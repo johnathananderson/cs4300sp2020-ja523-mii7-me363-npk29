@@ -87,10 +87,17 @@
                 'use strict';
 
                 var _createClass = function() {
-                    function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i];
+                    function defineProperties(target, props) {
+                        for (var i = 0; i < props.length; i++) {
+                            var descriptor = props[i];
                             descriptor.enumerable = descriptor.enumerable || false;
-                            descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true;
-                            Object.defineProperty(target, descriptor.key, descriptor); } } return function(Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+                            descriptor.configurable = true;
+                            if ("value" in descriptor) descriptor.writable = true;
+                            Object.defineProperty(target, descriptor.key, descriptor);
+                        }
+                    }
+                    return function(Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; };
+                }();
 
                 var _fuse = __webpack_require__(2);
 
@@ -161,7 +168,7 @@
                             position: 'auto',
                             resetScrollPosition: true,
                             regexFilter: null,
-                            shouldSort: true,
+                            shouldSort: false,
                             shouldSortItems: false,
                             sortFilter: _utils.sortByAlpha,
                             placeholder: true,
@@ -2941,7 +2948,7 @@
                         include: [],
 
                         // Whether to sort the result list, by score
-                        shouldSort: false,
+                        shouldSort: true,
 
                         // The search function to use
                         // Note that the default search function ([[Function]]) must conform to the following API:
@@ -3795,10 +3802,17 @@
                 });
 
                 var _createClass = function() {
-                    function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i];
+                    function defineProperties(target, props) {
+                        for (var i = 0; i < props.length; i++) {
+                            var descriptor = props[i];
                             descriptor.enumerable = descriptor.enumerable || false;
-                            descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true;
-                            Object.defineProperty(target, descriptor.key, descriptor); } } return function(Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+                            descriptor.configurable = true;
+                            if ("value" in descriptor) descriptor.writable = true;
+                            Object.defineProperty(target, descriptor.key, descriptor);
+                        }
+                    }
+                    return function(Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; };
+                }();
 
                 var _redux = __webpack_require__(5);
 
