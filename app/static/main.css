@@ -3,6 +3,10 @@
     src: url(./fonts/solena_regular.otf);
 }
 
+#saveface {
+    font-family: font1;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 970px;
