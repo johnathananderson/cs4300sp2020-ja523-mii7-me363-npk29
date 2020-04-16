@@ -1,11 +1,6 @@
 @font-face {
     font-family: font1;
-    src: url(./fonts/solena-reg.otf);
-    src: url(./fonts/solena-reg.eot);
-    /* IE9 Compat Modes */
-    src: url(./fonts/solena-reg.woff2) format('woff2'), /* Super Modern Browsers */
-    url(./fonts/solena-reg.woff) format('woff'), /* Pretty Modern Browsers */
-    url(./fonts/solena-reg.ttf) format('truetype'), /* Safari, Android, iOS */
+    src: url(./fonts/solena_regular.otf);
 }
 
 #saveface {
