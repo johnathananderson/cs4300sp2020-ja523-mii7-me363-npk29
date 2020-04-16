@@ -926,7 +926,7 @@ legend {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    background: url("static/images/bg2.jpg");
+    background: url("/static/images/bg2.jpg");
     background-size: cover;
     padding: 15px;
     font-family: 'Roboto', sans-serif;

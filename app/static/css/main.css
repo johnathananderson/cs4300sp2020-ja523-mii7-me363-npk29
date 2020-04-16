@@ -1,11 +1,11 @@
 @font-face {
     font-family: font1;
-    src: url('static/fonts/solena-reg.otf');
-    src: url('static/fonts/solena-reg.eot');
+    src: url('/static/fonts/solena-reg.otf');
+    src: url('/static/fonts/solena-reg.eot');
     /* IE9 Compat Modes */
-    src: url('static/fonts/solena-reg.woff2') format('woff2'), /* Super Modern Browsers */
-    url('static/fonts/solena-reg.woff') format('woff'), /* Pretty Modern Browsers */
-    url('static/fonts/solena-reg.ttf') format('truetype'), /* Safari, Android, iOS */
+    src: url('/static/fonts/solena-reg.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/static/fonts/solena-reg.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/static/fonts/solena-reg.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
 #saveface {
