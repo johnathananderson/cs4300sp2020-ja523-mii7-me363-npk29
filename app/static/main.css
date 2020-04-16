@@ -1,6 +1,6 @@
 @font-face {
     font-family: font1;
-    src: url(./fonts/la_viola-webfont.ttf);
+    src: url(la_viola-webfont.ttf);
 }
 
 #saveface {
@@ -42,7 +42,7 @@
 }
 
 .btn {
-    background-color: #4285F4;
+    background-color: black;
     border: none
 }
 
