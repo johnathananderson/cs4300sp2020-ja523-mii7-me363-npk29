@@ -18,7 +18,6 @@ html {
 
 body {
     margin: 0;
-    background: url("../images/bg1.jpg");
 }
 
 
@@ -927,6 +926,7 @@ legend {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
+    background: url("../images/bg0.png");
     background-size: cover;
     padding: 15px;
     font-family: 'Roboto', sans-serif;
