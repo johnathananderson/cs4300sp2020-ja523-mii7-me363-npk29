@@ -31,5 +31,5 @@ for brand in data:
             p["shades"][shade_name] = s
         data[brand]["products"][product_name] = p
 
-with open("output1.json", "w") as outfile:
-    json.dump(data1, outfile)
+with open("output.json", "w") as outfile:
+    json.dump(data, outfile)
