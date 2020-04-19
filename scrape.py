@@ -14,22 +14,22 @@ for brand in data:
     print(brand)
     brand_url = base_url + brand_prefix + str(data[brand]["id"]) + brand_suffix
     response = json.loads(requests.get(brand_url).content.decode("utf-8"))
-    data[brand]["products"] = []
+    data[brand]["products"] = {}
     for product in response:
         p = {}
-        p["name"] = product["name"]
+        product_name = product["name"]
         p["id"] = product["id"]
         p["thumb_image_url"] = product["thumb_image_url"]
         p["micro_image_url"] = product["micro_image_url"]
-        p["shades"] = []
+        p["shades"] = {}
         product_url = base_url + product_prefix + str(product["id"])
         shades = json.loads(requests.get(product_url).content.decode("utf-8"))
         for shade in shades:
             s = {}
+            shade_name = shade["name"]
             s["id"] = shade["id"]
-            s["name"] = shade["name"]
-            p["shades"].append(s)
-        data[brand]["products"].append(p)
+            p["shades"][shade_name] = s
+        data[brand]["products"][product_name] = p
 
 with open("output1.json", "w") as outfile:
-    json.dump(data, outfile)
+    json.dump(data1, outfile)
