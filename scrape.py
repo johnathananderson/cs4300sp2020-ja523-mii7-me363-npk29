@@ -9,7 +9,6 @@ brand_prefix = "products?brand_id="
 brand_suffix = "&include_discontinued=true&src=findation"
 product_prefix = "shades?product_id="
 
-
 for brand in data:
     print(brand)
     brand_url = base_url + brand_prefix + str(data[brand]["id"]) + brand_suffix
