@@ -13,7 +13,9 @@ def search():
 		output_message = "Its not working"
 	else:
 		output_message = "Your search: " + query
-		data = range(5)
+		for w in query:
+            data.append(w)
+            
 	return render_template('search.html', name=project_name, netid=net_id, output_message=output_message, data=data)
 
 
