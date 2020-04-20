@@ -1037,7 +1037,7 @@ legend {
     top: 0;
     right: 0;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     -ms-flex-align: center;
     align-items: center;
     width: 60px;
