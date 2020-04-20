@@ -1038,9 +1038,11 @@ legend {
     right: 0;
     /* display: -ms-flexbox; */
     /* display: flex; */
+    background: #e45c27;
+    border-radius: 3px;
     -ms-flex-align: center;
     align-items: center;
-    width: 60px;
+    width: 80px;
     height: 100%;
 }
 
