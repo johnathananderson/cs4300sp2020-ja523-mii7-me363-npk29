@@ -1064,6 +1064,7 @@ legend {
     color: #999;
     display: block;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .s008 form .inner-form .advance-search .row {
