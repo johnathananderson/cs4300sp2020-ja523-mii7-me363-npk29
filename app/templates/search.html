@@ -16,8 +16,8 @@
         <div class="topcorner">
             <p>Project Name: {{ name }}</p>
             <p>Student Name: ({{ netid }})</p>
+            <p>{{output_message}}</p>
             {% if data %}
-            <p>I don't know how to move this. </p>
             {% for d in data %}  
                 <br>
                 <p>{{d}}</p>
