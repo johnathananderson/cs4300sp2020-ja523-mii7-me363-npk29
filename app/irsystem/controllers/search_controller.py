@@ -10,7 +10,7 @@ def search():
 	query = request.args.get('search')
 	if not query:
 		data = []
-		output_message = ''
+		output_message = 'Its not working'
 	else:
 		output_message = "Your search: " + query
 		data = range(5)
