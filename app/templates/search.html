@@ -119,14 +119,6 @@
             </div>
         </form>
 
-        <!-- <form class="form-inline global-search">
-            {% if data %}
-            <h1>{{output_message}}</h1>
-            {% for d in data %}
-            <br>
-            <p>{{d}}</p>
-            {% endfor %} {% endif %}
-        </form> -->
 
     </div>
     <script src="/static/js/extention/choices.js"></script>
@@ -159,6 +151,20 @@
             }
         });
     </script>
+
+<form class="form-inline global-search">
+    {% if data %}
+    <h1>{{output_message}}</h1>
+    {% for d in data %}
+    <br>
+    <p>{{d}}</p>
+    {% endfor %} {% endif %}
+</form>
+
+
+
+
+
 </body>
 <!-- This templates was made by Colorlib (https://colorlib.com/etc/searchf/colorlib-search-7/) -->
 
