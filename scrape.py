@@ -9,7 +9,6 @@ brand_prefix = "products?brand_id="
 brand_suffix = "&include_discontinued=true&src=findation"
 product_prefix = "shades?product_id="
 
-
 for brand in data:
     print(brand)
     brand_url = base_url + brand_prefix + str(data[brand]["id"]) + brand_suffix
@@ -31,5 +30,5 @@ for brand in data:
             p["shades"][shade_name] = s
         data[brand]["products"][product_name] = p
 
-with open("output1.json", "w") as outfile:
-    json.dump(data1, outfile)
+with open("output.json", "w") as outfile:
+    json.dump(data, outfile)
