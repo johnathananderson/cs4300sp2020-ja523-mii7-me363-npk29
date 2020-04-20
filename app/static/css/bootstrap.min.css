@@ -1107,7 +1107,7 @@ legend {
     font-size: 14px;
 }
 
-.s008 form .inner-form .advance-search .row.third .input-field .result-count span {
+.s008 form .inner-form .advance-search .row.third .input-field .result-count p {
     color: #e45c27;
     padding-right: 5px;
 }

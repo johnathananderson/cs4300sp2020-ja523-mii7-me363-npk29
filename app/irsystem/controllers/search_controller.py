@@ -10,9 +10,9 @@ res = str(num_results)
 @irsystem.route('/', methods=['GET'])
 def search():
 	query = request.args.get('search')
-	if not query:
+	if not query or len(query)==0:
 		data = []
-		output_message = 'Its not working'
+		output_message = "Its not working"
 	else:
 		output_message = "Your search: " + query
 		data = range(5)
