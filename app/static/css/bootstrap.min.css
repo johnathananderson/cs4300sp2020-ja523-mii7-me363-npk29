@@ -1066,13 +1066,6 @@ legend {
     margin-bottom: 26px;
 }
 
-.s008 form .inner-form .advance-search .des {
-    font-size: 15px;
-    color: #999;
-    margin: 0 0 35;
-    margin-top: -20;
-}
-
 .s008 form .inner-form .advance-search .row {
     display: -ms-flexbox;
     display: flex;
