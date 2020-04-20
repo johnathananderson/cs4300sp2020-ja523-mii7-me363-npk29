@@ -1059,14 +1059,14 @@ legend {
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.s008 form .inner-form .advance-search .desc {
+.s008 form .inner-form .advance-search .desc_div .desc {
     font-size: 15px;
     color: #999;
     display: block;
     margin-bottom: 26px;
 }
 
-.s008 form .inner-form .advance-search .desc2 {
+.s008 form .inner-form .advance-search .desc_div .desc2 {
     font-size: 15px;
     color: #999;
     display: block;
