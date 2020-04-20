@@ -17,20 +17,13 @@
             <p>Project Name: {{ name }}</p>
             <p>Student Name: ({{ netid }})</p>
         </div>
-    </div>
-
 
         <form id="adv_form">
             <!-- <h1 id="saveface" style="font-size: 55px; color: black">
                 Save Face!
             </h1> -->
-            {% if data %}
-            <h1>{{output_message}}</h1>
-            {% for d in data %}
-            <br>
-            <p>{{d}}</p>
-            {% endfor %} {% endif %}
-            <br>
+
+            <br><br>
             <div class="inner-form">
                 <div class="basic-search">
                     <div class="input-field">
@@ -127,6 +120,7 @@
         </form>
 
 
+
     </div>
     <script src="/static/js/extention/choices.js"></script>
     <script>
@@ -158,13 +152,6 @@
             }
         });
     </script>
-
-
-
-
-
-
-
 </body>
 <!-- This templates was made by Colorlib (https://colorlib.com/etc/searchf/colorlib-search-7/) -->
 

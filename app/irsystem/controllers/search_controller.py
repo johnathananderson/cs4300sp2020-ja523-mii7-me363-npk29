@@ -13,7 +13,7 @@ def search():
 		output_message = ''
 	else:
 		output_message = "Your search: " + query
-		data = query
+		data = range(5)
 	return render_template('search.html', name=project_name, netid=net_id, output_message=output_message, data=data)
 
 
