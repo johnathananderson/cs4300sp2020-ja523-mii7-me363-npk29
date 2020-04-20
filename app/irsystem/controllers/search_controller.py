@@ -5,6 +5,7 @@ from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 project_name = "Save Face"
 net_id = "ja523, me363, mii7, npk29"
 num_results = 0
+res = str(num_results)
 
 @irsystem.route('/', methods=['GET'])
 def search():
