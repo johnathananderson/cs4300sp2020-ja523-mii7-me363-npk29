@@ -1053,7 +1053,7 @@ legend {
 }
 
 .s008 form .inner-form .advance-search {
-    background: #000;
+    background: rgba(0, 0, 0, .93);
     padding: 40px;
     border-radius: 3px;
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
