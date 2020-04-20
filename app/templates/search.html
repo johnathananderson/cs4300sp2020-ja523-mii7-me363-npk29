@@ -19,25 +19,17 @@
         </div>
 
 
-
-
-        <form class="form-inline global-search">
+        <form id="adv_form">
+            <!-- <h1 id="saveface" style="font-size: 55px; color: black">
+                Save Face!
+            </h1> -->
             {% if data %}
             <h1>{{output_message}}</h1>
             {% for d in data %}
             <br>
             <p>{{d}}</p>
             {% endfor %} {% endif %}
-        </form>
-
-
-        
-        <form id="adv_form">
-            <!-- <h1 id="saveface" style="font-size: 55px; color: black">
-                Save Face!
-            </h1> -->
-
-            <br><br>
+            <br>
             <div class="inner-form">
                 <div class="basic-search">
                     <div class="input-field">
