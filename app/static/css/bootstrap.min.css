@@ -1063,15 +1063,8 @@ legend {
     font-size: 15px;
     color: #999;
     display: block;
-    margin-bottom: 26px;
-}
-
-.s008 form .inner-form .advance-search .desc2 {
-    font-size: 15px;
-    color: #999;
-    display: block;
-    margin-bottom: 26px;
-    float: right;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .s008 form .inner-form .advance-search .row {
