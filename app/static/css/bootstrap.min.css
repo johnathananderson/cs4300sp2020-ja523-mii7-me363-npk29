@@ -1093,6 +1093,7 @@ legend {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
+    margin-top: 1vh;
 }
 
 .s008 form .inner-form .advance-search .row.third .input-field .result-count {
