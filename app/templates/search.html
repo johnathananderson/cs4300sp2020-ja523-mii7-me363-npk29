@@ -16,6 +16,14 @@
         <div class="topcorner">
             <p>Project Name: {{ name }}</p>
             <p>Student Name: ({{ netid }})</p>
+            <form class="form-inline global-search">
+                {% if data %}
+                <h1>{{output_message}}</h1>
+                {% for d in data %}
+                <br>
+                <p>{{d}}</p>
+                {% endfor %} {% endif %}
+            </form>
         </div>
 
         <form id="adv_form" class="form-inline global-search">
@@ -116,14 +124,6 @@
                     </div>
                 </div>
             </div>
-        </form>
-        <form class="form-inline global-search">
-            {% if data %}
-            <h1>{{output_message}}</h1>
-            {% for d in data %}
-            <br>
-            <p>{{d}}</p>
-            {% endfor %} {% endif %}
         </form>
     </div>
 
