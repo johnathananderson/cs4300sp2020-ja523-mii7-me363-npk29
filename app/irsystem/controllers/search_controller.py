@@ -2,6 +2,7 @@ from . import *
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 from findation import FindationBrowser
+import time
 
 project_name = "Save Face"
 net_id = "ja523, me363, mii7, npk29"
@@ -27,7 +28,7 @@ def search():
         products = [[brand1, product1, shade1], [brand2, product2, shade2]]
         f = FindationBrowser()
         f.start()
-        f.wait_for_page_load()
+        time.sleep(1)
         data = f.process_matches(products)
         f.close_out()
 

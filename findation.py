@@ -3,41 +3,26 @@ import os
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 from ingredients import IngredientsBrowser
 
 
 class FindationBrowser:
     def __init__(self):
         chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument("headless")
+        # chrome_options.add_argument("headless")
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(chrome_options=chrome_options, executable_path="chromedriver")
-        self.browser.implicitly_wait(10)
+        self.browser.implicitly_wait(3)
         self.url = "https://www.findation.com/"
 
     def start(self):
         self.browser.get(self.url)
-        self.wait_for_page_load()
+        time.sleep(1)
 
     def close_out(self):
         self.browser.close()
-
-    def wait_for_page_load(self):
-        try:
-            element_present = EC.presence_of_element_located((By.ID, "main"))
-            WebDriverWait(self.browser, 10).until(element_present)
-        except TimeoutException:
-            print("Timed out waiting for page to load")
-        finally:
-            print("Page loaded")
 
     def process_matches(self, products):
         with open("ingredients.json", "a+", encoding="utf8") as i:
@@ -47,7 +32,7 @@ class FindationBrowser:
                 ingredients = {}
         get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
         get_started_button.click()
-        self.wait_for_page_load()
+        time.sleep(1)
         n_products = len(products)
         results = []
         i = IngredientsBrowser()
@@ -59,31 +44,31 @@ class FindationBrowser:
             brand_input = self.browser.find_element_by_id("brand-search")
             brand_input.send_keys(brand)
             brand_input.send_keys(Keys.ENTER)
-            self.wait_for_page_load()
+            time.sleep(1)
             product_input = self.browser.find_element_by_xpath(
                 "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
             )
             product_input.send_keys(product_name)
             product_input.send_keys(Keys.ENTER)
-            self.wait_for_page_load()
+            time.sleep(1)
             shade_input = self.browser.find_element_by_xpath(
                 "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
             )
             shade_input.send_keys(shade)
             shade_input.send_keys(Keys.ENTER)
-            self.wait_for_page_load()
+            time.sleep(1)
             if p < n_products - 1:
                 add_another_button = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                 )
                 add_another_button.click()
-                self.wait_for_page_load()
+                time.sleep(1)
             else:
                 find_matches_button = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button"
                 )
                 find_matches_button.click()
-                self.wait_for_page_load()
+                time.sleep(1)
                 matches = self.browser.find_elements_by_class_name("match-meta")
                 for match in matches:
                     lines = match.text.splitlines()
