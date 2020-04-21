@@ -19,7 +19,7 @@ class FindationBrowser:
 
     def start(self):
         self.browser.get(self.url)
-        time.sleep(1)
+        time.sleep(3)
 
     def close_out(self):
         self.browser.close()
@@ -37,8 +37,8 @@ class FindationBrowser:
                 get_started_button.click()
                 found = True
             except:
-                time.sleep(1)
-        time.sleep(1)
+                time.sleep(3)
+        time.sleep(3)
         n_products = len(products)
         results = []
         i = IngredientsBrowser()
@@ -53,10 +53,10 @@ class FindationBrowser:
                     brand_input = self.browser.find_element_by_id("brand-search")
                     found = True
                 except:
-                    time.sleep(1)
+                    time.sleep(3)
             brand_input.send_keys(brand)
             brand_input.send_keys(Keys.ENTER)
-            time.sleep(1)
+            time.sleep(3)
             found = False
             while not found:
                 try:
@@ -65,10 +65,10 @@ class FindationBrowser:
                     )
                     found = True
                 except:
-                    time.sleep(1)
+                    time.sleep(3)
             product_input.send_keys(product_name)
             product_input.send_keys(Keys.ENTER)
-            time.sleep(1)
+            time.sleep(3)
             found = False
             while not found:
                 try:
@@ -77,10 +77,10 @@ class FindationBrowser:
                     )
                     found = True
                 except:
-                    time.sleep(1)
+                    time.sleep(3)
             shade_input.send_keys(shade)
             shade_input.send_keys(Keys.ENTER)
-            time.sleep(1)
+            time.sleep(3)
             if p < n_products - 1:
                 found = False
                 while not found:
@@ -91,8 +91,8 @@ class FindationBrowser:
                         add_another_button.click()
                         found = True
                     except:
-                        time.sleep(1)
-                time.sleep(1)
+                        time.sleep(3)
+                time.sleep(3)
             else:
                 found = False
                 while not found:
@@ -103,15 +103,15 @@ class FindationBrowser:
                         find_matches_button.click()
                         found = True
                     except:
-                        time.sleep(1)
-                time.sleep(1)
+                        time.sleep(3)
+                time.sleep(3)
                 found = False
                 while not found:
                     try:
                         matches = self.browser.find_elements_by_class_name("match-meta")
                         found = True
                     except:
-                        time.sleep(1)
+                        time.sleep(3)
                 for match in matches:
                     lines = match.text.splitlines()
                     match_brand = lines[0]
