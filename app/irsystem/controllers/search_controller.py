@@ -27,7 +27,7 @@ def search():
         products = [[brand1, product1, shade1], [brand2, product2, shade2]]
         f = FindationBrowser()
         f.start()
-        time.sleep(1)
+        f.wait_for_page_load()
         data = f.process_matches(products)
         f.close_out()
 
