@@ -107,8 +107,6 @@ class FindationBrowser:
 
 f = FindationBrowser()
 f.start()
-with open("products.json", encoding="utf8") as j:
-    data = json.load(j)
 brand1 = "Mary Kay"
 product1 = "Full-Coverage Foundation"
 shade1 = "Bronze 507"
