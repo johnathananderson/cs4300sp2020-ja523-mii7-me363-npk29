@@ -16,7 +16,7 @@ class FindationBrowser:
         chrome_options.add_argument("--no-sandbox")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(chrome_options=chrome_options, executable_path="chromedriver")
-        self.implicitly_wait(5)
+        self.browser.implicitly_wait(5)
         self.url = "https://www.findation.com/"
 
     def start(self):
