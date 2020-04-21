@@ -21,7 +21,12 @@ class FindationBrowser:
     def close_out(self):
         self.browser.close()
 
-    def process_matches(self, products, ingredients):
+    def process_matches(self, products):
+        with open("ingredients.json", "a+", encoding="utf8") as i:
+            try:
+                ingredients = json.load(i)
+            except:
+                ingredients = {}
         get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
         get_started_button.click()
         time.sleep(1)
@@ -91,6 +96,8 @@ class FindationBrowser:
 
                     results.append(match_product)
         i.close_out()
+        with open("ingredients.json", "w") as outfile:
+            json.dump(ingredients, outfile, indent=4)
         return results
 
 
@@ -107,18 +114,10 @@ product2 = "Medium-Coverage Foundation "
 shade2 = "Bronze 507 (Natural)"
 
 products = [[brand1, product1, shade1], [brand2, product2, shade2]]
-with open("ingredients.json", "a+", encoding="utf8") as i:
-    try:
-        ingredients = json.load(i)
-    except:
-        ingredients = {}
-results = f.process_matches(products, ingredients)
+results = f.process_matches(products)
 f.close_out()
 
 print("DONE")
-
-with open("ingredients.json", "w") as outfile:
-    json.dump(ingredients, outfile, indent=4)
 
 
 with open("findation_output.txt", "w") as outfile:
