@@ -1,4 +1,5 @@
 import json
+import os
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -6,7 +7,6 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from ingredients import IngredientsBrowser
 
-GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google_chrome"
 CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
 
 
@@ -16,8 +16,8 @@ class FindationBrowser:
         chrome_options.add_argument("headless")
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
-        chrome_options.binary_location = GOOGLE_CHROME_PATH
-        self.browser = webdriver.Chrome(chrome_options=chrome_options, executable_path=CHROMEDRIVER_PATH)
+        chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
+        self.browser = webdriver.Chrome(chrome_options=chrome_options, executable_path="chromedriver")
         self.url = "https://www.findation.com/"
 
     def start(self):
