@@ -6,9 +6,9 @@ from selenium import webdriver
 class IngredientsBrowser:
     def __init__(self):
         chrome_options = webdriver.ChromeOptions()
+        # chrome_options.add_argument("--no-sandbox")
+        # chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("headless")
-        chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--no-sandbox")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(chrome_options=chrome_options, executable_path="chromedriver")
 
