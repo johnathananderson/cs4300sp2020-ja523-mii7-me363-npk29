@@ -44,22 +44,42 @@ class IngredientsBrowser:
                 self.browser.get(review_results.find_element_by_class_name("review-product").get_attribute("href"))
                 time.sleep(1)
                 try:
-                    i = self.browser.find_element_by_xpath("//*[@id='ingredients']")
-                    ingredients = (
-                        i.get_attribute("innerHTML")
-                        .replace("Active: ", "")
-                        .replace("Other: ", "")
-                        .replace("May Contain: ", "")
-                        .replace("May contain: ", "")
-                        .strip()
-                        .split(",  ")
-                    )
-                    return ingredients
+                    found = False
+                    count = 0
+                    while not found and count < 10:
+                        try:
+                            i = self.browser.find_element_by_xpath("//*[@id='ingredients']")
+                            found = True
+                            ingredients = (
+                                i.get_attribute("innerHTML")
+                                .replace("Active: ", "")
+                                .replace("Other: ", "")
+                                .replace("May Contain: ", "")
+                                .replace("May contain: ", "")
+                                .strip()
+                                .split(",  ")
+                            )
+                            return ingredients
+                        except:
+                            time.sleep(1)
+                            count += 1
                 except:
                     return "Ingredients not found"
         else:
-            listings = self.browser.find_element_by_class_name("product-listings")
+            found = False
+            while not found:
+                try:
+                    listings = self.browser.find_element_by_class_name("product-listings")
+                    found = True
+                except:
+                    time.sleep(1)
             self.browser.get(listings.find_element_by_tag_name("a").get_attribute("href"))
             time.sleep(1)
-            ingredients = self.browser.find_elements_by_class_name("td-ingredient-interior")
+            found = False
+            while not found:
+                try:
+                    ingredients = self.browser.find_elements_by_class_name("td-ingredient-interior")
+                    found = True
+                except:
+                    time.sleep(1)
             return list(map(lambda x: x.text.split("\n")[0].title(), ingredients))

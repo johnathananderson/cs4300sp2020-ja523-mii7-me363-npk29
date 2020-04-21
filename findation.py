@@ -30,11 +30,14 @@ class FindationBrowser:
                 ingredients = json.load(i)
             except:
                 ingredients = {}
-        print()
-        print()
-        print()
-        get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
-        get_started_button.click()
+        found = False
+        while not found:
+            try:
+                get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
+                get_started_button.click()
+                found = True
+            except:
+                time.sleep(1)
         time.sleep(1)
         n_products = len(products)
         results = []
@@ -44,35 +47,71 @@ class FindationBrowser:
             brand = product[0]
             product_name = product[1]
             shade = product[2]
-            brand_input = self.browser.find_element_by_id("brand-search")
+            found = False
+            while not found:
+                try:
+                    brand_input = self.browser.find_element_by_id("brand-search")
+                    found = True
+                except:
+                    time.sleep(1)
             brand_input.send_keys(brand)
             brand_input.send_keys(Keys.ENTER)
             time.sleep(1)
-            product_input = self.browser.find_element_by_xpath(
-                "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
-            )
+            found = False
+            while not found:
+                try:
+                    product_input = self.browser.find_element_by_xpath(
+                        "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
+                    )
+                    found = True
+                except:
+                    time.sleep(1)
             product_input.send_keys(product_name)
             product_input.send_keys(Keys.ENTER)
             time.sleep(1)
-            shade_input = self.browser.find_element_by_xpath(
-                "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
-            )
+            found = False
+            while not found:
+                try:
+                    shade_input = self.browser.find_element_by_xpath(
+                        "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
+                    )
+                    found = True
+                except:
+                    time.sleep(1)
             shade_input.send_keys(shade)
             shade_input.send_keys(Keys.ENTER)
             time.sleep(1)
             if p < n_products - 1:
-                add_another_button = self.browser.find_element_by_xpath(
-                    "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
-                )
-                add_another_button.click()
+                found = False
+                while not found:
+                    try:
+                        add_another_button = self.browser.find_element_by_xpath(
+                            "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
+                        )
+                        add_another_button.click()
+                        found = True
+                    except:
+                        time.sleep(1)
                 time.sleep(1)
             else:
-                find_matches_button = self.browser.find_element_by_xpath(
-                    "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button"
-                )
-                find_matches_button.click()
+                found = False
+                while not found:
+                    try:
+                        find_matches_button = self.browser.find_element_by_xpath(
+                            "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button"
+                        )
+                        find_matches_button.click()
+                        found = True
+                    except:
+                        time.sleep(1)
                 time.sleep(1)
-                matches = self.browser.find_elements_by_class_name("match-meta")
+                found = False
+                while not found:
+                    try:
+                        matches = self.browser.find_elements_by_class_name("match-meta")
+                        found = True
+                    except:
+                        time.sleep(1)
                 for match in matches:
                     lines = match.text.splitlines()
                     match_brand = lines[0]
