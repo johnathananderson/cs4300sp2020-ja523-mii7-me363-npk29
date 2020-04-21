@@ -11,6 +11,7 @@ class IngredientsBrowser:
         chrome_options.add_argument("headless")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(chrome_options=chrome_options, executable_path="chromedriver")
+        self.browser.implicitly_wait(3)
 
     def close_out(self):
         self.browser.close()

@@ -124,45 +124,26 @@ class FindationBrowser:
                     match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
                     match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
 
-                    brand_product = match_brand + " " + match_name
-
-                    if match_brand in ingredients and match_name in ingredients[match_brand]:
-                        if ingredients[match_brand][match_name] == "Ingredients not found":
-                            match_product["ingredients"] = "Ingredients not found"
-                        else:
-                            match_product["ingredients"] = ingredients[brand_product]
+                    if (
+                        match_brand in ingredients
+                        and match_name in ingredients[match_brand]
+                        and ingredients[match_brand][match_name] != "Ingredients not found"
+                    ):
+                        print()
+                        print()
+                        print()
+                        print(True)
+                        match_product["ingredients"] = ingredients[match_brand][match_name]
                     else:
-                        # found_ingredients = i.find_ingredients(
-                        #     match_brand.replace(" ", "+"), match_name.replace(" ", "+")
-                        # )
-                        # ingredients[match_brand] = ingredients.get(match_brand, {})
-                        # ingredients[match_brand][match_name] = found_ingredients
-                        # match_product["ingredients"] = found_ingredients
-                        match_product["ingredients"] = "Ingredients not found"
+                        found_ingredients = i.find_ingredients(
+                            match_brand.replace(" ", "+"), match_name.replace(" ", "+")
+                        )
+                        ingredients[match_brand] = ingredients.get(match_brand, {})
+                        ingredients[match_brand][match_name] = found_ingredients
+                        match_product["ingredients"] = found_ingredients
 
                     results.append(match_product)
         i.close_out()
         with open("ingredients.json", "w") as outfile:
             json.dump(ingredients, outfile, indent=4)
         return results
-
-
-f = FindationBrowser()
-f.start()
-brand1 = "Mary Kay"
-product1 = "Full-Coverage Foundation"
-shade1 = "Bronze 507"
-
-brand2 = "Mary Kay"
-product2 = "Medium-Coverage Foundation "
-shade2 = "Bronze 507 (Natural)"
-
-products = [[brand1, product1, shade1], [brand2, product2, shade2]]
-results = f.process_matches(products)
-f.close_out()
-
-print("DONE")
-
-
-with open("findation_output.txt", "w") as outfile:
-    outfile.writelines("%s\n" % product for product in results)
