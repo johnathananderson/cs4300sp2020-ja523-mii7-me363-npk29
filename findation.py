@@ -17,9 +17,7 @@ class FindationBrowser:
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.binary_location = GOOGLE_CHROME_PATH
-        self.browser = webdriver.Chrome(
-            ChromeDriverManager().install(), chrome_options=chrome_options, execution_path=CHROMEDRIVER_PATH
-        )
+        self.browser = webdriver.Chrome(chrome_options=chrome_options, executable_path=CHROMEDRIVER_PATH)
         self.url = "https://www.findation.com/"
 
     def start(self):
