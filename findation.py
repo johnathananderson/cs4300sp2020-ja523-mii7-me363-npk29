@@ -132,12 +132,13 @@ class FindationBrowser:
                         else:
                             match_product["ingredients"] = ingredients[brand_product]
                     else:
-                        found_ingredients = i.find_ingredients(
-                            match_brand.replace(" ", "+"), match_name.replace(" ", "+")
-                        )
-                        ingredients[match_brand] = ingredients.get(match_brand, {})
-                        ingredients[match_brand][match_name] = found_ingredients
-                        match_product["ingredients"] = found_ingredients
+                        # found_ingredients = i.find_ingredients(
+                        #     match_brand.replace(" ", "+"), match_name.replace(" ", "+")
+                        # )
+                        # ingredients[match_brand] = ingredients.get(match_brand, {})
+                        # ingredients[match_brand][match_name] = found_ingredients
+                        # match_product["ingredients"] = found_ingredients
+                        match_product["ingredients"] = "Ingredients not found"
 
                     results.append(match_product)
         i.close_out()
