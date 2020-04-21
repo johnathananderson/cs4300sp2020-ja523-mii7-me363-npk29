@@ -4,9 +4,10 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from ingredients import IngredientsBrowser
 
 
-class Browser:
+class FindationBrowser:
     def __init__(self):
         options = Options()
         options.headless = True
@@ -20,11 +21,13 @@ class Browser:
     def close_out(self):
         self.browser.close()
 
-    def process_matches(self, products):
+    def process_matches(self, products, ingredients):
         get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
         get_started_button.click()
+        time.sleep(1)
         n_products = len(products)
         results = []
+        i = IngredientsBrowser()
         for p in range(n_products):
             product = products[p]
             brand = product[0]
@@ -63,22 +66,37 @@ class Browser:
                     lines = match.text.splitlines()
                     match_brand = lines[0]
                     match_name = lines[1]
-                    match_shade = lines[2].replace("Your shade: ", "")
-                    match_thumbnail = match.find_element_by_class_name("micro").get_attribute("src")
-                    match_url = match.find_element_by_class_name("media").get_attribute("href")
+                    match_shade = lines[2].replace("Your shade: ", "").replace(" (Natural)", "")
                     match_product = {}
                     match_product["brand"] = match_brand
                     match_product["name"] = match_name
                     match_product["shade"] = match_shade
-                    match_product["thumbnail"] = match_thumbnail
-                    match_product["url"] = match_url
+                    match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
+                    match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
+
+                    brand_product = match_brand + " " + match_name
+
+                    if match_brand in ingredients and match_name in ingredients[match_brand]:
+                        if ingredients[match_brand][match_name] == "Ingredients not found":
+                            match_product["ingredients"] = "Ingredients not found"
+                        else:
+                            match_product["ingredients"] = ingredients[brand_product]
+                    else:
+                        found_ingredients = i.find_ingredients(
+                            match_brand.replace(" ", "+"), match_name.replace(" ", "+")
+                        )
+                        ingredients[match_brand] = ingredients.get(match_brand, {})
+                        ingredients[match_brand][match_name] = found_ingredients
+                        match_product["ingredients"] = found_ingredients
+
                     results.append(match_product)
+        i.close_out()
         return results
 
 
-b = Browser()
-b.start()
-with open("./products.json", encoding="utf8") as j:
+f = FindationBrowser()
+f.start()
+with open("products.json", encoding="utf8") as j:
     data = json.load(j)
 brand1 = "Mary Kay"
 product1 = "Full-Coverage Foundation"
@@ -89,10 +107,19 @@ product2 = "Medium-Coverage Foundation "
 shade2 = "Bronze 507 (Natural)"
 
 products = [[brand1, product1, shade1], [brand2, product2, shade2]]
-results = b.process_matches(products)
-b.close_out()
+with open("ingredients.json", "a+", encoding="utf8") as i:
+    try:
+        ingredients = json.load(i)
+    except:
+        ingredients = {}
+results = f.process_matches(products, ingredients)
+f.close_out()
 
 print("DONE")
+
+with open("ingredients.json", "w") as outfile:
+    json.dump(ingredients, outfile, indent=4)
+
 
 with open("findation_output.txt", "w") as outfile:
     outfile.writelines("%s\n" % product for product in results)
