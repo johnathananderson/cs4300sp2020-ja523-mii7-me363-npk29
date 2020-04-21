@@ -21,7 +21,7 @@ class FindationBrowser:
 
     def start(self):
         self.browser.get(self.url)
-        time.sleep(1)
+        time.sleep(5)
 
     def close_out(self):
         self.browser.close()
@@ -34,7 +34,7 @@ class FindationBrowser:
                 ingredients = {}
         get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
         get_started_button.click()
-        time.sleep(1)
+        time.sleep(5)
         n_products = len(products)
         results = []
         i = IngredientsBrowser()
@@ -46,31 +46,31 @@ class FindationBrowser:
             brand_input = self.browser.find_element_by_id("brand-search")
             brand_input.send_keys(brand)
             brand_input.send_keys(Keys.ENTER)
-            time.sleep(1)
+            time.sleep(5)
             product_input = self.browser.find_element_by_xpath(
                 "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
             )
             product_input.send_keys(product_name)
             product_input.send_keys(Keys.ENTER)
-            time.sleep(1)
+            time.sleep(5)
             shade_input = self.browser.find_element_by_xpath(
                 "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
             )
             shade_input.send_keys(shade)
             shade_input.send_keys(Keys.ENTER)
-            time.sleep(1)
+            time.sleep(5)
             if p < n_products - 1:
                 add_another_button = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                 )
                 add_another_button.click()
-                time.sleep(1)
+                time.sleep(5)
             else:
                 find_matches_button = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button"
                 )
                 find_matches_button.click()
-                time.sleep(1)
+                time.sleep(5)
                 matches = self.browser.find_elements_by_class_name("match-meta")
                 for match in matches:
                     lines = match.text.splitlines()
