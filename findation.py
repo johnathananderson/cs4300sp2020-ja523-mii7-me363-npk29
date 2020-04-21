@@ -25,6 +25,7 @@ class FindationBrowser:
         self.browser.close()
 
     def process_matches(self, products):
+        print(self.browser.page_source)
         with open("ingredients.json", "a+", encoding="utf8") as i:
             try:
                 ingredients = json.load(i)
