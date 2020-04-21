@@ -2,13 +2,20 @@ import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
+GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google_chrome"
+CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
+
 
 class IngredientsBrowser:
     def __init__(self):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("headless")
-        # chrome_options.add_experimental_option("prefs", {"profile.default_content_settings.cookies": 2})
-        self.browser = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.binary_location = GOOGLE_CHROME_PATH
+        self.browser = webdriver.Chrome(
+            ChromeDriverManager().install(), chrome_options=chrome_options, execution_path=CHROMEDRIVER_PATH
+        )
 
     def close_out(self):
         self.browser.close()
