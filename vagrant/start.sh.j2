@@ -5,6 +5,7 @@ cd "{{ repository_path }}"
 exec gunicorn app:app \
     --bind=unix:/tmp/cs.sock \
     --workers 3 \
+    --timeout 90 \
     --user=root \
     --log-level=info \
     --access-logfile '-' \
