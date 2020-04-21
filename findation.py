@@ -31,8 +31,14 @@ class FindationBrowser:
                 ingredients = json.load(i)
             except:
                 ingredients = {}
-        get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
-        get_started_button.click()
+        found = False
+        while not found:
+            try:
+                get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
+                get_started_button.click()
+                found = True
+            except:
+                time.sleep(1)
         time.sleep(1)
         n_products = len(products)
         results = []
