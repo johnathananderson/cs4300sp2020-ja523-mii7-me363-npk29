@@ -3,9 +3,6 @@ import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-GOOGLE_CHROME_PATH = "/app/.apt/usr/bin/google_chrome"
-CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
-
 
 class IngredientsBrowser:
     def __init__(self):

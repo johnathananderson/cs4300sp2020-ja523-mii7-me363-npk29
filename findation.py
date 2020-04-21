@@ -7,8 +7,6 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from ingredients import IngredientsBrowser
 
-CHROMEDRIVER_PATH = "/app/.chromedriver/bin/chromedriver"
-
 
 class FindationBrowser:
     def __init__(self):
