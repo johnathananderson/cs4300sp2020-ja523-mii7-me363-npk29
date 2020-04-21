@@ -16,6 +16,7 @@ class FindationBrowser:
         chrome_options.add_argument("--no-sandbox")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(chrome_options=chrome_options, executable_path="chromedriver")
+        self.implicitly_wait(5)
         self.url = "https://www.findation.com/"
 
     def start(self):
@@ -31,14 +32,8 @@ class FindationBrowser:
                 ingredients = json.load(i)
             except:
                 ingredients = {}
-        found = False
-        while not found:
-            try:
-                get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
-                get_started_button.click()
-                found = True
-            except:
-                time.sleep(1)
+        get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
+        get_started_button.click()
         time.sleep(1)
         n_products = len(products)
         results = []
