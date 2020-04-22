@@ -34,7 +34,6 @@ class FindationBrowser:
                 ingredients = {}
         try:
             count = 0
-            time.sleep(1)
             while count < 11:
                 found = False
                 count = 0
@@ -44,9 +43,8 @@ class FindationBrowser:
                         get_started_button.click()
                         found = True
                     except:
-                        time.sleep(1)
-                        count += 1
-                time.sleep(1)
+                        time.sleep(0.1)
+                        count += 0.1
                 n_products = len(products)
                 results = []
                 for p in range(n_products):
@@ -61,8 +59,8 @@ class FindationBrowser:
                             brand_input = self.browser.find_element_by_id("brand-search")
                             found = True
                         except:
-                            time.sleep(1)
-                            count += 1
+                            time.sleep(0.1)
+                            count += 0.1
                     brand_input.send_keys(brand)
                     brand_input.send_keys(Keys.ENTER)
                     time.sleep(2)
@@ -75,8 +73,8 @@ class FindationBrowser:
                             )
                             found = True
                         except:
-                            time.sleep(1)
-                            count += 1
+                            time.sleep(0.1)
+                            count += 0.1
                     product_input.send_keys(product_name)
                     product_input.send_keys(Keys.ENTER)
                     time.sleep(2)
@@ -89,8 +87,8 @@ class FindationBrowser:
                             )
                             found = True
                         except:
-                            time.sleep(1)
-                            count += 1
+                            time.sleep(0.1)
+                            count += 0.1
                     shade_input.send_keys(shade)
                     shade_input.send_keys(Keys.ENTER)
                     time.sleep(2)
@@ -105,9 +103,8 @@ class FindationBrowser:
                                 add_another_button.click()
                                 found = True
                             except:
-                                time.sleep(1)
-                                count += 1
-                        time.sleep(1)
+                                time.sleep(0.1)
+                                count += 0.1
                     else:
                         found = False
                         count = 0
@@ -119,9 +116,8 @@ class FindationBrowser:
                                 find_matches_button.click()
                                 found = True
                             except:
-                                time.sleep(1)
-                                count += 1
-                        time.sleep(1)
+                                time.sleep(0.1)
+                                count += 0.1
                         found = False
                         count = 0
                         while not found and count < 11:
@@ -129,8 +125,9 @@ class FindationBrowser:
                                 matches = self.browser.find_elements_by_class_name("match-meta")
                                 found = True
                             except:
-                                time.sleep(1)
-                                count += 1
+                                time.sleep(0.1)
+                                count += 0.1
+                        print("Found matches")
                         for match in matches:
                             lines = match.text.splitlines()
                             match_brand = lines[0]
