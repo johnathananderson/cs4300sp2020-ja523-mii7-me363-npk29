@@ -600,7 +600,34 @@
             "Chlorphenesin. +/- Titanium Dioxide",
             "Iron Oxides."
         ],
-        "Even Better Makeup Cushion Compact": "Ingredients not found"
+        "Even Better Makeup Cushion Compact": "Ingredients not found",
+        "Anti-Blemish Solutions BB Cream": "Ingredients not found",
+        "Moisture Surge Tinted Moisturizer SPF 15": "Ingredients not found",
+        "BIY Blend It Yourself Pigment Drops": [
+            "Isododecane",
+            "Bis-Hydroxyethoxypropyl Dimethicone",
+            "Caprylyl Methicone",
+            "Sorbitan Sesquiisostearate",
+            "PEG-10 Dimethicone",
+            "Propylene Glycol Dicaprylate",
+            "Vinyl Dimethicone/Lauryl Dimethicone Crosspolymer",
+            "Phenyl Trimethicone",
+            "1, 2-Hexanediol",
+            "Methicone",
+            "Dimethicone",
+            "Disteardimonium Hectorite",
+            "Caprylyl Glycol",
+            "Propylene Carbonate",
+            "Aluminum Hydroxide",
+            "Tocopherol",
+            "Silica",
+            "Talc",
+            "Synthetic Fluorphlogopite. Titanium Dioxide (Ci 77891)",
+            "Mica",
+            "Iron Oxides (Ci 77492)",
+            "Iron Oxides (Ci 77491)",
+            "Iron Oxides (Ci 77499)."
+        ]
     },
     "Bobbi Brown": {
         "Skin Foundation Mineral Makeup SPF 15": [
@@ -1042,7 +1069,78 @@
             "Manganese Violet (Cl77742)",
             "Yellow 5Lake (Ci19140)]."
         ],
-        "Tinted Eye Brightener Concealer": "Ingredients not found"
+        "Tinted Eye Brightener Concealer": "Ingredients not found",
+        "Sheer Finish Pressed Powder": [
+            "Talc",
+            "Polymethyl Methacrylate",
+            "Silica",
+            "Dimethicone",
+            "Pentacrythrityl Tetraphosphate",
+            "Cetearyl Ethylhexanoate",
+            "Zinc Stearate",
+            "Zea Mays",
+            "Tocopheryl Acetate PEG-10",
+            "Tetrasodium EDTA",
+            "Chlorphenesin",
+            "Potassium Sorbate [+/- Mica",
+            "Titanium Dioxide",
+            "Oxides]"
+        ],
+        "Sheer Finish Loose Powder": [
+            "Talc",
+            "Ethylene/Methacrylate Copolymer",
+            "Polymethyl Methacrylate",
+            "Silica",
+            "Zeolite",
+            "Nylon-12",
+            "PEI-10",
+            "Tocopheryl Acetate",
+            "Lauroyl Lysine",
+            "Tetrasodium EDTA",
+            "Sorbic Acid",
+            "BHT",
+            "Methylparaben",
+            "Proplparaben",
+            "Butylparaben Mica",
+            "Yellow 6 Lake",
+            "Iron Oxides",
+            "Yellow 5 Lake",
+            "Titanium Dioxide",
+            "Ferric Ferrocyanide",
+            "Blue 1 Lake",
+            "Manganese Violet",
+            "Red Lake 30",
+            "Bismuth Oxychloride",
+            "Red 34 Lake",
+            "Ultramarines",
+            "Red 7 Lake"
+        ],
+        "Retouching Face Pencil": [
+            "Ricinus Communis (Castor) Seed Oil",
+            "Ethylhexyl Palmitate",
+            "Nylon-12",
+            "Euphorbia Cerifera (Candelilla) Wax",
+            "Octyldodecanol",
+            "Bis-diglyceryl Polyacyladipate-2",
+            "Copernicia Cerifera (Carnauba) Wax",
+            "Caprylic/Capric Triglyceride",
+            "Simmondsia Chinensis (Jojoba) Seed Oil",
+            "Cetyl Alcohol",
+            "BeeswaxCera AlbaCire Dabeille",
+            "Wheat Germ Glycerides",
+            "Talc",
+            "Montmorillonite",
+            "Calcium Sulfate",
+            "Tocopherol",
+            "Ascorbyl Palmitate. Mica",
+            "Titanium Dioxide",
+            "Iron Oxides",
+            "Manganese Violet",
+            "Carmine",
+            "Bismuth Oxychloride",
+            "Blue 1 Lake",
+            "Yellow 5 Lake."
+        ]
     },
     "CHANEL": {
         "Vitalumiere Satin Smoothing Fluid Makeup": "Ingredients not found",
@@ -1356,7 +1454,8 @@
         "Les Beiges Sheer Healthy Glow Tinted Moisturizer": "Ingredients not found",
         "Le Correcteur De Chanel Longwear Concealer": "Ingredients not found",
         "Les Beiges Fluide Belle Mine Multiaction": "Ingredients not found",
-        "Mat Lumiere Extreme Long-Wear Pore Minimizing Powder Foundation": "Ingredients not found"
+        "Mat Lumiere Extreme Long-Wear Pore Minimizing Powder Foundation": "Ingredients not found",
+        "Vitalumiere Loose Powder Foundation With Mini Kabuki Brush": "Ingredients not found"
     },
     "mark": {
         "Min-A-Real Cream to Powder Foundation": "Ingredients not found",
@@ -1762,7 +1861,9 @@
         ],
         "Lucent Magique Porcelain Cushion": "Ingredients not found",
         "Lucent Magique Cushion Lumiere": "Ingredients not found",
-        "True Match Minerals Skin Improving Foundation": "Ingredients not found"
+        "True Match Minerals Skin Improving Foundation": "Ingredients not found",
+        "True Match Even Perfecting Powder Foundation": "Ingredients not found",
+        "Age Perfect Radiant Serum Foundation": "Ingredients not found"
     },
     "Illamasqua": {
         "Powder Foundation": "Ingredients not found",
@@ -1946,6 +2047,34 @@
             "Titanium Dioxide",
             "Bismuth Oxychloride",
             "Ultramarines"
+        ],
+        "Luxury Concealing Foundation": [
+            "Retinyl Palmitate (Vitamin A Palmitate)",
+            "Talc",
+            "Phenoxyethanol",
+            "Cyclopentasiloxane",
+            "Cetyl Peg/ Ppg-10/ 1 Dimethicone",
+            "Tocopheryl Acetate",
+            "Mica",
+            "Glycerin",
+            "Cyclohexasiloxane",
+            "Ci 77499",
+            "Water",
+            "Dimethicone/ Vinyl Dimethicone Crosspolymer",
+            "Caprylic/ Capric Triglyceride",
+            "Trimethylsiloxysilicate",
+            "Polyglyceryl-4 Isostearate",
+            "Magnesium Stearate",
+            "Synthetic Beeswax",
+            "Silica, Amorphous",
+            "Ethylhexylglycerin",
+            "Ascorbic Acid (Vitamin C)",
+            "Rumex Occidentalis Extract",
+            "Punica Granatum (Pomegranate) Extract",
+            "Glycyrrhiza Glabra (Licorice) Root Extract",
+            "Triethoxycaprylylsilane",
+            "1,2-Hexanediol",
+            "Titanium Dioxide"
         ]
     },
     "Milani": {
@@ -2211,7 +2340,8 @@
             "Propylene Glycol Dicaprylate/ Dicaprate",
             "Lilium Candidum (Madonna Lily) Bulb Extract",
             "Titanium Dioxide"
-        ]
+        ],
+        "Screen Queen Foundation": "Ingredients not found"
     },
     "Black Opal": {
         "True Color Stick Foundation": [
@@ -2482,7 +2612,8 @@
             "Ajuga Turkestanica Extract. Bismuth Oxychloride",
             "Iron Oxides",
             "Titanium Dioxide"
-        ]
+        ],
+        "Capture Totale Dreamskin Perfect Skin Cushion": "Ingredients not found"
     },
     "Revlon": {
         "ColorStay Makeup For Combination/Oily Skin": [
@@ -3282,7 +3413,8 @@
         "Full Coverage Cream Foundation": "Ingredients not found",
         "Two Way Cake": "Ingredients not found",
         "Cream to Powder Foundation": "Ingredients not found",
-        "CC Cream Multi-Action": "Ingredients not found"
+        "CC Cream Multi-Action": "Ingredients not found",
+        "Radiance Concealer": "Ingredients not found"
     },
     "Maybelline": {
         "Fit Me Matte + Poreless Foundation": [
@@ -3787,7 +3919,64 @@
             "Titanium Dioxide"
         ],
         "Pure+ Base de Maquillaje": "Ingredients not found",
-        "Pure Base de Maquillaje": "Ingredients not found"
+        "Pure Base de Maquillaje": "Ingredients not found",
+        "Dream Lumi Touch Highlighting Concealer": [
+            "Butylparaben",
+            "Phenoxyethanol",
+            "Methylparaben",
+            "Cyclopentasiloxane",
+            "Propylene Glycol",
+            "Glycerin",
+            "Acrylates Copolymer",
+            "Alumina",
+            "Ci 77499",
+            "Mica",
+            "Water",
+            "Hydrogenated Polyisobutene",
+            "Sorbitan Isostearate",
+            "Titanium Dioxide",
+            "Ozokerite",
+            "Magnesium Sulfate",
+            "Disteardimonium Hectorite",
+            "Disodium Stearoyl Glutamate",
+            "Aluminum Hydroxide",
+            "Tocopherol",
+            "Silica, Amorphous",
+            "Chamomilla Recutita (Matricaria) Flower Extract"
+        ],
+        "Super Stay Better Skin Powder": [
+            "Talc",
+            "Salicylic Acid",
+            "Zinc Gluconate",
+            "Hydrogenated Polydecene",
+            "Hydrogenated Palm Oil",
+            "Manganese Gluconate",
+            "Ci 77499",
+            "Lauroyl Lysine",
+            "Nylon-12",
+            "Isononyl Isononanoate",
+            "Magnesium Stearate",
+            "Methicone",
+            "Caprylyl Glycol",
+            "Ascorbyl Glucoside",
+            "Calcium Pantothenate",
+            "Magnesium Gluconate",
+            "Copper Pca",
+            "Titanium Dioxide"
+        ],
+        "Dream BB Bronze 8-in-1 Beauty Balm Sunkissed Glow Perfector": "Ingredients not found",
+        "Clear Smooth All in One Pressed Powder": "Ingredients not found",
+        "Fit Me Set + Smooth Powder": [
+            "Talc",
+            "Mica",
+            "Ci 77499",
+            "Synthetic Fluorphlogopite",
+            "Magnesium Stearate",
+            "Isodecyl Neopentanoate",
+            "Nylon-12",
+            "Caprylyl Glycol",
+            "Titanium Dioxide"
+        ]
     },
     "NARS": {
         "Sheer Glow Foundation": [
@@ -4211,6 +4400,31 @@
             "Benzyl Alcohol. Mica",
             "Titanium Dioxide",
             "Iron Oxides."
+        ],
+        "Pressed Powder": [
+            "Butylparaben",
+            "Propylparaben",
+            "Talc",
+            "Ptfe (Teflon)",
+            "Methylparaben",
+            "Dimethicone",
+            "Titanium Dioxide",
+            "Silica, Amorphous",
+            "Zinc Stearate",
+            "Ci 77499",
+            "Chromium Oxide Greens",
+            "Chromium Hydroxide Green",
+            "Polymethyl Methacrylate",
+            "Nylon-66",
+            "Zea Mays (Corn) Starch",
+            "Polyethylene",
+            "Neopentyl Glycol Diethylhexanoate",
+            "Disodium Edta",
+            "Tocopherol",
+            "Ascorbyl Palmitate (Vitamin C Palmitate)",
+            "Bismuth Oxychloride",
+            "Ultramarines",
+            "Manganese Violet"
         ]
     },
     "IT Cosmetics": {
@@ -4987,7 +5201,37 @@
         "Blanc Expert Liquid Foundation": "Ingredients not found",
         "Miracle Cushion All-In-One Liquid Compact Foundation": "Ingredients not found",
         "Teint Idole Ultra Wear Foundation (Asia)": "Ingredients not found",
-        "Absolue Cushion Compact": "Ingredients not found"
+        "Absolue Cushion Compact": "Ingredients not found",
+        "Absolue Sublime Rejuvenating Essence Foundation": "Ingredients not found",
+        "Translucence Loose Powder Foundation": "Ingredients not found",
+        "Maquicomplet Complete Coverage Concealer": [
+            "Propylparaben",
+            "Diazolidinyl Urea",
+            "Methylparaben",
+            "Cyclopentasiloxane",
+            "Propylene Glycol",
+            "Urea",
+            "Acrylates Copolymer",
+            "Ci 77499",
+            "Mica",
+            "Water",
+            "Hydrogenated Polyisobutene",
+            "Sorbitan Isostearate",
+            "Ozokerite",
+            "Hexylene Glycol",
+            "Honey",
+            "Magnesium Sulfate",
+            "Disteardimonium Hectorite",
+            "Isopropyl Titanium Triisostearate",
+            "Silica, Amorphous",
+            "Tocopherol",
+            "Disodium Edta",
+            "Chamomilla Recutita (Matricaria) Extract",
+            "Glycosaminoglycans",
+            "Sodium Hyaluronate",
+            "Centaurea Cyanus (Cornflower) Flower Extract",
+            "Titanium Dioxide"
+        ]
     },
     "Giorgio Armani Beauty": {
         "Face Fabric Second Skin Nude Makeup SPF12": "Ingredients not found",
@@ -5006,7 +5250,9 @@
         "My Armani To Go Essence-In-Foundation Cushion": "Ingredients not found",
         "Crema Nuda Tinted Cream": "Ingredients not found",
         "Maestro Fusion Makeup": "Ingredients not found",
-        "Luminessence CC Cream": "Ingredients not found"
+        "Luminessence CC Cream": "Ingredients not found",
+        "Lasting Silk UV Powder Foundation Compact": "Ingredients not found",
+        "High Precision Retouch Illuminating Concealer": "Ingredients not found"
     },
     "Classic Makeup": {
         "Concealing Matte Foundation": "Ingredients not found",
@@ -5685,7 +5931,8 @@
             "Iron Oxides."
         ],
         "Re-Nutriv Ultra Radiance Makeup": "Ingredients not found",
-        "Resilience Lift Extreme Radiant Lifting Makeup SPF 15": "Ingredients not found"
+        "Resilience Lift Extreme Radiant Lifting Makeup SPF 15": "Ingredients not found",
+        "Re-Nutriv Ultra Radiance Lifting Creme Makeup SPF 15": "Ingredients not found"
     },
     "Essence": {
         "Camouflage 2 in 1 Powder & Make-Up": "Ingredients not found",
@@ -5711,7 +5958,8 @@
             "Ci 77499",
             "Magnesium Stearate"
         ],
-        "Soft & Natural Makeup": "Ingredients not found"
+        "Soft & Natural Makeup": "Ingredients not found",
+        "Instant Matt Make-Up": "Ingredients not found"
     },
     "100% Pure": {
         "Fruit Pigmented 2nd Skin Foundation": [
@@ -5988,7 +6236,8 @@
         "Beautifully Bare Finishing Powder": "Ingredients not found",
         "Perfect Blend Concealer": "Ingredients not found",
         "Tone Correcting Concealer": "Ingredients not found",
-        "Moisturizing Foundation Stick": "Ingredients not found"
+        "Moisturizing Foundation Stick": "Ingredients not found",
+        "HD Mattifying Cream Foundation": "Ingredients not found"
     },
     "BeautiControl": {
         "Secret Agent Mineral Makeup": "Ingredients not found",
@@ -6426,6 +6675,36 @@
             "Sodium Hyaluronate",
             "Triethoxycaprylylsilane",
             "Titanium Dioxide"
+        ],
+        "Gotcha Covered Concealer": [
+            "Ivory: Caprylic/Capric Triglyceride",
+            "Bis-Diglyceryl Polyacyladipate-2",
+            "VP/Hexadecene Copolymer",
+            "Cetyl Alcohol",
+            "Silica Dimethyl Silylate",
+            "Cocos Nucifera (Coconut) Oil",
+            "Microcrystalline Wax/Cera Microcristallina/Cire Microcristalline",
+            "Ascorbyl Palmitate",
+            "Tocopheryl Acetate",
+            "Ethylhexylglycerin",
+            "Phenoxyethanol. May Contain / Peut Contenir (+/-): Titanium Dioxide (CI 77891)",
+            "Iron Oxides (CI 77491",
+            "77492",
+            "77499)",
+            "Yellow 5 Lake (CI 19140). Ebony: Bis-Diglyceryl Polyacyladipate-2",
+            "Caprylic/Capric Triglyceride",
+            "VP/Hexadecene Copolymer",
+            "Cetyl Alcohol",
+            "Silica Dimethyl Silylate",
+            "Cocos Nucifera (Coconut) Oil",
+            "Microcrystalline Wax/Cera Microcristallina/Cire Microcristalline",
+            "Ascorbyl Palmitate",
+            "Tocopheryl Acetate",
+            "Ethylhexylglycerin",
+            "Phenoxyethanol. May Contain / Peut Contenir (+/-): Titanium Dioxide (CI 77891)",
+            "Iron Oxides (CI 77491",
+            "77492",
+            "77499)."
         ]
     },
     "Wycon Cosmetics": {
@@ -6585,7 +6864,8 @@
         "Le Teint Touche Eclat Compact": "Ingredients not found",
         "All Hours Cushion": "Ingredients not found",
         "Touche Eclat Cushion Foundation": "Ingredients not found",
-        "Touche Eclat Radiant Touch Concealer": "Ingredients not found"
+        "Touche Eclat Radiant Touch Concealer": "Ingredients not found",
+        "Teint Singulier Sheer Powdercreme Veil": "Ingredients not found"
     },
     "Shiseido": {
         "Advanced Hydro-Liquid Compact": [
@@ -7136,7 +7416,13 @@
             "Polybutylene Glycol/ Ppg-9/ 1 Copolymer",
             "Syzygium Jambos Leaf Extract",
             "Tocopherol"
-        ]
+        ],
+        "Revital Granas Foundation Powdery (PF)": "Ingredients not found",
+        "& Face Art Method Focus Control Foundation": [
+            "Cyclopentasiloxane, Dimethicone, Titanium Dioxide (Nano), Silica, Dimethicone Crosspolymer, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Mica, Trimethylsiloxysilicate, Titanium Dioxide (Ci 77891), Aluminum Hydroxide, Stearic Acid, Synthetic Fluorphlogopite, Iron Oxides (Ci 77491), Dipropylene Glycol, Disteardimonium Hectorite, PEG-10 Dimethicone, Red 30 (Ci 73360), Iron Oxides (Ci 77492), Tocopherol, Polysilicone-2, Ultramarines (Ci 77007), Zinc Oxide."
+        ],
+        "Revital Granas Foundation Powdery (PS)": "Ingredients not found",
+        "Perfecting Stick Concealer": "Ingredients not found"
     },
     "Dr.Hauschka": {
         "Concealer": "Ingredients not found",
@@ -7234,7 +7520,37 @@
             "Titanium Dioxide"
         ],
         "Correcting Concealer SPF 20": "Ingredients not found",
-        "Multi-Tasking Concealer SPF 20": "Ingredients not found"
+        "Multi-Tasking Concealer SPF 20": "Ingredients not found",
+        "PRIME TIME BB Primer-Cream SPF 30": [
+            "Retinyl Retinoate",
+            "Cyclopentasiloxane",
+            "Dimethicone",
+            "Peg-10 Dimethicone",
+            "Titanium Dioxide (Sunscreen Grade)",
+            "Zinc Oxide (Sunscreen Grade > 100Nm)",
+            "Hydrogenated Polydecene",
+            "Cyclohexasiloxane",
+            "Styrene/ Acrylates Copolymer",
+            "Alumina",
+            "Ci 77499",
+            "Dimethicone Crosspolymer",
+            "Aloe Barbadensis Leaf Juice",
+            "Glycyrrhiza Glabra (Licorice) Root Extract",
+            "Silica, Amorphous",
+            "Tocopherol",
+            "Magnesium Silicate",
+            "Panthenol",
+            "Magnesium Ascorbyl Phosphate",
+            "Hexyl Laurate",
+            "Stearic Acid",
+            "Polyglyceryl-4 Isostearate",
+            "Stearyl Triethoxysilane",
+            "Tetrahexyldecyl Ascorbate",
+            "Canola Oil",
+            "Cetearyl Alcohol",
+            "Polylactic Acid",
+            "Cholesteryl Nonanoate"
+        ]
     },
     "BareFaced Beauty": {
         "Mineral Foundation": "Ingredients not found"
@@ -7280,7 +7596,8 @@
         "Radiant Longwear Foundation SPF31 PA++": "Ingredients not found",
         "Cover 10 Real Stay BB Cream": "Ingredients not found",
         "Plus Volume V-V Bouncing Cushion": "Ingredients not found",
-        "Water Radiance It Radiant CC Cushion": "Ingredients not found"
+        "Water Radiance It Radiant CC Cushion": "Ingredients not found",
+        "Natural Cover CC It Radiant Cover Cream": "Ingredients not found"
     },
     "La Mav": {
         "Organic BB Creme": [
@@ -7578,6 +7895,28 @@
             "Boron Nitride",
             "Stearic Acid",
             "Va Crotonates"
+        ],
+        "Circle/Delete Concealer": [
+            "Ricinus Communis (Castor) Seed Oil",
+            "Camellia Sinensis (Green Tea) Leaf Extract",
+            "Pinus Strobus (White Pine) Bark Extract",
+            "Ci 77499",
+            "Moringa Pterygosperma (Moringa) Seed Oil",
+            "Persea Gratissima (Avocado) Oil",
+            "Helianthus Annuus (Sunflower) Seed Oil",
+            "Moringa Oil/ Hydrogenated Moringa Oil Esters",
+            "Copernicia Cerifera (Carnauba) Wax",
+            "Beeswax",
+            "Tribehenin",
+            "Boron Nitride",
+            "Caprylic/ Capric Triglyceride",
+            "Cucumis Sativus (Cucumber) Fruit Extract",
+            "Crithmum Maritimum (Sea Fennel) Extract",
+            "Laminaria Ochroleuca (Kelp) Extract",
+            "Bisabolol",
+            "Vitis Vinifera (Grape) Seed Extract",
+            "Ascorbyl Palmitate (Vitamin C Palmitate)",
+            "Titanium Dioxide"
         ]
     },
     "Kryolan": {
@@ -7597,7 +7936,8 @@
         "Translucent Powder": "Ingredients not found",
         "Blot Powder": "Ingredients not found",
         "Ultra Creme Powder": "Ingredients not found",
-        "Dermacolor Camouflage Fluid": "Ingredients not found"
+        "Dermacolor Camouflage Fluid": "Ingredients not found",
+        "Ultra Foundation Pot": "Ingredients not found"
     },
     "MAC": {
         "Lightful C Quick Finish Cushion Compact": "Ingredients not found",
@@ -8190,7 +8530,43 @@
             "Tetrahexyldecyl Ascorbate",
             "Tocopherol"
         ],
-        "Beyond BB Perfecting Liquid Foundation": "Ingredients not found"
+        "Beyond BB Perfecting Liquid Foundation": "Ingredients not found",
+        "Confidence Creamy Powder Foundation": [
+            "Talc",
+            "Octinoxate",
+            "Dimethicone",
+            "Polysorbate-20",
+            "Sodium Lactate",
+            "Mica",
+            "Zinc Stearate",
+            "Glycerin",
+            "Ci 77499",
+            "Titanium Dioxide (Sunscreen Grade)",
+            "Nylon-12",
+            "Silica, Amorphous",
+            "Triethoxycaprylylsilane",
+            "Boron Nitride",
+            "Diisostearyl Malate",
+            "Hydrogenated C6-14 Olefin Polymers",
+            "Phenyl Trimethicone",
+            "Aluminum Hydroxide",
+            "Water",
+            "Butylene Glycol",
+            "Carbomer",
+            "Dipentaerythrityl Hexahydroxystearate/ Hexastearate/ Hexaro Sinate",
+            "Ethylhexylglycerin",
+            "Glyceryl Caprylate",
+            "Hydrogen Dimethicone",
+            "Hydrogenated Polyisobutene",
+            "Kaolin",
+            "Methicone",
+            "Octyldodecanol",
+            "Octyldodecyl Stearoyl Stearate",
+            "Palmitoyl Tetrapeptide-7",
+            "Palmitoyl Tripeptide-1",
+            "Ultramarines",
+            "Zinc Oxide"
+        ]
     },
     "CaraMia": {
         "Liquid Matte Foundation": "Ingredients not found"
@@ -8276,6 +8652,48 @@
             "Disodium Edta",
             "Sodium Hyaluronate",
             "Dimethicone/ Methicone Copolymer",
+            "Titanium Dioxide"
+        ],
+        "BB Cream Beauty Balm": [
+            "Retinyl Palmitate (Vitamin A Palmitate)",
+            "Propylparaben",
+            "Zinc Chloride",
+            "Phenoxyethanol",
+            "Methylparaben",
+            "Cyclopentasiloxane",
+            "Propylene Glycol",
+            "Peg/ Ppg-18/ 18 Dimethicone",
+            "Dimethicone",
+            "Tocopheryl Acetate",
+            "Titanium Dioxide (Sunscreen Grade)",
+            "Zinc Oxide (Sunscreen Grade > 100Nm)",
+            "Cyclohexasiloxane",
+            "Anthemis Nobilis (Chamomile) Flower Extract",
+            "Phytantriol",
+            "Glycerin",
+            "Mica",
+            "Ci 77499",
+            "Water",
+            "Octyldodecyl Neopentanoate",
+            "Magnesium Chloride",
+            "Potassium Chloride",
+            "Sodium Chloride",
+            "Lysine",
+            "Panax Ginseng (Ginseng) Root Extract",
+            "Ginkgo Biloba (Maidenhair Tree)",
+            "Camellia Oleifera (Tea-Oil Camellia) Leaf Extract",
+            "Magnesium Ascorbyl Phosphate",
+            "Tocopherol",
+            "Tetrahexyldecyl Ascorbate",
+            "Aluminum Hydroxide",
+            "Stearic Acid",
+            "Triethoxycaprylylsilane",
+            "Boron Nitride",
+            "Sodium Dehydroacetate",
+            "Palmitic Acid",
+            "Dextrin Palmitate",
+            "Sodium Hyaluronate",
+            "Butylene Glycol",
             "Titanium Dioxide"
         ]
     },
@@ -8519,7 +8937,9 @@
         "mark. Nude Matte Fluid Makeup": "Ingredients not found",
         "True Color Ideal Nude Liquid Foundation": "Ingredients not found",
         "mark. Nude Matte Cream Concealer": "Ingredients not found",
-        "Color Trend Perfect and Hide Liquid Concealer": "Ingredients not found"
+        "Color Trend Perfect and Hide Liquid Concealer": "Ingredients not found",
+        "Real Matte Liquid Foundation": "Ingredients not found",
+        "Ideal Flawless Colour Correcting Cream": "Ingredients not found"
     },
     "Zuri Cosmetics": {
         "Loose Powder": [
@@ -8982,7 +9402,12 @@
             "Mica",
             "Ci 77499"
         ],
-        "Luminous Shimmer Powder": "Ingredients not found"
+        "Luminous Shimmer Powder": "Ingredients not found",
+        "Radiant Finishing Powder": [
+            "Titanium Dioxide",
+            "Mica",
+            "Ci 77499"
+        ]
     },
     "Anastasia Beverly Hills": {
         "Stick Foundation / Stick Contour": "Ingredients not found",
@@ -9004,7 +9429,8 @@
         "Contour Cream Kit": "Ingredients not found"
     },
     "T. LeClerc": {
-        "Loose Powder / Poudre Libre": "Ingredients not found"
+        "Loose Powder / Poudre Libre": "Ingredients not found",
+        "Pressed Powder": "Ingredients not found"
     },
     "INIKA": {
         "Certified Organic BB Cream": [
@@ -9419,7 +9845,8 @@
     "Astra Make-Up": {
         "Concealer": "Ingredients not found",
         "Long Stay Foundation": "Ingredients not found",
-        "8H Mat Foundation": "Ingredients not found"
+        "8H Mat Foundation": "Ingredients not found",
+        "My Foundation": "Ingredients not found"
     },
     "SUQQU": {
         "Extra Rich Cream Foundation": "Ingredients not found",
@@ -9517,10 +9944,43 @@
             "Allantoin",
             "Phenethyl Alcohol",
             "Ethylhexylglycerin"
+        ],
+        "Sheer Vivid Tinted Moisturizer": [
+            "Jasminum Officinale (Jasmine) Extract",
+            "Eugenia Caryophyllus (Clove) Flower Extract",
+            "Dimethicone",
+            "Rosa Canina (Rose Hip) Seed Oil",
+            "Zinc Oxide (Sunscreen Grade > 100Nm)",
+            "Glycerin",
+            "Mica",
+            "Titanium Dioxide (Sunscreen Grade)",
+            "Ci 77499",
+            "Water",
+            "Aloe Barbadensis Leaf Juice",
+            "Caprylic/ Capric Triglyceride",
+            "Sesamum Indicum (Sesame) Oil",
+            "Polyglyceryl-2 Oleate",
+            "Polyhydroxystearic Acid",
+            "Polyglyceryl-2 Stearate",
+            "Behenyl Olivate",
+            "Chondrus Crispus (Carrageenan) Extract",
+            "Persea Gratissima (Avocado) Oil",
+            "Camellia Sinensis (Green Tea) Leaf",
+            "Cocos Nucifera (Coconut) Oil",
+            "Butyrospermum Parkii (Shea) Butter",
+            "Rosmarinus Officinalis (Rosemary) Leaf",
+            "Lavandula Angustifolia (Lavender) Flower/ Leaf/ Steam Extract",
+            "Vitis Vinifera (Grape) Fruit Extract",
+            "Sodium Hyaluronate",
+            "Tocopherol",
+            "Ethylhexylglycerin",
+            "Phenethyl Alcohol"
         ]
     },
     "Coffret D'or by Kanebo": {
-        "Nudy Cover Moisture Liquid UV": "Ingredients not found"
+        "Nudy Cover Moisture Liquid UV": "Ingredients not found",
+        "Nudy Cover Liquid UV": "Ingredients not found",
+        "Nudy Cover Pact UV": "Ingredients not found"
     },
     "Mally": {
         "Poreless Perfection Glowing Foundation": "Ingredients not found",
@@ -9537,6 +9997,39 @@
             "Ci 77499",
             "Trimethylsiloxysilicate",
             "Lauroyl Lysine"
+        ],
+        "Ultimate Performance Liquid Foundation": [
+            "Cyclotetrasiloxane",
+            "Cyclopentasiloxane",
+            "Peg/ Ppg-18/ 18 Dimethicone",
+            "Dimethicone",
+            "Cetyl Peg/ Ppg-10/ 1 Dimethicone",
+            "Sd Alcohol 1",
+            "Ci 77499",
+            "Hydrogenated Lecithin",
+            "Glycerin",
+            "Water",
+            "Titanium Dioxide",
+            "Butylene Glycol",
+            "Isododecane",
+            "Coco-Caprylate/ Caprate",
+            "Trimethylsiloxysilicate",
+            "Polypropylsilsesquioxane",
+            "Polyglyceryl-4 Isostearate",
+            "Hexyl Laurate",
+            "Disteardimonium Hectorite",
+            "Caprylyl Glycol",
+            "Polysilicone-11",
+            "Silica, Amorphous",
+            "Dimethicone Crosspolymer",
+            "Potassium Cetyl Phosphate",
+            "Sodium Chloride",
+            "Sodium Dehydroacetate",
+            "Magnesium Aluminum Silicate",
+            "Octanohydroxamic Acid",
+            "Xanthan Gum",
+            "Triethoxycaprylylsilane",
+            "Calophylium Tacamahaca (Tamanu) Seed Oil"
         ]
     },
     "Beauty Pie": {
@@ -9620,6 +10113,25 @@
             "Silica, Amorphous",
             "Chromium Oxide Greens",
             "Copernicia Cerifera (Carnauba) Wax",
+            "Ultramarines"
+        ],
+        "Completely Covered Creme Concealer": [
+            "Ricinus Communis (Castor) Seed Oil",
+            "Lavandula Angustifolia (Lavender) Oil",
+            "Glycerin",
+            "Titanium Dioxide (Sunscreen Grade)",
+            "Ci 77499",
+            "Mica",
+            "Chromium Oxide Greens",
+            "Limnanthes Versicolor (Meadowfoam) Seed Oil",
+            "Caprylic/ Capric Triglyceride",
+            "Euphorbia Cerifera (Candelilla) Wax",
+            "Simmondsia Chinensis (Jojoba) Seed Oil",
+            "Tapioca Starch",
+            "Butyrospermum Parkii (Shea) Butter",
+            "Ozokerite",
+            "Xylityl Cocoate",
+            "Silica, Amorphous",
             "Ultramarines"
         ]
     },
@@ -9847,6 +10359,51 @@
             "Phenoxyethanol",
             "Sodium Hyaluronate. Iron Oxides",
             "Titanium Dioxide"
+        ],
+        "The Foundation - Perfect Matte Liquid Foundation": [
+            "Ingredients: Ensulizole (3%). Water",
+            "Dimethicone",
+            "Cyclopentasiloxane",
+            "Isohexadecane",
+            "Mica",
+            "Ethylhexyl Methoxycinnamate",
+            "Titanium Dioxide",
+            "Glycerin",
+            "Sorbitan Isostearate",
+            "Dimethicone Crosspolymer",
+            "Cyclohexasiloxane",
+            "Alumina",
+            "Caprylyl Dimethicone Ethoxy Glucoside",
+            "Aluminum/Magnesium Hydroxide Stearate",
+            "Silica Silylate",
+            "Sodium Chloride",
+            "Zinc Stearate",
+            "Hexylene Glycol",
+            "Methylparaben",
+            "Potassium Sorbate",
+            "Propylparaben",
+            "Mannitol",
+            "Glucose",
+            "PCA Dimethicone",
+            "Fructose",
+            "Sorbitol",
+            "Urea",
+            "Sodium PCA",
+            "Sucrose",
+            "Dextrin",
+            "Tocopherol",
+            "Ascorbyl Palmitate",
+            "Trehalose",
+            "BHT",
+            "Acetyl Hexapeptide-8, Polyquaternium-51",
+            "Glutamic Acid",
+            "Alanine",
+            "Aspartic Acid",
+            "Benzoic Acid",
+            "Triacetin",
+            "Phenoxyethanol",
+            "Sodium Hyaluronate. Iron Oxides",
+            "Titanium Dioxide."
         ]
     },
     "Juvia's Place": {
@@ -10033,7 +10590,29 @@
             "Prunus Amygdalus Dulcis (Sweet Almond) Oil",
             "Kaolin",
             "Pycnogenol"
-        ]
+        ],
+        "Tinted Moisturiser SPF 50+": [
+            "Citrus Aurantium Amara (Bitter Orange) Peel Oil",
+            "Zinc Oxide (Sunscreen Grade > 100Nm)",
+            "Ricinus Communis (Castor) Seed Oil",
+            "Ci 77499",
+            "Citrus Reticulata Oil",
+            "Pyrus Malus (Apple) Juice",
+            "Cocos Nucifera (Coconut) Oil",
+            "Vitis Vinifera (Grape) Juice",
+            "Aloe Barbadensis (Organic Aloe Leaf) Juice",
+            "Caprylic/ Capric Triglyceride",
+            "Sorbitan Stearate",
+            "Polyglyceryl-10 Laurate",
+            "Magnesium Sulfate",
+            "Helianthus Annuus (Sunflower) Seed Oil",
+            "Simmondsia Chinensis (Jojoba) Seed Oil",
+            "Tocopherol",
+            "Sodium Hyaluronate",
+            "Phenethyl Alcohol",
+            "Ethylhexylglycerin"
+        ],
+        "Pure Mineral Skin Perfecting BB Cream": "Ingredients not found"
     },
     "Cover FX": {
         "Power Play Foundation": [
@@ -10173,7 +10752,46 @@
             "Titanium Dioxide"
         ],
         "Cover Click Foundation and Concealer": "Ingredients not found",
-        "Correct Click Cream Corrector": "Ingredients not found"
+        "Correct Click Cream Corrector": "Ingredients not found",
+        "Custom Cover Drops (Reformulated 2019)": "Ingredients not found",
+        "Cream Concealer": [
+            "Phenoxyethanol",
+            "Cetyl Peg/ Ppg-10/ 1 Dimethicone",
+            "Peg-10 Rapeseed Sterol",
+            "Glycerin",
+            "Mica",
+            "Ci 77499",
+            "Chromium Oxide Greens",
+            "Water",
+            "Polyglyceryl-2 Triisostearate",
+            "Caprylic/ Capric Triglyceride",
+            "Diethylhexyl Carbonate",
+            "Polyglyceryl-4 Isostearate",
+            "Tribehenin",
+            "Hydrogenated Polyisobutene",
+            "Squalane",
+            "Tricontanyl Pvp",
+            "C12-15 Alkyl Benzoate",
+            "Tetrahexyldecyl Ascorbate",
+            "Ethyl Linoleate",
+            "Ethyl Linolenate",
+            "Ethyl Oleate",
+            "Lauroyl Lysine",
+            "Bisabolol",
+            "Disteardimonium Hectorite",
+            "Magnesium Sulfate",
+            "Tocopherol",
+            "Caprylyl Glycol",
+            "Sodium Stearoyl Glutamate",
+            "Ximenynic Acid",
+            "Phytosphingosine",
+            "Sorbitol",
+            "Disodium Edta",
+            "Xanthan Gum",
+            "Ceramide 2",
+            "Palmitoyl Oligopeptide",
+            "Titanium Dioxide"
+        ]
     },
     "Benefit Cosmetics": {
         "Hello Happy Soft Blur Foundation": "Ingredients not found",
@@ -10186,7 +10804,8 @@
         "Hello Flawless Powder Foundation": "Ingredients not found",
         "Boi-ing Hydrating Concealer": "Ingredients not found",
         "Boi-ing Brightening Concealer": "Ingredients not found",
-        "Boi-ing Erase Case Concealer Kit": "Ingredients not found"
+        "Boi-ing Erase Case Concealer Kit": "Ingredients not found",
+        "Hello Happy Velvet Powder Foundation": "Ingredients not found"
     },
     "Adorn": {
         "Liquid Mineral Foundation": "Ingredients not found"
@@ -10599,7 +11218,10 @@
         "City Light Tinted Moisturiser": "Ingredients not found",
         "Stay Perfect Compact Foundation": "Ingredients not found",
         "Aqua Perfect Cushion Foundation": "Ingredients not found",
-        "Instant Radiance Foundation": "Ingredients not found"
+        "Instant Radiance Foundation": "Ingredients not found",
+        "Protect & Perfect Advanced All in One Foundation": [
+            "Aqua (Water), Glycerin, Glycolic Acid, Sodium Hydroxide, Gluconolactone, Phenoxyethanol, Panthenol, Allantoin, Polysorbate 20, Benzoic Acid, Dehydroacetic Acid, Sodium Gluconate, Citric Acid."
+        ]
     },
     "April Skin": {
         "Magic Snow Cushion White": "Ingredients not found",
@@ -10625,7 +11247,9 @@
             "Perlite",
             "Disodium Stearoyl Glutamate",
             "Aluminum Hydroxide"
-        ]
+        ],
+        "Toleriane Teint Compact Foundation": "Ingredients not found",
+        "Toleriane Corrective Compact-Powder Mineral Foundation": "Ingredients not found"
     },
     "Za": {
         "Perfect Fit Two-Way Foundation": "Ingredients not found",
@@ -10636,7 +11260,9 @@
         "Skin Beauty Face Powder": "Ingredients not found",
         "True White Plus Two-Way Foundation": "Ingredients not found",
         "True White Plus Liquid Foundation": "Ingredients not found",
-        "True White Ex Two-Way Foundation": "Ingredients not found"
+        "True White Ex Two-Way Foundation": "Ingredients not found",
+        "True White Cushion Compact": "Ingredients not found",
+        "Perfect Fit Liquid Foundation": "Ingredients not found"
     },
     "Catrice": {
         "Liquid Camouflage High Coverage Concealer": "Ingredients not found",
@@ -10766,7 +11392,8 @@
         "Perfect Multi Compact Foundation": "Ingredients not found",
         "Lighting White Powdery UV Foundation": "Ingredients not found",
         "True Liquid Long Keep UV Foundation": "Ingredients not found",
-        "Essence Rich White Liquid UV Foundation": "Ingredients not found"
+        "Essence Rich White Liquid UV Foundation": "Ingredients not found",
+        "True Liquid Moisture UV Foundation": "Ingredients not found"
     },
     "CEZANNE": {
         "UV Foundation EX": "Ingredients not found",
@@ -10775,7 +11402,8 @@
         "UV Milky Foundation R": "Ingredients not found",
         "BB Cream": "Ingredients not found",
         "Foundation Pact N": "Ingredients not found",
-        "UV Skin White Foundation": "Ingredients not found"
+        "UV Skin White Foundation": "Ingredients not found",
+        "BB Neri Pact": "Ingredients not found"
     },
     "Beauty Blender": {
         "Bounce Foundation": [
@@ -10876,6 +11504,56 @@
             "Waltheria Indica Leaf Extract",
             "Xanthan Gum",
             "Titanium Dioxide"
+        ],
+        "Liquid Veil 4-in-1 Spray Foundation": "Ingredients not found",
+        "Bare It All 12-Hour 4-in-1 Skin-Perfecting Foundation": "Ingredients not found",
+        "4-in-1 Pressed Mineral Makeup Foundation Split Pan": "Ingredients not found",
+        "Air Perfection CC Cushion Foundation": "Ingredients not found",
+        "4-in-1 Tinted Moisturizer": [
+            "Retinyl Palmitate (Vitamin A Palmitate)",
+            "Retinol (Vitamin A)",
+            "Zinc Chloride",
+            "Lactic Acid",
+            "Phenoxyethanol",
+            "Cyclopentasiloxane",
+            "Peg/ Ppg-18/ 18 Dimethicone",
+            "Dimethicone",
+            "Tocopheryl Acetate",
+            "Titanium Dioxide (Sunscreen Grade)",
+            "Zinc Oxide (Sunscreen Grade > 100Nm)",
+            "Anthemis Nobilis (Chamomile) Flower Extract",
+            "Phytantriol",
+            "Glycerin",
+            "Mica",
+            "Ci 77499",
+            "Water",
+            "Butylene Glycol",
+            "Octyldodecyl Neopentanoate",
+            "Magnesium Chloride",
+            "Potassium Chloride",
+            "Sodium Chloride",
+            "Lysine",
+            "Butyrospermum Parkii (Shea) Butter",
+            "Panax Ginseng (Ginseng) Root Extract",
+            "Ginkgo Biloba (Maidenhair Tree)",
+            "Camellia Oleifera (Tea-Oil Camellia) Leaf Extract",
+            "Aloe Barbadensis Leaf Extract",
+            "Magnesium Ascorbyl Phosphate",
+            "Tocopherol",
+            "Tetrahexyldecyl Ascorbate",
+            "Aluminum Hydroxide",
+            "Stearic Acid",
+            "Triethoxycaprylylsilane",
+            "Boron Nitride",
+            "Palmitic Acid",
+            "Dextrin Palmitate",
+            "Sodium Starch Octenylsuccinate",
+            "Ceramide",
+            "Sodium Hyaluronate",
+            "Sodium Dehydroacetate",
+            "Disodium Edta",
+            "Caprylyl Glycol",
+            "Hexylene Glycol"
         ]
     },
     "Max Factor": {
@@ -11357,6 +12035,31 @@
             "Caprylhydroxamic Acid",
             "Tetrahexyldecyl Ascorbate",
             "Ci 75470"
+        ],
+        "Photo Focus Dewy Foundation": [
+            "Water/Eau",
+            "Glycerin",
+            "Ethylhexyl Palmitate",
+            "Synthetic Fluorphlogopite",
+            "Caprylic/Capric Triglyceride",
+            "PPG-26-Buteth-26",
+            "Panthenol",
+            "Propanediol",
+            "PEG-40 Hydrogenated Castor Oil",
+            "Carbomer",
+            "Ethylhexylglycerin",
+            "Tocopheryl Acetate",
+            "Chlorphenesin",
+            "Caprylhydroxamic Acid",
+            "Sodium Hydroxide",
+            "Disodium EDTA",
+            "Dipotassium Glycyrrhizate",
+            "Alumina",
+            "Tin Oxide",
+            "Silica",
+            "Titanium Dioxide/CI 77891",
+            "Iron Oxides/CI 77491",
+            "CI 77499."
         ]
     },
     "Barbara Daly": {
@@ -11398,7 +12101,8 @@
         "Matte Base Liquida / Liquid Matte Foundation": "Ingredients not found",
         "Feels Base Liquida": "Ingredients not found",
         "Naked Flawless Collection Alta Cobertura Corretivo": "Ingredients not found",
-        "Naked Skin Collection Liquid Concealer": "Ingredients not found"
+        "Naked Skin Collection Liquid Concealer": "Ingredients not found",
+        "Alta Cobertura Corretivo / HD Concealer": "Ingredients not found"
     },
     "Anew": {
         "Anew Age-Transforming Foundation": [
@@ -11470,7 +12174,8 @@
     },
     "Bruna Tavares": {
         "Pausa Para Feminices Base Matte": "Ingredients not found",
-        "Corretivo Liquido": "Ingredients not found"
+        "Corretivo Liquido": "Ingredients not found",
+        "Base Matte Hipoalergenica": "Ingredients not found"
     },
     "Dermacol": {
         "Make-Up Cover Foundation": "Ingredients not found",
@@ -11523,7 +12228,9 @@
         "BB Magic Beauty Cream": "Ingredients not found",
         "Compact Powder with Lace Relief": "Ingredients not found",
         "Caviar Long Stay Make-Up & Corrector": "Ingredients not found",
-        "Imperial Make-Up": "Ingredients not found"
+        "Imperial Make-Up": "Ingredients not found",
+        "Noblesse Fusion Make-Up": "Ingredients not found",
+        "Matt Control Make-Up": "Ingredients not found"
     },
     "Guerlain": {
         "Lingerie de Peau Aqua Nude Foundation": "Ingredients not found",
@@ -11539,7 +12246,11 @@
         "Tenue de Perfection Timeproof Foundation": "Ingredients not found",
         "Parure Gold Gold Radiance Fluid Foundation SPF 30": "Ingredients not found",
         "Lingerie de Peau Cushion Foundation": "Ingredients not found",
-        "Terracotta Skin Healthy Glow Foundation": "Ingredients not found"
+        "Terracotta Skin Healthy Glow Foundation": "Ingredients not found",
+        "Blanc de Perle Brightening Foundation": "Ingredients not found",
+        "Parure Gold Cushion Gold Radiance Foundation": "Ingredients not found",
+        "Orchidee Imperiale Cream Foundation": "Ingredients not found",
+        "Multi-Perfecting Concealer": "Ingredients not found"
     },
     "Too Faced": {
         "Born This Way Naturally Radiant Concealer": [
@@ -11998,7 +12709,8 @@
     },
     "Meow Cosmetics": {
         "Pampered Puss": "Ingredients not found",
-        "Flawless": "Ingredients not found"
+        "Flawless": "Ingredients not found",
+        "Purrr-fect": "Ingredients not found"
     },
     "Lise Watier": {
         "Poudre Mineraliste Mineral Loose Powder": "Ingredients not found",
@@ -12069,7 +12781,8 @@
     },
     "Marie Dalgar": {
         "Stamp Up Matte Finish Air Cushion": "Ingredients not found",
-        "Radiant Matte Fluid Foundation": "Ingredients not found"
+        "Radiant Matte Fluid Foundation": "Ingredients not found",
+        "True Color Longwear Foundation": "Ingredients not found"
     },
     "Carter Beauty": {
         "Half Measure Dewy Foundation": "Ingredients not found",
@@ -12203,7 +12916,31 @@
         "Aqua Balance Makeup": "Ingredients not found",
         "Ultra Powder Foundation": "Ingredients not found",
         "Lasting Foundation": "Ingredients not found",
-        "Perfecting Makeup": "Ingredients not found"
+        "Perfecting Makeup": "Ingredients not found",
+        "Total Finish Compact Makeup": "Ingredients not found",
+        "Powder Base Foundation": [
+            "Talc",
+            "Tocopheryl Acetate",
+            "Distearyldimonium Chloride",
+            "Chlorphenesin",
+            "Mica",
+            "Ci 77499",
+            "Silica, Amorphous",
+            "Tetrahexyldecyl Ascorbate",
+            "Caprylic/ Capric Triglyceride",
+            "Diphenyl Dimethicone/ Vinyl Diphenyl Dimethicone/ Silsesquioxane Crosspolymer",
+            "Diphenylsiloxy Phenyl Trimethicone",
+            "Triethoxysilylethyl Polydimethylsiloxyethyl Hexyl Dimethicone",
+            "Lauroyl Lysine",
+            "Magnesium Stearate",
+            "Dipentaerythrityl Hexahydroxystearate",
+            "Tocopherol",
+            "Methicone",
+            "Sorbitan Sesquiisostearate",
+            "Pyridoxine",
+            "Disodium Phosphate",
+            "Titanium Dioxide"
+        ]
     },
     "ARTDECO": {
         "Rich Treatment Foundation": "Ingredients not found",
@@ -12280,7 +13017,8 @@
         ],
         "Wild Rose Liquid Foundation SPF20": "Ingredients not found",
         "Watermelon Lightweight Tinted Moisturiser": "Ingredients not found",
-        "Ginger and Vitamins Lightweight Foundation SPF 10": "Ingredients not found"
+        "Ginger and Vitamins Lightweight Foundation SPF 10": "Ingredients not found",
+        "Multivitamin Compact Powder": "Ingredients not found"
     },
     "L'Bel": {
         "Base Hydra Absolute": "Ingredients not found",
@@ -12299,7 +13037,8 @@
     },
     "Chambor": {
         "Extreme Matte Long Wear Foundation": "Ingredients not found",
-        "Orosa Skin Fusion Foundation": "Ingredients not found"
+        "Orosa Skin Fusion Foundation": "Ingredients not found",
+        "Brightening & Smoothing Foundation": "Ingredients not found"
     },
     "Elcie Cosmetics": {
         "Micro Silque Foundation": "Ingredients not found"
@@ -12766,7 +13505,9 @@
         "Lasting Matte Lightweight Mousse Foundation": "Ingredients not found"
     },
     "Lunasol by Kanebo": {
-        "Skin Modeling Liquid Foundation": "Ingredients not found"
+        "Skin Modeling Liquid Foundation": "Ingredients not found",
+        "Glowing Watery Oil Liquid Foundation": "Ingredients not found",
+        "Skin Modeling Water Cream Foundation": "Ingredients not found"
     },
     "Zelens": {
         "Age Control Foundation": "Ingredients not found",
@@ -12949,7 +13690,9 @@
             "CI 77492",
             "CI 77499 (Iron Oxides)."
         ],
-        "Tinted Moisturizer Natural Skin Perfector": "Ingredients not found"
+        "Tinted Moisturizer Natural Skin Perfector": "Ingredients not found",
+        "Secret Camouflage": "Ingredients not found",
+        "Secret Concealer": "Ingredients not found"
     },
     "BECCA": {
         "Ultimate Coverage 24 Hour Foundation": [
@@ -13155,6 +13898,38 @@
             "Sodium Lauroyl Aspartate",
             "Aluminum Hydroxide",
             "Titanium Dioxide"
+        ],
+        "Multi-Tasking Perfecting Powder": [
+            "Mica",
+            "Silica",
+            "Lauroyl Lysine",
+            "Boron Nitride",
+            "Zinc Stearate",
+            "Squalane",
+            "Ethylhexyl Palmitate",
+            "Octyldodecyl Stearoyl Stearate",
+            "Dimethicone",
+            "Glyceryl Caprylate",
+            "Simmondsia Chinensis (Jojoba) Seed Oil",
+            "Carthamus Tinctorius (Safflower) Seed Oil",
+            "Aloe Barbadensis Leaf Extract",
+            "Tocopherol",
+            "Retinyl Palmitate",
+            "Panthenyl Triacetate",
+            "Tetrahexyldecyl Ascorbate",
+            "Lonicera Caprifolium (Honeysuckle) Flower Extract",
+            "Lonicera Japonica (Honeysuckle) Flower Extract",
+            "Palmaria Palmata Extract",
+            "Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer",
+            "Trimyristin",
+            "Hydrogenated Lecithin",
+            "Dipropylene Glycol",
+            "Aqua (Water/Eau)",
+            "p-Anisic Acid",
+            "Sodium Dehydroacetate",
+            "Potassium Sorbate. CI 77891 (Titanium Dioxide)",
+            "CI 77491/77492/77499 (Iron Oxides)",
+            "CI 77163 (Bismuth Oxychloride)."
         ]
     },
     "FM - Foundation Manual": {
@@ -13203,7 +13978,50 @@
             "Titanium Dioxide"
         ],
         "Essential High Coverage Cr\u00e8me Foundation": "Ingredients not found",
-        "Essential High Coverage Liquid Concealer": "Ingredients not found"
+        "Essential High Coverage Liquid Concealer": "Ingredients not found",
+        "Matte Moisture Tint": [
+            "Retinyl Palmitate (Vitamin A Palmitate)",
+            "Butylparaben",
+            "Isopropylparaben",
+            "Propylparaben",
+            "Zinc Chloride",
+            "Phenoxyethanol",
+            "Methylparaben",
+            "Cyclopentasiloxane",
+            "Peg/ Ppg-18/ 18 Dimethicone",
+            "Dimethicone",
+            "Cetyl Peg/ Ppg-10/ 1 Dimethicone",
+            "Ethylparaben",
+            "Titanium Dioxide (Sunscreen Grade)",
+            "Zinc Oxide (Sunscreen Grade > 100Nm)",
+            "Phytantriol",
+            "Potassium Sorbate",
+            "Mica",
+            "Ci 77499",
+            "Water",
+            "Octyldodecyl Neopentanoate",
+            "Butylene Glycol",
+            "Polyglyceryl-4 Isostearate",
+            "Dimethicone Crosspolymer",
+            "Silica, Amorphous",
+            "Stearic Acid",
+            "Aluminum Hydroxide",
+            "Sodium Dehydroacetate",
+            "Hexyl Laurate",
+            "Triethoxycaprylylsilane",
+            "Nylon-12",
+            "Sodium Chloride",
+            "Tocopherol",
+            "Tetrahexyldecyl Ascorbate",
+            "Polydodecanamideaminium Triazadiphenylethenesulfonate",
+            "Polyvinylalcohol Crosspolymer",
+            "Magnesium Chloride",
+            "Potassium Chloride",
+            "Lysine",
+            "Sodium Hyaluronate",
+            "Titanium Dioxide"
+        ],
+        "Age-Repairing Perfector": "Ingredients not found"
     },
     "Three Cosmetics": {
         "Flawless Ethereal Fluid Foundation SPF36/PA+++": "Ingredients not found",
@@ -13283,7 +14101,8 @@
             "Disodium Stearoyl Glutamate",
             "Acetylated Glycol Stearate",
             "Ethylhexylglycerin"
-        ]
+        ],
+        "Dermablend Total Body Corrective Foundation": "Ingredients not found"
     },
     "Aniise": {
         "Mineral Liquid Foundations": "Ingredients not found",
@@ -13370,6 +14189,9 @@
         ],
         "One Heck of a Blot All Day Liquid-to-Powder Foundation": [
             "Castille soap (Water, Coconut Oil, Tall Oil, Potassium Hydroxide), Glycerin, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Chamomilla Recutita (Matricaria) Flower Extract, Hydrastis Canadensis (Goldenseal) Root Extract, Hedychium Coronarium Root Extract (Awapuhi), Fucus Vesiculosus Extract (Bladderwrack), Cymbopogon Martinii Oil (Palmarosa), Citrus Aurantium Amara (Bitter Orange) Peel Oil, Lavandula Angustifolia (Lavender) Oil, Chamomilla Recutita (Matricaria) Flower Oil, Calendula Officinalis Flower Oil, Callitris Introtropica Wood Oil (Blue Cypress)."
+        ],
+        "Kick Ass All Day Wear Foundation": [
+            "Castille soap (Water, Coconut Oil, Tall Oil, Potassium Hydroxide), Glycerin, Melaleuca Alternifolia (Tea Tree) Leaf Oil, Chamomilla Recutita (Matricaria) Flower Extract, Hydrastis Canadensis (Goldenseal) Root Extract, Hedychium Coronarium Root Extract (Awapuhi), Fucus Vesiculosus Extract (Bladderwrack), Cymbopogon Martinii Oil (Palmarosa), Citrus Aurantium Amara (Bitter Orange) Peel Oil, Lavandula Angustifolia (Lavender) Oil, Chamomilla Recutita (Matricaria) Flower Oil, Calendula Officinalis Flower Oil, Callitris Introtropica Wood Oil (Blue Cypress)."
         ]
     },
     "Sulwhasoo": {
@@ -13378,7 +14200,9 @@
         "Perfecting Cushion Brightening": "Ingredients not found",
         "Perfecting Cushion EX": "Ingredients not found",
         "Evenfair Perfecting Cushion": "Ingredients not found",
-        "Evenfair Smoothing Foundation": "Ingredients not found"
+        "Evenfair Smoothing Foundation": "Ingredients not found",
+        "Sheer Lasting Foundation": "Ingredients not found",
+        "CC Emulsion": "Ingredients not found"
     },
     "Artistry": {
         "Exact Fit Pressed Powder": "Ingredients not found",
@@ -13520,7 +14344,8 @@
         ],
         "Base L\u00edquida Tonalizante": "Ingredients not found",
         "Base Cobertura Ultra": "Ingredients not found",
-        "Corretivo Soft": "Ingredients not found"
+        "Corretivo Soft": "Ingredients not found",
+        "Base Liquida Soft": "Ingredients not found"
     },
     "Besame Cosmetics": {
         "Cashmere Foundation Stick": "Ingredients not found"
@@ -13709,7 +14534,8 @@
     "Italia Deluxe": {
         "Maquillaje En Polvo Compacto": "Ingredients not found",
         "Stay Liquid Foundation- Oil Free, SPF 10": "Ingredients not found",
-        "Long Stay Makeup Foundation": "Ingredients not found"
+        "Long Stay Makeup Foundation": "Ingredients not found",
+        "2 In 1 Cover Up Concealer & Foundation Stick": "Ingredients not found"
     },
     "Antonym": {
         "Baked Foundation": [
@@ -13727,7 +14553,8 @@
             "Polyglyceryl-3 Diisostearate",
             "Dehydroacetic Acid",
             "Titanium Dioxide"
-        ]
+        ],
+        "Skin Esteem Organic Liquid Foundation": "Ingredients not found"
     },
     "Alix Avien": {
         "Anti-Age Foundation": "Ingredients not found",
@@ -13735,7 +14562,8 @@
     },
     "Hinode": {
         "Dazzle Light Skin Base Liquid": "Ingredients not found",
-        "Dazzle Compact Powder + HD Matte Finish And Long Duration": "Ingredients not found"
+        "Dazzle Compact Powder + HD Matte Finish And Long Duration": "Ingredients not found",
+        "Dazzle HD Cover + Base L\u00edquida 30 ml": "Ingredients not found"
     },
     "Vult Cosmetica": {
         "BB Cream Balm Multifuncional": "Ingredients not found",
@@ -13745,7 +14573,8 @@
         "Base Liquida / Liquid Foundation": "Ingredients not found",
         "Duo Cake": "Ingredients not found",
         "Base Fluida / Fluid Foundation": "Ingredients not found",
-        "Corretivo Em Cream": "Ingredients not found"
+        "Corretivo Em Cream": "Ingredients not found",
+        "Corretivo Liquido HD Alta Cobertura": "Ingredients not found"
     },
     "Beauty in High Definition": {
         "Fluid Foundation": "Ingredients not found"
@@ -13768,7 +14597,8 @@
         "City Radiance Brightening Effect Foundation": "Ingredients not found",
         "Blur The Lines Concealer": "Ingredients not found",
         "Always Fabulous Foundation": "Ingredients not found",
-        "123 Perfect CC Eye Cream Concealer": "Ingredients not found"
+        "123 Perfect CC Eye Cream Concealer": "Ingredients not found",
+        "Silk Edition Compact Powder": "Ingredients not found"
     },
     "CoverGirl": {
         "CoverGirl + Olay Advanced Radiance Age-Defying Liquid Makeup": "Ingredients not found",
@@ -14286,7 +15116,11 @@
             "Triacetin",
             "Sodium Hyaluronate",
             "Titanium Dioxide"
-        ]
+        ],
+        "TruBlend Undercover Concealer": [
+            "Aqua/Water/Eau, Isododecane, Cyclopentasiloxane, Talc, Trimethylsiloxysilicate, Butylene Glycol, Cetyl PEG/PPG-10/1 Dimethicone, Cetearyl Ethylhexanoate, Acrylates Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Magnesium Sulfate, Bis-PEG/PPG-14/14 Dimethicone, Boron Nitride, Ammonium Acrylates Copolymer, Tribehenin, Isopropyl Titanium Triisostearate, Disteardimonium Hectorite, Laureth-7, Lecithin, Phenoxyethanol, Trihydroxystearin, Chlorphenesin, Propylene Carbonate, Xanthan Gum, Alcohol Denat., Glycerin, Tocopheryl Acetate, Disodium EDTA, Disodium Deceth-6 Sulfosuccinate, Sodium PCA, Urea, Laureth-30, Sodium Dehydroacetate, Trehalose, Hexylene Glycol, Polyquaternium-51, Caprylyl Glycol, Triacetin, Sodium Hyaluronate, Pentaerythrityl Tetra-Di-T-Butyl Hydroxyhydrocinnamate. Titanium Dioxide (Ci 77891), Iron Oxides (Ci 77491, Ci 77492, Ci 77499)."
+        ],
+        "Clean Fresh Skin Milk Nourishing Foundation": "Ingredients not found"
     },
     "Yves Rocher": {
         "Zero Defaut Comfort Cream Foundation": "Ingredients not found",
@@ -14296,7 +15130,11 @@
         "Pure Light Light & Luminous Foundation": "Ingredients not found",
         "Radiant Youth Corrector Pen": "Ingredients not found",
         "Rayonnant Jeunesse Instant Youthful Effect Foundation": "Ingredients not found",
-        "Flawless Skin Powder": "Ingredients not found"
+        "Flawless Skin Powder": "Ingredients not found",
+        "Zero Defaut Perfect Skin Powder": "Ingredients not found",
+        "Zero Defaut Flawless Skin Concealer": "Ingredients not found",
+        "Pure Light Light & Luminous Loose Powder": "Ingredients not found",
+        "BB Peau Parfaite Sublime Skin BB Cream 6-in-1": "Ingredients not found"
     },
     "Alison Raffaele": {
         "Reality Base": [
@@ -14679,6 +15517,42 @@
             "Trehalose",
             "Sodium Hyaluronate",
             "Triacetin"
+        ],
+        "Healthy Skin Enhancer": [
+            "Retinyl Palmitate (Vitamin A Palmitate)",
+            "Retinol (Vitamin A)",
+            "Fragrance",
+            "Propylparaben",
+            "Methylparaben",
+            "Phenoxyethanol",
+            "Cyclopentasiloxane",
+            "Dimethicone",
+            "Tocopheryl Acetate",
+            "Bht",
+            "Polysorbate-20",
+            "Peg-100 Stearate",
+            "Peg-75 Stearate",
+            "Ceteth-20",
+            "Steareth-20",
+            "Ethylparaben",
+            "Tetrasodium Edta",
+            "Ci 77499",
+            "Water",
+            "Isopropyl Isostearate",
+            "Butylene Glycol",
+            "Glyceryl Monostearate",
+            "Cetyl Alcohol",
+            "Cetearyl Alcohol",
+            "Arginine",
+            "Olea Europaea (Olive) Extract",
+            "Camellia Oleifera (Tea-Oil Camellia) Leaf Extract",
+            "Silica, Amorphous",
+            "Sclerotium Gum",
+            "Erythorbic Acid",
+            "Isostearyl Palmitate",
+            "Polysilicone-11",
+            "Ammonium Polyacryloyldimethyl Taurate",
+            "Lauroyl Lysine"
         ]
     },
     "Collistar": {
@@ -14714,12 +15588,14 @@
             "Bismuth Oxychloride",
             "Titanium Dioxide"
         ],
-        "Mineral Liquid Foundation": "Ingredients not found"
+        "Mineral Liquid Foundation": "Ingredients not found",
+        "Fabulous & Flawless Foundation": "Ingredients not found"
     },
     "Mecca Max": {
         "Game Face BB Cream SPF 30": "Ingredients not found",
         "Life Proof Cream Concealer": "Ingredients not found",
-        "Life Proof Longwear Foundation": "Ingredients not found"
+        "Life Proof Longwear Foundation": "Ingredients not found",
+        "Blur Veil Wet & Dry Powder Foundation": "Ingredients not found"
     },
     "American Beauty": {
         "Perfectly Even Natural Finish Foundation": "Ingredients not found",
@@ -14784,7 +15660,8 @@
             "Sodium Dehydroacetate",
             "Titanium Dioxide"
         ],
-        "2-in-1 Compact Foundation": "Ingredients not found"
+        "2-in-1 Compact Foundation": "Ingredients not found",
+        "Nude Effect Natural Makeup Fluid": "Ingredients not found"
     },
     "Wardah": {
         "Exclusive Liquid Foundation": "Ingredients not found",
@@ -14792,7 +15669,8 @@
         "Everyday Beauty Balm Cream": "Ingredients not found",
         "Exclusive Two Way Cake": "Ingredients not found",
         "Lightening Two Way Cake": "Ingredients not found",
-        "Exclusive Creamy Foundation": "Ingredients not found"
+        "Exclusive Creamy Foundation": "Ingredients not found",
+        "C-Defense DD Cream": "Ingredients not found"
     },
     "CANMAKE": {
         "Color Mixing Concealer": "Ingredients not found",
@@ -14806,7 +15684,8 @@
     },
     "Thin Lizzy": {
         "Liquid Foundation": "Ingredients not found",
-        "Concealer creme": "Ingredients not found"
+        "Concealer creme": "Ingredients not found",
+        "Loose Mineral Foundation": "Ingredients not found"
     },
     "Benecos": {
         "Natural Creamy Makeup": "Ingredients not found",
@@ -14885,7 +15764,8 @@
         "BB Creme Beauty Balm": "Ingredients not found",
         "Firming Age Revive Foundation": "Ingredients not found",
         "Luminous Hydrating Foundation": "Ingredients not found",
-        "Longwear 24 Hour Foundation": "Ingredients not found"
+        "Longwear 24 Hour Foundation": "Ingredients not found",
+        "Lightweight Oil Free Radiant Coverage Foundation SPF15": "Ingredients not found"
     },
     "Mineral Fusion": {
         "Liquid Foundation": [
@@ -15222,7 +16102,8 @@
             "Acetylated Glycol Stearate",
             "Ethylhexylglycerin",
             "Titanium Dioxide"
-        ]
+        ],
+        "Flawless Creator Foundation Drops": "Ingredients not found"
     },
     "Morphe": {
         "Fluidity Full Coverage Foundation": [
@@ -15626,6 +16507,73 @@
             "Ethylhexylglycerin",
             "Hexylene Glycol",
             "Titanium Dioxide"
+        ],
+        "Concealer Twins Cream 2-in-1 Correct and Cover Cream": "Ingredients not found",
+        "Super BB All-in-1 Beauty Balm Cream SPF 30": [
+            "Sodium Hydroxide",
+            "Phenoxyethanol",
+            "Cyclopentasiloxane",
+            "Dimethicone",
+            "Cetyl Peg/ Ppg-10/ 1 Dimethicone",
+            "Peg-10 Dimethicone",
+            "Tocopheryl Acetate",
+            "Laureth-12",
+            "Peg/ Ppg-18/ 18 Dimethicone",
+            "Polysorbate-60",
+            "Titanium Dioxide (Sunscreen Grade)",
+            "Zinc Oxide (Sunscreen Grade > 100Nm)",
+            "Glycerin",
+            "Hectorite",
+            "Mica",
+            "Ci 77499",
+            "Water",
+            "Caprylic/ Capric Triglyceride",
+            "Neopentyl Glycol Diheptanoate",
+            "Butylene Glycol",
+            "Cetearyl Alcohol",
+            "C30-45 Alkyl Cetearyl Dimethicone Crosspolymer",
+            "Sodium Chloride",
+            "Salix Alba (White Willow) Bark Extract",
+            "Butyrospermum Parkii (Shea) Butter",
+            "Perilla Ocymoides (Beefsteak Plant) Oil",
+            "Lysolecithin",
+            "Polysilicone-11",
+            "Tetrahexyldecyl Ascorbate",
+            "Disodium Edta",
+            "Disteardimonium Hectorite",
+            "Glyceryl Monostearate",
+            "Magnesium Silicate",
+            "Propylene Carbonate",
+            "Triethoxycaprylylsilane",
+            "Xanthan Gum",
+            "Caprylyl Glycol",
+            "Ethylhexylglycerin",
+            "Hexylene Glycol"
+        ],
+        "Mineral Wear Talc-Free Mineral Airbrushing Loose Powder": [
+            "Active Ingredients: Titanium Dioxide15%;Zinc Oxide 10%; Inactive Ingredients: Mica, Boron Nitride, Zinc Stearate, Lauroyl Lysine, Tricaprylin, Magnesium Silicate, Carthamus Tinctorius (Safflower) Seed Oil, Chamomilla Recutita (Matricaria) Flower Extract, Panax Ginseng Root Extract, Ginkgo Biloba Leaf Extract, Camellia Oleifera Leaf Extract, Ascorbyl Palmitate, Tocopheryl Acetate, Retinyl Palmitate, Chlorphenesin, Potassium Sorbate, Sodium Dehydroacetate. Iron Oxides, Titanium Dioxide."
+        ],
+        "Organic Wear Tinted Moisturizer": [
+            "Talc",
+            "Cannabis Sativa (Hemp) Seed Oil",
+            "Ci 77499",
+            "Titanium Dioxide",
+            "Citrus Aurantium Dulcis (Orange) Fruit Water",
+            "Alcohol Denatured",
+            "Simmondsia Chinensis (Jojoba) Seed Oil",
+            "Helianthus Annuus (Sunflower) Seed Oil",
+            "Persea Gratissima (Avocado) Oil",
+            "Lecithin",
+            "Butyrospermum Parkii (Shea) Butter",
+            "Olea Europaea (Olive)",
+            "Garcinia Indica Seed Butter",
+            "Alginic Acid",
+            "Aluminum Hydroxide",
+            "Cetearyl Alcohol",
+            "Cetearyl Wheat Bran Glucosides",
+            "Glyceryl Stearate Se",
+            "Hydrated Silica",
+            "Xanthan Gum"
         ]
     },
     "Younique": {
@@ -15634,7 +16582,9 @@
         "Touch Mineral Skin Perfecting Concealer": "Ingredients not found",
         "Touch Mineral Cream Foundation": "Ingredients not found",
         "Touch Mineral Pressed Powder Foundation": "Ingredients not found",
-        "Touch Behold Finishing Powder": "Ingredients not found"
+        "Touch Behold Finishing Powder": "Ingredients not found",
+        "Touch Loose Powder Foundation": "Ingredients not found",
+        "Touch Pressed Powder Foundation": "Ingredients not found"
     },
     "Natural Glamour": {
         "2Glo Foundation Powder Pot": "Ingredients not found"
@@ -15664,7 +16614,31 @@
             "Ethylhexylglycerin. Iron Oxides",
             "Titanium Dioxide."
         ],
-        "Studio Pro Matte Finish Pressed Powder": "Ingredients not found"
+        "Studio Pro Matte Finish Pressed Powder": "Ingredients not found",
+        "Studio Pro Total Coverage Concealer": [
+            "Phenoxyethanol",
+            "Dimethicone",
+            "Cyclopentasiloxane",
+            "Propylene Glycol",
+            "Cetyl Peg/ Ppg-10/ 1 Dimethicone",
+            "Peg-10 Dimethicone",
+            "Fd&C Yellow 5 Aluminum Lake",
+            "Mica",
+            "Glycerin",
+            "Ci 77499",
+            "Water",
+            "Isododecane",
+            "Tridecyl Trimellitate",
+            "Caprylyl Methicone",
+            "Isoamyl Laurate",
+            "Dimethicone Crosspolymer",
+            "Magnesium Stearate",
+            "Polyglyceryl-4 Isostearate",
+            "Disteardimonium Hectorite",
+            "Propylene Carbonate",
+            "Sodium Chloride",
+            "Titanium Dioxide"
+        ]
     },
     "Make B": {
         "Color Adapt Liquid Concealer / Color Correct Liquid Concealer": "Ingredients not found",
@@ -15847,7 +16821,8 @@
     "Chantecaille": {
         "Just Skin Tinted Moisturizer": "Ingredients not found",
         "Future Skin Foundation": "Ingredients not found",
-        "Compact Makeup Foundation": "Ingredients not found"
+        "Compact Makeup Foundation": "Ingredients not found",
+        "Real Skin+ Eye and Face Stick": "Ingredients not found"
     },
     "Laneige": {
         "BB Cushion (SPF 50+ / PA+++) 2x15g": "Ingredients not found",
@@ -15865,7 +16840,9 @@
         "Essence Cake Foundation": "Ingredients not found",
         "Skin Veil Oil Free Foundation": "Ingredients not found",
         "Water Supreme Foundation": "Ingredients not found",
-        "Snow BB Essence Balm": "Ingredients not found"
+        "Snow BB Essence Balm": "Ingredients not found",
+        "Water Glow Gel Foundation": "Ingredients not found",
+        "Skin Veil Base Cushion": "Ingredients not found"
     },
     "Guinot": {
         "Youth Time Foundation": "Ingredients not found"
@@ -15893,7 +16870,9 @@
     "Note Cosmetics": {
         "Luminous Silk Compact Powder": "Ingredients not found",
         "Luminous Moisturizing Foundation": "Ingredients not found",
-        "Detox & Protect Foundation": "Ingredients not found"
+        "Detox & Protect Foundation": "Ingredients not found",
+        "Mattifying Extreme Wear Foundation": "Ingredients not found",
+        "Mineral Foundation": "Ingredients not found"
     },
     "Bioderma": {
         "Photoderm Max Tinted Cream": [
@@ -15975,7 +16954,9 @@
         "Matte Full Cover Cushion": "Ingredients not found",
         "Smart Drawing Foundation": "Ingredients not found",
         "Mineral Stick Concealer": "Ingredients not found",
-        "No Sebum BB Cream": "Ingredients not found"
+        "No Sebum BB Cream": "Ingredients not found",
+        "Matte Full Cover Concealer": "Ingredients not found",
+        "Mineral Ultrafine Pact": "Ingredients not found"
     },
     "Emina": {
         "Bare With Me Mineral Cushion": "Ingredients not found",
@@ -15986,13 +16967,19 @@
         "Every Finish Powder": "Ingredients not found"
     },
     "Zao Organic Makeup": {
-        "Organic Silk Foundation (Liquid)": "Ingredients not found"
+        "Organic Silk Foundation (Liquid)": "Ingredients not found",
+        "Organic Mineral Silk Foundation (Loose Powder)": "Ingredients not found"
     },
     "Quem disse Berenice?": {
         "Base Supermate Matte Liquid Foundation": "Ingredients not found",
         "Corretivo Alta Cobertura": "Ingredients not found",
         "Base Cushion": "Ingredients not found",
-        "Base Aqua Hidratante": "Ingredients not found"
+        "Base Aqua Hidratante": "Ingredients not found",
+        "Base Alta Cobertura Full-Coverage Liquid Foundation": "Ingredients not found",
+        "Corretivo Aqua Hidratante": "Ingredients not found",
+        "Base Natural Superfluida Natural Fluid Foundation": "Ingredients not found",
+        "Po Compacto FPS 15": "Ingredients not found",
+        "Corretivo Liquido": "Ingredients not found"
     },
     "TheBalm": {
         "Even Steven Whipped Foundation": "Ingredients not found",
@@ -16114,7 +17101,35 @@
             "Stearalkonium Hectorite",
             "Magnesium Aluminum Silicate",
             "Silica, Crystalline (Quartz)"
-        ]
+        ],
+        "Flawless Beauty Fluid": [
+            "Water (Aqua)",
+            "Propylene Glycol",
+            "Propylene Glycol Stearate",
+            "Glycerin",
+            "PEG-8",
+            "Oleic Acid",
+            "Kaolin",
+            "Lecithin",
+            "Isostearamide DEA",
+            "Cetyl Esters",
+            "Cetyl Alcohol",
+            "Tocopherol",
+            "Panthenol",
+            "Triethanolamine",
+            "Magnesium Aluminum Silicate",
+            "Cellulose Gum",
+            "Simethicone",
+            "Disodium EDTA",
+            "Methylparaben",
+            "Propylparaben",
+            "Butylparaben",
+            "Imidazolidinyl Urea. [+/- Iron Oxides",
+            "Titanium Dioxide",
+            "Ultramarines",
+            "Chromium Oxide Greens."
+        ],
+        "Illuminating Tint & Conceal": "Ingredients not found"
     },
     "Av\u00e8ne": {
         "Couvrance Fluid Foundation Corrector / Couvrance Fond de Teint Correcteur Fluide SPF15": "Ingredients not found",
@@ -16395,6 +17410,35 @@
             "Linalool",
             "Alpha-Isomethyl Ionone Titanium Dioxide",
             "Iron Oxides"
+        ],
+        "UV Bright Cushion": "Ingredients not found",
+        "Super Matte Loose Powder": [
+            "Talc",
+            "Silica",
+            "Nylon-12",
+            "Silk Powder",
+            "Propylparaben",
+            "Butylparaben",
+            "Methylparaben",
+            "Dehydroacetic Acid. Iron Oxides",
+            "Mica",
+            "Red 27 Lake",
+            "Titanium Dioxide",
+            "Yellow 10 Lake",
+            "Red 7 Lake",
+            "Red 21 Lake",
+            "Yellow 6 Lake",
+            "Ultramarines",
+            "Blue 1 Lake",
+            "Yellow 5 Lake",
+            "Red 6",
+            "Manganese Violet",
+            "Chromium Oxide Greens",
+            "Chromium Hydroxide Green",
+            "Synthetic Fluorphlogopite",
+            "Slica",
+            "Calcium Sodium Borosilicate",
+            "Tin Oxide."
         ]
     },
     "Erborian": {
@@ -16821,7 +17865,12 @@
         "Misa Geum Sul Vitalizing BB Cake": "Ingredients not found",
         "Radiance Foundation": "Ingredients not found",
         "Signature Aura Tension Long Wear Cover": "Ingredients not found",
-        "Signature Super Light Foundation": "Ingredients not found"
+        "Signature Super Light Foundation": "Ingredients not found",
+        "M Prism Powder Pact": "Ingredients not found",
+        "Glow Skindation": "Ingredients not found",
+        "Closing Cover Liquid Concealer": "Ingredients not found",
+        "The Original Tension Pact Natural Cover": "Ingredients not found",
+        "Signature Complexion Coordinating BB Cream": "Ingredients not found"
     },
     "Joe Blasco": {
         "Ultrabase Foundation": "Ingredients not found"
@@ -16899,7 +17948,11 @@
         "Mat Mousse Foundation": "Ingredients not found",
         "Smart Hydrating Foundation": "Ingredients not found",
         "Liquid Skin Second Skin Foundation": "Ingredients not found",
-        "Skin Trainer CC Blur": "Ingredients not found"
+        "Skin Trainer CC Blur": "Ingredients not found",
+        "Insta Moisture Foundation": "Ingredients not found",
+        "Skin Tone Foundation": "Ingredients not found",
+        "Matte Fusion Pressed Powder": "Ingredients not found",
+        "Weightless Perfection Wet and Dry Powder Foundation": "Ingredients not found"
     },
     "Payot": {
         "Base Liquida Mate HD": "Ingredients not found",
@@ -16926,7 +17979,8 @@
             "Caprylyl Glycol",
             "Ceramide Np",
             "Titanium Dioxide"
-        ]
+        ],
+        "Boca Rosa Beauty Perfect Base Mate": "Ingredients not found"
     },
     "Bio-Beaute by Nuxe": {
         "Skin-Perfecting Compact BB Cream": "Ingredients not found",
@@ -17115,7 +18169,8 @@
     "Kiss New York": {
         "Pro Touch Cushion Foundation": "Ingredients not found",
         "Ultimate Cover Stick Foundation": "Ingredients not found",
-        "Creme To Powder Foundation": "Ingredients not found"
+        "Creme To Powder Foundation": "Ingredients not found",
+        "Acne Cover + Care Cream Foundation": "Ingredients not found"
     },
     "Shu Uemura": {
         "Unlimited Breathable Lasting Foundation": "Ingredients not found",
@@ -17177,10 +18232,12 @@
         "Liquid Elixir Serum Foundation": "Ingredients not found",
         "Oh 2 Glow Foundation": "Ingredients not found",
         "Matte Up Foundation": "Ingredients not found",
-        "Colour Clique CC Cream": "Ingredients not found"
+        "Colour Clique CC Cream": "Ingredients not found",
+        "Don't Sweat It Water Resistant Foundation": "Ingredients not found"
     },
     "ASAP": {
-        "Mineral Makeup Base": "Ingredients not found"
+        "Mineral Makeup Base": "Ingredients not found",
+        "Perfecting Mineral Foundation": "Ingredients not found"
     },
     "Tropic": {
         "Beauty Booster Sheer Foundation": "Ingredients not found",
@@ -17613,7 +18670,33 @@
             "Hexylene Glycol",
             "Titanium Dioxide",
             "Zinc Oxide"
-        ]
+        ],
+        "Stay All Day Concealer": [
+            "Petrolatum",
+            "Dimethicone",
+            "Glyceryl Behenate",
+            "Tocopheryl Acetate",
+            "Mica",
+            "Ci 77499",
+            "Isostearyl Palmitate",
+            "Isostearyl Behenate",
+            "Polyethylene",
+            "Microcrystalline Wax (Cera Microcristallina)",
+            "Kaolin",
+            "Ozokerite",
+            "Polyamide-5",
+            "Silica, Amorphous",
+            "Lauryl Methacrylate/ Glycol Dimethacrylate Crosspolymer",
+            "Polymethyl Methacrylate",
+            "Glyceryl Dibehenate",
+            "Tribehenin",
+            "Caprylyl Glycol",
+            "Tocopherol",
+            "Tetrahexyldecyl Ascorbate",
+            "Pentaerythrityl Tetra-Di-T-Butyl Hydroxyhydrocinnamate",
+            "Titanium Dioxide"
+        ],
+        "Hide & Chic Fluid Foundation": "Ingredients not found"
     },
     "Illuminating Touch Foundation": {
         "FOUNDATION": "Ingredients not found"
@@ -17783,15 +18866,50 @@
         "Matissime Powder Foundation": "Ingredients not found",
         "Photo'Perfexion Fluid Foundation": "Ingredients not found",
         "Matissime Velvet Compact": "Ingredients not found",
-        "Eclat Matissime Fluid Foundation": "Ingredients not found"
+        "Eclat Matissime Fluid Foundation": "Ingredients not found",
+        "Teint Couture Long-Wearing Fluid Foundation": [
+            "Titanium Dioxide 2.92% Inactive: Water",
+            "Methyl Trimethicone",
+            "Dimethicone",
+            "Alcohol",
+            "PEG-9 Polydimethylsiloxyethyl Dimethicone",
+            "Polymethylsilsesquioxane",
+            "Isododecane",
+            "Butylene Glycol",
+            "Silica",
+            "Acrylates/Dimethicone Copolymer",
+            "Polymethyl Methacrylate",
+            "Phenoxyethanol",
+            "Cetyl Dimethicone",
+            "Phenyl Trimethicone",
+            "Disteardimonium Hectorite",
+            "Aluminum Hydroxide",
+            "Stearic Acid",
+            "Sodium Myristoyl Glutamate",
+            "VP/VA Copolymer",
+            "Propylene Carbonate",
+            "Fragrance",
+            "Saccharide Isomerate",
+            "Sodium Chloride",
+            "Butylphenyl Methylpropional",
+            "BHT",
+            "Smithsonite Extract",
+            "Geraniol",
+            "Citric Acid",
+            "Sodium Citrate. Titanium Dioxide",
+            "Iron Oxides."
+        ],
+        "Teint Couture Cushion Foundation": "Ingredients not found"
     },
     "La Mer": {
         "The Soft Fluid Longwear Foundation": "Ingredients not found",
-        "The Reparative SkinTint": "Ingredients not found"
+        "The Reparative SkinTint": "Ingredients not found",
+        "The Luminous Lifting Cushion Foundation": "Ingredients not found"
     },
     "Liz Earle": {
         "Signature Foundation": "Ingredients not found",
-        "Sheer Skin Tint Foundation": "Ingredients not found"
+        "Sheer Skin Tint Foundation": "Ingredients not found",
+        "Natural Finish Loose Powder": "Ingredients not found"
     },
     "Gerda Spillmann": {
         "Bio-Fond Cream Foundation": "Ingredients not found"
@@ -17814,7 +18932,9 @@
         "Moisture Veil LX Powder Foundation": "Ingredients not found",
         "Flawless Fit Foundation": "Ingredients not found",
         "Face Perfect Concealing Makeup": "Ingredients not found",
-        "Basic Formula UV JQ Foundation": "Ingredients not found"
+        "Basic Formula UV JQ Foundation": "Ingredients not found",
+        "Essence Foundation UV JQ": "Ingredients not found",
+        "Essence Foundation Liquid": "Ingredients not found"
     },
     "Pat McGrath Labs": {
         "Skin Fetish: Sublime Perfection Foundation": "Ingredients not found"
@@ -18116,7 +19236,8 @@
             "Calcium Gluconate",
             "Magnesium Ascorbyl Phosphate",
             "Palmaria Palmata (Dulse) Extract"
-        ]
+        ],
+        "Your Skin Makeup Foundation": "Ingredients not found"
     },
     "Face Atelier": {
         "Ultra Foundation Pro": "Ingredients not found",
@@ -18163,7 +19284,8 @@
             "Quaternium-18 Hectorite",
             "Propylene Carbonate",
             "Titanium Dioxide"
-        ]
+        ],
+        "Dura Skin": "Ingredients not found"
     },
     "Yes Cosmetics": {
         "Base HD": [
@@ -18236,7 +19358,10 @@
         ]
     },
     "Monave": {
-        "Vegan Moisture Mousse Foundation": "Ingredients not found"
+        "Vegan Moisture Mousse Foundation": "Ingredients not found",
+        "Cream Foundation": "Ingredients not found",
+        "Loose Mineral Foundation": "Ingredients not found",
+        "Loose Mineral Concealer-Foundation": "Ingredients not found"
     },
     "Grace": {
         "Infiniti Tinted Nourishing Cream": "Ingredients not found"
@@ -18255,7 +19380,8 @@
     },
     "Natasha Denona": {
         "Foundation X / Foundation X Full Coverage Fruit Complex": "Ingredients not found",
-        "Transformatte Pore Vanishing Matte Foundation": "Ingredients not found"
+        "Transformatte Pore Vanishing Matte Foundation": "Ingredients not found",
+        "Face Glow Foundation": "Ingredients not found"
     },
     "NuSkin": {
         "Advanced Tinted Moisturizer": "Ingredients not found",
@@ -18408,7 +19534,8 @@
             "Aspartic Acid",
             "Titanium Dioxide",
             "Ultramarines"
-        ]
+        ],
+        "Skin Veil Foundation Pen": "Ingredients not found"
     },
     "Blosson Ville Cosmetics": {
         "Duo Face FPS 15 / Duo Face SPF 15": "Ingredients not found"
@@ -18684,7 +19811,8 @@
             "Propylparaben",
             "Chlorphenesin Iron Oxides",
             "Titanium Dioxide"
-        ]
+        ],
+        "Prevage Anti-Aging Foundation": "Ingredients not found"
     },
     "W3LL People": {
         "Narcissist Foundation Stick": [
@@ -18802,7 +19930,8 @@
     "Mirenesse": {
         "Flawless Revolution 3 in 1 Skin Perfector": "Ingredients not found",
         "Matte Liquid Silk Foundation": "Ingredients not found",
-        "4 in 1 Skin Clone Foundation Mineral Face Powder": "Ingredients not found"
+        "4 in 1 Skin Clone Foundation Mineral Face Powder": "Ingredients not found",
+        "Velvet Maxi Lift Airbrush Line Treatment Foundation": "Ingredients not found"
     },
     "Youngblood": {
         "Liquid Mineral Foundation": "Ingredients not found",
@@ -18816,7 +19945,8 @@
     "Pixy": {
         "UV Whitening Two Way Cake Perfect Fit": "Ingredients not found",
         "UV Whitening BB Cream": "Ingredients not found",
-        "Make It Glow Dewy Cushion": "Ingredients not found"
+        "Make It Glow Dewy Cushion": "Ingredients not found",
+        "UV Whitening Compact Powder Coverlast": "Ingredients not found"
     },
     "BYS": {
         "All Day Wear Foundation": "Ingredients not found",
@@ -18918,7 +20048,8 @@
             "Persea Gratissima (Avocado) Oil",
             "Glycosaminoglycans",
             "Sodium Chondroitin Sulfate"
-        ]
+        ],
+        "HD Picture Perfect Liquid Foundation": "Ingredients not found"
     },
     "Spectraban T": {
         "Color Base Compacto": "Ingredients not found",
@@ -18977,7 +20108,8 @@
     },
     "Savvy by DB": {
         "Mineral Loose Powder": "Ingredients not found",
-        "Flawless Finish Foundation": "Ingredients not found"
+        "Flawless Finish Foundation": "Ingredients not found",
+        "Smooth Creme Foundation": "Ingredients not found"
     },
     "Serge Louis Alvarez": {
         "Photo Foundation": "Ingredients not found"
@@ -19004,7 +20136,46 @@
         "Radiant Fluid Foundation": "Ingredients not found",
         "Radiant Cream Foundation": "Ingredients not found",
         "Powder Foundation": "Ingredients not found",
-        "Radiant Cushion Foundation": "Ingredients not found"
+        "Radiant Cushion Foundation": "Ingredients not found",
+        "Radiant Powder Foundation": "Ingredients not found",
+        "Brightening Powder Foundation": "Ingredients not found",
+        "The Foundation": [
+            "Citrus Aurantium Dulcis (Orange) Oil",
+            "Dimethicone",
+            "Sodium Benzoate",
+            "Rosa Damascena (Rose) Flower Oil",
+            "Propanediol",
+            "Glycerin",
+            "Citrus Aurantium Bergamia (Bergamot) Fruit Oil",
+            "Ci 77499",
+            "Water",
+            "Coco-Caprylate/ Caprate",
+            "Isododecane",
+            "Trimethylsiloxysilicate",
+            "Caprylic/ Capric Triglyceride",
+            "Dimethicone/ Vinyl Dimethicone Crosspolymer",
+            "Isostearic Acid",
+            "Polyglyceryl-4 Diisostearate/ Polyhydroxystearate/ Sebacate",
+            "Isoeicosane",
+            "Jojoba Esters",
+            "Magnesium Sulfate",
+            "Beeswax",
+            "Gluconolactone",
+            "Sodium Hyaluronate",
+            "Sodium Chloride",
+            "Hydrogenated Castor Oil",
+            "Polyhydroxystearic Acid",
+            "Lecithin",
+            "Ethylhexyl Palmitate",
+            "Isopropyl Myristate",
+            "Polyglyceryl-3 Polyricinoleate",
+            "Prunus Amygdalus Dulcis (Sweet Almond) Oil",
+            "Salvia Sclarea (Clary Sage) Oil",
+            "Citrus Aurantium Dulcis (Orange) Flower Oil",
+            "Vanilla Planifolia Fruit Extract",
+            "Triethoxycaprylylsilane",
+            "Titanium Dioxide"
+        ]
     },
     "Bettina Cosmetics": {
         "Dual Foundation Powder": "Ingredients not found",
@@ -19042,7 +20213,8 @@
     "Luscious Cosmetics": {
         "Flawless Finish Foundation": "Ingredients not found",
         "Foundation Stick": "Ingredients not found",
-        "Velvet Matte Powder": "Ingredients not found"
+        "Velvet Matte Powder": "Ingredients not found",
+        "High Definition Mineral Liquid Foundation 30ml": "Ingredients not found"
     },
     "Koh Gen Do": {
         "Maifanshi Moisture Foundation": "Ingredients not found",
@@ -19132,7 +20304,9 @@
         ],
         "Aquarela Corretivo Facial": "Ingredients not found",
         "Una Nude Me CC Cream": "Ingredients not found",
-        "BB Base Multi Beneficios FPS30": "Ingredients not found"
+        "BB Base Multi Beneficios FPS30": "Ingredients not found",
+        "Una Base Liquida Matific FPS15": "Ingredients not found",
+        "Aquarela BB Cream Matte FPS15": "Ingredients not found"
     },
     "Inglot": {
         "YSM Cream Foundation": "Ingredients not found",
@@ -19140,7 +20314,8 @@
         "Cream Powder": "Ingredients not found",
         "HD Perfect Coverup Foundation": "Ingredients not found",
         "Cream Foundation": "Ingredients not found",
-        "AMC Mousse Foundation": "Ingredients not found"
+        "AMC Mousse Foundation": "Ingredients not found",
+        "Stick Foundation": "Ingredients not found"
     },
     "Earthnicity": {
         "Mineral Foundation": "Ingredients not found"
@@ -19151,7 +20326,8 @@
     },
     "Lucy Minerals": {
         "Original Formula Lucy Minerals Foundation": "Ingredients not found",
-        "Oil Control Foundation with Calcium Carbonate": "Ingredients not found"
+        "Oil Control Foundation with Calcium Carbonate": "Ingredients not found",
+        "Light Foundation": "Ingredients not found"
     },
     "The Face Shop": {
         "Phytogenic Infinite Powder Foundation": "Ingredients not found",
@@ -19175,7 +20351,8 @@
         "Ink Lasting Concealer Slim Fit": "Ingredients not found",
         "Ink Lasting Foundation Slim Fit": "Ingredients not found",
         "Anti-Darkening Cushion": "Ingredients not found",
-        "Face It Radiance Foundation": "Ingredients not found"
+        "Face It Radiance Foundation": "Ingredients not found",
+        "Face It Flawless Mineral Cover Powder": "Ingredients not found"
     },
     "Bell Cosmetics": {
         "BB Mousse Foundation": "Ingredients not found",
@@ -19218,10 +20395,21 @@
             "Bismuth Oxychloride",
             "Ultramarines"
         ],
-        "Creme-to-Powder Foundation": "Ingredients not found"
+        "Creme-to-Powder Foundation": "Ingredients not found",
+        "Pressed Powder": [
+            "Talc",
+            "Ci 77499",
+            "Synthetic Fluorphlogopite",
+            "Magnesium Stearate",
+            "Isodecyl Neopentanoate",
+            "Nylon-12",
+            "Caprylyl Glycol",
+            "Titanium Dioxide"
+        ]
     },
     "Bella Aurora": {
-        "Fluid Makeup / Maquillaje fluido SPF12": "Ingredients not found"
+        "Fluid Makeup / Maquillaje fluido SPF12": "Ingredients not found",
+        "Compact Makeup / Maquillaje CompactoSPF50": "Ingredients not found"
     },
     "Mantecorp Skincare": {
         "Episol Color": "Ingredients not found"
@@ -19233,7 +20421,8 @@
         "Base Matte Media Cobertura": "Ingredients not found",
         "Corretivo Efeito Matte": "Ingredients not found",
         "Corretivo Liquido": "Ingredients not found",
-        "Po Compacto HD Ultra Fino": "Ingredients not found"
+        "Po Compacto HD Ultra Fino": "Ingredients not found",
+        "BB Blur": []
     },
     "Living Nature": {
         "Foundation": [
@@ -19255,6 +20444,31 @@
             "Stearic Acid",
             "Cetyl Alcohol",
             "Sclerotium Gum",
+            "Tocopherol",
+            "Leptospermum Scoparium (Manuka) Oil",
+            "Melaleuca Alternifolia (Tea Tree) Leaf Oil"
+        ],
+        "Clear Lights Tinted Moisturiser": [
+            "Talc",
+            "Pelargonium Graveolens (Geranium) Flower Oil",
+            "Citrus Grandis (Grapefruit) Seed Extract",
+            "Glycerin",
+            "Mica",
+            "Ci 77499",
+            "Water",
+            "Jojoba Esters",
+            "Macadamia Ternifolia Seed Oil",
+            "Simmondsia Chinensis (Jojoba) Seed Oil",
+            "Persea Gratissima (Avocado) Oil",
+            "Cetearyl Wheat Straw Glycosides",
+            "Cetearyl Alcohol",
+            "Zinc Oxide",
+            "Titanium Dioxide",
+            "Butyrospermum Parkii (Shea) Butter",
+            "Honey Extract",
+            "Sclerotium Gum",
+            "Stearic Acid",
+            "Cetyl Alcohol",
             "Tocopherol",
             "Leptospermum Scoparium (Manuka) Oil",
             "Melaleuca Alternifolia (Tea Tree) Leaf Oil"
@@ -19348,10 +20562,79 @@
         "Terrybly Densiliss Anti-Wrinkle Serum Foundation": "Ingredients not found",
         "Sheer-Expert Perfecting Fluid Foundation": "Ingredients not found",
         "Cover-Expert Perfecting Fluid Foundation Ultra-Correcting Coverage SPF 15": "Ingredients not found",
-        "Nude-Expert Duo Stick": "Ingredients not found"
+        "Nude-Expert Duo Stick": "Ingredients not found",
+        "Cellularose Moisturising CC Cream": "Ingredients not found",
+        "Touche Veloutee Highlighting Concealer Brush": [
+            "Fragrance",
+            "Hydroxycitronellal",
+            "Lyral",
+            "Talc",
+            "Cyclotetrasiloxane",
+            "Limonene",
+            "Lilial",
+            "Phenoxyethanol",
+            "Methylparaben",
+            "Cyclopentasiloxane",
+            "Dimethicone",
+            "Peg/ Ppg-18/ 18 Dimethicone",
+            "Propylene Glycol",
+            "Hexyl Cinnamal",
+            "Linalool",
+            "Benzyl Salicylate",
+            "Alpha-Isomethyl Ionone",
+            "Geraniol",
+            "Eugenol",
+            "Citronellol",
+            "Glycerin",
+            "Mica",
+            "Cyclohexasiloxane",
+            "Alumina",
+            "Tetrasodium Edta",
+            "Potassium Sorbate",
+            "Chlorphenesin",
+            "Ci 77499",
+            "Water",
+            "Polyethylene",
+            "Propylene Glycol Dicaprylate/ Dicaprate",
+            "Dimethicone Crosspolymer",
+            "Sodium Citrate",
+            "Butylene Glycol",
+            "Boron Nitride",
+            "Tocopherol",
+            "Quaternium-90 Bentonite",
+            "Dextrin Palmitate",
+            "Ethanol",
+            "Dimethiconol",
+            "Lauroyl Lysine",
+            "Disodium Stearoyl Glutamate",
+            "Caprylic/ Capric Triglyceride",
+            "Ethylhexyl Palmitate",
+            "Polymethyl Methacrylate",
+            "Dehydroacetic Acid",
+            "Silica, Amorphous",
+            "Aluminum Hydroxide",
+            "Palmitic Acid",
+            "Panthenol",
+            "Aesculus Hippocastanum (Horse Chestnut) Extract",
+            "Phoenix Dactylifera (Date) Kernel Extract",
+            "Silica Dimethyl Silylate",
+            "Ruscus Aculeatus (Box Holly) Root Extract",
+            "Ammonium Glycyrrhizate",
+            "Brassica Campestris (Rapeseed) Sterols",
+            "Prolinamidoethyl Imidazole",
+            "Centella Asiatica (Gotu Kola) Extract",
+            "Caprylyl Glycol",
+            "Hydrolyzed Yeast Protein",
+            "Calendula Officinalis (Pot Marigold) Flower Extract",
+            "Sodium Hyaluronate",
+            "Hexylene Glycol",
+            "Disodium Edta",
+            "Titanium Dioxide"
+        ]
     },
     "Signature Minerals": {
-        "Mineral Makeup Foundation": "Ingredients not found"
+        "Mineral Makeup Foundation": "Ingredients not found",
+        "Finishing Veils": "Ingredients not found"
     },
     "Ultraceuticals": {
         "Ultra Active Mineral Colour": "Ingredients not found"
@@ -19496,7 +20779,8 @@
             "Sorbitan Laurate",
             "Sodium Chloride"
         ],
-        "Baked Balance-n-Glow Illuminating Foundation": "Ingredients not found"
+        "Baked Balance-n-Glow Illuminating Foundation": "Ingredients not found",
+        "Baked Liquid Radiance Foundation": "Ingredients not found"
     },
     "Sonia Kashuk": {
         "Perfecting Luminous Foundation": [
@@ -19615,6 +20899,32 @@
             "Trisodium Inositol Triphosphate",
             "Titanium Dioxide",
             "Iron Oxides"
+        ],
+        "POREfection Concealer": "Ingredients not found",
+        "Natural Performance Foundation": [
+            "Retinyl Acetate (Vitmin A Acetate)",
+            "Cyclopentasiloxane",
+            "Cetyl Peg/ Ppg-10/ 1 Dimethicone",
+            "Glycerin",
+            "Ci 77499",
+            "Water",
+            "Isohexadecane",
+            "Ethylhexyl Palmitate",
+            "Pentylene Glycol",
+            "Trimethylsiloxysilicate",
+            "Butylene Glycol",
+            "Disteardimonium Hectorite",
+            "Glyceryl Ethylhexanoate/ Stearate/ Adipate",
+            "Zinc Oxide",
+            "Ethylhexylglycerin",
+            "Methicone",
+            "Disodium Edta",
+            "Ppg-15 Stearyl Ether",
+            "Xylitol",
+            "Olea Europaea (Olive) Extract",
+            "Citrus Medica Limonum (Lemon) Peel",
+            "Carica Papaya (Papaya) Fruit Extract",
+            "Titanium Dioxide"
         ]
     },
     "SilkyGirl": {
@@ -19623,7 +20933,8 @@
         "Skin Perfect Liquid Foundation": "Ingredients not found",
         "Pure Fresh Oil-Control Pressed Powder": "Ingredients not found",
         "Magic BB All-in-One Powder Foundation": "Ingredients not found",
-        "Magic BB White Chiffon 2-Way Powder Foundation": "Ingredients not found"
+        "Magic BB White Chiffon 2-Way Powder Foundation": "Ingredients not found",
+        "Gen Matte Cushion Foundation": "Ingredients not found"
     },
     "Amuse": {
         "Flawless Liquid Foundation": "Ingredients not found",
@@ -19645,7 +20956,8 @@
     "Innoxa": {
         "Timeless Foundation": "Ingredients not found",
         "HydroBoost Foundation": "Ingredients not found",
-        "Satin Sheen Natural Finish Makeup": "Ingredients not found"
+        "Satin Sheen Natural Finish Makeup": "Ingredients not found",
+        "EverLast Foundation": "Ingredients not found"
     },
     "Mecca Cosmetica": {
         "Light Saver Brightening Concealer": "Ingredients not found",
@@ -19658,7 +20970,8 @@
     },
     "Aromaleigh Mineral Cosmetics": {
         "Gossamer Layerable Mineral Foundation": "Ingredients not found",
-        "Pashmina Heavy Coverage Mineral Foundation": "Ingredients not found"
+        "Pashmina Heavy Coverage Mineral Foundation": "Ingredients not found",
+        "Dewdrop Mineral Foundation Powder": "Ingredients not found"
     },
     "Be Creative Makeup": {
         "Feather Finish Matte Foundation": "Ingredients not found"
@@ -19677,7 +20990,8 @@
         "Derma Cover Tattoo Foundation": "Ingredients not found"
     },
     "Dalla Makeup": {
-        "Base Matte Oil Free Alta Cobertura": "Ingredients not found"
+        "Base Matte Oil Free Alta Cobertura": "Ingredients not found",
+        "Meu Blurhinzo Querido!": "Ingredients not found"
     },
     "Cashmere by Dax Cosmetics": {
         "Make-Up Blur Maxi Cover Smoothing and Covering Fluid Foundation": "Ingredients not found",
@@ -19732,20 +21046,24 @@
         "Defense Longwear Cushion Foundation": "Ingredients not found",
         "Cover Up Pro Concealer": "Ingredients not found",
         "Cover Fit Powder Foundation": "Ingredients not found",
-        "Seamless Foundation": "Ingredients not found"
+        "Seamless Foundation": "Ingredients not found",
+        "Pro Fit Liquid Concealer": "Ingredients not found"
     },
     "Sisley": {
         "Phyto-Teint Expert Foundation": "Ingredients not found",
-        "Phyto-Teint Eclat Fluid Foundation": "Ingredients not found"
+        "Phyto-Teint Eclat Fluid Foundation": "Ingredients not found",
+        "Sisleya Le Teint Anti-Aging Foundation": "Ingredients not found"
     },
     "Stellar": {
         "Limitless Foundation": "Ingredients not found"
     },
     "Idun Minerals": {
-        "Powder Foundation": "Ingredients not found"
+        "Powder Foundation": "Ingredients not found",
+        "Norrsken Foundation": "Ingredients not found"
     },
     "ColoreScience": {
-        "Natural Finish Pressed Foundation": "Ingredients not found"
+        "Natural Finish Pressed Foundation": "Ingredients not found",
+        "Sunforgettable Brush-On Sunscreen": "Ingredients not found"
     },
     "Neve Cosmetics": {
         "High Coverage Mineral Foundation": "Ingredients not found"
@@ -19757,7 +21075,8 @@
     "Kate Tokyo by Kanebo": {
         "Secret Skin Maker Zero Liquid Foundation": "Ingredients not found",
         "Powderless Liquid for Cover": "Ingredients not found",
-        "Powdery Skin Maker": "Ingredients not found"
+        "Powdery Skin Maker": "Ingredients not found",
+        "Powdery Mousse BB for Cover": "Ingredients not found"
     },
     "It's Skin": {
         "It's Top Professional Touch-Finish Foundation": "Ingredients not found",
@@ -19775,7 +21094,8 @@
             "Hamamelis Virginiana (Witch Hazel)"
         ],
         "Base Matte Alta Cobertura Oil Free": "Ingredients not found",
-        "Po Compacto Matte HD": "Ingredients not found"
+        "Po Compacto Matte HD": "Ingredients not found",
+        "Base Matte Vegana": "Ingredients not found"
     },
     "W.Lab": {
         "W-Snow Aura Cushion": "Ingredients not found",
@@ -19908,7 +21228,34 @@
             "Titanium Dioxide"
         ],
         "Basic Control Color N": "Ingredients not found",
-        "Gel Emulsion Compact": "Ingredients not found"
+        "Gel Emulsion Compact": "Ingredients not found",
+        "UV Liquid Foundation": [
+            "Butylparaben",
+            "Fragrance",
+            "Propylparaben",
+            "Imidazolidinyl Urea",
+            "Triethanolamine",
+            "Methylparaben",
+            "Dimethicone",
+            "Lauryl Peg/ Ppg-18/ 18 Methicone",
+            "Tocopheryl Acetate",
+            "Decamethylcyclopentasiloxane",
+            "Glycerin",
+            "Ci 77499",
+            "Water",
+            "Titanium Dioxide",
+            "Aluminum Hydroxide",
+            "Dimethicone/ Vinyl Dimethicone Crosspolymer",
+            "Butylene Glycol",
+            "Sodium Chloride",
+            "Hydrogenated Camellia Oleifera Seed Oil",
+            "Disodium Edta",
+            "Natto Gum",
+            "Sorbitan Isostearate",
+            "Allantoin"
+        ],
+        "Liquid Foundation S (Limited Edition)": "Ingredients not found",
+        "Gel Creamy Foundation S (Limited Edition)": "Ingredients not found"
     },
     "L'Ocean": {
         "Stick Foundation": [
@@ -20028,7 +21375,9 @@
             "Undeceth-5",
             "Butyloctanol"
         ],
-        "Perfect Cover Cushion": "Ingredients not found"
+        "Perfect Cover Cushion": "Ingredients not found",
+        "Perfect Skin Foundation": "Ingredients not found",
+        "Super Vital Foundation": "Ingredients not found"
     },
     "VDL": {
         "Perfecting Last Foundation SPF 30, PA ++": "Ingredients not found",
@@ -20065,7 +21414,9 @@
         "True Wear Foundation": "Ingredients not found",
         "HD Perfect Foundation": "Ingredients not found",
         "Easy Touch Concealer": "Ingredients not found",
-        "Black Cushion": "Ingredients not found"
+        "Black Cushion": "Ingredients not found",
+        "Mineral Multi BB": "Ingredients not found",
+        "HD Perfect Powder Pact": "Ingredients not found"
     },
     "COSRX": {
         "Clear Fit Blemish Cushion / Blemish Cover Cushion": "Ingredients not found"
@@ -20284,7 +21635,9 @@
         "Ribbon BB Powder": "Ingredients not found"
     },
     "LaurEss Minerals": {
-        "Minimalist": "Ingredients not found"
+        "Minimalist": "Ingredients not found",
+        "Ethereal": "Ingredients not found",
+        " Elemental": "Ingredients not found"
     },
     "B.": {
         "Flawless Complete Coverage Foundation": "Ingredients not found",
@@ -20358,7 +21711,8 @@
         "Po Compacto / Compact Powder": "Ingredients not found"
     },
     "BioNike": {
-        "Defence Color Cover Camouflage Blemish Concealer": "Ingredients not found"
+        "Defence Color Cover Camouflage Blemish Concealer": "Ingredients not found",
+        "Defence Color Cover Stick Foundation": "Ingredients not found"
     },
     "TIGI": {
         "Powder Foundation": [
@@ -20458,7 +21812,8 @@
         ]
     },
     "MyFace Cosmetics": {
-        "mymix Foundation": "Ingredients not found"
+        "mymix Foundation": "Ingredients not found",
+        "mymatch Powder": "Ingredients not found"
     },
     "Clio Professional": {
         "Kill Cover Liquid Founwear Ampoule Cushion": "Ingredients not found",
@@ -20476,7 +21831,8 @@
         "High Coverage Concealer": "Ingredients not found",
         "Kill Cover Conceal-Dation": "Ingredients not found",
         "Kill Cover Founwear Cushion XP": "Ingredients not found",
-        "Kill Cover Liquid Founwear BB Cream": "Ingredients not found"
+        "Kill Cover Liquid Founwear BB Cream": "Ingredients not found",
+        "Kill Cover Pro Artist Liquid Concealer": "Ingredients not found"
     },
     "Astalift": {
         "Lighting Perfection Long Keep Pact UV SPF 20": "Ingredients not found",
@@ -20505,7 +21861,8 @@
         "Cover Perfection Concealer Foundation": "Ingredients not found",
         "Cover Perfection Liquid Concealer": "Ingredients not found",
         "Saemmul Moist BB": "Ingredients not found",
-        "Cover Perfection Pot Concealer": "Ingredients not found"
+        "Cover Perfection Pot Concealer": "Ingredients not found",
+        "Saemmul Perfect Pore BB": "Ingredients not found"
     },
     "Skin79": {
         "Super+ BB Cream / Super+ Beblesh Balm": "Ingredients not found",
@@ -20548,7 +21905,8 @@
         "Daily Essentials Tinted Moisturising Day Cream": "Ingredients not found"
     },
     "Beauty People": {
-        "Absolute Cover Fit Foundation": "Ingredients not found"
+        "Absolute Cover Fit Foundation": "Ingredients not found",
+        "Absolute Deep Ocean Girl Cushion Foundation": "Ingredients not found"
     },
     "LaiKou": {
         "Color Correction Foundation": "Ingredients not found"
@@ -20611,7 +21969,9 @@
     "Sensai by Kanebo": {
         "Highlighting Concealer": "Ingredients not found",
         "Fluid Finish Foundation": "Ingredients not found",
-        "Cellular Performance Total Finish Foundation": "Ingredients not found"
+        "Cellular Performance Total Finish Foundation": "Ingredients not found",
+        "Cellular Performance Cream Foundation": "Ingredients not found",
+        "Flawless Satin Foundation": "Ingredients not found"
     },
     "Thalgo": {
         "BB Cream": []
@@ -20820,7 +22180,9 @@
     "Tony Moly Cosmetics": {
         "Dear-Me Petite Cotton BB Cream": "Ingredients not found",
         "Luminous Goddess Aura BB Cream": "Ingredients not found",
-        "Cats Wink Shiny Skin Foundation": "Ingredients not found"
+        "Cats Wink Shiny Skin Foundation": "Ingredients not found",
+        "Luminous Goddess Aura Glow Cushion": "Ingredients not found",
+        "Pokemon Pikachu Mini Cover Cushion": "Ingredients not found"
     },
     "Vincent Longo": {
         "Perfect Canvas Loose Face Powder": "Ingredients not found",
@@ -20832,7 +22194,8 @@
     "KOS\u00c9": {
         "Beaute de Kose Sensational White Liquid Makeup": "Ingredients not found",
         "Esprique Forming Beauty Pact UV SPF22": "Ingredients not found",
-        "Esprique Forming Beauty Liquid UV SPF20": "Ingredients not found"
+        "Esprique Forming Beauty Liquid UV SPF20": "Ingredients not found",
+        "Cosme Decorte AQ Cream Foundation Supreme SPF20": "Ingredients not found"
     },
     "MeMeMe": {
         "Flawless Cream Foundation": "Ingredients not found",
@@ -20857,7 +22220,8 @@
         "EX Moisture Skincare BB Cream": "Ingredients not found"
     },
     "Classified Cosmetics": {
-        "Aero Minerale Hydrating Mineral Foundation Mist": "Ingredients not found"
+        "Aero Minerale Hydrating Mineral Foundation Mist": "Ingredients not found",
+        "ERA Everyday Foundation": "Ingredients not found"
     },
     "Lilah B.": {
         "Virtuous Veil Concealer & Eye Primer": "Ingredients not found"
@@ -21075,7 +22439,8 @@
         "Skin Finish Foundation": "Ingredients not found"
     },
     "Kett Cosmetics": {
-        "Fixx Creme Makeup": "Ingredients not found"
+        "Fixx Creme Makeup": "Ingredients not found",
+        "Hydro Foundation": "Ingredients not found"
     },
     "Lock Color": {
         "Lock it Good Boundation": "Ingredients not found"
@@ -21087,7 +22452,8 @@
         "365 BB Sunscreen": []
     },
     "in2it": {
-        "Oil Control & Oil Free 2-way Foundation": "Ingredients not found"
+        "Oil Control & Oil Free 2-way Foundation": "Ingredients not found",
+        "Sheer Natural Gel Foundation": "Ingredients not found"
     },
     "Joppa Minerals": {
         "Full and Soft Coverage": "Ingredients not found"
@@ -21283,7 +22649,99 @@
             "Disodium EDTA",
             "Phenoxyethanol."
         ],
-        "Face Powder N": []
+        "Face Powder N": [],
+        "Liquid Foundation": [
+            "Water",
+            "Ascorbic Acid",
+            "Glycerin",
+            "Dimethicone",
+            "Squalane",
+            "Butylene Glycol",
+            "Dipropylene Glycol",
+            "Acetyl Glucosamine",
+            "Cucumis Sativus (Cucumber) Fruit Extract",
+            "Hordeum Vulgare (Barley) Extract",
+            "Morus Nigra (Mulberry) Root Extract",
+            "Molasses Extract",
+            "Laminaria Digitata Extract",
+            "Scutellaria Baicalensis Root Extract",
+            "Acetyl Hexapeptide-8",
+            "Vitis Vinifera (Grape) Fruit Extract",
+            "Algae Extract",
+            "Palmitoyl Hexapeptide-12",
+            "Palmitoyl Tripeptide-1",
+            "Palmitoyl Tripeptide-7",
+            "Alcaligenes Polysaccharides",
+            "Caffeine",
+            "Sucrose",
+            "Whey Protein",
+            "Betaine",
+            "Salicylic Acid",
+            "Glycine Soja (Soybean) Protein",
+            "Sodium Hyaluronate",
+            "Caprylyl Glycol",
+            "Sigesbeckia Orientalis (St. Pauls Wort) Extract",
+            "Bis-PEG-18 Methyl Ether Dimethyl Silane",
+            "Propylene Glycol Dicaprate",
+            "Helianthus Annus (Sunflower) Seedcake",
+            "Allyl Methacrylates Crosspolymer",
+            "Carbomer",
+            "Glyceryl Polymethacrylate",
+            "Triomethamine",
+            "Xanthan Gum",
+            "Potassium Sorbate",
+            "PEG-8",
+            "Polysorbate 20",
+            "Sodium Citrate",
+            "Disodium EDTA",
+            "Phenoxyethanol."
+        ],
+        "Protecting Foundation Primer S": [
+            "Water",
+            "Ascorbic Acid",
+            "Glycerin",
+            "Dimethicone",
+            "Squalane",
+            "Butylene Glycol",
+            "Dipropylene Glycol",
+            "Acetyl Glucosamine",
+            "Cucumis Sativus (Cucumber) Fruit Extract",
+            "Hordeum Vulgare (Barley) Extract",
+            "Morus Nigra (Mulberry) Root Extract",
+            "Molasses Extract",
+            "Laminaria Digitata Extract",
+            "Scutellaria Baicalensis Root Extract",
+            "Acetyl Hexapeptide-8",
+            "Vitis Vinifera (Grape) Fruit Extract",
+            "Algae Extract",
+            "Palmitoyl Hexapeptide-12",
+            "Palmitoyl Tripeptide-1",
+            "Palmitoyl Tripeptide-7",
+            "Alcaligenes Polysaccharides",
+            "Caffeine",
+            "Sucrose",
+            "Whey Protein",
+            "Betaine",
+            "Salicylic Acid",
+            "Glycine Soja (Soybean) Protein",
+            "Sodium Hyaluronate",
+            "Caprylyl Glycol",
+            "Sigesbeckia Orientalis (St. Pauls Wort) Extract",
+            "Bis-PEG-18 Methyl Ether Dimethyl Silane",
+            "Propylene Glycol Dicaprate",
+            "Helianthus Annus (Sunflower) Seedcake",
+            "Allyl Methacrylates Crosspolymer",
+            "Carbomer",
+            "Glyceryl Polymethacrylate",
+            "Triomethamine",
+            "Xanthan Gum",
+            "Potassium Sorbate",
+            "PEG-8",
+            "Polysorbate 20",
+            "Sodium Citrate",
+            "Disodium EDTA",
+            "Phenoxyethanol."
+        ]
     },
     "eSpoir": {
         "Pro Tailor Foundation Be Glow": "Ingredients not found",
@@ -21298,12 +22756,15 @@
     "Jill Stuart": {
         "Smooth Silk Liquid Foundation": "Ingredients not found",
         "Airy Tint Watery CC Cream UV Veil": "Ingredients not found",
-        "Pure Essence Cushion Compact Foundation": "Ingredients not found"
+        "Pure Essence Cushion Compact Foundation": "Ingredients not found",
+        "Airy Stay Flawless Powder Foundation": "Ingredients not found"
     },
     "Ettusais": {
         "BB Mineral Cream": "Ingredients not found",
         "Oil Block Foundation": "Ingredients not found",
-        "Premium Chiffon Foundation": "Ingredients not found"
+        "Premium Chiffon Foundation": "Ingredients not found",
+        "Zero Pore Oil Block Pact": "Ingredients not found",
+        "Flat Design Liquid Foundation": "Ingredients not found"
     },
     "Alha Alfa": {
         "Royal Propolis Foundation": "Ingredients not found"
@@ -21312,15 +22773,18 @@
         "Cover Face Concealer Foundation": "Ingredients not found"
     },
     "EVAGARDEN": {
-        "Precious Mineral Foundation": "Ingredients not found"
+        "Precious Mineral Foundation": "Ingredients not found",
+        "Smoothing Effect Foundation": "Ingredients not found"
     },
     "Illuminare Cosmetics": {
         "Mattifying Ultimate All Day Mineral Foundation": "Ingredients not found",
-        "Concealing Extra Coverage Mineral Foundation": "Ingredients not found"
+        "Concealing Extra Coverage Mineral Foundation": "Ingredients not found",
+        "Moisturizing Fantastic Finish Mineral Foundation": "Ingredients not found"
     },
     "Luna": {
         "Water Essence Founpact / Water Essence Water Pact AD": "Ingredients not found",
-        "Essence Sensitive Pact": "Ingredients not found"
+        "Essence Sensitive Pact": "Ingredients not found",
+        "Pro Conceal Cushion": "Ingredients not found"
     },
     "d Program by Shiseido": {
         "Skincare Foundation (Powdery)": "Ingredients not found",
@@ -21330,7 +22794,8 @@
         "Mineral Makeup": "Ingredients not found"
     },
     "Lumiere Mineral Cosmetics": {
-        "Flawless Finish Face Base": "Ingredients not found"
+        "Flawless Finish Face Base": "Ingredients not found",
+        "Veena Velvet Face Base": "Ingredients not found"
     },
     "Lioele Cosmetics": {
         "Be My Skin (Skin Fix) Foundation": "Ingredients not found"
@@ -21344,13 +22809,16 @@
     },
     "Nature Republic": {
         "Pure Foundation": "Ingredients not found",
-        "Pure BB Cream": "Ingredients not found"
+        "Pure BB Cream": "Ingredients not found",
+        "Nature Origin Cushion CC Natural Foundation": "Ingredients not found",
+        "Botanical Cream Concealer": "Ingredients not found"
     },
     "Superface": {
         "Zoom in Mesh Cushion": "Ingredients not found"
     },
     "Majolica Majorca": {
-        "Milky Skin Remaker": "Ingredients not found"
+        "Milky Skin Remaker": "Ingredients not found",
+        "Skin Remaker Pore Cover": "Ingredients not found"
     },
     "Integrate by Shiseido": {
         "Integrate Liquid Foundation": "Ingredients not found",
@@ -21390,13 +22858,15 @@
         "Perfect Innerlighting Cushion": "Ingredients not found"
     },
     "Surratt Beauty": {
-        "Dew Drop Foundation": "Ingredients not found"
+        "Dew Drop Foundation": "Ingredients not found",
+        "Surreal Real Skin Foundation Wand": "Ingredients not found"
     },
     "Some By Mi": {
         "Something Maxi Glam Cover Cushion": "Ingredients not found"
     },
     "CYBER COLORS": {
-        "Black Label Essence Veil Nude Foundation": "Ingredients not found"
+        "Black Label Essence Veil Nude Foundation": "Ingredients not found",
+        "Black Label Essence UV Liquid Foundation": "Ingredients not found"
     },
     "Belloite": {
         "Watch Me Finish Powder Pact": "Ingredients not found"
@@ -21451,10 +22921,12 @@
     },
     "Diego Dalla Palma": {
         "Cream Compact Foundation": "Ingredients not found",
-        "Compact Powder Foundation": "Ingredients not found"
+        "Compact Powder Foundation": "Ingredients not found",
+        "Long Lasting & Full Coverage Foundation SPF 20": "Ingredients not found"
     },
     "Pretty Vulgar": {
-        "Cool AF Lava Water Foundation": "Ingredients not found"
+        "Cool AF Lava Water Foundation": "Ingredients not found",
+        "Under Cover Concealer": "Ingredients not found"
     },
     "Jany Coco": {
         "Jany Top Cover Foundation": "Ingredients not found"
@@ -21502,7 +22974,8 @@
     },
     "Paese Cosmetics": {
         "Sebum Control/Sebum Control Mat": "Ingredients not found",
-        "Long Cover Fluid Foundation": "Ingredients not found"
+        "Long Cover Fluid Foundation": "Ingredients not found",
+        "Collagen Moisturizing Foundation": "Ingredients not found"
     },
     "G&K Cosmetics": {
         "Total Coverage Foundation": [
@@ -21540,7 +23013,8 @@
         "Make B. Base Cushion": "Ingredients not found",
         "Intense Base Liquida Mate Superfix": "Ingredients not found",
         "Capricho Po Facial Antiacne": "Ingredients not found",
-        "Make B. Po Compacto Color Adapt": "Ingredients not found"
+        "Make B. Po Compacto Color Adapt": "Ingredients not found",
+        "Make B. Corretivo Liquido Color Adapt": "Ingredients not found"
     },
     "Coty": {
         "Airspun Face Powder": [
@@ -21568,7 +23042,8 @@
         "Foundation Powder": "Ingredients not found"
     },
     "Gorgeous Cosmetics": {
-        "Base Perfect Liquid Foundation": "Ingredients not found"
+        "Base Perfect Liquid Foundation": "Ingredients not found",
+        "Sheer Brilliance Liquid Foundation": "Ingredients not found"
     },
     "La Femme": {
         "Liquid Foundation": "Ingredients not found"
@@ -21597,7 +23072,8 @@
             "Xanthan Gum",
             "Titanium Dioxide"
         ],
-        "Derma Minerals Cream Foundation": "Ingredients not found"
+        "Derma Minerals Cream Foundation": "Ingredients not found",
+        "Light Foundation": "Ingredients not found"
     },
     "Nouba": {
         "Staminal Foundation": "Ingredients not found"
@@ -21746,5 +23222,209 @@
     },
     "Benefique by Shiseido": {
         "Powdery Foundation Aura Dream": "Ingredients not found"
+    },
+    "Maja": {
+        "Cream Powder Compact Foundation": "Ingredients not found"
+    },
+    "Obsessive Compulsive Cosmetics": {
+        "OCC Tint: Tinted Moisturizer": "Ingredients not found"
+    },
+    "Issada": {
+        "Mineral Velvet Cream Foundation": "Ingredients not found"
+    },
+    "Nutrimetics": {
+        "Perfecting Oil-Free Foundation": "Ingredients not found"
+    },
+    "Keep in Touch": {
+        "White Blending Base Cushion": "Ingredients not found"
+    },
+    "Simply Vera by Vera Wang": {
+        "Naturally Radiant Hydrating Makeup": "Ingredients not found"
+    },
+    "Trinny London": {
+        "Just a Touch Foundation/Concealer": "Ingredients not found"
+    },
+    "Starlooks": {
+        "Matte Mousse Foundation": "Ingredients not found"
+    },
+    "TBmake": {
+        "Matte Base Hipo Ppf": "Ingredients not found"
+    },
+    "Vizzela": {
+        "Base L\u00edquida Vegana": "Ingredients not found",
+        "Corretivo": "Ingredients not found"
+    },
+    "Negra Rosa": {
+        "Base Liquida": []
+    },
+    "Luisance": {
+        "Base Liquida Matte": "Ingredients not found"
+    },
+    "Coringco": {
+        "Cherry Blossom Water Cushion": "Ingredients not found"
+    },
+    "Nilens Jord": {
+        "Liquid Concealer": "Ingredients not found"
+    },
+    "Dr. Althea": {
+        "Aurora Cover Cushion": "Ingredients not found"
+    },
+    "KANEBO": {
+        "Media Cream Foundation": "Ingredients not found",
+        "Twany Century The Foundation": "Ingredients not found",
+        "Impress Granmula Foundation": "Ingredients not found",
+        "Luster Cream Foundation": "Ingredients not found"
+    },
+    "Westman Atelier": {
+        "Vital Skin Foundation Stick": "Ingredients not found"
+    },
+    "Klavuu": {
+        "Urban Pearlsation High Coverage Tension Cushion": "Ingredients not found"
+    },
+    "Sooryehan": {
+        "Yeonhwayun Firming Cover Cushion": "Ingredients not found"
+    },
+    "Iconic London": {
+        "Pigment Foundation Stick": "Ingredients not found"
+    },
+    "Mented Cosmetics": {
+        "Skin by Mented": "Ingredients not found"
+    },
+    "Eve Pearl": {
+        "HD Dual Foundation": "Ingredients not found",
+        "HD Liquid Foundation": "Ingredients not found"
+    },
+    "Serge Lutens": {
+        "Compact Foundation / Teint Si Fin": "Ingredients not found"
+    },
+    "M.U.S.T.": {
+        "Magnetism Cushion Foundation": "Ingredients not found"
+    },
+    "Lissage by Kanebo": {
+        "Colormaintenizer C1": "Ingredients not found"
+    },
+    "Joan Collins": {
+        "First Base": "Ingredients not found"
+    },
+    "Essenze Di Pozzi": {
+        "Corretivo L\u00edquido": "Ingredients not found"
+    },
+    "Perricone MD": {
+        "No Makeup Foundation": "Ingredients not found"
+    },
+    "Kokie Cosmetics": {
+        "Be Bright Illuminating Concealer": "Ingredients not found"
+    },
+    "Cathy Doll": {
+        "AA Matte Powder Cushion Oil Control": "Ingredients not found"
+    },
+    "Merry Monde": {
+        "Love Crush Heart Stick Foundation": "Ingredients not found"
+    },
+    "New CID Cosmetics": {
+        "i-Perfection": "Ingredients not found"
+    },
+    "Jennifer Bradley": {
+        "4 in One Camera Ready Foundation": "Ingredients not found"
+    },
+    "dUCK Cosmetics": {
+        "All Covered Make-Up Foundation": [
+            "Phenoxyethanol",
+            "Dimethicone",
+            "Cetyl Peg/ Ppg-10/ 1 Dimethicone",
+            "Tocopheryl Acetate",
+            "Mica",
+            "Alumina",
+            "Tin Oxide",
+            "Ci 77499",
+            "Water",
+            "Isododecane",
+            "Titanium Dioxide",
+            "Butylene Glycol",
+            "Dimethicone/ Vinyl Dimethicone Crosspolymer",
+            "Isostearyl Neopentanoate",
+            "Zinc Oxide",
+            "Stearic Acid",
+            "Synthetic Fluorphlogopite",
+            "Disteardimonium Hectorite",
+            "Sodium Chloride",
+            "Polyglyceryl-4 Isostearate",
+            "Triethoxycaprylylsilane",
+            "Glyceryl Caprylate",
+            "Propylene Carbonate",
+            "Aluminum Hydroxide",
+            "Ascorbyl Tetraisopalmitate",
+            "Ethylhexylglycerin",
+            "Silica, Amorphous",
+            "Sodium Hyaluronate"
+        ]
+    },
+    "SimplySiti": {
+        "Argan Wonder Powder": "Ingredients not found"
+    },
+    "Hard Candy": {
+        "Glamoflauge Heavy Duty Concealer": "Ingredients not found"
+    },
+    "Le Metier de Beaute": {
+        "Classic Flawless Finish Foundation": "Ingredients not found"
+    },
+    "Nvey Eco": {
+        "Creme Deluxe Flawless Finish Foundation": "Ingredients not found"
+    },
+    "Sunday Riley": {
+        "The Influencer Clean Long Wear Foundation": [
+            "Water",
+            "Phenyl Trimethicone",
+            "Cetyl Diglyceryl Tris(Trimethylsiloxy)silylethyl Dimethicone",
+            "Dimethicone/Vinyl Dimethicone Crosspolymer",
+            "Dimethicone",
+            "Dimethicone Crosspolymer",
+            "Silica",
+            "Propanediol",
+            "Isododecane",
+            "C24-28 Alkyldimethylsiloxy Trimethylsiloxysilicate",
+            "Butylene Glycol",
+            "Hydrogenated Lecithin",
+            "Polypropylsilsesquioxane",
+            "Epilobium Angustifolium Flower/Leaf/Stem Extract",
+            "Echium Plantagineum Seed Oil",
+            "Cardiospermum Halicacabum Flower/Leaf/Vine Extract",
+            "Adipic Acid/Neopentyl Glycol Crosspolymer",
+            "Lauryl Dimethicone",
+            "Octyldodecanol",
+            "Tocopherol",
+            "Synthetic Fluorphlogopite",
+            "Helianthus Annuus (Sunflower) Seed Oil Unsaponifiables",
+            "Hydrogenated Polyisobutene",
+            "Sodium Metabisulfite",
+            "Sodium Phytate",
+            "Bisabolol",
+            "Pentylene Glycol",
+            "Pentaerythrityl tetra-di-t-butyl hydroxyhydrocinnamate (antioxidant to prevent color change)",
+            "Phenethyl Alcohol",
+            "Citronellol",
+            "Geraniol",
+            "Nerol",
+            "Phenoxyethanol",
+            "Caprylyl Glycol",
+            "Chlorphenesin",
+            "Mica",
+            "Iron Oxides",
+            "Hydrogenated Polydecene",
+            "Propylene Carbonate",
+            "Hydroxystearic Acid",
+            "Disteardimonium Hectorite. Titanium Dioxide (CI 77891)",
+            "Iron Oxides (CI 77492)",
+            "Iron Oxides (CI 77491)",
+            "Iron Oxides (CI 77499)",
+            "Ispopropyl Titanium Triisostearate",
+            "1, 2-Hexanediol."
+        ]
+    },
+    "Ultima II (DISCONTINUED)": {
+        "Wonderwear Longwearing Makeup": "Ingredients not found"
+    },
+    "Priia": {
+        "Essential Cover Loose Mineral Foundation": "Ingredients not found"
     }
 }

@@ -14,8 +14,9 @@ class FindationBrowser:
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("headless")
+        chrome_options.add_argument("--log-level=3")
         # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
-        self.browser = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
+        self.browser = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
         self.browser.implicitly_wait(2)
 
     def close_out(self):
