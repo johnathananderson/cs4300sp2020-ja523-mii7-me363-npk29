@@ -28,7 +28,6 @@ class FindationBrowser:
         with open("ingredients.json", encoding="utf8") as data:
             try:
                 ingredients = json.load(data)
-                print("Opened ingredients")
             except:
                 print("Couldn't open ingredients")
                 ingredients = {}
@@ -63,7 +62,7 @@ class FindationBrowser:
                             count += 0.1
                     brand_input.send_keys(brand)
                     brand_input.send_keys(Keys.ENTER)
-                    time.sleep(2)
+                    time.sleep(1.5)
                     found = False
                     count = 0
                     while not found and count < 11:
@@ -77,7 +76,7 @@ class FindationBrowser:
                             count += 0.1
                     product_input.send_keys(product_name)
                     product_input.send_keys(Keys.ENTER)
-                    time.sleep(2)
+                    time.sleep(1.5)
                     found = False
                     count = 0
                     while not found and count < 11:
@@ -91,7 +90,6 @@ class FindationBrowser:
                             count += 0.1
                     shade_input.send_keys(shade)
                     shade_input.send_keys(Keys.ENTER)
-                    time.sleep(2)
                     if p < n_products - 1:
                         found = False
                         count = 0
@@ -127,7 +125,7 @@ class FindationBrowser:
                             except:
                                 time.sleep(0.1)
                                 count += 0.1
-                        print("Found matches")
+                        print("Found " + str(len(matches)) + " matches")
                         for match in matches:
                             lines = match.text.splitlines()
                             match_brand = lines[0]
@@ -141,7 +139,6 @@ class FindationBrowser:
                             match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
 
                             if match_brand in ingredients and match_name in ingredients[match_brand]:
-                                print("Found in ingredients.json: " + match_brand + " " + match_name)
                                 match_product["ingredients"] = ingredients[match_brand][match_name]
                             else:
                                 print("Not found in ingredients.json: " + match_brand + " " + match_name)
