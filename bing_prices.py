@@ -9,18 +9,21 @@ options.headless = True
 options.add_argument('log-level=3')
 driver = webdriver.Chrome(options=options)
 
-def write_json(data, filename='product_prices.json'): 
+def write_json(data, filename='apjson_product_prices.json'): 
     with open(filename,'w') as f: 
         json.dump(data, f, indent=4)
         
-with open("./ingredients.json", encoding = 'utf-8') as j:
+with open("./all-products.json", encoding = 'utf-8') as j:
     data = json.load(j)
     
 base_url = "https://www.bing.com/search?q="
-retail_price_map = {}
+
+with open("apjson_product_prices.json") as j:
+    retail_price_map = json.load(j)
+
 for brand in data:
     retail_price_map[brand] = {}
-    for product in data[brand]:
+    for product in data[brand]["products"]:
         query_url = base_url + brand + " " + product + " prices"
         driver.get(query_url)
         #Extract list of prices and corresponding retailers
