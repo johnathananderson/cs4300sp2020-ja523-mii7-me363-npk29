@@ -46,6 +46,7 @@ class FindationBrowser:
                         count += 0.1
                 n_products = len(products)
                 results = []
+                time.sleep(1)
                 for p in range(n_products):
                     product = products[p]
                     brand = product[0]
@@ -62,7 +63,7 @@ class FindationBrowser:
                             count += 0.1
                     brand_input.send_keys(brand)
                     brand_input.send_keys(Keys.ENTER)
-                    time.sleep(1.5)
+                    time.sleep(2)
                     found = False
                     count = 0
                     while not found and count < 11:
@@ -76,7 +77,7 @@ class FindationBrowser:
                             count += 0.1
                     product_input.send_keys(product_name)
                     product_input.send_keys(Keys.ENTER)
-                    time.sleep(1.5)
+                    time.sleep(2)
                     found = False
                     count = 0
                     while not found and count < 11:
@@ -149,29 +150,35 @@ class FindationBrowser:
                                     ingredients[match_brand] = ingredients.get(match_brand, {})
                                     ingredients[match_brand][match_name] = found_ingredients
                                     # match_product["ingredients"] = "Ingredients not found"
-                                except:
+                                except Exception as e:
                                     ingredients[match_brand] = ingredients.get(match_brand, {})
                                     ingredients[match_brand][match_name] = "Ingredients not found"
+                                    print(e)
                             results.append(match_product)
                 with open("ingredients.json", "w") as outfile:
                     json.dump(ingredients, outfile, indent=4)
                 return results
-        except:
+        except Exception as e:
             print("Failed: " + products[0][0] + " " + products[0][1])
+            print(e)
 
 
 f = FindationBrowser()
-with open("products.json", encoding="utf8") as j:
-    data = json.load(j)
+with open("all-products.json", encoding="utf8") as j:
+    products = json.load(j)
+
+with open("major-brands.json", encoding="utf8") as j:
+    major_brands = json.load(j)
 
 i = IngredientsBrowser()
-for brand in data:
-    for product_name in data[brand]["products"]:
-        c = 0
-        for shade in data[brand]["products"][product_name]["shades"]:
-            product = [[brand, product_name, shade], [brand, product_name, shade]]
-            print(product[0])
-            f.process_matches(product, i)
+for brand in products:
+    if brand in major_brands:
+        for product_name in products[brand]["products"]:
+            c = 0
+            for shade in products[brand]["products"][product_name]["shades"]:
+                product = [[brand, product_name, shade], [brand, product_name, shade]]
+                print(product[0])
+                f.process_matches(product, i)
 i.close_out()
 f.close_out()
 

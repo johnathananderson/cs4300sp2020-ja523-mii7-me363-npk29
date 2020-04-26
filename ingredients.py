@@ -52,7 +52,7 @@ class IngredientsBrowser:
                     self.browser.get(review_results.find_element_by_class_name("review-product").get_attribute("href"))
                     found = False
                     count = 0
-                    while not found and count < 6:
+                    while not found and count < 3:
                         try:
                             i = self.browser.find_element_by_xpath("//*[@id='ingredients']")
                             found = True
@@ -76,7 +76,7 @@ class IngredientsBrowser:
             else:
                 found = False
                 count = 0
-                while not found:
+                while not found and count < 6:
                     try:
                         listings = self.browser.find_element_by_class_name("product-listings")
                         found = True
@@ -86,7 +86,7 @@ class IngredientsBrowser:
                 self.browser.get(listings.find_element_by_tag_name("a").get_attribute("href"))
                 found = False
                 count = 0
-                while not found:
+                while not found and count < 6:
                     try:
                         ingredients = self.browser.find_elements_by_class_name("td-ingredient-interior")
                         found = True
