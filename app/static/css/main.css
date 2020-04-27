@@ -18,8 +18,12 @@
     right: 2%;
 }
 
-#adv_form {
+#prev_form {
     margin-top: 10vh;
+}
+
+#adv_form {
+    margin-top: 0vh;
 }
 
 
