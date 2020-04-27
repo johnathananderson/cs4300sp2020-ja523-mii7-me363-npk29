@@ -63,7 +63,7 @@ def product():
         data = range(5)
         output_message = "Your search: " + query
 
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, pdatatest=pdatatest)
     # return (request.form['search'])
 
 
