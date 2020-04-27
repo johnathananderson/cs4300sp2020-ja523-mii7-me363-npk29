@@ -1,12 +1,11 @@
 from . import *
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
-from findation import FindationBrowser
-import time
+# from findation import FindationBrowser
+# import time
 
 project_name = "Save Face"
 net_id = "ja523, me363, mii7, npk29"
-
 
 @irsystem.route("/", methods=["GET"])
 def search():
@@ -15,7 +14,8 @@ def search():
         data = []
         output_message = "Its not working"
     else:
-    output_message = "Your search: " + query
+        data = range(5)
+        output_message = "Your search: " + query
     # query = query.split()
     # brand1 = "Mary Kay"
     # product1 = "Full-Coverage Foundation"
@@ -31,9 +31,9 @@ def search():
     # time.sleep(1)
     # data = f.process_matches(products)
     # f.close_out()
-    return render_template("search.html")
+    return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data)
 
 
-# @irsystem.route("/outputs", methods=["GET"])
-# def outputs():
-#     return render_template("outputs.html")
+@irsystem.route("/outputs", methods=["GET"])
+def outputs():
+    return render_template("outputs.html")

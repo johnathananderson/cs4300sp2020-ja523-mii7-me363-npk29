@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "/Users/nakiakenon/OneDrive - Cornell University/cs4300sp2020-ja523-mii7-me363-npk29/venv/bin/python3",
+    "python.pythonPath": "venv/bin/python",
     "git.ignoreLimitWarning": true
 }
