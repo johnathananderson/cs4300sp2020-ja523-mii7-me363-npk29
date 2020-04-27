@@ -53,14 +53,14 @@ def product():
         data = []
         output_message = "Please go back and enter a brand!"
     else:
-        with open('/products.json') as prodlist:
-            pdata = json.load(prodlist)
-            print(pdata['100% Pure'])
-            pdatatest = pdata['100% Pure']
+        # with open('/products.json') as prodlist:
+        #     pdata = json.load(prodlist)
+        #     print(pdata['100% Pure'])
+        #     pdatatest = pdata['100% Pure']
         data = range(5)
         output_message = "Your search: " + query
 
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, pdatatest=pdatatest)
+    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
     # return (request.form['search'])
 
 
