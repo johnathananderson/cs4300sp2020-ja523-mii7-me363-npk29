@@ -139,13 +139,15 @@
 </head>
 
 <body>
-    <form class="form-inline global-search">
-        {% if data %}
-        <h1>{{output_message}}</h1>
-        {% for d in data %}
-        <br>
-        <span>{{d}}</span> {% endfor %} {% endif %}
-    </form>
+    <div class="topcorner">
+        <form class="form-inline global-search">
+            {% if data %}
+            <h1>{{output_message}}</h1>
+            {% for d in data %}
+            <br>
+            <span>{{d}}</span> {% endfor %} {% endif %}
+        </form>
+    </div>
     <div class="block">
 
         <div class="top">
