@@ -128,39 +128,7 @@
             </form>
         </div>
 
-
-
     </div>
-    <script src="/static/js/extention/choices.js"></script>
-    <script>
-        const customSelects = document.querySelectorAll("select");
-        const deleteBtn = document.getElementById('delete')
-        const choices = new Choices('select', {
-            searchEnabled: false,
-            removeItemButton: true,
-            itemSelectText: '',
-        });
-        for (let i = 0; i < customSelects.length; i++) {
-            customSelects[i].addEventListener('addItem', function(event) {
-                if (event.detail.value) {
-                    let parent = this.parentNode.parentNode
-                    parent.classList.add('valid')
-                    parent.classList.remove('invalid')
-                } else {
-                    let parent = this.parentNode.parentNode
-                    parent.classList.add('invalid')
-                    parent.classList.remove('valid')
-                }
-            }, false);
-        }
-        deleteBtn.addEventListener("click", function(e) {
-            e.preventDefault()
-            const deleteAll = document.querySelectorAll('.choices__button')
-            for (let i = 0; i < deleteAll.length; i++) {
-                deleteAll[i].click();
-            }
-        });
-    </script>
 
     <script>
         brands = [
@@ -732,6 +700,38 @@
         /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
         autocomplete(document.getElementById("input"), brands);
     </script>
+
+    <script src="/static/js/extention/choices.js"></script>
+    <script>
+        const customSelects = document.querySelectorAll("select");
+        const deleteBtn = document.getElementById('delete')
+        const choices = new Choices('select', {
+            searchEnabled: false,
+            removeItemButton: true,
+            itemSelectText: '',
+        });
+        for (let i = 0; i < customSelects.length; i++) {
+            customSelects[i].addEventListener('addItem', function(event) {
+                if (event.detail.value) {
+                    let parent = this.parentNode.parentNode
+                    parent.classList.add('valid')
+                    parent.classList.remove('invalid')
+                } else {
+                    let parent = this.parentNode.parentNode
+                    parent.classList.add('invalid')
+                    parent.classList.remove('valid')
+                }
+            }, false);
+        }
+        deleteBtn.addEventListener("click", function(e) {
+            e.preventDefault()
+            const deleteAll = document.querySelectorAll('.choices__button')
+            for (let i = 0; i < deleteAll.length; i++) {
+                deleteAll[i].click();
+            }
+        });
+    </script>
+
 </body>
 <!-- This templates was made by Colorlib (https://colorlib.com/etc/searchf/colorlib-search-7/) -->
 
