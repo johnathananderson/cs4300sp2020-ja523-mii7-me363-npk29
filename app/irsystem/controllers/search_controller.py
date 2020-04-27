@@ -10,7 +10,7 @@ net_id = "ja523, me363, mii7, npk29"
 
 @irsystem.route("/", methods=["GET"])
 def search():
-    # query = request.args.get("search")
+    query = request.args.get("search")
     if not query:
         data = []
         output_message = "Its not working"
