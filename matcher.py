@@ -60,7 +60,7 @@ def main_function(query, results):
             
     scores = edit_distance_search(query, output_list)
 
-    return(scores[:5])
+    return(scores[0])
    
 
 
