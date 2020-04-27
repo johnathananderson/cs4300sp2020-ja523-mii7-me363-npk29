@@ -51,7 +51,6 @@
 .a-items text {
     margin-left: 5vh;
     padding-bottom: 5px;
-    line-height: 200%;
 }
 
 .a-items:hover,
@@ -62,18 +61,9 @@
     cursor: pointer;
 }
 
-
-/* 
-.ui-helper-hidden-accessible {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-} */
+.a-items {
+    padding-bottom: 15px;
+}
 
 
 /* # sourceMappingURL=bg2.css.map */
