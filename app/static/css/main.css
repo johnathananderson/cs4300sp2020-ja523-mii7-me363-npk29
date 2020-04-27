@@ -19,12 +19,61 @@
 }
 
 #prev_form {
-    margin-top: 10vh;
+    margin-top: 10.5vh;
+    display: inline-block;
 }
 
 #adv_form {
-    margin-top: 0vh;
+    display: inline-block;
 }
+
+#inputautocomplete-list {
+    text-align: left;
+    color: black;
+    opacity: 0.98;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    max-height: 55vh;
+    overflow: scroll;
+    padding-left: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #F5F5F5;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+.a-items text {
+    margin-left: 5vh;
+    padding-bottom: 5px;
+    line-height: 200%;
+}
+
+.a-items:hover,
+.a-items:hover:active,
+.a-items:hover:focus {
+    text-decoration: none;
+    color: #e45c27;
+    cursor: pointer;
+}
+
+
+/* 
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+} */
 
 
 /* # sourceMappingURL=bg2.css.map */
