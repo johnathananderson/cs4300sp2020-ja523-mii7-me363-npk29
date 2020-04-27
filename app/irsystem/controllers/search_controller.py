@@ -60,7 +60,7 @@ def product():
 @irsystem.route("/outputs/", methods=["GET"])
 def outputs():
     # prod_type = request.form['choices-single-defaul']
-    query = request.args.get("search")
+    query = request.args.get("adv-search")
     if not query:
         data = []
         output_message = "Its not working"
