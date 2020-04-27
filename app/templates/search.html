@@ -10,6 +10,7 @@
     <link href="/static/css/main.css" rel="stylesheet" charset="utf-8" />
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" charset="utf-8" />
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -539,7 +540,8 @@
                                 /*execute a function when someone clicks on the item value (DIV element):*/
                                 b.addEventListener("click", function(e) {
                                     /*insert the value for the autocomplete text field:*/
-                                    inp.value = this.getElementsByTagName("input")[0].value;
+                                    inp.value = this.getElementsByTagName("input")[0].value.replace(/'/gi, "\\'");
+                                    // .replace("'", "%27")
                                     /*close the list of autocompleted values,
                                     (or any other open lists of autocompleted values:*/
                                     closeAllLists();
@@ -609,7 +611,7 @@
                     });
                 }
 
-                /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+                /*initiate the autocomplete function on the "inut" element, and pass along the brands array as possible autocomplete values:*/
                 autocomplete(document.getElementById("input"), brands);
             </script>
 
