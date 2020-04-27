@@ -43,7 +43,7 @@ def search():
     return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data)
     # return (request.form['search'])
 
-@irsystem.route("/product", methods=["GET"])
+@irsystem.route("/product/", methods=["GET"])
 def product():
     # prod_type = request.form['choices-single-defaul']
     query = request.args.get("search")
@@ -57,7 +57,7 @@ def product():
     # return (request.form['search'])
 
 
-@irsystem.route("/outputs", methods=["GET"])
+@irsystem.route("/outputs/", methods=["GET"])
 def outputs():
     # prod_type = request.form['choices-single-defaul']
     query = request.args.get("search")

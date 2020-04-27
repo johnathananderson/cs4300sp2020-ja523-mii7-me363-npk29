@@ -28,4 +28,5 @@ socketio.init_app(app)
 # HTTP error handling
 @app.errorhandler(404)
 def not_found(error):
+  print(error)
   return render_template("404.html"), 404
