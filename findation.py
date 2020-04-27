@@ -15,14 +15,15 @@ class FindationBrowser:
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("headless")
         chrome_options.add_argument("--log-level=3")
-        # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
-        self.browser = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+        chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
+        self.browser = webdriver.Chrome(options=chrome_options, executable_path="chromedriver")
         self.browser.implicitly_wait(2)
 
     def close_out(self):
         self.browser.close()
 
-    def process_matches(self, products, i):
+    def process_matches(self, products):
+        i = IngredientsBrowser()
         self.browser.delete_all_cookies()
         self.browser.get("https://www.findation.com/")
         with open("ingredients.json", encoding="utf8") as data:
@@ -160,29 +161,30 @@ class FindationBrowser:
                             results.append(match_product)
                 with open("ingredients.json", "w") as outfile:
                     json.dump(ingredients, outfile, indent=4)
+                i.close_out()
                 return results
         except Exception as e:
             print("Failed: " + products[0][0] + " " + products[0][1])
             print(e)
 
 
-f = FindationBrowser()
-with open("products.json", encoding="utf8") as j:
-    products = json.load(j)
+# f = FindationBrowser()
+# with open("products.json", encoding="utf8") as j:
+#     products = json.load(j)
 
-with open("major-brands.json", encoding="utf8") as j:
-    major_brands = json.load(j)
+# with open("major-brands.json", encoding="utf8") as j:
+#     major_brands = json.load(j)
 
-i = IngredientsBrowser()
-for brand in products:
-    if brand in major_brands:
-        for product_name in products[brand]["products"]:
-            c = 0
-            for shade in products[brand]["products"][product_name]["shades"]:
-                product = [[brand, product_name, shade], [brand, product_name, shade]]
-                print(product[0])
-                f.process_matches(product, i)
-i.close_out()
-f.close_out()
+# i = IngredientsBrowser()
+# for brand in products:
+#     if brand in major_brands:
+#         for product_name in products[brand]["products"]:
+#             c = 0
+#             for shade in products[brand]["products"][product_name]["shades"]:
+#                 product = [[brand, product_name, shade], [brand, product_name, shade]]
+#                 print(product[0])
+#                 f.process_matches(product, i)
+# i.close_out()
+# f.close_out()
 
-print("DONE")
+# print("DONE")
