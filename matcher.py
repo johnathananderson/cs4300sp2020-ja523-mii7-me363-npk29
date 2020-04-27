@@ -1,9 +1,116 @@
 
 import numpy as np 
+import copy
+import re
+import ast
+import json
 
-results = np.loadtxt("findation_output.txt")
+
+def main_function(query, results):
+
+    info_dict = {}
+    object_list = []
+    foundation_list  = []
+    shade_list = []
+    with open("results", 'r' , encoding="ISO-8859-1") as f:
+        for line in f.readlines():
+            object_list.append(ast.literal_eval(line))
+    for lines in object_list:
+        info_dict[lines['brand']] = {}
+    #     if lines['name'] not in foundation_list:
+    #         foundation_list.append(lines['name'])
+    #     if lines['shade'] not in shade_list:
+    #         shade_list.append(lines['shade'])
+    # print(shade_list)
+
+        # info_dict[lines['brand']].update({'name': []})
+
+ 
+    for key in info_dict.keys():
+        for lines in object_list:
+            brand = lines['brand']
+            if brand == key:
+                name = lines['name']
+                shade = lines['shade']
+                thumbnail = lines['thumbnail']
+                ingredients = lines['ingredients']
+
+                info_dict[brand].update({name: {}})
+                info_dict[brand][name].update({shade: {}})
+                info_dict[brand][name][shade].update({'ingredients': ingredients})
+                info_dict[brand][name][shade].update({'thumbnail': thumbnail})
 
 
+        output_list = []
+    for key in info_dict.keys():
+        message_dict = {}
+        message = key
+        for ke in info_dict[key].keys():
+            temp = message 
+            temp2 = "".join((temp, " ", ke))
+           
+            for k in info_dict[key][ke].keys():
+                temp3  = temp2
+                temp4 = "".join((temp3, " ", k))
+                message_dict['text'] =  temp4
+                output_list.append(message_dict)
+                message_dict = {}
+           
+    
+            
+    scores = edit_distance_search(query, output_list)
+
+    return(scores[:5])
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    # with open("findation_output.txt", encoding="latin-1") as datafile:
+    #    results = datafile.readlines()
+    # # split_arrays = re.findall"[\u4e00-\u9fff]+", results)   
+    # for items in results:
+    #     item  = items.split(',')
+    
+      
+    #     for it in item:
+         
+    #         breakup = it.split(',')
+           
+    #         for st in breakup:
+                
+    #             if '{'  in st:
+    #                 st = st.replace("{", "")
+    #             elif '}' in st:
+    #                 st = st.replace('}', "")
+    #             final = st.split(':')
+    #             for i in range(len(final)):
+    #                 item = final[i].strip('"')
+    #                 if i == 0:
+    #                     key = item
+    #                     if i 
+    #                     info_dict[key] = 
+    #                 if i > 0 :
+    #                     val = final[0]
+    #                      info_dict[val] 
+    #                 #  info_dict[item1] = 
+          
+                    
+                  
+
+                
+                    
+            
+            
+            
 
 
 
