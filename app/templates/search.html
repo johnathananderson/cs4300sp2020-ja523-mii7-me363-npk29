@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
     <link href="/static/css/main.css" rel="stylesheet" charset="utf-8" />
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" charset="utf-8" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
 <body>
@@ -170,49 +171,50 @@
             // const products1 = await d3.json("./products.json");
             // const products2 = await d3.json("./products2.json");
             const brands = await d3.json("/brands.json");
-            // brands = [
-            //     "bareMinerals",
-            //     "Beauty Blender",
-            //     "BECCA",
-            //     "Bella Aurora",
-            //     "Bella Cosmetics",
-            //     "BeYu",
-            //     "Black Opal",
-            //     "Bobbi Brown",
-            //     "Boots No.7",
-            //     "Botanic Farm",
-            //     "Bourjois",
-            //     "Bronx Colors",
-            //     "BRTC",
-            //     "Bruna Tavares",
-            //     "BRW - BR Waterfull",
-            //     "Burberry Beauty",
-            //     "Calvin Klein / CK One",
-            //     "Candy Doll",
-            //     "Careline",
-            //     "Caremille Seoul",
-            //     "Cargo",
-            //     "Caring Colours",
-            //     "CHANEL",
-            //     "Classified Cosmetics",
-            //     "Claudia Cosmetics",
-            //     "Clinique",
-            //     "Cover FX",
-            //     "CoverGirl",
-            //     "Delilah Cosmetics",
-            //     "Dermablend",
-            //     "Dermacol",
-            //     "Dermage",
-            //     "Dermalogica",
-            //     "Dermaquest",
-            //     "Dior",
-            //     "DMCK",
-            //     "DMGM",
-            //     "DMK Cosmetics",
-            //     "Doctor's Lab",
-            //     "Dolce and Gabbana",
-            //     "Doll 10"
-            // ]
+            console.log(brands)
+                // brands = [
+                //     "bareMinerals",
+                //     "Beauty Blender",
+                //     "BECCA",
+                //     "Bella Aurora",
+                //     "Bella Cosmetics",
+                //     "BeYu",
+                //     "Black Opal",
+                //     "Bobbi Brown",
+                //     "Boots No.7",
+                //     "Botanic Farm",
+                //     "Bourjois",
+                //     "Bronx Colors",
+                //     "BRTC",
+                //     "Bruna Tavares",
+                //     "BRW - BR Waterfull",
+                //     "Burberry Beauty",
+                //     "Calvin Klein / CK One",
+                //     "Candy Doll",
+                //     "Careline",
+                //     "Caremille Seoul",
+                //     "Cargo",
+                //     "Caring Colours",
+                //     "CHANEL",
+                //     "Classified Cosmetics",
+                //     "Claudia Cosmetics",
+                //     "Clinique",
+                //     "Cover FX",
+                //     "CoverGirl",
+                //     "Delilah Cosmetics",
+                //     "Dermablend",
+                //     "Dermacol",
+                //     "Dermage",
+                //     "Dermalogica",
+                //     "Dermaquest",
+                //     "Dior",
+                //     "DMCK",
+                //     "DMGM",
+                //     "DMK Cosmetics",
+                //     "Doctor's Lab",
+                //     "Dolce and Gabbana",
+                //     "Doll 10"
+                // ]
 
             function autocomplete(inp, arr) {
                 /*the autocomplete function takes two arguments,
