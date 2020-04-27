@@ -1,0 +1,69 @@
+@font-face {
+    font-family: font1;
+    src: url('/static/fonts/solena-reg.otf');
+    src: url('/static/fonts/solena-reg.eot');
+    /* IE9 Compat Modes */
+    src: url('/static/fonts/solena-reg.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/static/fonts/solena-reg.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/static/fonts/solena-reg.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+#saveface {
+    font-family: font1;
+}
+
+.topcorner {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+
+#prev_form {
+    margin-top: 10.5vh;
+    display: inline-block;
+}
+
+#adv_form {
+    display: inline-block;
+}
+
+#inputautocomplete-list {
+    text-align: left;
+    color: black;
+    opacity: 0.98;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    max-height: 55vh;
+    overflow: scroll;
+    padding-left: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: #F5F5F5;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+}
+
+.a-items text {
+    margin-left: 5vh;
+    padding-bottom: 5px;
+}
+
+.a-items:hover,
+.a-items:hover:active,
+.a-items:hover:focus {
+    text-decoration: none;
+    color: #e45c27;
+    cursor: pointer;
+}
+
+.a-items {
+    padding-bottom: 15px;
+}
+
+
+/* # sourceMappingURL=bg2.css.map */

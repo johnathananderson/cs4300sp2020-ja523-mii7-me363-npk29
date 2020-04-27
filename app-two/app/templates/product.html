@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="/static/css/main.css" rel="stylesheet" charset="utf-8">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="topcorner">
+        <p>Project Name: {{ name }}</p>
+        <p>Student Name: ({{ netid }})</p>
+        <p>Product: ({{ pdatatest }})</p>
+
+        <form class="form-inline global-search">
+            {% if data %}
+            <h1>{{output_message}}</h1>
+            {% for d in data %}
+            <br>
+            <span>{{d}}</span> {% endfor %} {% endif %}
+        </form>
+    </div>
+    <div class="col-xs-6">
+        <select class="form-control" name="select1" id="select1">
+              <option value="1">Fruit</option>
+              <option value="2">Animal</option>
+              <option value="3">Bird</option>
+              <option value="4">Car</option>
+            </select>
+    </div>
+    <div class="col-xs-6">
+        <select class="form-control" name="select2" id="select2">
+              <option value="1">Banana</option>
+              <option value="1">Apple</option>
+              <option value="1">Orange</option>
+              <option value="2">Wolf</option>
+              <option value="2">Fox</option>
+              <option value="2">Bear</option>
+              <option value="3">Eagle</option>
+              <option value="3">Hawk</option>
+              <option value="4">BWM</option><option>
+          </option></select>
+    </div>
+
+    <script>
+        //Reference: https://jsfiddle.net/fwv18zo1/
+        var $select1 = $('#select1'),
+            $select2 = $('#select2'),
+            $options = $select2.find('option');
+
+        $select1.on('change', function() {
+            $select2.html($options.filter('[value="' + this.value + '"]'));
+        }).trigger('change');
+    </script>
+</body>
+
+</html>
