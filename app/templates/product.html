@@ -8,29 +8,31 @@
 </head>
 
 <body>
-    <div class="topcorner">
-        <p>Project Name: {{ name }}</p>
-        <p>Student Name: ({{ netid }})</p>
-        <p>Product: ({{ pdatatest }})</p>
+    <div class="s008">
 
-        <form class="form-inline global-search">
-            {% if data %}
-            <h1>{{output_message}}</h1>
-            {% for d in data %}
-            <br>
-            <span>{{d}}</span> {% endfor %} {% endif %}
-        </form>
-    </div>
-    <div class="col-xs-6">
-        <select class="form-control" name="select1" id="select1">
+        <div class="topcorner">
+
+            <form class="form-inline global-search">
+                {% if data %}
+                <h1>{{output_message}}</h1>
+                {% for d in data %}
+                <br>
+                <span>{{d}}</span> {% endfor %} {% endif %}
+            </form>
+            <p>Product: ({{ pdatatest }})</p>
+        </div>
+
+        <div id="productforms">
+            <div class="col-xs-6">
+                <select class="form-control" name="select1" id="select1">
               <option value="1">Fruit</option>
               <option value="2">Animal</option>
               <option value="3">Bird</option>
               <option value="4">Car</option>
             </select>
-    </div>
-    <div class="col-xs-6">
-        <select class="form-control" name="select2" id="select2">
+            </div>
+            <div class="col-xs-6">
+                <select class="form-control" name="select2" id="select2">
               <option value="1">Banana</option>
               <option value="1">Apple</option>
               <option value="1">Orange</option>
@@ -41,8 +43,9 @@
               <option value="3">Hawk</option>
               <option value="4">BWM</option><option>
           </option></select>
+            </div>
+        </div>
     </div>
-
     <script>
         //Reference: https://jsfiddle.net/fwv18zo1/
         var $select1 = $('#select1'),

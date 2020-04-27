@@ -527,7 +527,7 @@
                         /*for each item in the array...*/
                         for (i = 0; i < arr.length; i++) {
                             /*check if the item starts with the same letters as the text field value:*/
-                            if (arr[i].substr(0, val.length).toUpperCase().trim() == val.toUpperCase()) {
+                            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
                                 /*create a DIV element for each matching element:*/
                                 b = document.createElement("DIV");
                                 b.setAttribute("class", "a-items");
@@ -566,7 +566,7 @@
                             addActive(x);
                         } else if (e.keyCode == 13) {
                             /*If the ENTER key is pressed, prevent the form from being submitted,*/
-                            // e.preventDefault();
+                            e.preventDefault();
                             // document.getElementById("icon-wrap").click();
                             if (currentFocus > -1) {
                                 /*and simulate a click on the "active" item:*/
