@@ -33,6 +33,18 @@ def search():
     # f.close_out()
     return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data)
 
+@irsystem.route("/product", methods=["GET"])
+def products():
+    # prod_type = request.form['choices-single-defaul']
+    query = request.args.get("search")
+    if not query:
+        data = []
+        output_message = "Its not working"
+    else:
+        data = range(5)
+        output_message = "Your search: " + query
+    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+
 
 @irsystem.route("/outputs", methods=["POST"])
 def outputs():
@@ -45,15 +57,3 @@ def outputs():
         data = range(5)
         output_message = "Your search: " + query
     return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data)
-
-@irsystem.route("/product", methods=["GET"])
-def products():
-    # prod_type = request.form['choices-single-defaul']
-    query = request.args.get("search")
-    if not query:
-        data = []
-        output_message = "Its not working"
-    else:
-        data = range(5)
-        output_message = "Your search: " + query
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
