@@ -30,7 +30,6 @@
 
 #inputautocomplete-list {
     text-align: left;
-    background-color: wheat;
     color: black;
     opacity: 0.98;
     position: absolute;
@@ -38,6 +37,15 @@
     z-index: 1;
     max-height: 55vh;
     overflow: scroll;
+    padding-left: 2vh;
+    padding-top: 2vh;
+    background-color: wheat;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
 }
 
 
@@ -84,7 +92,6 @@
 .a-items:hover:focus {
     text-decoration: none;
     color: #e45c27;
-    background-color: #f2dfbd;
     cursor: pointer;
 }
 
