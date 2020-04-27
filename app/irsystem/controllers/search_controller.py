@@ -1,6 +1,7 @@
 from . import *
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
+from flask import request
 # from findation import FindationBrowser
 # import time
 
@@ -43,7 +44,8 @@ def products():
     else:
         data = range(5)
         output_message = "Your search: " + query
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+    # return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+    return (request.form['search'])
 
 
 @irsystem.route("/outputs", methods=["POST"])
