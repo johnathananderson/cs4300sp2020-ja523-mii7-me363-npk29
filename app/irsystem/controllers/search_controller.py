@@ -1,8 +1,7 @@
 from . import *
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
-# from findation import FindationBrowser
-# import time
+from matcher import *
 
 project_name = "Save Face"
 net_id = "ja523, me363, mii7, npk29"
@@ -16,6 +15,7 @@ def search():
     else:
         data = range(5)
         output_message = "Your search: " + query
+
     # query = query.split()
     # brand1 = "Mary Kay"
     # product1 = "Full-Coverage Foundation"
