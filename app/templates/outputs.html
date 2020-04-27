@@ -144,10 +144,11 @@
     <div class="topcorner">
         <form class="form-inline global-search">
             {% if data %}
-            <h1>{{output_message}}</h1>
-            {% for d in data %}
+            <h1>{{data}}</h1>
+            <!-- {% for d in data %}
             <br>
-            <span>{{d}}</span> {% endfor %} {% endif %}
+            <span>{{d}}</span> {% endfor %}  -->
+            {% endif %}
         </form>
     </div>
     <div class="block">
