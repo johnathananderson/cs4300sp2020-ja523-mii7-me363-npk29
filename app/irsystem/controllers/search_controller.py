@@ -2,6 +2,7 @@ from . import *
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 import json
+import glob
 # from search import main_function
 from flask import request
 # from findation import FindationBrowser
@@ -53,7 +54,9 @@ def product():
         data = []
         output_message = "Please go back and enter a brand!"
     else:
-        with open('../products.json') as prodlist:
+        products_json = glob.glob("products.json")
+        print(products_json[0])
+        with open(products_json[0]) as prodlist:
             pdata = json.load(prodlist)
             print(pdata['100% Pure'])
             pdatatest = pdata['100% Pure']
