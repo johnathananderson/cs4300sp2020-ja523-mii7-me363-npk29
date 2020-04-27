@@ -8,6 +8,17 @@
 </head>
 
 <body>
+    <div class="topcorner">
+        <p>Project Name: {{ name }}</p>
+        <p>Student Name: ({{ netid }})</p>
+        <form class="form-inline global-search">
+            {% if data %}
+            <h1>{{output_message}}</h1>
+            {% for d in data %}
+            <br>
+            <span>{{d}}</span> {% endfor %} {% endif %}
+        </form>
+    </div>
     <div class="col-xs-6">
         <select class="form-control" name="select1" id="select1">
               <option value="1">Fruit</option>
