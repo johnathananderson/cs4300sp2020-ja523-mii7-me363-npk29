@@ -40,7 +40,8 @@ def product():
         data = range(5)
         output_message = "Your search: " + query
 
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, pdatatest=pdatatest)
+    # return (request.form['search'])
 
 @irsystem.route("/product/test/", methods=["GET"])
 def product_test():
@@ -58,7 +59,7 @@ def product_test():
     data = f.process_matches(products)
     print(data)
     f.close_out()
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+    return render_template("product.html", name=project_name, netid=net_id, data=data)
 
 @irsystem.route("/outputs/", methods=["GET"])
 def outputs():
