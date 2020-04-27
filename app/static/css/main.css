@@ -52,6 +52,7 @@
 .a-items text {
     margin-left: 5vh;
     padding-bottom: 5px;
+    line-height: 200%;
 }
 
 .a-items:hover,
