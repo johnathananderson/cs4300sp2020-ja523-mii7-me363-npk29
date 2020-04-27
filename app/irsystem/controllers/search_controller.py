@@ -8,7 +8,7 @@ from flask import request
 project_name = "Save Face"
 net_id = "ja523, me363, mii7, npk29"
 
-@irsystem.route("/search", methods=["GET"])
+@irsystem.route("/", methods=["GET"])
 def search():
     # query = request.args.get("search")
     # if not query:
