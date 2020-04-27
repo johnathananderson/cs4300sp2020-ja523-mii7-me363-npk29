@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="/static/css/main.css" rel="stylesheet" charset="utf-8">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" charset="utf-8">
-    <script src="/static/js/extention/prodchoices.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -41,7 +41,16 @@
           </option></select>
     </div>
 
+    <script>
+        //Reference: https://jsfiddle.net/fwv18zo1/
+        var $select1 = $('#select1'),
+            $select2 = $('#select2'),
+            $options = $select2.find('option');
 
+        $select1.on('change', function() {
+            $select2.html($options.filter('[value="' + this.value + '"]'));
+        }).trigger('change');
+    </script>
 </body>
 
 </html>

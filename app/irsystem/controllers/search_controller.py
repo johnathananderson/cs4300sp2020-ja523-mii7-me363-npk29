@@ -1,6 +1,7 @@
 from . import *
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
+import json
 # from search import main_function
 from flask import request
 # from findation import FindationBrowser
@@ -50,10 +51,14 @@ def product():
     query = request.args.get("search")
     if not query:
         data = []
-        output_message = "Its not working"
+        output_message = "Please go back and enter a brand!"
     else:
+        with open('products.json') as prodlist:
+            pdata = json.load(prodlist)
+            print(pdata)
         data = range(5)
         output_message = "Your search: " + query
+
     return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
     # return (request.form['search'])
 
@@ -62,6 +67,7 @@ def product():
 def outputs():
     # prod_type = request.form['choices-single-defaul']
     query = request.args.get("adv-search")
+    print(query)
     if not query:
         data = []
         output_message = "Its not working"
