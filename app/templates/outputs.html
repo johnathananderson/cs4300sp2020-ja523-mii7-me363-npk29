@@ -146,7 +146,7 @@
             <h1>{{output_message}}</h1>
             {% for d in data %}
             <br>
-            <span>{{d}}</span> {% endfor %} {% endif %}
+            <span></span> 
         </form>
     </div>
     <div class="block">
@@ -154,7 +154,7 @@
         <div class="top">
             <ul>
                 <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-                <li><span class="converse">Converse</span></li>
+                <li><span class="converse">First Match</span></li>
                 <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
             </ul>
         </div>
@@ -164,10 +164,10 @@
         </div>
 
         <div class="bottom">
-            <div class="heading">Chuck Taylor All Star Classic Colours</div>
-            <div class="info">Classic red converse edition</div>
-            <div class="style">Color: Red / Style: M9621C</div>
-            <div class="price">$50.00 <span class="old-price">$75.00</span></div>
+            <div class="heading">Brand: {{d}</div>
+            <div class="info">Shade{{d}}</div>
+            <div class="style">Link to buy: {{d}} </div>
+            <div class="price">Price : {{d}}</div> </div>
         </div>
 
     </div>
@@ -176,7 +176,7 @@
         <div class="top">
             <ul>
                 <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-                <li><span class="converse">Converse</span></li>
+                <li><span class="converse">Second Match</span></li>
                 <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
 </a></li>
             </ul>
@@ -187,10 +187,10 @@
         </div>
 
         <div class="bottom">
-            <div class="heading">Chuck Taylor All Star Neon Floral Yth/Jr</div>
-            <div class="info">Neon converse edition</div>
-            <div class="style">Color: Black/White/Aegean Aqua / Style: 654210C</div>
-            <div class="price">$35.00 <span class="old-price">$45.00</span></div>
+            <div class="heading"> Brand:{{d}}</div>
+            <div class="info">Shade: {{d}}</div>
+            <div class="style">Link to buy: {{d}} </div>
+            <div class="price">Price to buy: {{d}} </div>
         </div>
 
     </div>
@@ -199,7 +199,7 @@
         <div class="top">
             <ul>
                 <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-                <li><span class="converse">Converse</span></li>
+                <li><span class="converse">Third Match</span></li>
                 <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
 </a></li>
             </ul>
@@ -210,10 +210,10 @@
         </div>
 
         <div class="bottom">
-            <div class="heading">Chuck Taylor Stars and Bars</div>
-            <div class="info">Fresh converse edition</div>
-            <div class="style">Color: Stars & Bars / Style: M8437C</div>
-            <div class="price">$50.00</div>
+            <div class="heading">Brand: {{d}}</div>
+            <div class="info">Shade: {{d}} </div>
+            <div class="style">Link to buy: {{d}}</div>
+            <div class="price">Price: {{d}}</div>
         </div>
 
     </div>
@@ -222,7 +222,7 @@
         <div class="top">
             <ul>
                 <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-                <li><span class="converse">Converse</span></li>
+                <li><span class="converse">Fourth Match</span></li>
                 <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i>
 </a></li>
             </ul>
@@ -233,14 +233,16 @@
         </div>
 
         <div class="bottom">
-            <div class="heading">Chuck Taylor All Star II Neon</div>
-            <div class="info">Neon converse edition</div>
-            <div class="style">Color: Teal/Navy/White / Style: 151116C</div>
-            <div class="price">$34.00 <span class="old-price">$50.00</span></div>
+            <div class="heading">Brand: {{d}}</div>
+            <div class="info">Shade: {{d}}</div>
+            <div class="style">Link to buy: {{d}} </div>
+            <div class="price">Price: {{d}}</div>
         </div>
 
     </div>
-
+   
 </body>
-
+{% endfor %}
+    
+{% endif %}
 </html>
