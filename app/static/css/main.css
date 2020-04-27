@@ -19,11 +19,13 @@
 }
 
 #prev_form {
-    margin-top: 10vh;
+    margin-top: 9vh;
+    display: inline-block;
 }
 
 #adv_form {
-    margin-top: -2vh;
+    margin-top: 1vh;
+    display: inline-block;
 }
 
 
