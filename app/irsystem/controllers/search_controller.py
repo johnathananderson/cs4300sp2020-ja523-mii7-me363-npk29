@@ -1,7 +1,7 @@
 from . import *
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
-from matcher import main_function
+# from search import main_function
 from flask import request
 # from findation import FindationBrowser
 # import time
@@ -66,6 +66,6 @@ def outputs():
         data = []
         output_message = "Its not working"
     else:
-        data = main_function(query, "findation_output.txt")
+        data = range(5)
         output_message = "Your search: " + query
     return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data)
