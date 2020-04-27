@@ -1,6 +1,8 @@
 from . import *
 from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
+import json
+# from search import main_function
 from flask import request
 # from findation import FindationBrowser
 # import time
@@ -38,8 +40,8 @@ def search():
         data = []
         output_message = "Its not working"
     else:
-        data = range(5)
         output_message = "Your search: " + query
+        data = range(5)
     return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data)
     # return (request.form['search'])
 
@@ -49,18 +51,24 @@ def product():
     query = request.args.get("search")
     if not query:
         data = []
-        output_message = "Its not working"
+        output_message = "Please go back and enter a brand!"
     else:
+        with open('/products.json') as prodlist:
+            pdata = json.load(prodlist)
+            print(pdata['100% Pure'])
+            pdatatest = pdata['100% Pure']
         data = range(5)
         output_message = "Your search: " + query
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+
+    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, pdatatest=pdatatest)
     # return (request.form['search'])
 
 
 @irsystem.route("/outputs/", methods=["GET"])
 def outputs():
     # prod_type = request.form['choices-single-defaul']
-    query = request.args.get("search")
+    query = request.args.get("adv-search")
+    print(query)
     if not query:
         data = []
         output_message = "Its not working"

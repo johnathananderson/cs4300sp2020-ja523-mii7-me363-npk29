@@ -19,12 +19,11 @@
 }
 
 #prev_form {
-    margin-top: 9vh;
+    margin-top: 10.5vh;
     display: inline-block;
 }
 
 #adv_form {
-    margin-top: 1vh;
     display: inline-block;
 }
 
@@ -62,18 +61,9 @@
     cursor: pointer;
 }
 
-
-/* 
-.ui-helper-hidden-accessible {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-} */
+.a-items {
+    padding-bottom: 15px;
+}
 
 
 /* # sourceMappingURL=bg2.css.map */
