@@ -25,7 +25,7 @@
             </form>
         </div>
 
-        <form id="adv_form" action="outputs.html" method="POST">
+        <form id="adv_form" action="product.html" method="POST">
             <!-- <h1 id="saveface" style="font-size: 55px; color: black">
                 Save Face!
             </h1><br>-->
@@ -41,56 +41,59 @@
                     </button>
                     </div>
                 </div>
-                <div class="advance-search">
-                    <span class="desc" style="margin-bottom: 10px; text-align: center;">Don't have a current product? </span>
-                    <span class="desc2" style="font-size: 15px; color: #999; display: block; text-align: center; margin-bottom: 35px;"> Let's help you find one. </span>
-                    <!-- <br/> <br/> Let's help you find one. -->
-                    <div class="row">
-                        <div class="input-field">
-                            <div class="input-select">
-                                <select data-trigger="" name="choices-single-defaul">
+        </form>
+
+        <form id="adv_form" action="outputs.html" method="POST">
+            <div class="advance-search">
+                <span class="desc" style="margin-bottom: 10px; text-align: center;">Don't have a current product? </span>
+                <span class="desc2" style="font-size: 15px; color: #999; display: block; text-align: center; margin-bottom: 35px;"> Let's help you find one. </span>
+                <!-- <br/> <br/> Let's help you find one. -->
+                <div class="row">
+                    <div class="input-field">
+                        <div class="input-select">
+                            <select data-trigger="" name="choices-single-defaul">
                     <option placeholder="" value="">TYPE</option>
                     <option>FOUNDATION</option>
                     <option>CONCEALER</option>
                   </select>
-                            </div>
                         </div>
-                        <div class="input-field">
-                            <div class="input-select">
-                                <select data-trigger="" name="choices-single-defaul">
+                    </div>
+                    <div class="input-field">
+                        <div class="input-select">
+                            <select data-trigger="" name="choices-single-defaul">
                     <option placeholder="" value="">COVERAGE</option>
                     <option>LIGHT</option>
                     <option>MEDIUM</option>
                     <option>FULL</option>
                   </select>
-                            </div>
                         </div>
-                        <div class="input-field">
-                            <div class="input-select">
-                                <select data-trigger="" name="choices-single-defaul">
+                    </div>
+                    <div class="input-field">
+                        <div class="input-select">
+                            <select data-trigger="" name="choices-single-defaul">
                     <option placeholder="" value="">FINISH</option>
                     <option>LIQUID</option>
                     <option>CREAM</option>
                     <option>POWDER</option>
                     <option>STICK</option>
                   </select>
-                            </div>
                         </div>
                     </div>
-                    <div class="row second">
-                        <div class="input-field">
-                            <div class="input-select">
-                                <select data-trigger="" name="choices-single-defaul">
+                </div>
+                <div class="row second">
+                    <div class="input-field">
+                        <div class="input-select">
+                            <select data-trigger="" name="choices-single-defaul">
                     <option placeholder="" value="">DESIRED BRAND</option>
                     <option>MAC</option>
                     <option>REVLON</option>
                     <option>FENTY</option>
                   </select>
-                            </div>
                         </div>
-                        <div class="input-field">
-                            <div class="input-select">
-                                <select data-trigger="" name="choices-single-defaul">
+                    </div>
+                    <div class="input-field">
+                        <div class="input-select">
+                            <select data-trigger="" name="choices-single-defaul">
                     <option placeholder="" value="">SKIN TYPE</option>
                     <option>DRY</option>
                     <option>OILY</option>
@@ -98,11 +101,11 @@
                     <option>COMBINATION</option>
                     <option>ACNE PRONE</option>
                   </select>
-                            </div>
                         </div>
-                        <div class="input-field">
-                            <div class="input-select">
-                                <select data-trigger="" name="choices-single-defaul">
+                    </div>
+                    <div class="input-field">
+                        <div class="input-select">
+                            <select data-trigger="" name="choices-single-defaul">
                     <option placeholder="" value="">PRICE</option>
                     <option>$1 - $20</option>
                     <option>$20 - $60</option>
@@ -110,21 +113,21 @@
                     <option> $120 - $400</option>
                      <!-- Need to think about how to display hex/skin tone, desired retailers? unwanted/wanted ingredients, and spf for later milestones-->
                   </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row third">
-                        <div class="input-field">
-                            <div class="result-count">
-                                <!-- <span> {{ num_results }} </span>results -->
-                                <button class="btn-delete" id="delete">Reset</button>
-                            </div>
-                            <div class="group-btn">
-                                <button type="submit" class="btn btn-search">Search</button>
-                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="row third">
+                    <div class="input-field">
+                        <div class="result-count">
+                            <!-- <span> {{ num_results }} </span>results -->
+                            <button class="btn-delete" id="delete">Reset</button>
+                        </div>
+                        <div class="group-btn">
+                            <button type="submit" class="btn btn-search">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </form>
     </div>

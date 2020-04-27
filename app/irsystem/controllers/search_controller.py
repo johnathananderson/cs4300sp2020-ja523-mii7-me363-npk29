@@ -37,4 +37,11 @@ def search():
 @irsystem.route("/outputs", methods=["POST"])
 def outputs():
     # prod_type = request.form['choices-single-defaul']
-    return render_template("outputs.html")
+    query = request.args.get("search")
+    if not query:
+        data = []
+        output_message = "Its not working"
+    else:
+        data = range(5)
+        output_message = "Your search: " + query
+    return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data)
