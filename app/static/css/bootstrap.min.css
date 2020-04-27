@@ -1032,7 +1032,7 @@ legend {
     padding: 10px 80px 10px 40px;
 }
 
-.s008 form .inner-form .basic-search .input-field .icon-wrap {
+#icon-wrap {
     position: absolute;
     top: 0;
     right: 0;
@@ -1046,10 +1046,29 @@ legend {
     height: 100%;
 }
 
-.s008 form .inner-form .basic-search .input-field .icon-wrap svg {
+#icon-wrap svg {
     width: 34px;
     height: 34px;
     fill: white;
+}
+
+#icon-wrap {
+    min-width: 100px;
+    height: 40px;
+    padding: 0 15px;
+    background: #e45c27;
+    white-space: nowrap;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    transition: all .2s ease-out, color .2s ease-out;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#icon-wrap {
+    background: #d7501b;
 }
 
 .s008 form .inner-form .advance-search {
