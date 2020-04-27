@@ -31,6 +31,7 @@
 #inputautocomplete-list {
     text-align: left;
     background-color: wheat;
+    color: black;
     opacity: 0.98;
     position: absolute;
     width: 100%;
@@ -74,11 +75,15 @@
     white-space: nowrap;
 } */
 
-#inputautocomplete-list:hover,
-#inputautocomplete-list:active,
-#inputautocomplete-list:focus {
+.a-item text {
+    margin-left: 5vh;
+}
+
+.a-items:hover,
+.a-items:hover:active,
+.a-items:hover:focus {
     text-decoration: none;
-    color: #262626;
+    color: #e45c27;
     background-color: #f2dfbd;
     cursor: pointer;
 }
