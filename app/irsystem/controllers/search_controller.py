@@ -11,11 +11,11 @@ net_id = "ja523, me363, mii7, npk29"
 @irsystem.route("/", methods=["GET"])
 def search():
     # query = request.args.get("search")
-    # if not query or len(query) == 0:
-    #     data = []
-    #     output_message = "Its not working"
-    # else:
-    # output_message = "Your search: " + query
+    if not query:
+        data = []
+        output_message = "Its not working"
+    else:
+    output_message = "Your search: " + query
     # query = query.split()
     # brand1 = "Mary Kay"
     # product1 = "Full-Coverage Foundation"
