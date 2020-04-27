@@ -44,8 +44,8 @@ def products():
     else:
         data = range(5)
         output_message = "Your search: " + query
-    # return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
-    return (request.form['search'])
+    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+    # return (request.form['search'])
 
 
 @irsystem.route("/outputs", methods=["POST"])
