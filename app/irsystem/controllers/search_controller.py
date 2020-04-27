@@ -58,8 +58,7 @@ def product():
         print(products_json[0])
         with open(products_json[0]) as prodlist:
             pdata = json.load(prodlist)
-            print(pdata['100% Pure'])
-            pdatatest = pdata['100% Pure']
+            pdatatest = pdata[query]
         data = range(5)
         output_message = "Your search: " + query
 
