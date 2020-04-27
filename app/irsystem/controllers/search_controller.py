@@ -61,6 +61,7 @@ def product():
 def outputs():
     # prod_type = request.form['choices-single-defaul']
     query = request.args.get("adv-search")
+    print(query)
     if not query:
         data = []
         output_message = "Its not working"
