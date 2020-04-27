@@ -31,5 +31,9 @@ def search():
     # time.sleep(1)
     # data = f.process_matches(products)
     # f.close_out()
+    return render_template("search.html")
 
-    return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+
+# @irsystem.route("/outputs", methods=["GET"])
+# def outputs():
+#     return render_template("outputs.html")
