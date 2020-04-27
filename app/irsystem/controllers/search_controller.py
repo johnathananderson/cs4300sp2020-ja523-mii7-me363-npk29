@@ -54,7 +54,6 @@ def product_test():
 
     products = [[brand1, product1, shade1], [brand2, product2, shade2]]
     f = FindationBrowser()
-    f.start()
     data = f.process_matches(products)
     print(data)
     f.close_out()
