@@ -28,5 +28,13 @@
     display: inline-block;
 }
 
+#inputautocomplete-list {
+    text-align: left;
+    background-color: wheat;
+    opacity: 0.98;
+    position: absolute;
+    width: 100%;
+}
+
 
 /* # sourceMappingURL=bg2.css.map */
