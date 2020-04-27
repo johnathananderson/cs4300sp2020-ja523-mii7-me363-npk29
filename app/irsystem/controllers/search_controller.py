@@ -57,7 +57,7 @@ def product():
     # return (request.form['search'])
 
 
-@irsystem.route("/outputs", methods=["POST"])
+@irsystem.route("/outputs", methods=["GET"])
 def outputs():
     # prod_type = request.form['choices-single-defaul']
     query = request.args.get("search")
