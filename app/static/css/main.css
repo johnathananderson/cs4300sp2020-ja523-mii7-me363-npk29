@@ -34,8 +34,9 @@
     opacity: 0.98;
     position: absolute;
     width: 100%;
-    z-index: 1000;
-    max-height: 90vh;
+    z-index: 1;
+    max-height: 55vh;
+    overflow: scroll;
 }
 
 
