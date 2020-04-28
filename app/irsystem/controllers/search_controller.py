@@ -63,7 +63,6 @@ def product():
         brands_list = []
         for brand in pdata:
             brands_list.append(brand) 
-        pdatatest2 = pdata[query]
         data = range(5)
         output_message = "Your search: " + query
 
