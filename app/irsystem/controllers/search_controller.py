@@ -87,13 +87,13 @@ def product():
 
 @irsystem.route("/product/test/", methods=["GET"])
 def product_test():
-    brand1 = "Givenchy"
-    product1 = "Teint Couture Balm Foundation"
-    shade1 = "N°02 Nude Shell - Light with Pink undertones"
+    brand1 = "100% Pure"
+    product1 = "Bamboo Blur Powder"
+    shade1 = "Medium"
 
-    brand2 = "Givenchy"
-    product2 = "Teint Couture Balm Foundation"
-    shade2 = "N°02 Nude Shell - Light with Pink undertones"
+    brand2 = "100% Pure"
+    product2 = "Bamboo Blur Powder"
+    shade2 = "Medium"
 
     products = [[brand1, product1, shade1], [brand2, product2, shade2]]
     f = FindationBrowser()
