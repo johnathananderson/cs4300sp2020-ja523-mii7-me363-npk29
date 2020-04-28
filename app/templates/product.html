@@ -46,7 +46,7 @@
         </form>
 
         <script>
-            products = {{ products | safe }};
+            p = {{ products | safe }};
             console.log(products)
             function autocomplete(inp, arr) {
                 /*the autocomplete function takes two arguments,
@@ -154,7 +154,7 @@
             }
 
             /*initiate the autocomplete function on the "inut" element, and pass along the brands array as possible autocomplete values:*/
-            autocomplete(document.getElementById("input"), products);
+            autocomplete(document.getElementById("input"), p);
         </script>
 
         <div id="productforms">
