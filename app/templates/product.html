@@ -28,9 +28,9 @@
                         var myform = document.getElementById('prev_form');
                         myform.onsubmit = function () {
                             var b = String({{ brand | safe }});
-                        console.log(b);
-                        document.getElementById("brand-input").value = b;
-                        myform.submit();
+                            console.log(b);
+                            document.getElementById("brand-input").value = b;
+                            myform.submit();
                         };   
                     </script>
                     <button id="icon-wrap" type="submit" style="justify-content: center">
