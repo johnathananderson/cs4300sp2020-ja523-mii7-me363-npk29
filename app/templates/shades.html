@@ -18,17 +18,20 @@
     </div>
 
     <div class="inner-form">
-        <form id="prev_form" method="POST">
+        <form id="prev_form" method="POST" action="findation">
             <div class="basic-search">
                 <div class="input-field">
-                    <input id="input" name="product-input" type="text" placeholder="Enter your current product"
+                    <input id="input" name="shade-input" type="text" placeholder="Enter your shade"
                         autocomplete="off" />
                     <input type="hidden" id="brand-input" name="brand-input" />
+                    <input type="hidden" id="product-input" name="product-input" />
                     <script>
                         var myform = document.getElementById('prev_form');
                         myform.onsubmit = function () {
                             var b = String(({{ brand | tojson | safe }}));
                             document.getElementById("brand-input").value = b;
+                            var p = String(({{ product | tojson | safe }}));
+                            document.getElementById("product-input").value = p;
                             myform.submit();
                         };
                     </script>
@@ -46,7 +49,7 @@
         </div>
 
         <script>
-            p = ({{ products | safe }});
+            s = ({{ shades | safe }});
             function autocomplete(inp, arr) {
                 /*the autocomplete function takes two arguments,
                 the text field element and an array of possible autocompleted values:*/
@@ -153,7 +156,7 @@
             }
 
             /*initiate the autocomplete function on the "inut" element, and pass along the brands array as possible autocomplete values:*/
-            autocomplete(document.getElementById("input"), p);
+            autocomplete(document.getElementById("input"), s);
         </script>
 
         <!-- <div id="productforms">

@@ -66,37 +66,27 @@ def product():
         )
     else:
         brand = request.form.get("brand-input")
-        print(brand)
         product = request.form.get("products-input")
-        print(product)
         products_json = glob.glob("products.json")
         with open(products_json[0], encoding="utf8") as prodlist:
             pdata = json.load(prodlist)
-            p = pdata[brand]["products"]
             s = pdata[brand]["products"][product]["shades"]
-        products = []
-        for product in p:
-            products.append(product)
         shades = []
         for shade in s:
             shades.append(shade)
-        print(product)
-        print(shades)
 
-        return render_template( "product.html", name=project_name, netid=net_id, products=products, shades=shades, brand=brand)
+        return render_template("shades.html", name=project_name, netid=net_id, product=product, shades=shades, brand=brand)
 
 
-@irsystem.route("/product/test/", methods=["GET"])
+@irsystem.route("/findation/", methods=["POST"])
 def product_test():
-    brand1 = "100% Pure"
-    product1 = "Bamboo Blur Powder"
-    shade1 = "Medium"
-
-    brand2 = "100% Pure"
-    product2 = "Bamboo Blur Powder"
-    shade2 = "Medium"
-
-    products = [[brand1, product1, shade1], [brand2, product2, shade2]]
+    brand = request.form.get("brand-input")
+    print(brand)
+    product = request.form.get("product-input")
+    print(product)
+    shade = request.form.get("shade-input")
+    print(shade)
+    products = [[brand, product, shade], [brand, product, shade]]
     f = FindationBrowser()
     data = f.process_matches(products)
     print(data)
