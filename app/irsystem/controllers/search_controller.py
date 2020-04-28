@@ -37,12 +37,13 @@ def search():
     # # f.close_out()
     # return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data)
     query = request.args.get("search")
-    products_json = glob.glob("products.json")
-    with open(products_json[0]) as prodlist:
-        pdata = json.load(prodlist)
+    brands_json = glob.glob("brand-ids.json")
+    with open(brands_json[0], encoding="utf8") as brandslist:
+        bdata = json.load(brandslist)
     brands = []
-    for brand in pdata:
-        brands.append(brand) 
+    for brand in bdata:
+        brands.append(brand)
+    print(brands) 
     if not query:
         data = []
         output_message = "Its not working"
@@ -61,7 +62,7 @@ def product():
         output_message = "Please go back and enter a brand!"
     else:
         products_json = glob.glob("products.json")
-        with open(products_json[0]) as prodlist:
+        with open(products_json[0], encoding="utf8") as prodlist:
             pdata = json.load(prodlist)
             pdatatest = pdata[query]['products']
             shades = pdata[query]['products']['shades']
