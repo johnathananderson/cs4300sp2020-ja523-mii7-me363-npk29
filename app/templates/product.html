@@ -29,9 +29,9 @@
                         autocomplete="off" />
                     <input type="hidden" id="brand-input" name="brand-input" />
                     <script>
-                        var brand = {{ brand | safe }};
-                        console.log(brand);
-                        document.getElementById("brand").value = brand;
+                        var b = {{ brand | safe }};
+                        console.log(b);
+                        document.getElementById("brand-input").value = b;
                     </script>
                     <button id="icon-wrap" type="submit" style="justify-content: center">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
