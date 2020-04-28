@@ -43,7 +43,6 @@ def search():
     brands = []
     for brand in bdata:
         brands.append(brand)
-    print(brands) 
     if not query:
         data = []
         output_message = "Its not working"
