@@ -46,14 +46,14 @@
             </form>
 
             <script>
+                function unescape(string) {
+                    return new DOMParser().parseFromString(string, 'text/html').querySelector('html').textContent;
+                }
                 brands = '{{ brands|e }}';
                 for (i = 0; i < brands.length; i++) {
-                    brands[i] = brands[i].replace("'", "\'")
+                    brands[i] = unescape(brands[i])
                 }
                 console.log(brands);
-                // function unescape(string) {
-                //     return new DOMParser().parseFromString(string, 'text/html').querySelector('html').textContent;
-                // }
                 function autocomplete(inp, arr) {
                     /*the autocomplete function takes two arguments,
                     the text field element and an array of possible autocompleted values:*/
