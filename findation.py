@@ -15,6 +15,8 @@ class FindationBrowser:
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("headless")
         chrome_options.add_argument("--log-level=3")
+        chrome_options.addArguments("--proxy-server='direct://'")
+        chrome_options.addArguments("--proxy-bypass-list=*")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(options=chrome_options, executable_path="chromedriver")
         self.browser.implicitly_wait(2)
@@ -36,13 +38,13 @@ class FindationBrowser:
             try:
                 prices = json.load(p)
             except:
-                print("Couldn't open ingredients")
+                print("Couldn't open prices")
                 prices = {}
         with open("matches.json", encoding="utf8") as m:
             try:
                 matches_json = json.load(m)
             except:
-                print("Couldn't open ingredients")
+                print("Couldn't open matches")
                 matches_json = {}
         try:
             count = 0
@@ -151,7 +153,6 @@ class FindationBrowser:
                             match_shade = lines[2].replace("Your shade: ", "").replace(" (Natural)", "")
                             if match_brand in matches_json and match_name in matches_json[match_brand] and match_shade in matches_json[match_brand][match_name]:
                                 results.append(matches_json[match_brand][match_name][match_shade])
-                                print("Cached")
                             else:
                                 match_product = {}
                                 match_product["brand"] = match_brand
