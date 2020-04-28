@@ -9,13 +9,9 @@
 
 <body>
     <div class="topcorner">
-
         <form class="form-inline global-search">
-            {% if data %}
             <h1>{{output_message}}</h1>
-            {% for d in data %}
             <br>
-            <span>{{d}}</span> {% endfor %} {% endif %}
         </form>
         <!-- <p>Product: ({{ pdatatest }})</p><br> -->
         <!-- <p>Shades: ({{ shades }})</p> -->
@@ -45,9 +41,10 @@
                             </path>
                         </svg>
                     </button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
 
         <script>
             p = ({{ products | safe }});
@@ -56,7 +53,7 @@
                 the text field element and an array of possible autocompleted values:*/
                 var currentFocus;
                 /*execute a function when someone writes in the text field:*/
-                inp.addEventListener("input", function (e) {
+                inp.addEventListener("input", function(e) {
                     var a, b, i, val = this.value;
                     /*close any already open lists of autocompleted values*/
                     closeAllLists();
@@ -83,7 +80,7 @@
                             /*insert a input field that will hold the current array item's value:*/
                             b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                             /*execute a function when someone clicks on the item value (DIV element):*/
-                            b.addEventListener("click", function (e) {
+                            b.addEventListener("click", function(e) {
                                 /*insert the value for the autocomplete text field:*/
                                 inp.value = this.getElementsByTagName("input")[0].value.replace("'", "\'");
                                 // .replace("'", "%27")
@@ -96,7 +93,7 @@
                     }
                 });
                 /*execute a function presses a key on the keyboard:*/
-                inp.addEventListener("keydown", function (e) {
+                inp.addEventListener("keydown", function(e) {
                     var x = document.getElementById(this.id + "autocomplete-list");
                     if (x) x = x.getElementsByTagName("div");
                     if (e.keyCode == 40) {
@@ -151,7 +148,7 @@
                     }
                 }
                 /*execute a function when someone clicks in the document:*/
-                document.addEventListener("click", function (e) {
+                document.addEventListener("click", function(e) {
                     closeAllLists(e.target);
                 });
             }
@@ -191,7 +188,7 @@
                 $select2 = $('#select2'),
                 $options = $select2.find('option');
 
-            $select1.on('change', function () {
+            $select1.on('change', function() {
                 $select2.html($options.filter('[value="' + this.value + '"]'));
             }).trigger('change');
         </script>
