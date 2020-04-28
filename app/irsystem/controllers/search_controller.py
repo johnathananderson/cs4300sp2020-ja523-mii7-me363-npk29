@@ -81,17 +81,14 @@ def product():
 @irsystem.route("/product/findation/", methods=["POST"])
 def product_test():
     brand = request.form.get("brand-input")
-    print(brand)
     product = request.form.get("product-input")
-    print(product)
     shade = request.form.get("shade-input")
-    print(shade)
     products = [[brand, product, shade], [brand, product, shade]]
     f = FindationBrowser()
     data = f.process_matches(products)
     print(data)
     f.close_out()
-    return render_template("product.html", name=project_name, netid=net_id, data=data)
+    return render_template("outputs.html", name=project_name, netid=net_id, data=data)
 
 
 @irsystem.route("/outputs/", methods=["GET"])
