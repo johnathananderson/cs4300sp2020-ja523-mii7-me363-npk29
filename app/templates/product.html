@@ -25,9 +25,9 @@
                         autocomplete="off" />
                     <input type="hidden" id="brand-input" name="brand-input" />
                     <script>
-                        var brand_input = document.getElementById('brand-input');
+                        var myform = document.getElementById('prev_form');
                         myform.onsubmit = function () {
-                            var b = {{ brand | tojson | safe }};
+                            var b = String(({{ brand | tojson | safe }}));
                             console.log(b);
                             document.getElementById("brand-input").value = b;
                             myform.submit();
