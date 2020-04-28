@@ -61,11 +61,7 @@ def product():
         console.log(product)
         console.log(shades)
 
-<<<<<<< HEAD
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, pdatatest=pdatatest)
-=======
         return render_template("product.html", name=project_name, netid=net_id, products=products, shades=shades, brand=brand)
->>>>>>> fb499f451728274c288cb578e164365125dc6c8b
 
 @irsystem.route("/product/test/", methods=["GET"])
 def product_test():
