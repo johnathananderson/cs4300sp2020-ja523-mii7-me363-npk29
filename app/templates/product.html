@@ -31,7 +31,8 @@
                     <script>
                         var myform = document.getElementById('prev_form');
                         myform.onsubmit = function () {
-                            var b = {{ brand | safe}};
+                            var b = {{ brand | safe
+                        }};
                         document.getElementById("brand-input").value = b;
                         myform.submit();
                         };   
@@ -160,7 +161,7 @@
             autocomplete(document.getElementById("input"), p);
         </script>
 
-        <div id="productforms">
+        <!-- <div id="productforms">
             <div class="col-xs-6">
                 <select class="form-control" name="select1" id="select1">
                     <option value="1">Fruit</option>
@@ -184,7 +185,7 @@
                     </option>
                 </select>
             </div>
-        </div>
+        </div> -->
         <script>
             //Reference: https://jsfiddle.net/fwv18zo1/
             var $select1 = $('#select1'),

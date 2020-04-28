@@ -29,9 +29,7 @@ def search():
     else:
         output_message = "Your search: " + query
         data = range(5)
-    return render_template(
-        "search.html", name=project_name, netid=net_id, output_message=output_message, data=data, brands=brands
-    )
+    return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data, brands=brands)
     # return (request.form['search'])
 
 
@@ -84,9 +82,7 @@ def product():
         print(product)
         print(shades)
 
-        return render_template(
-            "product.html", name=project_name, netid=net_id, products=products, shades=shades, brand=brand
-        )
+        return render_template( "product.html", name=project_name, netid=net_id, products=products, shades=shades, brand=brand)
 
 
 @irsystem.route("/product/test/", methods=["GET"])

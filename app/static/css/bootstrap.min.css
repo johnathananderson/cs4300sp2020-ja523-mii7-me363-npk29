@@ -777,6 +777,7 @@ legend {
     border-bottom-right-radius: 2.5px;
     overflow: hidden;
     word-break: break-all;
+    text-align: left;
 }
 
 .choices__list--dropdown.is-active {
