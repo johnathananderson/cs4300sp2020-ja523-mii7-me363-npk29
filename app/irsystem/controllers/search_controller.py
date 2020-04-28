@@ -86,7 +86,6 @@ def product_test():
     products = [[brand, product, shade], [brand, product, shade]]
     f = FindationBrowser()
     data = f.process_matches(products)
-    print(data)
     f.close_out()
     return render_template("outputs.html", name=project_name, netid=net_id, data=data)
 
