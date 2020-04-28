@@ -38,11 +38,7 @@
             </form>
 
             <script>
-                brands = {
-                    {
-                        brands | safe
-                    }
-                };
+                brands = {{brands | safe}};
 
                 function autocomplete(inp, arr) {
                     /*the autocomplete function takes two arguments,
