@@ -146,7 +146,7 @@ class FindationBrowser:
                             if match_brand in ingredients and match_name in ingredients[match_brand]:
                                 match_product["ingredients"] = ingredients[match_brand][match_name]
                             else:
-                                print("Not found in ingredients.json: " + match_brand + " " + match_name)
+                                # print("Not found in ingredients.json: " + match_brand + " " + match_name)
                                 # try:
                                 #     found_ingredients = i.find_ingredients(
                                 #         urllib.parse.quote(match_brand), urllib.parse.quote(match_name)
