@@ -31,7 +31,8 @@
                     <script>
                         var myform = document.getElementById('prev_form');
                         myform.onsubmit = function () {
-                            var b = {{ brand | safe }};
+                            var b = String({{ brand | safe }});
+                        console.log(b);
                         document.getElementById("brand-input").value = b;
                         myform.submit();
                         };   
@@ -49,8 +50,7 @@
         </form>
 
         <script>
-            p = {{ products | safe }};
-            console.log(p);
+            p = ({{ products | safe }});
             function autocomplete(inp, arr) {
                 /*the autocomplete function takes two arguments,
                 the text field element and an array of possible autocompleted values:*/
