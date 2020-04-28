@@ -29,7 +29,7 @@
                         autocomplete="off" />
                     <input type="hidden" id="brand" name="brand" value="" />
                     <script>
-                        var brand = '{{ brand | safe }}';
+                        var brand = JSON.stringify({{ brand | safe }});
                         document.getElementById("brand").value = brand;
                         console.log(brand);
                     </script>

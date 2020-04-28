@@ -52,7 +52,6 @@ def product():
             products = []
             for product in p:
                 products.append(product)
-            print(products)
             # shades = pdata[query]['products'][selected_product]['shades']
 
             data = range(5)
@@ -68,6 +67,7 @@ def product():
             brand=query,
         )
     else:
+        
         brand = request.args.get("brand")
         print(brand)
         product = request.args.get("products-input")
