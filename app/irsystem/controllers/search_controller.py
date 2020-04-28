@@ -53,13 +53,13 @@ def product():
         brand = request.args.get("brand")
         product = request.args.get("products-input")
         products_json = glob.glob("products.json")
-            with open(products_json[0], encoding="utf8") as prodlist:
-                pdata = json.load(prodlist)
-                products = pdata[brand]['products']
-                shades = pdata[brand]['products'][product]['shades']
+        with open(products_json[0], encoding="utf8") as prodlist:
+            pdata = json.load(prodlist)
+            products = pdata[brand]['products']
+            shades = pdata[brand]['products'][product]['shades']
 
-        console.log(product)
-        console.log(shades)
+        print(product)
+        print(shades)
 
         return render_template("product.html", name=project_name, netid=net_id, products=products, shades=shades, brand=brand)
 
