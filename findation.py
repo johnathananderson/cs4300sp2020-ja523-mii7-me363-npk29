@@ -22,7 +22,7 @@ class FindationBrowser:
     def close_out(self):
         self.browser.close()
 
-    def process_matches(products):
+    def process_matches(self, products):
         # i = IngredientsBrowser()
         self.browser.delete_all_cookies()
         self.browser.get("https://www.findation.com/")
@@ -151,6 +151,7 @@ class FindationBrowser:
                             match_shade = lines[2].replace("Your shade: ", "").replace(" (Natural)", "")
                             if match_brand in matches_json and match_name in matches_json[match_brand] and match_shade in matches_json[match_brand][match_name]:
                                 results.append(matches_json[match_brand][match_name][match_shade])
+                                print("Cached")
                             else:
                                 match_product = {}
                                 match_product["brand"] = match_brand
