@@ -67,8 +67,7 @@ def product():
             brand=query,
         )
     else:
-        
-        brand = request.args.get("brand")
+        brand = request.args.get("brand-input")
         print(brand)
         product = request.args.get("products-input")
         products_json = glob.glob("products.json")
