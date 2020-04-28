@@ -147,17 +147,18 @@ class FindationBrowser:
                                 match_product["ingredients"] = ingredients[match_brand][match_name]
                             else:
                                 print("Not found in ingredients.json: " + match_brand + " " + match_name)
-                                try:
-                                    found_ingredients = i.find_ingredients(
-                                        urllib.parse.quote(match_brand), urllib.parse.quote(match_name)
-                                    )
-                                    ingredients[match_brand] = ingredients.get(match_brand, {})
-                                    ingredients[match_brand][match_name] = found_ingredients
-                                    # match_product["ingredients"] = "Ingredients not found"
-                                except Exception as e:
-                                    ingredients[match_brand] = ingredients.get(match_brand, {})
-                                    ingredients[match_brand][match_name] = "Ingredients not found"
-                                    print(e)
+                                # try:
+                                #     found_ingredients = i.find_ingredients(
+                                #         urllib.parse.quote(match_brand), urllib.parse.quote(match_name)
+                                #     )
+                                #     ingredients[match_brand] = ingredients.get(match_brand, {})
+                                #     ingredients[match_brand][match_name] = found_ingredients
+                                #     # match_product["ingredients"] = "Ingredients not found"
+                                # except Exception as e:
+                                ingredients[match_brand] = ingredients.get(match_brand, {})
+                                ingredients[match_brand][match_name] = "Ingredients not found"
+                                match_product["ingredients"] = "Ingredients not found"
+                                    # print(e)
                             results.append(match_product)
                 with open("ingredients.json", "w") as outfile:
                     json.dump(ingredients, outfile, indent=4)
