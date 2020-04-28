@@ -17,7 +17,7 @@ class FindationBrowser:
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument("--proxy-server='direct://'")
         chrome_options.add_argument("--proxy-bypass-list=*")
-        chromeOptions.addArguments("--blink-settings=imagesEnabled=false"); 
+        chrome_options.add_argument("--blink-settings=imagesEnabled=false"); 
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(options=chrome_options, executable_path="chromedriver")
         self.browser.implicitly_wait(2)
