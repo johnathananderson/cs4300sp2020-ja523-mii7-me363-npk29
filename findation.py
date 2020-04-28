@@ -32,6 +32,12 @@ class FindationBrowser:
             except:
                 print("Couldn't open ingredients")
                 ingredients = {}
+        with open("prices.json", encoding="utf8") as p:
+            try:
+                prices = json.load(p)
+            except:
+                print("Couldn't open ingredients")
+                prices = {}
         try:
             count = 0
             while count < 11:
@@ -143,6 +149,13 @@ class FindationBrowser:
                             match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
                             match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
 
+                            if match_brand in prices and match_name in prices[match_brand]:
+                                match_product["prices"] = prices[match_brand][match_name]
+                            else:
+                                prices[match_brand] = prices.get(match_brand, {})
+                                prices[match_brand][match_name] = "Prices not found"
+                                match_product["prices"] = "Prices not found"
+                            
                             if match_brand in ingredients and match_name in ingredients[match_brand]:
                                 match_product["ingredients"] = ingredients[match_brand][match_name]
                             else:
@@ -162,6 +175,8 @@ class FindationBrowser:
                             results.append(match_product)
                 with open("ingredients.json", "w") as outfile:
                     json.dump(ingredients, outfile, indent=4)
+                with open("prices.json", "w") as outfile:
+                    json.dump(prices, outfile, indent=4)
                 i.close_out()
                 return results
         except Exception as e:
