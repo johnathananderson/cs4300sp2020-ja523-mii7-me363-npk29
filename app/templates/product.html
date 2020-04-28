@@ -17,7 +17,7 @@
             <br>
             <span>{{d}}</span> {% endfor %} {% endif %}
         </form>
-        <p>Product: ({{ pdatatest }})</p><br>
+        <!-- <p>Product: ({{ pdatatest }})</p><br> -->
         <!-- <p>Shades: ({{ shades }})</p> -->
     </div>
 
@@ -29,7 +29,7 @@
                         autocomplete="off" />
                     <input type="hidden" name="brand" value="" />
                     <script>
-                        var brand = {{ brand | safe }};
+                        var brand = '{{ brand | safe }}';
                         document.getElementById("brand").value = brand;
                     </script>
                     <button id="icon-wrap" type="submit" style="justify-content: center">
@@ -152,7 +152,7 @@
             }
 
             /*initiate the autocomplete function on the "inut" element, and pass along the brands array as possible autocomplete values:*/
-            autocomplete(document.getElementById("input"), brands);
+            autocomplete(document.getElementById("input"), products);
         </script>
 
         <div id="productforms">
