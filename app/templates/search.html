@@ -18,13 +18,6 @@
         <div class="topcorner">
             <p>Project Name: {{ name }}</p>
             <p>Student Name: ({{ netid }})</p>
-            <form class="form-inline global-search">
-                {% if data %}
-                <h1>{{output_message}}</h1>
-                {% for d in data %}
-                <br>
-                <span>{{d}}</span> {% endfor %} {% endif %}
-            </form>
         </div>
 
         <div class="inner-form">
@@ -45,7 +38,11 @@
             </form>
 
             <script>
-                brands = {{brands | safe}};
+                brands = {
+                    {
+                        brands | safe
+                    }
+                };
 
                 function autocomplete(inp, arr) {
                     /*the autocomplete function takes two arguments,
