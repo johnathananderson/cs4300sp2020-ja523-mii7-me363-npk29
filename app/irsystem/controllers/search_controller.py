@@ -88,6 +88,8 @@ def product_test():
     shade = request.form.get("shade-input")
     products = [[brand, product, shade], [brand, product, shade]]
     data = f.process_matches(products)
+    f.browser.delete_all_cookies()
+    f.browser.get("https://www.findation.com/")
     return render_template("outputs.html", name=project_name, netid=net_id, data=data)
 
 

@@ -13,21 +13,21 @@ class FindationBrowser:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-gpu")
-        # chrome_options.add_argument("headless")
+        # chrome_options.add_argument("--headless")
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument("--proxy-server='direct://'")
         chrome_options.add_argument("--proxy-bypass-list=*")
+        chromeOptions.addArguments("--blink-settings=imagesEnabled=false"); 
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(options=chrome_options, executable_path="chromedriver")
         self.browser.implicitly_wait(2)
+        self.browser.get("https://www.findation.com/")
 
     def close_out(self):
         self.browser.close()
 
     def process_matches(self, products):
         # i = IngredientsBrowser()
-        self.browser.delete_all_cookies()
-        self.browser.get("https://www.findation.com/")
         with open("ingredients.json", encoding="utf8") as data:
             try:
                 ingredients = json.load(data)
@@ -62,7 +62,6 @@ class FindationBrowser:
                         count += 0.1
                 n_products = len(products)
                 results = []
-                time.sleep(2)
                 for p in range(n_products):
                     product = products[p]
                     brand = product[0]
