@@ -40,6 +40,7 @@ class FindationBrowser:
                 prices = {}
         try:
             count = 0
+            time.sleep(1)
             while count < 11:
                 found = False
                 count = 0
@@ -53,7 +54,7 @@ class FindationBrowser:
                         count += 0.1
                 n_products = len(products)
                 results = []
-                time.sleep(1)
+                time.sleep(2)
                 for p in range(n_products):
                     product = products[p]
                     brand = product[0]
@@ -70,7 +71,7 @@ class FindationBrowser:
                             count += 0.1
                     brand_input.send_keys(brand)
                     brand_input.send_keys(Keys.ENTER)
-                    time.sleep(1)
+                    time.sleep(2)
                     found = False
                     count = 0
                     while not found and count < 11:
@@ -84,7 +85,7 @@ class FindationBrowser:
                             count += 0.1
                     product_input.send_keys(product_name)
                     product_input.send_keys(Keys.ENTER)
-                    time.sleep(1.75)
+                    time.sleep(2)
                     found = False
                     count = 0
                     while not found and count < 11:
@@ -98,7 +99,7 @@ class FindationBrowser:
                             count += 0.1
                     shade_input.send_keys(shade)
                     shade_input.send_keys(Keys.ENTER)
-                    time.sleep(1)
+                    time.sleep(2)
                     if p < n_products - 1:
                         found = False
                         count = 0
@@ -112,7 +113,7 @@ class FindationBrowser:
                             except:
                                 time.sleep(0.1)
                                 count += 0.1
-                        time.sleep(1.5)
+                        time.sleep(1.75)
                     else:
                         found = False
                         count = 0
@@ -126,7 +127,7 @@ class FindationBrowser:
                             except:
                                 time.sleep(0.1)
                                 count += 0.1
-                        time.sleep(1)
+                        time.sleep(2)
                         found = False
                         count = 0
                         while not found and count < 11:
