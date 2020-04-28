@@ -40,16 +40,16 @@ def search():
     products_json = glob.glob("products.json")
     with open(products_json[0]) as prodlist:
         pdata = json.load(prodlist)
-    brands_list = []
+    brands = []
     for brand in pdata:
-        brands_list.append(brand) 
+        brands.append(brand) 
     if not query:
         data = []
         output_message = "Its not working"
     else:
         output_message = "Your search: " + query
         data = range(5)
-    return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data, brands_list=brands_list)
+    return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data, brands=brands)
     # return (request.form['search'])
 
 @irsystem.route("/product/", methods=["GET"])
