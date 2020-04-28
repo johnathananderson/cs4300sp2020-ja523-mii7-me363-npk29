@@ -59,7 +59,7 @@ def product():
         with open(products_json[0]) as prodlist:
             pdata = json.load(prodlist)
         brands_list = []
-        for brand in json:
+        for brand in pdata:
             brands_list.append(brand) 
         pdatatest = pdata[query]
         data = range(5)
