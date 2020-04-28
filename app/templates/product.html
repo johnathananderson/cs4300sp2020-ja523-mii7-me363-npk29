@@ -27,7 +27,7 @@
                 <div class="input-field">
                     <input id="input" name="products-input" type="text" placeholder="Enter your current product"
                         autocomplete="off" />
-                    <input type="hidden" name="brand" value="" />
+                    <input type="hidden" id="brand" name="brand" value="" />
                     <script>
                         var brand = '{{ brand | safe }}';
                         document.getElementById("brand").value = brand;
