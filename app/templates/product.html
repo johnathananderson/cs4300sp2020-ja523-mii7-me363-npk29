@@ -27,7 +27,7 @@
                     <script>
                         var brand_input = document.getElementById('brand-input');
                         myform.onsubmit = function () {
-                            var b = String({{ brand | tojson | safe }});
+                            var b = {{ brand | tojson | safe }};
                             console.log(b);
                             document.getElementById("brand-input").value = b;
                             myform.submit();
