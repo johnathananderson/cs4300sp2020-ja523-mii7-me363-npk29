@@ -56,6 +56,7 @@ def search():
 def product():
     # prod_type = request.form['choices-single-defaul']
     query = request.args.get("search")
+    # selected_product = request.args.get("product_search") need to write form for input
     if not query:
         data = []
         output_message = "Please go back and enter a brand!"
@@ -64,7 +65,8 @@ def product():
         with open(products_json[0]) as prodlist:
             pdata = json.load(prodlist)
             pdatatest = pdata[query]['products']
-            shades = pdata[query]['products']['shades']
+            print(pdatatest)
+            # shades = pdata[query]['products'][selected_product]['shades']
 
         data = range(5)
         output_message = "Your search: " + query
