@@ -49,7 +49,8 @@ def product():
             with open(products_json[0], encoding="utf8") as prodlist:
                 pdata = json.load(prodlist)
                 products = pdata[query]["products"]
-                # shades = pdata[query]['products'][selected_product]['shades']
+            print(products)
+            # shades = pdata[query]['products'][selected_product]['shades']
 
             data = range(5)
             output_message = "Your search: " + query
