@@ -50,7 +50,6 @@ def product():
             products = []
             for product in p:
                 products.append(product)
-            print(products)
             # shades = pdata[query]['products'][selected_product]['shades']
 
             data = range(5)
@@ -66,7 +65,8 @@ def product():
             brand=query,
         )
     else:
-        brand = request.args.get("brand")
+        brand = request.args.get("brand-input")
+        print(brand)
         product = request.args.get("products-input")
         products_json = glob.glob("products.json")
         with open(products_json[0], encoding="utf8") as prodlist:
