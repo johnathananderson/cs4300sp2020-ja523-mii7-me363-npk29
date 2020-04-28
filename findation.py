@@ -22,10 +22,10 @@ class FindationBrowser:
     def close_out(self):
         self.browser.close()
 
-    def process_matches(products, f):
+    def process_matches(products):
         # i = IngredientsBrowser()
-        f.browser.delete_all_cookies()
-        f.browser.get("https://www.findation.com/")
+        self.browser.delete_all_cookies()
+        self.browser.get("https://www.findation.com/")
         with open("ingredients.json", encoding="utf8") as data:
             try:
                 ingredients = json.load(data)
@@ -38,6 +38,12 @@ class FindationBrowser:
             except:
                 print("Couldn't open ingredients")
                 prices = {}
+        with open("matches.json", encoding="utf8") as m:
+            try:
+                matches_json = json.load(m)
+            except:
+                print("Couldn't open ingredients")
+                matches_json = {}
         try:
             count = 0
             time.sleep(1)
@@ -46,7 +52,7 @@ class FindationBrowser:
                 count = 0
                 while not found and count < 11:
                     try:
-                        get_started_button = f.browser.find_element_by_xpath("//*[@id='hide-splash']")
+                        get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
                         get_started_button.click()
                         found = True
                     except:
@@ -64,7 +70,7 @@ class FindationBrowser:
                     count = 0
                     while not found and count < 11:
                         try:
-                            brand_input = f.browser.find_element_by_id("brand-search")
+                            brand_input = self.browser.find_element_by_id("brand-search")
                             found = True
                         except:
                             time.sleep(0.1)
@@ -76,7 +82,7 @@ class FindationBrowser:
                     count = 0
                     while not found and count < 11:
                         try:
-                            product_input = f.browser.find_element_by_xpath(
+                            product_input = self.browser.find_element_by_xpath(
                                 "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                             )
                             found = True
@@ -90,7 +96,7 @@ class FindationBrowser:
                     count = 0
                     while not found and count < 11:
                         try:
-                            shade_input = f.browser.find_element_by_xpath(
+                            shade_input = self.browser.find_element_by_xpath(
                                 "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
                             )
                             found = True
@@ -105,7 +111,7 @@ class FindationBrowser:
                         count = 0
                         while not found and count < 11:
                             try:
-                                add_another_button = f.browser.find_element_by_xpath(
+                                add_another_button = self.browser.find_element_by_xpath(
                                     "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                                 )
                                 add_another_button.click()
@@ -119,7 +125,7 @@ class FindationBrowser:
                         count = 0
                         while not found and count < 11:
                             try:
-                                find_matches_button = f.browser.find_element_by_class_name(
+                                find_matches_button = self.browser.find_element_by_class_name(
                                     "actions"
                                 ).find_element_by_tag_name("button")
                                 find_matches_button.click()
@@ -132,7 +138,7 @@ class FindationBrowser:
                         count = 0
                         while not found and count < 11:
                             try:
-                                matches = f.browser.find_elements_by_class_name("match-meta")
+                                matches = self.browser.find_elements_by_class_name("match-meta")
                                 found = True
                             except:
                                 time.sleep(0.1)
@@ -143,41 +149,49 @@ class FindationBrowser:
                             match_brand = lines[0]
                             match_name = lines[1]
                             match_shade = lines[2].replace("Your shade: ", "").replace(" (Natural)", "")
-                            match_product = {}
-                            match_product["brand"] = match_brand
-                            match_product["name"] = match_name
-                            match_product["shade"] = match_shade
-                            match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
-                            match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
+                            if match_brand in matches_json and match_name in matches_json[match_brand] and match_shade in matches_json[match_brand][match_name]:
+                                results.append(matches_json[match_brand][match_name][match_shade])
+                            else:
+                                match_product = {}
+                                match_product["brand"] = match_brand
+                                match_product["name"] = match_name
+                                match_product["shade"] = match_shade
+                                match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
+                                match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
 
-                            if match_brand in prices and match_name in prices[match_brand]:
-                                match_product["prices"] = prices[match_brand][match_name]
-                            else:
-                                prices[match_brand] = prices.get(match_brand, {})
-                                prices[match_brand][match_name] = "Prices not found"
-                                match_product["prices"] = "Prices not found"
-                            
-                            if match_brand in ingredients and match_name in ingredients[match_brand]:
-                                match_product["ingredients"] = ingredients[match_brand][match_name]
-                            else:
-                                # print("Not found in ingredients.json: " + match_brand + " " + match_name)
-                                # try:
-                                #     found_ingredients = i.find_ingredients(
-                                #         urllib.parse.quote(match_brand), urllib.parse.quote(match_name)
-                                #     )
-                                #     ingredients[match_brand] = ingredients.get(match_brand, {})
-                                #     ingredients[match_brand][match_name] = found_ingredients
-                                #     # match_product["ingredients"] = "Ingredients not found"
-                                # except Exception as e:
-                                ingredients[match_brand] = ingredients.get(match_brand, {})
-                                ingredients[match_brand][match_name] = "Ingredients not found"
-                                match_product["ingredients"] = "Ingredients not found"
-                                    # print(e)
-                            results.append(match_product)
+                                if match_brand in prices and match_name in prices[match_brand]:
+                                    match_product["prices"] = prices[match_brand][match_name]
+                                else:
+                                    prices[match_brand] = prices.get(match_brand, {})
+                                    prices[match_brand][match_name] = "Prices not found"
+                                    match_product["prices"] = "Prices not found"
+                                
+                                if match_brand in ingredients and match_name in ingredients[match_brand]:
+                                    match_product["ingredients"] = ingredients[match_brand][match_name]
+                                else:
+                                    # print("Not found in ingredients.json: " + match_brand + " " + match_name)
+                                    # try:
+                                    #     found_ingredients = i.find_ingredients(
+                                    #         urllib.parse.quote(match_brand), urllib.parse.quote(match_name)
+                                    #     )
+                                    #     ingredients[match_brand] = ingredients.get(match_brand, {})
+                                    #     ingredients[match_brand][match_name] = found_ingredients
+                                    #     # match_product["ingredients"] = "Ingredients not found"
+                                    # except Exception as e:
+                                    ingredients[match_brand] = ingredients.get(match_brand, {})
+                                    ingredients[match_brand][match_name] = "Ingredients not found"
+                                    match_product["ingredients"] = "Ingredients not found"
+                                        # print(e)
+                                results.append(match_product)
+                                matches_json[match_brand] = matches_json.get(match_brand, {})
+                                matches_json[match_brand][match_name] = matches_json[match_brand].get(match_name, {})
+                                matches_json[match_brand][match_name][match_shade] = match_product
                 with open("ingredients.json", "w") as outfile:
                     json.dump(ingredients, outfile, indent=4)
                 with open("prices.json", "w") as outfile:
                     json.dump(prices, outfile, indent=4)
+                with open("matches.json", "w") as outfile:
+                    json.dump(matches_json, outfile, indent=4)
                 return results
         except Exception as e:
             print("Failed: " + products[0][0] + " " + products[0][1])
