@@ -149,11 +149,12 @@
 <body>
     <ul id="myUL">
         <script>
-            var array = ({{ data | tojson | safe }});
+            var array = {{ data | tojson | safe }};
 
             array.forEach(function (item) {
                 var li = document.createElement("li");
                 var text = document.createTextNode(item);
+                console.log(item);
                 li.appendChild(text);
                 document.getElementById("myUl").appendChild(li);
             });
