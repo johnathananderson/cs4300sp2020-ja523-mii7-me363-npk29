@@ -63,7 +63,7 @@ def product():
         products_json = glob.glob("products.json")
         with open(products_json[0]) as prodlist:
             pdata = json.load(prodlist)
-        pdatatest = pdata[query]
+            pdatatest = pdata[query]['products']
         data = range(5)
         output_message = "Your search: " + query
 
@@ -80,11 +80,6 @@ def outputs():
         data = []
         output_message = "Its not working"
     else:
-        with open("findation_output.txt") as foutput:
-            ls = []
-            for f in foutput:
-                ls.append(f)
-            test_out = ls[0]
         data = range(5)
         output_message = "Your search: " + query
-    return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data, test_out=test_out)
+    return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data)
