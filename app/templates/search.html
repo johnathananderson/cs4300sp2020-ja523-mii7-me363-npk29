@@ -47,6 +47,9 @@
 
             <script>
                 brands = '{{ brands|e }}';
+                for (i = 0; i < brands.length; i++) {
+                    brands[i] = brands[i].replace("'", "\'")
+                }
                 console.log(brands);
                 // function unescape(string) {
                 //     return new DOMParser().parseFromString(string, 'text/html').querySelector('html').textContent;
