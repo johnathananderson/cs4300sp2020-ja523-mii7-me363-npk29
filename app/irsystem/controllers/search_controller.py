@@ -75,6 +75,11 @@ def outputs():
         data = []
         output_message = "Its not working"
     else:
+        with open("findation_output.txt") as foutput:
+            ls = []
+            for f in foutput:
+                ls.append(f)
+            test_out = ls[0]
         data = range(5)
         output_message = "Your search: " + query
-    return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+    return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data, test_out=test_out)

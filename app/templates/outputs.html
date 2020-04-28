@@ -146,7 +146,8 @@
             <h1>{{output_message}}</h1>
             {% for d in data %}
             <br>
-            <span></span> 
+            <span></span>
+            <h2>{{ test_out }}</h2>
         </form>
     </div>
     <div class="block">
@@ -167,8 +168,9 @@
             <div class="heading">Brand: {{d}</div>
             <div class="info">Shade{{d}}</div>
             <div class="style">Link to buy: {{d}} </div>
-            <div class="price">Price : {{d}}</div> </div>
+            <div class="price">Price : {{d}}</div>
         </div>
+    </div>
 
     </div>
     <div class="block">
@@ -240,9 +242,8 @@
         </div>
 
     </div>
-   
+
 </body>
-{% endfor %}
-    
-{% endif %}
+{% endfor %} {% endif %}
+
 </html>
