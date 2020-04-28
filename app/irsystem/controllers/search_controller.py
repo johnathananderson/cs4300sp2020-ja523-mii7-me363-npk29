@@ -59,6 +59,7 @@ def product():
         with open(products_json[0]) as prodlist:
             pdata = json.load(prodlist)
             pdatatest = pdata[query]['products']
+            shades = pdata[query]['products']['shades']
 
         brands_list = []
         for brand in pdata:
@@ -66,7 +67,7 @@ def product():
         data = range(5)
         output_message = "Your search: " + query
 
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, pdatatest=pdatatest, brands_list=brands_list)
+    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, pdatatest=pdatatest, brands_list=brands_list, shades=shades)
     # return (request.form['search'])
 
 
