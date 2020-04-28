@@ -69,6 +69,7 @@ def product():
         )
     else:
         brand = request.args.get("brand")
+        print(brand)
         product = request.args.get("products-input")
         products_json = glob.glob("products.json")
         with open(products_json[0], encoding="utf8") as prodlist:
