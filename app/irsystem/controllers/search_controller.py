@@ -37,13 +37,19 @@ def search():
     # # f.close_out()
     # return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data)
     query = request.args.get("search")
+    products_json = glob.glob("products.json")
+    with open(products_json[0]) as prodlist:
+        pdata = json.load(prodlist)
+    brands_list = []
+    for brand in pdata:
+        brands_list.append(brand) 
     if not query:
         data = []
         output_message = "Its not working"
     else:
         output_message = "Your search: " + query
         data = range(5)
-    return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+    return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data, brands_list=brands_list)
     # return (request.form['search'])
 
 @irsystem.route("/product/", methods=["GET"])
@@ -55,17 +61,13 @@ def product():
         output_message = "Please go back and enter a brand!"
     else:
         products_json = glob.glob("products.json")
-        print(products_json[0])
         with open(products_json[0]) as prodlist:
             pdata = json.load(prodlist)
-        brands_list = []
-        for brand in pdata:
-            brands_list.append(brand) 
         pdatatest = pdata[query]
         data = range(5)
         output_message = "Your search: " + query
 
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, pdatatest=pdatatest, brands_list=brands_list)
+    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, pdatatest=pdatatest)
     # return (request.form['search'])
 
 
