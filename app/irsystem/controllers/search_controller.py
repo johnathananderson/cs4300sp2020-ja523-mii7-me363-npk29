@@ -3,6 +3,8 @@ from app.irsystem.models.helpers import *
 from app.irsystem.models.helpers import NumpyEncoder as NumpyEncoder
 import json
 import glob
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 # from search import main_function
 from flask import request
@@ -12,6 +14,7 @@ from findation import FindationBrowser
 
 project_name = "Save Face"
 net_id = "ja523, me363, mii7, npk29"
+f = FindationBrowser()
 
 
 @irsystem.route("/", methods=["GET"])
@@ -84,9 +87,7 @@ def product_test():
     product = request.form.get("product-input")
     shade = request.form.get("shade-input")
     products = [[brand, product, shade], [brand, product, shade]]
-    f = FindationBrowser()
     data = f.process_matches(products)
-    f.close_out()
     return render_template("outputs.html", name=project_name, netid=net_id, data=data)
 
 

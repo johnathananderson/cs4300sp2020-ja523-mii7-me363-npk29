@@ -22,10 +22,10 @@ class FindationBrowser:
     def close_out(self):
         self.browser.close()
 
-    def process_matches(self, products):
-        i = IngredientsBrowser()
-        self.browser.delete_all_cookies()
-        self.browser.get("https://www.findation.com/")
+    def process_matches(products, f):
+        # i = IngredientsBrowser()
+        f.browser.delete_all_cookies()
+        f.browser.get("https://www.findation.com/")
         with open("ingredients.json", encoding="utf8") as data:
             try:
                 ingredients = json.load(data)
@@ -46,7 +46,7 @@ class FindationBrowser:
                 count = 0
                 while not found and count < 11:
                     try:
-                        get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
+                        get_started_button = f.browser.find_element_by_xpath("//*[@id='hide-splash']")
                         get_started_button.click()
                         found = True
                     except:
@@ -64,7 +64,7 @@ class FindationBrowser:
                     count = 0
                     while not found and count < 11:
                         try:
-                            brand_input = self.browser.find_element_by_id("brand-search")
+                            brand_input = f.browser.find_element_by_id("brand-search")
                             found = True
                         except:
                             time.sleep(0.1)
@@ -76,7 +76,7 @@ class FindationBrowser:
                     count = 0
                     while not found and count < 11:
                         try:
-                            product_input = self.browser.find_element_by_xpath(
+                            product_input = f.browser.find_element_by_xpath(
                                 "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                             )
                             found = True
@@ -90,7 +90,7 @@ class FindationBrowser:
                     count = 0
                     while not found and count < 11:
                         try:
-                            shade_input = self.browser.find_element_by_xpath(
+                            shade_input = f.browser.find_element_by_xpath(
                                 "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
                             )
                             found = True
@@ -105,7 +105,7 @@ class FindationBrowser:
                         count = 0
                         while not found and count < 11:
                             try:
-                                add_another_button = self.browser.find_element_by_xpath(
+                                add_another_button = f.browser.find_element_by_xpath(
                                     "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                                 )
                                 add_another_button.click()
@@ -113,13 +113,13 @@ class FindationBrowser:
                             except:
                                 time.sleep(0.1)
                                 count += 0.1
-                        time.sleep(1.75)
+                        time.sleep(2)
                     else:
                         found = False
                         count = 0
                         while not found and count < 11:
                             try:
-                                find_matches_button = self.browser.find_element_by_class_name(
+                                find_matches_button = f.browser.find_element_by_class_name(
                                     "actions"
                                 ).find_element_by_tag_name("button")
                                 find_matches_button.click()
@@ -132,7 +132,7 @@ class FindationBrowser:
                         count = 0
                         while not found and count < 11:
                             try:
-                                matches = self.browser.find_elements_by_class_name("match-meta")
+                                matches = f.browser.find_elements_by_class_name("match-meta")
                                 found = True
                             except:
                                 time.sleep(0.1)
@@ -178,7 +178,6 @@ class FindationBrowser:
                     json.dump(ingredients, outfile, indent=4)
                 with open("prices.json", "w") as outfile:
                     json.dump(prices, outfile, indent=4)
-                i.close_out()
                 return results
         except Exception as e:
             print("Failed: " + products[0][0] + " " + products[0][1])
