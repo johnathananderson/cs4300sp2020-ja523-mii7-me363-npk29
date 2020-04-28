@@ -66,7 +66,7 @@ def product():
         )
     else:
         brand = request.form.get("brand-input")
-        product = request.form.get("products-input")
+        product = request.form.get("product-input")
         products_json = glob.glob("products.json")
         with open(products_json[0], encoding="utf8") as prodlist:
             pdata = json.load(prodlist)
