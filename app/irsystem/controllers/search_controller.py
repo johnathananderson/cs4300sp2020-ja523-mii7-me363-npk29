@@ -46,8 +46,12 @@ def product():
             products_json = glob.glob("products.json")
             with open(products_json[0], encoding="utf8") as prodlist:
                 pdata = json.load(prodlist)
-                products = pdata[query]["products"]
-                # shades = pdata[query]['products'][selected_product]['shades']
+                p = pdata[query]["products"]
+            products = []
+            for product in p:
+                products.append(product)
+            print(products)
+            # shades = pdata[query]['products'][selected_product]['shades']
 
             data = range(5)
             output_message = "Your search: " + query
@@ -67,8 +71,14 @@ def product():
         products_json = glob.glob("products.json")
         with open(products_json[0], encoding="utf8") as prodlist:
             pdata = json.load(prodlist)
-            products = pdata[brand]["products"]
-            shades = pdata[brand]["products"][product]["shades"]
+            p = pdata[brand]["products"]
+            s = pdata[brand]["products"][product]["shades"]
+        products = []
+        for product in p:
+            products.append(product)
+        shades = []
+        for shade in s:
+            shades.append(shade)
         print(product)
         print(shades)
 
