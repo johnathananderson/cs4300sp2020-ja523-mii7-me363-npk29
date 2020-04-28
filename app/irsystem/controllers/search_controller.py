@@ -78,7 +78,7 @@ def product():
         return render_template("shades.html", name=project_name, netid=net_id, product=product, shades=shades, brand=brand)
 
 
-@irsystem.route("/findation/", methods=["POST"])
+@irsystem.route("/product/findation/", methods=["POST"])
 def product_test():
     brand = request.form.get("brand-input")
     print(brand)
