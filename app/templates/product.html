@@ -9,7 +9,6 @@
 
 <body>
     <div class="topcorner">
-
         <form class="form-inline global-search">
             <h1>{{output_message}}</h1>
             <br>
@@ -19,9 +18,6 @@
     </div>
 
     <div class="s008">
-
-        <h1>{{output_message}}</h1>
-
         <div class="inner-form">
             <form id="prev_form" method="POST">
                 <div class="basic-search">
@@ -31,11 +27,7 @@
                         <script>
                             var myform = document.getElementById('prev_form');
                             myform.onsubmit = function() {
-                                var b = {
-                                    {
-                                        brand | safe
-                                    }
-                                };
+                                var b = {{ brand | safe}};
                                 document.getElementById("brand-input").value = b;
                                 myform.submit();
                             };
@@ -54,11 +46,7 @@
         </div>
 
         <script>
-            p = {
-                {
-                    products | safe
-                }
-            };
+            p = {{products | safe }};
             console.log(p);
 
             function autocomplete(inp, arr) {
