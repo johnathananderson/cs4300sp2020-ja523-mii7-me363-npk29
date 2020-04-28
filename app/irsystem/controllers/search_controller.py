@@ -29,26 +29,39 @@ def search():
     return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data, brands=brands)
     # return (request.form['search'])
 
-@irsystem.route("/product/", methods=["GET"])
+@irsystem.route("/product/", methods=["GET", "POST"])
 def product():
-    # prod_type = request.form['choices-single-defaul']
-    query = request.args.get("search")
-    # selected_product = request.args.get("product_search") need to write form for input
-    if not query:
-        data = []
-        output_message = "Please go back and enter a brand!"
+    if request.method == 'GET':
+        # prod_type = request.form['choices-single-defaul']
+        query = request.args.get("search")
+        # selected_product = request.args.get("product_search") need to write form for input
+        if not query:
+            data = []
+            output_message = "Please go back and enter a brand!"
+        else:
+            products_json = glob.glob("products.json")
+            with open(products_json[0], encoding="utf8") as prodlist:
+                pdata = json.load(prodlist)
+                products = pdata[query]['products']
+                # shades = pdata[query]['products'][selected_product]['shades']
+
+            data = range(5)
+            output_message = "Your search: " + query
+
+        return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, products=products, brand=query)
     else:
+        brand = request.args.get("brand")
+        product = request.args.get("products-input")
         products_json = glob.glob("products.json")
-        with open(products_json[0], encoding="utf8") as prodlist:
-            pdata = json.load(prodlist)
-            pdatatest = pdata[query]['products']
-            print(pdatatest)
-            # shades = pdata[query]['products'][selected_product]['shades']
+            with open(products_json[0], encoding="utf8") as prodlist:
+                pdata = json.load(prodlist)
+                products = pdata[brand]['products']
+                shades = pdata[brand]['products'][product]['shades']
 
-        data = range(5)
-        output_message = "Your search: " + query
+        console.log(product)
+        console.log(shades)
 
-    return render_template("product.html", name=project_name, netid=net_id, output_message=output_message, data=data, pdatatest=pdatatest, shades=shades)
+        return render_template("product.html", name=project_name, netid=net_id, products=products, shades=shades, brand=brand)
 
 @irsystem.route("/product/test/", methods=["GET"])
 def product_test():
