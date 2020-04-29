@@ -70,7 +70,7 @@ class FindationBrowser:
                 print(12)
                 WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.ID, "product")))
                 product_input = self.browser.find_element_by_id("product").find_element_by_class_name("form-control")
-                product_input.send_keys(product_name + " ")
+                product_input.send_keys(product_name)
                 product_input.send_keys(Keys.ENTER)
                 print(13)
                 WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.ID, "shade")))
