@@ -92,6 +92,7 @@ class FindationBrowser:
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     ).click()
+                    time.sleep(1)
                     print(18)
                     # time.sleep(2.5)
                     # WebDriverWait(self.browser, 20, 0.1).until(
