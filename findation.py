@@ -19,7 +19,7 @@ class FindationBrowser:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--no-sandbox")
         # chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--headless")
+        # chrome_options.add_argument("--headless")
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument("--no-proxy-server")
         chrome_options.add_argument("--proxy-server='direct://'")
@@ -57,12 +57,10 @@ class FindationBrowser:
                 product_name = product[1]
                 shade = product[2]
                 print(9)
-                self.browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                # self.browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 print(10)
                 print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
                 print("height")
-                while self.browser.find_element_by_id("brand").value_of_css_property("height") == "auto":
-                    print("waiting")
 
                 WebDriverWait(self.browser, 20).until(
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
@@ -73,7 +71,7 @@ class FindationBrowser:
                 brand_input.clear()
                 brand_input.send_keys(brand + " ")
                 brand_input.send_keys(Keys.ENTER)
-                time.sleep(0.5)
+                time.sleep(1.5)
                 print(12)
                 WebDriverWait(self.browser, 20).until(
                     EC.visibility_of_element_located(
