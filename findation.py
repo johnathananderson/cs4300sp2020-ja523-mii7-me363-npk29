@@ -64,12 +64,13 @@ class FindationBrowser:
                 product_name = product[1]
                 shade = product[2]
                 print(10)
-                while (
-                    self.browser.find_element_by_id("brand-search").value_of_css_property("border-color")
-                    != "rgb(102, 175, 233)"
-                ):
-                    print(self.browser.find_element_by_id("brand-search").value_of_css_property("border-color"))
-                    time.sleep(0.1)
+                WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "brand-search")))
+                # while (
+                #     self.browser.find_element_by_id("brand-search").value_of_css_property("border-color")
+                #     != "rgb(102, 175, 233)"
+                # ):
+                #     print(self.browser.find_element_by_id("brand-search").value_of_css_property("border-color"))
+                #     time.sleep(0.1)
                 brand_input = self.browser.find_element_by_id("brand-search")
                 print(11)
                 brand_input.send_keys(brand + " ")
@@ -91,7 +92,7 @@ class FindationBrowser:
                     WebDriverWait(self.browser, 20).until(EC.invisibility_of_element_located((By.ID, "shade")))
                     print(19)
                     WebDriverWait(self.browser, 20, 0.1).until(
-                        EC.element_to_be_clickable(
+                        EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     )
