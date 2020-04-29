@@ -94,7 +94,7 @@ class FindationBrowser:
                     )
                     add_another_button.click()
                     print(17)
-                    WebDriverWait(self.browser, 20, 0.1).until(EC.staleness_of(add_another_button))
+                    WebDriverWait(self.browser, 20, 0.1).until(EC.invisibility_of_element(add_another_button))
                     # time.sleep(2.5)
                     # WebDriverWait(self.browser, 20, 0.1).until(
                     #     EC.visibility_of_element_located((By.CLASS_NAME, "/html/body/div[2]/div/div/div[3]/div[2]"))
