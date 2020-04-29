@@ -68,18 +68,14 @@ class FindationBrowser:
                 brand_input.send_keys(brand)
                 brand_input.send_keys(Keys.ENTER)
                 print(12)
-                WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")))
-                product_input = self.browser.find_element_by_xpath(
-                    "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
-                )
+                WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.ID, "product")))
+                product_input = self.browser.find_element_by_id("product").find_element_by_class_name("form-control")
                 product_input.send_keys(product_name)
                 product_input.send_keys(Keys.ENTER)
                 print(13)
-                WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input")))
+                WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.ID, "shade")))
                 print(14)
-                shade_input = self.browser.find_element_by_xpath(
-                    "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
-                )
+                shade_input = self.browser.find_element_by_id("shade").find_element_by_class_name("form-control")
                 shade_input.send_keys(shade)
                 shade_input.send_keys(Keys.ENTER)
                 print(15)
