@@ -23,7 +23,7 @@ class FindationBrowser:
         # chrome_options.add_argument("--proxy-bypass-list=*")
         # chrome_options.add_argument("--ignore-certificate-errors")
         # chrome_options.add_argument("--blink-settings=imagesEnabled=false")
-        chrome_options.add_argument("--virtual-time-budget=1000")
+        # chrome_options.add_argument("--virtual-time-budget=1000")
         chrome_options.add_argument("--start-maximized")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(executable_path="chromedriver", options=chrome_options)
@@ -113,6 +113,11 @@ class FindationBrowser:
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     )
+                    WebDriverWait(self.browser, 20).until(
+                        EC.element_to_be_clickable(
+                            (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
+                        )
+                    )
                     add_another_button = self.browser.find_element_by_xpath(
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
@@ -120,6 +125,7 @@ class FindationBrowser:
                     print(16)
                 else:
                     WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "actions")))
+                    WebDriverWait(self.browser, 20).until(EC.element_to_be_clickable((By.CLASS_NAME, "actions")))
                     find_matches_button = self.browser.find_element_by_class_name("actions").find_element_by_tag_name(
                         "button"
                     )
