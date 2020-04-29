@@ -53,9 +53,7 @@ class FindationBrowser:
         #         print("Couldn't open matches")
         #         matches_json = {}
         try:
-            WebDriverWait(self.browser, 20).until(
-                EC.visibility_of_element_located((By.XPATH, "//*[@id='hide-splash']"))
-            )
+            WebDriverWait(self.browser, 20).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='hide-splash']")))
             get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
             get_started_button.click()
             n_products = len(products)
@@ -96,16 +94,7 @@ class FindationBrowser:
                     )
                     add_another_button.click()
                     print(17)
-                    time.sleep(1.5)
-                    print(self.browser.find_element_by_class_name("search-options").value_of_css_property("display"))
-                    while (
-                        self.browser.find_element_by_class_name("search-options").value_of_css_property("display")
-                        != "block"
-                    ):
-                        print(
-                            self.browser.find_element_by_class_name("search-options").value_of_css_property("display")
-                        )
-                        time.sleep(1)
+                    time.sleep(1)
                     # WebDriverWait(self.browser, 20).until(
                     #     EC.visibility_of_element_located((By.CLASS_NAME, "/html/body/div[2]/div/div/div[3]/div[2]"))
                     # )
@@ -123,7 +112,7 @@ class FindationBrowser:
                     )
                     find_matches_button.click()
                     print(21)
-                    WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "matches")))
+                    time.sleep(1)
                     print(22)
                     matches = self.browser.find_elements_by_class_name("match-meta")
                     print("Found " + str(len(matches)) + " matches")
