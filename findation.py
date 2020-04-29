@@ -3,7 +3,7 @@ import json
 # import urllib
 import os
 
-# import time
+import time
 import selenium.webdriver.support.expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
