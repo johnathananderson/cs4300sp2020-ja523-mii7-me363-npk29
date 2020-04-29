@@ -87,13 +87,15 @@ class FindationBrowser:
                 shade_input.send_keys(Keys.ENTER)
                 print(17)
                 if p < n_products - 1:
+                    print(18)
+                    print(shade_input.value_of_css_property("display"))
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     ).click()
                     # time.sleep(1)
-                    print(18)
+                    print(19)
                     # time.sleep(2.5)
                     # WebDriverWait(self.browser, 20, 0.1).until(
                     #     EC.visibility_of_element_located((By.CLASS_NAME, "/html/body/div[2]/div/div/div[3]/div[2]"))
