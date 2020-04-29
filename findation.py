@@ -43,6 +43,7 @@ class FindationBrowser:
                 print("Couldn't open outputs")
                 outputs = {}
         try:
+            print(self.browser.find_element_by_id("brand-search").value_of_css_property("height"))
             WebDriverWait(self.browser, 20).until(
                 EC.visibility_of_element_located((By.XPATH, "//*[@id='hide-splash']"))
             )
