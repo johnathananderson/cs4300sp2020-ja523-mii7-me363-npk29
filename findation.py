@@ -112,8 +112,10 @@ class FindationBrowser:
                     )
                     find_matches_button.click()
                     print(21)
-                    time.sleep(1.5)
+                    # time.sleep(1.5)
                     print(22)
+                    WebDriverWait(self.browser, 20, 0.1).until(EC.url_contains("searches"))
+                    print(23)
                     matches = self.browser.find_elements_by_class_name("match-meta")
                     print("Found " + str(len(matches)) + " matches")
                     for match in matches:
