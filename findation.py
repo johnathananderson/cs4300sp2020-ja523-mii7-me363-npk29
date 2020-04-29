@@ -64,10 +64,23 @@ class FindationBrowser:
                 product_name = product[1]
                 shade = product[2]
                 print(10)
+                print(
+                    self.browser.find_element_by_xpath(
+                        "/html/body/div[2]/div/div/div[3]/div[2]/div/div[1]/div[1]"
+                    ).value_of_css_property("display")
+                )
+
                 while (
-                    self.browser.find_element_by_class_name("search-input").value_of_css_property("display") == "none"
+                    self.browser.find_element_by_xpath(
+                        "/html/body/div[2]/div/div/div[3]/div[2]/div/div[1]/div[1]"
+                    ).value_of_css_property("display")
+                    == "none"
                 ):
-                    print(self.browser.find_element_by_class_name("search-input").value_of_css_property("display"))
+                    print(
+                        self.browser.find_element_by_xpath(
+                            "/html/body/div[2]/div/div/div[3]/div[2]/div/div[1]/div[1]"
+                        ).value_of_css_property("display")
+                    )
                     time.sleep(0.5)
                 brand_input = self.browser.find_element_by_id("brand-search")
                 print(11)
