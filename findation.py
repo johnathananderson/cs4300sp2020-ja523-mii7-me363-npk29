@@ -63,6 +63,7 @@ class FindationBrowser:
                 brand = product[0]
                 product_name = product[1]
                 shade = product[2]
+                print(product)
                 WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
                 brand_input.send_keys(brand + " ")
@@ -85,14 +86,15 @@ class FindationBrowser:
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
                     add_another_button.click()
-                    print(15)
+                    print(16)
+                    time.sleep(.1)
                 else:
                     WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.CLASS_NAME, "actions")))
                     find_matches_button = self.browser.find_element_by_class_name(
                         "actions"
                     ).find_element_by_tag_name("button")
                     find_matches_button.click()
-                    print(16)
+                    print(17)
                     WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.CLASS_NAME, "match-meta")))
                     matches = self.browser.find_elements_by_class_name("match-meta")
                     print("Found " + str(len(matches)) + " matches")
