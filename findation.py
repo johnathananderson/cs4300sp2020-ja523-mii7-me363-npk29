@@ -88,20 +88,20 @@ class FindationBrowser:
                         )
                     )
                     add_another_button.click()
-                    print(15)
                     WebDriverWait(self.browser, 8).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "search-options"))
                     )
-                    print(16)
                 else:
+                    print(15)
                     elt = WebDriverWait(self.browser, 8).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "actions"))
                     )
+                    print(16)
                     find_matches_button = elt.find_element_by_tag_name("button")
                     find_matches_button.click()
                     print(17)
-                    matches = WebDriverWait(self.browser, 8).until(
-                        EC.visibility_of_element_located((By.CLASS_NAME, "match-meta"))
+                    matches = WebDriverWait(self.browser, 12).until(
+                        EC.visibility_of_all_elements_located((By.CLASS_NAME, "match-meta"))
                     )
                     print("Found " + str(len(matches)) + " matches")
                     for match in matches:
