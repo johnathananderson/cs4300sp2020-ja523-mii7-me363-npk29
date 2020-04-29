@@ -111,7 +111,8 @@ class FindationBrowser:
                     )
                     find_matches_button.click()
                     print(21)
-                    WebDriverWait(self.browser, 12).until(EC.visibility_of_element_located((By.CLASS_NAME, "matches")))
+                    WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "matches")))
+                    print(22)
                     matches = self.browser.find_elements_by_class_name("match-meta")
                     print("Found " + str(len(matches)) + " matches")
                     for match in matches:
