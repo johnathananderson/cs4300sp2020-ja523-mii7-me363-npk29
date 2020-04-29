@@ -64,7 +64,9 @@ class FindationBrowser:
                 product_name = product[1]
                 shade = product[2]
                 print(10)
-                WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "brand-search")))
+                WebDriverWait(self.browser, 20).until(
+                    EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
+                )
                 # while (
                 #     self.browser.find_element_by_id("brand-search").value_of_css_property("border-color")
                 #     != "rgb(102, 175, 233)"
