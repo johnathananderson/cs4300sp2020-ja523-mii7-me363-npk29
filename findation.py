@@ -86,8 +86,8 @@ class FindationBrowser:
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
-                        ).click()
-                    )
+                        )
+                    ).click()
                     print(18)
                     # time.sleep(2.5)
                     # WebDriverWait(self.browser, 20, 0.1).until(
@@ -100,15 +100,9 @@ class FindationBrowser:
                         EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button")
                         )
-                    )
+                    ).click()
                     print(20)
-                    find_matches_button = self.browser.find_element_by_xpath(
-                        "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button"
-                    )
-                    find_matches_button.click()
-                    print(21)
                     # time.sleep(1.5)
-                    print(22)
                     WebDriverWait(self.browser, 20, 0.1).until(EC.url_contains("searches"))
                     print(23)
                     matches = self.browser.find_elements_by_class_name("match-meta")
