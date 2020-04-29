@@ -16,7 +16,7 @@ class FindationBrowser:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--headless")
+        # chrome_options.add_argument("--headless")
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument("--no-proxy-server")
         chrome_options.add_argument("--proxy-server='direct://'")
@@ -65,7 +65,7 @@ class FindationBrowser:
                 shade = product[2]
                 print(10)
                 brand_input = WebDriverWait(self.browser, 20, 0.1).until(
-                    EC.element_to_be_clickable((By.ID, "brand-search"))
+                    EC.visibility_of_element_located((By.ID, "brand-search"))
                 )
                 print(11)
                 brand_input.send_keys(brand + " ")
@@ -86,12 +86,8 @@ class FindationBrowser:
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
-                        )
+                        ).click()
                     )
-                    add_another_button = self.browser.find_element_by_xpath(
-                        "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
-                    )
-                    add_another_button.click()
                     print(18)
                     # time.sleep(2.5)
                     # WebDriverWait(self.browser, 20, 0.1).until(
