@@ -18,7 +18,7 @@ class FindationBrowser:
     def __init__(self):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-gpu")
+        # chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument("--no-proxy-server")
@@ -103,6 +103,8 @@ class FindationBrowser:
                         EC.invisibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                     )
                     print(17)
+                    print(self.browser.find_element_by_id("brand-search").value_of_css_property("height"))
+                    print("height")
                     WebDriverWait(self.browser, 20).until(
                         EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
