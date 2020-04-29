@@ -27,7 +27,7 @@ class FindationBrowser:
         # chrome_options.add_argument("--ignore-certificate-errors")
         # chrome_options.add_argument("--blink-settings=imagesEnabled=false")
         # chrome_options.add_argument("--virtual-time-budget=1000")
-        # chrome_options.add_argument("--start-maximized")
+        chrome_options.add_argument("--start-maximized")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
         self.browser.get("https://www.findation.com/")
