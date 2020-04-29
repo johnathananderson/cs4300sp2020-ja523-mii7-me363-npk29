@@ -73,34 +73,37 @@ class FindationBrowser:
                 brand_input.send_keys(brand + " ")
                 brand_input.send_keys(Keys.ENTER)
                 print(12)
+                WebDriverWait(self.browser, 20, 0.1).until(EC.presence_of_element_located((By.ID, "product")))
                 elt = WebDriverWait(self.browser, 20, 0.1).until(EC.visibility_of_element_located((By.ID, "product")))
                 product_input = elt.find_element_by_class_name("form-control")
                 product_input.send_keys(product_name)
                 product_input.send_keys(Keys.ENTER)
                 print(13)
+                WebDriverWait(self.browser, 20, 0.1).until(EC.presence_of_element_located((By.ID, "shade")))
+                print(14)
                 elt = WebDriverWait(self.browser, 20, 0.1).until(EC.visibility_of_element_located((By.ID, "shade")))
+                print(15)
                 shade_input = elt.find_element_by_class_name("form-control")
+                print(16)
                 shade_input.send_keys(shade)
                 shade_input.send_keys(Keys.ENTER)
-                print(14)
+                print(17)
                 if p < n_products - 1:
-                    print(15)
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     )
-                    print(16)
                     add_another_button = self.browser.find_element_by_xpath(
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
                     add_another_button.click()
-                    print(17)
+                    print(18)
                     # time.sleep(2.5)
                     # WebDriverWait(self.browser, 20, 0.1).until(
                     #     EC.visibility_of_element_located((By.CLASS_NAME, "/html/body/div[2]/div/div/div[3]/div[2]"))
                     # )
-                    print(18)
+                    # print(18)
                 else:
                     print(19)
                     WebDriverWait(self.browser, 20, 0.1).until(
