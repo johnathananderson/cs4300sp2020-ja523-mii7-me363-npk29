@@ -71,7 +71,7 @@ class FindationBrowser:
                 brand_input.clear()
                 brand_input.send_keys(brand)
                 l = self.browser.find_element_by_xpath("/html/body/div[2]/div/div/div[3]/div[2]/div/div[1]/ul")
-                li = l.find_elements_by_tag_name()
+                li = l.find_elements_by_tag_name("li")
                 opts = []
                 for x in li:
                     if x.value_of_css_property("display") != "none":
