@@ -14,7 +14,6 @@ from findation import FindationBrowser
 
 project_name = "Save Face"
 net_id = "ja523, me363, mii7, npk29"
-f = FindationBrowser()
 
 
 @irsystem.route("/", methods=["GET"])
@@ -90,9 +89,11 @@ def product_test():
     brand = request.form.get("brand-input")
     product = request.form.get("product-input")
     shade = request.form.get("shade-input")
+    f = FindationBrowser()
+    f.browser.get("https://www.findation.com/")
     products = [[brand, product, shade], [brand, product, shade]]
     data = f.process_matches(products)
-    f.browser.get("https://www.findation.com/")
+    f.close_out()
     return render_template("outputs.html", name=project_name, netid=net_id, data=data)
 
 
