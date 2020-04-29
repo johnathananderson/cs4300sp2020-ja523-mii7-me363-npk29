@@ -58,7 +58,6 @@ class FindationBrowser:
             n_products = len(products)
             results = []
             for p in range(n_products):
-                print(p)
                 product = products[p]
                 brand = product[0]
                 product_name = product[1]
@@ -82,24 +81,28 @@ class FindationBrowser:
                 shade_input.send_keys(Keys.ENTER)
                 print(14)
                 if p < n_products - 1:
+                    print(15)
                     add_another_button = WebDriverWait(self.browser, 8).until(
                         EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     )
+                    print(16)
                     add_another_button.click()
+                    print(17)
                     WebDriverWait(self.browser, 8).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "search-options"))
                     )
+                    print(18)
                 else:
-                    print(15)
+                    print(19)
                     elt = WebDriverWait(self.browser, 8).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "actions"))
                     )
-                    print(16)
+                    print(20)
                     find_matches_button = elt.find_element_by_tag_name("button")
                     find_matches_button.click()
-                    print(17)
+                    print(21)
                     matches = WebDriverWait(self.browser, 12).until(
                         EC.visibility_of_all_elements_located((By.CLASS_NAME, "match-meta"))
                     )
