@@ -32,7 +32,6 @@ class FindationBrowser:
         self.browser.close()
 
     def process_matches(self, products):
-        self.browser.delete_all_cookies()
         # i = IngredientsBrowser()
         with open("outputs_i.json", encoding="utf8") as data:
             try:
@@ -104,14 +103,14 @@ class FindationBrowser:
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
                     add_another_button.click()
-                    print(15)
+                    print(16)
                 else:
                     WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "actions")))
                     find_matches_button = self.browser.find_element_by_class_name("actions").find_element_by_tag_name(
                         "button"
                     )
                     find_matches_button.click()
-                    print(16)
+                    print(17)
                     WebDriverWait(self.browser, 20).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "match-meta"))
                     )

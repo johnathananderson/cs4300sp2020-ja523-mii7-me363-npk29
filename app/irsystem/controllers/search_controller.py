@@ -32,7 +32,9 @@ def search():
     else:
         output_message = "Your search: " + query
         data = range(5)
-    return render_template("search.html", name=project_name, netid=net_id, output_message=output_message, data=data, brands=brands)
+    return render_template(
+        "search.html", name=project_name, netid=net_id, output_message=output_message, data=data, brands=brands
+    )
     # return (request.form['search'])
 
 
@@ -78,7 +80,9 @@ def product():
         for shade in s:
             shades.append(shade)
 
-        return render_template("shades.html", name=project_name, netid=net_id, product=product, shades=shades, brand=brand)
+        return render_template(
+            "shades.html", name=project_name, netid=net_id, product=product, shades=shades, brand=brand
+        )
 
 
 @irsystem.route("/product/findation/", methods=["POST"])
@@ -88,6 +92,7 @@ def product_test():
     shade = request.form.get("shade-input")
     products = [[brand, product, shade], [brand, product, shade]]
     data = f.process_matches(products)
+    f.browser.delete_all_cookies()
     f.browser.get("https://www.findation.com/")
     return render_template("outputs.html", name=project_name, netid=net_id, data=data)
 
