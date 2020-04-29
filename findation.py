@@ -69,9 +69,19 @@ class FindationBrowser:
                 WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
                 brand_input.clear()
-                brand_input.send_keys(brand + " ")
-                brand_input.send_keys(Keys.ENTER)
-                time.sleep(1.5)
+                brand_input.send_keys(brand)
+                l = self.browser.find_element_by_xpath("/html/body/div[2]/div/div/div[3]/div[2]/div/div[1]/ul")
+                li = l.find_elements_by_tag_name()
+                opts = []
+                for x in li:
+                    if x.value_of_css_property("display") != "none":
+                        opts.append(x)
+                print(opts)
+                for x in opts:
+                    a = x.find_element_by_class_name("heading")
+                    if a.get_attribute("text").strip() == brand.strip():
+                        print(a.get_attribute("text"))
+                        a.click()
                 print(12)
                 WebDriverWait(self.browser, 20).until(
                     EC.visibility_of_element_located(
