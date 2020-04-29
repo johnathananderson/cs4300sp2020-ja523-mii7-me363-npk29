@@ -1,7 +1,8 @@
 import json
 
 # import urllib
-# import os
+import os
+
 # import time
 import selenium.webdriver.support.expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -28,7 +29,7 @@ class FindationBrowser:
         # chrome_options.add_argument("--virtual-time-budget=1000")
         firefox_options.add_argument("--start-maximized")
         # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
-        self.browser = webdriver.Firefox(options=firefox_options)
+        self.browser = webdriver.Firefox(options=firefox_options, executable_path=os.environ.get("GECKODRIVER_PATH"))
         self.browser.get("https://www.findation.com/")
 
     def close_out(self):
