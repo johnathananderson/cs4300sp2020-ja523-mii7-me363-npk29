@@ -29,6 +29,7 @@ class FindationBrowser:
         # chrome_options.add_argument("--virtual-time-budget=1000")
         # firefox_options.add_argument("--start-maximized")
         # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
+        os.chmod("GECKODRIVER_PATH", 0755)
         self.browser = webdriver.Firefox()
         self.browser.get("https://www.findation.com/")
 
