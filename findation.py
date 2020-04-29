@@ -64,6 +64,7 @@ class FindationBrowser:
                 product_name = product[1]
                 shade = product[2]
                 print(10)
+                print(self.browser.find_element_by_id("brand-search").value_of_css_property("display"))
                 brand_input = WebDriverWait(self.browser, 20, 0.1).until(
                     EC.visibility_of_element_located((By.ID, "brand-search"))
                 )
