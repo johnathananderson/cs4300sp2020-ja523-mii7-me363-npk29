@@ -69,9 +69,7 @@ class FindationBrowser:
                 ):
                     print(self.browser.find_element_by_class_name("search-input").value_of_css_property("display"))
                     time.sleep(0.5)
-                brand_input = WebDriverWait(self.browser, 20, 0.1).until(
-                    EC.visibility_of_element_located((By.ID, "brand-search"))
-                )
+                brand_input = self.browser.find_element_by_id("brand-search")
                 print(11)
                 brand_input.send_keys(brand + " ")
                 brand_input.send_keys(Keys.ENTER)
