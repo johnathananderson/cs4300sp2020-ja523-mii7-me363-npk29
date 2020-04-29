@@ -16,7 +16,7 @@ from selenium.webdriver.common.keys import Keys
 
 class FindationBrowser:
     def __init__(self):
-        firefox_options = webdriver.FirefoxOptions()
+        # firefox_options = webdriver.FirefoxOptions()
         # firefox_options.add_argument("--no-sandbox")
         # firefox_options.add_argument("--disable-gpu")
         # chrome_options.add_argument("--headless")
@@ -29,9 +29,7 @@ class FindationBrowser:
         # chrome_options.add_argument("--virtual-time-budget=1000")
         # firefox_options.add_argument("--start-maximized")
         # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
-        self.browser = webdriver.Firefox(
-            firefox_binary=os.environ.get("FIREFOX_BIN"), executable_path=os.environ.get("PATH")
-        )
+        self.browser = webdriver.Firefox()
         self.browser.get("https://www.findation.com/")
 
     def close_out(self):
