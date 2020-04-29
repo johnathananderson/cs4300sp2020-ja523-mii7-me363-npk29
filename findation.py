@@ -32,7 +32,6 @@ class FindationBrowser:
         self.browser.close()
 
     def process_matches(self, products):
-        self.browser.delete_all_cookies()
         # i = IngredientsBrowser()
         with open("outputs_i.json", encoding="utf8") as data:
             try:
@@ -53,28 +52,21 @@ class FindationBrowser:
         #         print("Couldn't open matches")
         #         matches_json = {}
         try:
-            WebDriverWait(self.browser, 20, 0.1).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='hide-splash']")))
+            WebDriverWait(self.browser, 20).until(
+                EC.visibility_of_element_located((By.XPATH, "//*[@id='hide-splash']"))
+            )
             get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
             get_started_button.click()
             n_products = len(products)
             results = []
             for p in range(n_products):
+                print(p)
                 product = products[p]
                 brand = product[0]
                 product_name = product[1]
                 shade = product[2]
-                print(10)
-                WebDriverWait(self.browser, 20).until(
-                    EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
-                )
-                # while (
-                #     self.browser.find_element_by_id("brand-search").value_of_css_property("border-color")
-                #     != "rgb(102, 175, 233)"
-                # ):
-                #     print(self.browser.find_element_by_id("brand-search").value_of_css_property("border-color"))
-                #     time.sleep(0.1)
+                WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
-                print(11)
                 brand_input.send_keys(brand + " ")
                 brand_input.send_keys(Keys.ENTER)
                 print(12)
@@ -84,16 +76,13 @@ class FindationBrowser:
                 product_input.send_keys(Keys.ENTER)
                 print(13)
                 WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "shade")))
+                print(14)
                 shade_input = self.browser.find_element_by_id("shade").find_element_by_class_name("form-control")
-                print(16)
                 shade_input.send_keys(shade)
                 shade_input.send_keys(Keys.ENTER)
-                print(17)
+                print(15)
                 if p < n_products - 1:
-                    print(18)
-                    WebDriverWait(self.browser, 20).until(EC.invisibility_of_element_located((By.ID, "shade")))
-                    print(19)
-                    WebDriverWait(self.browser, 20, 0.1).until(
+                    WebDriverWait(self.browser, 20).until(
                         EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
@@ -102,24 +91,17 @@ class FindationBrowser:
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
                     add_another_button.click()
-                    # time.sleep(1)
-                    print(19)
-                    # time.sleep(2.5)
-                    # WebDriverWait(self.browser, 20, 0.1).until(
-                    #     EC.visibility_of_element_located((By.CLASS_NAME, "/html/body/div[2]/div/div/div[3]/div[2]"))
-                    # )
-                    # print(18)
+                    print(15)
                 else:
-                    print(19)
-                    WebDriverWait(self.browser, 20, 0.1).until(
-                        EC.element_to_be_clickable(
-                            (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button")
-                        )
-                    ).click()
-                    print(20)
-                    # time.sleep(1.5)
-                    WebDriverWait(self.browser, 20, 0.1).until(EC.url_contains("searches"))
-                    print(23)
+                    WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.CLASS_NAME, "actions")))
+                    find_matches_button = self.browser.find_element_by_class_name("actions").find_element_by_tag_name(
+                        "button"
+                    )
+                    find_matches_button.click()
+                    print(16)
+                    WebDriverWait(self.browser, 20).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, "match-meta"))
+                    )
                     matches = self.browser.find_elements_by_class_name("match-meta")
                     print("Found " + str(len(matches)) + " matches")
                     for match in matches:
