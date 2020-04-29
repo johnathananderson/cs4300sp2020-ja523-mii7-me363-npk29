@@ -107,7 +107,7 @@ class FindationBrowser:
                         match_product["name"] = match_name
                         match_product["shade"] = match_shade
                         match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
-                        # match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
+                        match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
                         
                         if match_brand in outputs and match_name in outputs[match_brand]:
                             match_product["ingredients"] = outputs[match_brand][match_name]["ingredients"]
