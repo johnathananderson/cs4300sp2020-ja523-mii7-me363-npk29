@@ -64,8 +64,10 @@ class FindationBrowser:
                 product_name = product[1]
                 shade = product[2]
                 print(10)
-                while not self.browser.find_element_by_id("brand-search") == self.browser.switch_to().active_element():
-                    print("Not active")
+                while (
+                    self.browser.find_element_by_id("brand-search").value_of_css_property("border-color") != "#66afe9"
+                ):
+                    print(self.browser.find_element_by_id("brand-search").value_of_css_property("border-color"))
                     time.sleep(0.5)
                 brand_input = self.browser.find_element_by_id("brand-search")
                 print(11)
