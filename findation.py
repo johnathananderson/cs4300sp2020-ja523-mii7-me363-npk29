@@ -89,7 +89,9 @@ class FindationBrowser:
                     )
                     add_another_button.click()
                     print(15)
-                    WebDriverWait(self.browser, 8).until(EC.visibility_of_element((By.CLASS_NAME, "search-options")))
+                    WebDriverWait(self.browser, 8).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, "search-options"))
+                    )
                     print(16)
                 else:
                     elt = WebDriverWait(self.browser, 8).until(
