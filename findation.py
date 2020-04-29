@@ -88,9 +88,12 @@ class FindationBrowser:
                 print(17)
                 if p < n_products - 1:
                     print(18)
-                    print(shade_input.value_of_css_property("display"))
+                    while shade_input.value_of_css_property("display") == "block":
+                        print("waiting")
+                        time.sleep(0.1)
+                    print(19)
                     WebDriverWait(self.browser, 20, 0.1).until(
-                        EC.visibility_of_element_located(
+                        EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     ).click()
@@ -104,7 +107,7 @@ class FindationBrowser:
                 else:
                     print(19)
                     WebDriverWait(self.browser, 20, 0.1).until(
-                        EC.visibility_of_element_located(
+                        EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button")
                         )
                     ).click()
