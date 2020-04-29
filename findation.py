@@ -16,7 +16,7 @@ class FindationBrowser:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--headless")
+        # chrome_options.add_argument("--headless")
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument("--no-proxy-server")
         chrome_options.add_argument("--proxy-server='direct://'")
@@ -25,7 +25,7 @@ class FindationBrowser:
         chrome_options.add_argument("--blink-settings=imagesEnabled=false")
         chrome_options.add_argument("--start-maximized")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
-        self.browser = webdriver.Chrome(options=chrome_options, executable_path="chromedriver")
+        self.browser = webdriver.Chrome(executable_path="chromedriver", options=chrome_options)
         self.browser.get("https://www.findation.com/")
 
     def close_out(self):
@@ -73,7 +73,7 @@ class FindationBrowser:
                 WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
                 brand_input.clear()
-                brand_input.send_keys(brand)
+                brand_input.send_keys(brand + " ")
                 brand_input.send_keys(Keys.ENTER)
                 print(12)
                 WebDriverWait(self.browser, 20).until(
@@ -175,6 +175,13 @@ class FindationBrowser:
 
 
 # f = FindationBrowser()
+# brand = "Mary Kay"
+# product_name = "Timewise Luminous 3D Foundation"
+# shade = "Beige C 120"
+# product = [[brand, product_name, shade], [brand, product_name, shade]]
+# f.process_matches(product)
+# f.close_out()
+# print("Done")
 # with open("products.json", encoding="utf8") as j:
 #     products = json.load(j)
 
