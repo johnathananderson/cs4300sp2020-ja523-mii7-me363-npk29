@@ -32,6 +32,7 @@ class FindationBrowser:
         self.browser.close()
 
     def process_matches(self, products):
+        self.browser.delete_all_cookies()
         # i = IngredientsBrowser()
         with open("outputs_i.json", encoding="utf8") as data:
             try:
@@ -52,7 +53,9 @@ class FindationBrowser:
         #         print("Couldn't open matches")
         #         matches_json = {}
         try:
-            WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.XPATH, "//*[@id='hide-splash']")))
+            WebDriverWait(self.browser, 20).until(
+                EC.visibility_of_element_located((By.XPATH, "//*[@id='hide-splash']"))
+            )
             get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
             get_started_button.click()
             n_products = len(products)
@@ -63,26 +66,26 @@ class FindationBrowser:
                 product_name = product[1]
                 shade = product[2]
                 print(10)
-                brand_input = WebDriverWait(self.browser, 8).until(
+                brand_input = WebDriverWait(self.browser, 20).until(
                     EC.visibility_of_element_located((By.ID, "brand-search"))
                 )
                 print(11)
                 brand_input.send_keys(brand + " ")
                 brand_input.send_keys(Keys.ENTER)
                 print(12)
-                elt = WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.ID, "product")))
+                elt = WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "product")))
                 product_input = elt.find_element_by_class_name("form-control")
                 product_input.send_keys(product_name)
                 product_input.send_keys(Keys.ENTER)
                 print(13)
-                elt = WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.ID, "shade")))
+                elt = WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "shade")))
                 shade_input = elt.find_element_by_class_name("form-control")
                 shade_input.send_keys(shade)
                 shade_input.send_keys(Keys.ENTER)
                 print(14)
                 if p < n_products - 1:
                     print(15)
-                    WebDriverWait(self.browser, 8).until(
+                    WebDriverWait(self.browser, 20).until(
                         EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
@@ -91,16 +94,15 @@ class FindationBrowser:
                     add_another_button = self.browser.find_element_by_xpath(
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
-                    print(add_another_button.get_attribute("text"))
                     add_another_button.click()
                     print(17)
-                    WebDriverWait(self.browser, 8).until(
+                    WebDriverWait(self.browser, 20).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "search-options"))
                     )
                     print(18)
                 else:
                     print(19)
-                    WebDriverWait(self.browser, 8).until(
+                    WebDriverWait(self.browser, 20).until(
                         EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button")
                         )
