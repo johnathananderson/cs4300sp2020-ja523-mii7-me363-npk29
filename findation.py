@@ -27,7 +27,7 @@ class FindationBrowser:
         self.browser = webdriver.Chrome(options=chrome_options, executable_path="chromedriver")
         self.browser.implicitly_wait(2)
         self.browser.get("https://www.findation.com/")
-        wait = new WebDriverWait(self.browser, 3)
+        self.wait = new WebDriverWait(self.browser, 3)
 
     def close_out(self):
         self.browser.close()
@@ -55,7 +55,7 @@ class FindationBrowser:
         try:
             count = 0
             while count < 11:
-                wait.until(EC.visibilityOfElementLocated((By.XPATH, "//*[@id='hide-splash']")))
+                self.wait.until(EC.visibilityOfElementLocated((By.XPATH, "//*[@id='hide-splash']")))
                 get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
                 get_started_button.click()
                 n_products = len(products)
@@ -65,17 +65,17 @@ class FindationBrowser:
                     brand = product[0]
                     product_name = product[1]
                     shade = product[2]
-                    wait.until(EC.visibilityOfElementLocated((By.ID, "brand-search")))
+                    self.wait.until(EC.visibilityOfElementLocated((By.ID, "brand-search")))
                     brand_input = self.browser.find_element_by_id("brand-search")
                     brand_input.send_keys(brand)
                     brand_input.send_keys(Keys.ENTER)
-                    wait.until(EC.visibilityOfElementLocated((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")))
+                    self.wait.until(EC.visibilityOfElementLocated((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")))
                     product_input = self.browser.find_element_by_xpath(
                         "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                     )
                     product_input.send_keys(product_name)
                     product_input.send_keys(Keys.ENTER)
-                    wait.until(EC.visibilityOfElementLocated((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input")))
+                    self.wait.until(EC.visibilityOfElementLocated((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input")))
                     shade_input = self.browser.find_element_by_xpath(
                         "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
                     )
@@ -83,18 +83,18 @@ class FindationBrowser:
                     shade_input.send_keys(Keys.ENTER)
                     time.sleep(2)
                     if p < n_products - 1:
-                        wait.until(EC.visibilityOfElementLocated((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")))
+                        self.wait.until(EC.visibilityOfElementLocated((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")))
                         add_another_button = self.browser.find_element_by_xpath(
                             "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                         )
                         add_another_button.click()
                     else:
-                        wait.until(EC.visibilityOfElementLocated((By.CLASS_NAME, "actions")))
+                        self.wait.until(EC.visibilityOfElementLocated((By.CLASS_NAME, "actions")))
                         find_matches_button = self.browser.find_element_by_class_name(
                             "actions"
                         ).find_element_by_tag_name("button")
                         find_matches_button.click()
-                        wait.until(EC.visibilityOfElementLocated((By.CLASS_NAME, "match-meta")))
+                        self.wait.until(EC.visibilityOfElementLocated((By.CLASS_NAME, "match-meta")))
                         matches = self.browser.find_elements_by_class_name("match-meta")
                         print("Found " + str(len(matches)) + " matches")
                         for match in matches:
