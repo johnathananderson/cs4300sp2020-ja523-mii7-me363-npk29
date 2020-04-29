@@ -32,6 +32,7 @@ class FindationBrowser:
         self.browser.close()
 
     def process_matches(self, products):
+        self.browser.delete_all_cookies()
         # i = IngredientsBrowser()
         with open("outputs_i.json", encoding="utf8") as data:
             try:
