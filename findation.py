@@ -82,12 +82,16 @@ class FindationBrowser:
                 print(14)
                 if p < n_products - 1:
                     print(15)
-                    add_another_button = WebDriverWait(self.browser, 8).until(
-                        EC.visibility_of_element_located(
+                    WebDriverWait(self.browser, 8).until(
+                        EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     )
                     print(16)
+                    add_another_button = self.browser.find_element_by_xpath(
+                        "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
+                    )
+                    print(add_another_button.get_attribute("text"))
                     add_another_button.click()
                     print(17)
                     WebDriverWait(self.browser, 8).until(
@@ -96,11 +100,15 @@ class FindationBrowser:
                     print(18)
                 else:
                     print(19)
-                    elt = WebDriverWait(self.browser, 8).until(
-                        EC.visibility_of_element_located((By.CLASS_NAME, "actions"))
+                    WebDriverWait(self.browser, 8).until(
+                        EC.element_to_be_clickable(
+                            (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button")
+                        )
                     )
                     print(20)
-                    find_matches_button = elt.find_element_by_tag_name("button")
+                    find_matches_button = self.browser.find_element_by_xpath(
+                        "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button"
+                    )
                     find_matches_button.click()
                     print(21)
                     matches = WebDriverWait(self.browser, 12).until(
