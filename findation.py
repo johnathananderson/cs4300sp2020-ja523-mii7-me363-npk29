@@ -67,7 +67,7 @@ class FindationBrowser:
                 WebDriverWait(self.browser, 20, 0.1).until(EC.presence_of_element_located((By.ID, "brand-search")))
                 print(11)
                 brand_input = WebDriverWait(self.browser, 20, 0.1).until(
-                    EC.presence_of_element_located((By.ID, "brand-search"))
+                    EC.visibility_of_element_located((By.ID, "brand-search"))
                 )
                 print(11)
                 brand_input.send_keys(brand + " ")
