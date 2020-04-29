@@ -61,6 +61,9 @@ class FindationBrowser:
                 print(10)
                 print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
                 print("height")
+                while self.browser.find_element_by_id("brand").value_of_css_property("height") == "auto":
+                    print("waiting")
+
                 WebDriverWait(self.browser, 20).until(
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                 )
@@ -68,9 +71,9 @@ class FindationBrowser:
                 WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
                 brand_input.clear()
-                brand_input.send_keys(brand)
-                brand_input.send_keys(" ")
+                brand_input.send_keys(brand + " ")
                 brand_input.send_keys(Keys.ENTER)
+                time.sleep(0.5)
                 print(12)
                 WebDriverWait(self.browser, 20).until(
                     EC.visibility_of_element_located(
@@ -118,6 +121,7 @@ class FindationBrowser:
                     add_another_button = self.browser.find_element_by_xpath(
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
+                    print(add_another_button.get_attribute("text"))
                     add_another_button.click()
                     print(18)
                 else:

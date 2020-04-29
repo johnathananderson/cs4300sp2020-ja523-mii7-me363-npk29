@@ -92,6 +92,7 @@ def product_test():
     f = FindationBrowser()
     f.browser.get("https://www.findation.com/")
     products = [[brand, product, shade], [brand, product, shade]]
+    time.sleep(1)
     data = f.process_matches(products)
     f.close_out()
     return render_template("outputs.html", name=project_name, netid=net_id, data=data)
