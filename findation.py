@@ -96,7 +96,7 @@ class FindationBrowser:
                     )
                     add_another_button.click()
                     print(17)
-                    time.sleep(0.5)
+                    time.sleep(1.5)
                     print(self.browser.find_element_by_class_name("search-options").value_of_css_property("display"))
                     while (
                         self.browser.find_element_by_class_name("search-options").value_of_css_property("display")
