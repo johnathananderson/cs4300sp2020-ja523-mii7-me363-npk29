@@ -18,16 +18,17 @@ class FindationBrowser:
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--log-level=3")
+        chrome_options.add_argument('--no-proxy-server')
         chrome_options.add_argument("--proxy-server='direct://'")
         chrome_options.add_argument("--proxy-bypass-list=*")
         chrome_options.add_argument('--ignore-certificate-errors')
-        chrome_options.add_argument("--blink-settings=imagesEnabled=false");
-        chrome_options.add_argument("--window-size=1920,1080");
+        chrome_options.add_argument("--blink-settings=imagesEnabled=false")
+        chrome_options.add_argument("--start-maximized")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
         self.browser = webdriver.Chrome(options=chrome_options, executable_path="chromedriver")
         self.browser.implicitly_wait(2)
         self.browser.get("https://www.findation.com/")
-        
+
     def close_out(self):
         self.browser.close()
 
