@@ -88,11 +88,11 @@ class FindationBrowser:
                 print(17)
                 if p < n_products - 1:
                     WebDriverWait(self.browser, 20, 0.1).until(
-                        EC.element_to_be_clickable(
+                        EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     ).click()
-                    time.sleep(1)
+                    # time.sleep(1)
                     print(18)
                     # time.sleep(2.5)
                     # WebDriverWait(self.browser, 20, 0.1).until(
@@ -102,7 +102,7 @@ class FindationBrowser:
                 else:
                     print(19)
                     WebDriverWait(self.browser, 20, 0.1).until(
-                        EC.element_to_be_clickable(
+                        EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/button")
                         )
                     ).click()
