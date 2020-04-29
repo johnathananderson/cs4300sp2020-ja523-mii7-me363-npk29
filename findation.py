@@ -67,7 +67,7 @@ class FindationBrowser:
                 shade = product[2]
                 WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
-                brand_input.send_keys(brand + " ")
+                brand_input.send_keys(brand)
                 brand_input.send_keys(Keys.ENTER)
                 print(12)
                 WebDriverWait(self.browser, 20).until(EC.visibility_of_element_located((By.ID, "product")))
