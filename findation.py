@@ -88,9 +88,7 @@ class FindationBrowser:
                 print(17)
                 if p < n_products - 1:
                     print(18)
-                    while shade_input.value_of_css_property("display") == "block":
-                        print("waiting")
-                        time.sleep(0.1)
+                    WebDriverWait(self.browser, 20).until(EC.invisibility_of_element_located((By.ID, "shade")))
                     print(19)
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.element_to_be_clickable(
