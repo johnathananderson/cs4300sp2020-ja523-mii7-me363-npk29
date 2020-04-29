@@ -1,14 +1,16 @@
 import json
-import urllib
-import os
-import time
+
+# import urllib
+# import os
+# import time
 import selenium.webdriver.support.expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from ingredients import IngredientsBrowser
-from webdriver_manager.chrome import ChromeDriverManager
+
+# from ingredients import IngredientsBrowser
+# from webdriver_manager.chrome import ChromeDriverManager
 
 
 class FindationBrowser:
@@ -26,7 +28,7 @@ class FindationBrowser:
         # chrome_options.add_argument("--virtual-time-budget=1000")
         firefox_options.add_argument("--start-maximized")
         # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
-        self.browser = webdriver.Firefox(executable_path="geckodriver", options=firefox_options)
+        self.browser = webdriver.Firefox(options=firefox_options)
         self.browser.get("https://www.findation.com/")
 
     def close_out(self):
