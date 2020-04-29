@@ -18,10 +18,10 @@ class FindationBrowser:
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--log-level=3")
-        chrome_options.add_argument('--no-proxy-server')
+        chrome_options.add_argument("--no-proxy-server")
         chrome_options.add_argument("--proxy-server='direct://'")
         chrome_options.add_argument("--proxy-bypass-list=*")
-        chrome_options.add_argument('--ignore-certificate-errors')
+        chrome_options.add_argument("--ignore-certificate-errors")
         chrome_options.add_argument("--blink-settings=imagesEnabled=false")
         chrome_options.add_argument("--start-maximized")
         chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
@@ -81,21 +81,28 @@ class FindationBrowser:
                 shade_input.send_keys(Keys.ENTER)
                 print(15)
                 if p < n_products - 1:
-                    WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")))
+                    WebDriverWait(self.browser, 8).until(
+                        EC.visibility_of_element_located(
+                            (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
+                        )
+                    )
                     add_another_button = self.browser.find_element_by_xpath(
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
                     add_another_button.click()
+                    print(add_another_button).get_attribute("text")
                     print(16)
-                    time.sleep(.1)
+                    time.sleep(1)
                 else:
                     WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.CLASS_NAME, "actions")))
-                    find_matches_button = self.browser.find_element_by_class_name(
-                        "actions"
-                    ).find_element_by_tag_name("button")
+                    find_matches_button = self.browser.find_element_by_class_name("actions").find_element_by_tag_name(
+                        "button"
+                    )
                     find_matches_button.click()
                     print(17)
-                    WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.CLASS_NAME, "match-meta")))
+                    WebDriverWait(self.browser, 8).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, "match-meta"))
+                    )
                     matches = self.browser.find_elements_by_class_name("match-meta")
                     print("Found " + str(len(matches)) + " matches")
                     for match in matches:
@@ -112,7 +119,7 @@ class FindationBrowser:
                         match_product["shade"] = match_shade
                         match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
                         match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
-                        
+
                         if match_brand in outputs and match_name in outputs[match_brand]:
                             match_product["ingredients"] = outputs[match_brand][match_name]["ingredients"]
                             match_product["prices"] = outputs[match_brand][match_name]["prices"]
@@ -128,11 +135,11 @@ class FindationBrowser:
                             # except Exception as e:
                             match_product["ingredients"] = "Ingredients not found"
                             match_product["prices"] = "Prices not found"
-                                # print(e)
+                            # print(e)
                         results.append(match_product)
-                            # matches_json[match_brand] = matches_json.get(match_brand, {})
-                            # matches_json[match_brand][match_name] = matches_json[match_brand].get(match_name, {})
-                            # matches_json[match_brand][match_name][match_shade] = match_product
+                        # matches_json[match_brand] = matches_json.get(match_brand, {})
+                        # matches_json[match_brand][match_name] = matches_json[match_brand].get(match_name, {})
+                        # matches_json[match_brand][match_name][match_shade] = match_product
             # with open("ingredients.json", "w") as outfile:
             #     json.dump(ingredients, outfile, indent=4)
             # with open("prices.json", "w") as outfile:
