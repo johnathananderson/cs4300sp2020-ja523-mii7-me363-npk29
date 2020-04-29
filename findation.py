@@ -56,6 +56,8 @@ class FindationBrowser:
                 brand = product[0]
                 product_name = product[1]
                 shade = product[2]
+                print(9)
+                self.browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 print(10)
                 WebDriverWait(self.browser, 20).until(
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
