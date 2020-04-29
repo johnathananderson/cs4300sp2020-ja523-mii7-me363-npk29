@@ -16,11 +16,11 @@ from selenium.webdriver.common.keys import Keys
 
 class FindationBrowser:
     def __init__(self):
-        firefox_options = webdriver.FirefoxOptions()
-        # firefox_options.add_argument("--no-sandbox")
-        # firefox_options.add_argument("--disable-gpu")
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument("--no-sandbox")
+        # chrome_options.add_argument("--disable-gpu")
         # chrome_options.add_argument("--headless")
-        # firefox_options.add_argument("--log-level=3")
+        chrome_options.add_argument("--log-level=3")
         # chrome_options.add_argument("--no-proxy-server")
         # chrome_options.add_argument("--proxy-server='direct://'")
         # chrome_options.add_argument("--proxy-bypass-list=*")
@@ -28,9 +28,8 @@ class FindationBrowser:
         # chrome_options.add_argument("--blink-settings=imagesEnabled=false")
         # chrome_options.add_argument("--virtual-time-budget=1000")
         # firefox_options.add_argument("--start-maximized")
-        firefox_options.binary_location(os.environ.get("FIREFOX_BIN"))
-        # chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
-        self.browser = webdriver.Firefox(executable_path=os.environ.get("GECKODRIVER_PATH"), options=firefox_options)
+        chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_SHIM", None)
+        self.browser = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
         self.browser.get("https://www.findation.com/")
 
     def close_out(self):
