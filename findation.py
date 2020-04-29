@@ -64,9 +64,7 @@ class FindationBrowser:
                 product_name = product[1]
                 shade = product[2]
                 print(10)
-                while not self.browser.find_element_by_id("brand-search").equals(
-                    self.browser.switch_to().active_element()
-                ):
+                while not self.browser.find_element_by_id("brand-search") == self.browser.switch_to().active_element():
                     print("Not active")
                     time.sleep(0.5)
                 brand_input = self.browser.find_element_by_id("brand-search")
