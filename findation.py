@@ -27,7 +27,7 @@ class FindationBrowser:
         self.browser = webdriver.Chrome(options=chrome_options, executable_path="chromedriver")
         self.browser.implicitly_wait(2)
         self.browser.get("https://www.findation.com/")
-        WebDriverWait wait = new WebDriverWait(self.browser, 5)
+        wait = new WebDriverWait(self.browser, 3)
 
     def close_out(self):
         self.browser.close()
