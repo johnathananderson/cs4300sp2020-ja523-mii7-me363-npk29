@@ -65,7 +65,7 @@ class FindationBrowser:
                 shade = product[2]
                 print(10)
                 brand_input = WebDriverWait(self.browser, 20, 0.1).until(
-                    EC.visibility_of_element_located((By.ID, "brand-search"))
+                    EC.element_located_selection_state_to_be((By.ID, "brand-search"), True)
                 )
                 print(11)
                 brand_input.send_keys(brand + " ")
@@ -94,11 +94,11 @@ class FindationBrowser:
                     )
                     add_another_button.click()
                     print(17)
-                    time.sleep(2.5)
+                    # time.sleep(2.5)
                     # WebDriverWait(self.browser, 20, 0.1).until(
                     #     EC.visibility_of_element_located((By.CLASS_NAME, "/html/body/div[2]/div/div/div[3]/div[2]"))
                     # )
-                    print(18)
+                    # print(18)
                 else:
                     print(19)
                     WebDriverWait(self.browser, 20, 0.1).until(
