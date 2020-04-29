@@ -99,7 +99,7 @@ class FindationBrowser:
                     print(self.browser.find_element_by_class_name("search-options").value_of_css_property("display"))
                     while (
                         self.browser.find_element_by_class_name("search-options").value_of_css_property("display")
-                        == "none"
+                        != "block"
                     ):
                         print("waiting")
                         time.sleep(1)
