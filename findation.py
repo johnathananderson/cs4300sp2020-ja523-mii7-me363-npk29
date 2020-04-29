@@ -75,11 +75,10 @@ class FindationBrowser:
                 product_input.send_keys(Keys.ENTER)
                 print(13)
                 WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.ID, "shade")))
-                print(14)
                 shade_input = self.browser.find_element_by_id("shade").find_element_by_class_name("form-control")
                 shade_input.send_keys(shade)
                 shade_input.send_keys(Keys.ENTER)
-                print(15)
+                print(14)
                 if p < n_products - 1:
                     WebDriverWait(self.browser, 8).until(
                         EC.visibility_of_element_located(
@@ -90,16 +89,16 @@ class FindationBrowser:
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
                     add_another_button.click()
-                    print(add_another_button).get_attribute("text")
-                    print(16)
-                    time.sleep(1)
+                    print(add_another_button.get_attribute("text"))
+                    print(15)
+                    time.sleep(2)
                 else:
                     WebDriverWait(self.browser, 8).until(EC.visibility_of_element_located((By.CLASS_NAME, "actions")))
                     find_matches_button = self.browser.find_element_by_class_name("actions").find_element_by_tag_name(
                         "button"
                     )
                     find_matches_button.click()
-                    print(17)
+                    print(16)
                     WebDriverWait(self.browser, 8).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "match-meta"))
                     )
