@@ -52,13 +52,10 @@
     padding-bottom: 5px;
 }
 
-
-/* .a-items:hover,
+.a-items:hover,
 .a-items:hover:active,
-.a-items:hover:focus, */
-
-.autocomplete-active,
-.autocomplete-active:hover {
+.a-items:hover:focus,
+.autocomplete-active {
     text-decoration: none;
     color: #e45c27;
     cursor: pointer;
