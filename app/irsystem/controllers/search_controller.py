@@ -49,7 +49,7 @@ def search():
 def product():
     if request.method == "GET":
         # prod_type = request.form['choices-single-defaul']
-        query = request.args.get("search")
+        query = request.args.get("search").strip()
         # selected_product = request.args.get("product_search") need to write form for input
         if not query:
             data = []
