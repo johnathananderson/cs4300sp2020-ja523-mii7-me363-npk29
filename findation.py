@@ -131,7 +131,7 @@ class FindationBrowser:
                     print(19)
                     WebDriverWait(self.browser, 20, 0.1).until(EC.url_contains("searches"))
                     print(20)
-                    WebDriverWait(self.browser, 20, 2).until(
+                    WebDriverWait(self.browser, 20, 0.1).until(
                         EC.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div/div/div[4]/div[3]/div"))
                     )
                     print(21)
