@@ -18,10 +18,10 @@ net_id = "ja523, me363, mii7, npk29"
 outputs_json = glob.glob("outputs_i.json")
 with open(outputs_json[0], encoding="utf8") as data:
     try:
-        outputs = json.load(data)
+        outputs_j = json.load(data)
     except:
         print("Couldn't open outputs")
-        outputs = {}
+        outputs_j = {}
 
 
 @irsystem.route("/", methods=["GET"])
@@ -100,7 +100,7 @@ def product_test():
     f = FindationBrowser()
     products = [[brand, product, shade], [brand, product, shade]]
     time.sleep(1)
-    data = f.process_matches(products, outputs)
+    data = f.process_matches(products, outputs_j)
     f.close_out()
     return render_template("outputs.html", name=project_name, netid=net_id, data=data)
 
