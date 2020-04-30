@@ -91,7 +91,6 @@ def product_test():
     product = request.form.get("product-input")
     shade = request.form.get("shade-input")
     f = FindationBrowser()
-    f.browser.get("https://www.findation.com/")
     products = [[brand, product, shade], [brand, product, shade]]
     time.sleep(1)
     data = f.process_matches(products)
