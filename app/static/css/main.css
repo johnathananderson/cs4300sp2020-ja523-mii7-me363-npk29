@@ -27,11 +27,6 @@
     display: inline-block;
 }
 
-.autocomplete-active {
-    color: #e45c27;
-    cursor: pointer;
-}
-
 #inputautocomplete-list {
     text-align: left;
     color: black;
@@ -57,9 +52,13 @@
     padding-bottom: 5px;
 }
 
-.a-items:hover,
+
+/* .a-items:hover,
 .a-items:hover:active,
-.a-items:hover:focus {
+.a-items:hover:focus, */
+
+.autocomplete-active,
+.autocomplete-active:hover {
     text-decoration: none;
     color: #e45c27;
     cursor: pointer;
