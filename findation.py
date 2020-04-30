@@ -67,7 +67,7 @@ class FindationBrowser:
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                 )
                 print(11)
-                WebDriverWait(self.browser, 20, 2).until(EC.element_to_be_clickable((By.ID, "brand-search")))
+                WebDriverWait(self.browser, 20, 0.1).until(EC.element_to_be_clickable((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
                 brand_input.send_keys("  " + brand.strip())
                 time.sleep(0.5)
