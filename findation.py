@@ -44,7 +44,7 @@ class FindationBrowser:
                 print("Couldn't open outputs")
                 outputs = {}
         try:
-            WebDriverWait(self.browser, 20, 2).until(
+            WebDriverWait(self.browser, 20, 0.1).until(
                 EC.visibility_of_element_located((By.XPATH, "//*[@id='hide-splash']"))
             )
             get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
@@ -77,6 +77,7 @@ class FindationBrowser:
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")
                     )
                 )
+                print(12)
                 product_input = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                 )
