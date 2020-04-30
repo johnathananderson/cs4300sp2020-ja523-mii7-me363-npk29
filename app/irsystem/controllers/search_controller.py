@@ -99,7 +99,7 @@ def product_test():
     shade = request.form.get("shade-input")
     f = FindationBrowser()
     products = [[brand, product, shade], [brand, product, shade]]
-    time.sleep(1)
+    time.sleep(0.01)
     data = f.process_matches(products, outputs_j)
     f.close_out()
     return render_template("outputs.html", name=project_name, netid=net_id, data=data)
