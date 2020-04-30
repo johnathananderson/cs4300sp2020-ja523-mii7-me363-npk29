@@ -27,6 +27,11 @@
     display: inline-block;
 }
 
+.autocomplete-active {
+    color: #e45c27;
+    cursor: pointer;
+}
+
 #inputautocomplete-list {
     text-align: left;
     color: black;
@@ -54,8 +59,7 @@
 
 .a-items:hover,
 .a-items:hover:active,
-.a-items:hover:focus,
-.autocomplete-active {
+.a-items:hover:focus {
     text-decoration: none;
     color: #e45c27;
     cursor: pointer;
