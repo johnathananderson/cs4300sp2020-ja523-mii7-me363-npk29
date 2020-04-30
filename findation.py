@@ -37,12 +37,6 @@ class FindationBrowser:
         self.browser.close()
 
     def process_matches(self, products, outputs):
-        with open("outputs_i.json", encoding="utf8") as data:
-            try:
-                outputs = json.load(data)
-            except:
-                print("Couldn't open outputs")
-                outputs = {}
         try:
             WebDriverWait(self.browser, 20, 0.1).until(
                 EC.visibility_of_element_located((By.XPATH, "//*[@id='hide-splash']"))

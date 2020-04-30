@@ -15,6 +15,13 @@ from findation import FindationBrowser
 
 project_name = "Save Face"
 net_id = "ja523, me363, mii7, npk29"
+outputs_json = glob.glob("outputs_i.json")
+with open(outputs_json, encoding="utf8") as data:
+    try:
+        outputs = json.load(data)
+    except:
+        print("Couldn't open outputs")
+        outputs = {}
 
 
 @irsystem.route("/", methods=["GET"])
@@ -93,7 +100,7 @@ def product_test():
     f = FindationBrowser()
     products = [[brand, product, shade], [brand, product, shade]]
     time.sleep(1)
-    data = f.process_matches(products)
+    data = f.process_matches(products, outputs)
     f.close_out()
     return render_template("outputs.html", name=project_name, netid=net_id, data=data)
 
