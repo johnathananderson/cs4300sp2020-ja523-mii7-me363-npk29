@@ -16,7 +16,7 @@ from findation import FindationBrowser
 project_name = "Save Face"
 net_id = "ja523, me363, mii7, npk29"
 outputs_json = glob.glob("outputs_i.json")
-with open(outputs_json, encoding="utf8") as data:
+with open(outputs_json[0], encoding="utf8") as data:
     try:
         outputs = json.load(data)
     except:
