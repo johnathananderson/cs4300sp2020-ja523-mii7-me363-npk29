@@ -29,6 +29,7 @@
 
 .autocomplete-active {
     color: #e45c27;
+    cursor: pointer;
 }
 
 #inputautocomplete-list {
