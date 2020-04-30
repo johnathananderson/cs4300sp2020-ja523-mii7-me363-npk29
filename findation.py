@@ -106,12 +106,12 @@ class FindationBrowser:
                     print(17)
                     print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
                     print("height")
-                    WebDriverWait(self.browser, 20, 0.5).until(
+                    WebDriverWait(self.browser, 20, 2).until(
                         EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     )
-                    WebDriverWait(self.browser, 20, 0.5).until(
+                    WebDriverWait(self.browser, 20, 2).until(
                         EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
@@ -126,7 +126,7 @@ class FindationBrowser:
                     WebDriverWait(self.browser, 20, 2).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "actions"))
                     )
-                    WebDriverWait(self.browser, 20, 0.5).until(EC.element_to_be_clickable((By.CLASS_NAME, "actions")))
+                    WebDriverWait(self.browser, 20, 2).until(EC.element_to_be_clickable((By.CLASS_NAME, "actions")))
                     find_matches_button = self.browser.find_element_by_class_name("actions").find_element_by_tag_name(
                         "button"
                     )
