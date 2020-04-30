@@ -75,12 +75,8 @@
                                 b.addEventListener("click", function(e) {
                                     /*insert the value for the autocomplete text field:*/
                                     inp.value = this.getElementsByTagName("input")[0];
+                                    // .replace("'", "%27")
                                     console.log(inp)
-                                    console.log(inp.value)
-                                    console.log(inp.value.replace("'", "\'"))
-                                    console.log(inp.value.replace("'", "%27"))
-                                    console.log(inp.replace("'", "\'"))
-                                    console.log(inp.replace("'", "%27"))
                                     // .replace("'", "%27")
                                     /*close the list of autocompleted values,
                                     (or any other open lists of autocompleted values:*/
