@@ -54,6 +54,7 @@
 
 .a-items:hover,
 .a-items:hover:active,
+.a-items:active,
 .a-items:hover:focus {
     text-decoration: none;
     color: #e45c27;
