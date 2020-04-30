@@ -122,6 +122,7 @@ class FindationBrowser:
                     )
                     print(add_another_button.get_attribute("text"))
                     add_another_button.click()
+                    time.sleep(2)
                     print(18)
                 else:
                     WebDriverWait(self.browser, 15, 1.75).until(
