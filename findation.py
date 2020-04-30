@@ -36,7 +36,7 @@ class FindationBrowser:
     def close_out(self):
         self.browser.close()
 
-    def process_matches(self, products):
+    def process_matches(self, products, outputs):
         with open("outputs_i.json", encoding="utf8") as data:
             try:
                 outputs = json.load(data)
@@ -60,7 +60,6 @@ class FindationBrowser:
                 self.browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 print(10)
                 print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
-                print("height")
 
                 WebDriverWait(self.browser, 20, 2).until(
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
@@ -69,7 +68,7 @@ class FindationBrowser:
                 WebDriverWait(self.browser, 20, 0.1).until(EC.element_to_be_clickable((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
                 brand_input.send_keys("  " + brand.strip())
-                time.sleep(0.5)
+                time.sleep(0.3)
                 brand_input.send_keys(Keys.ENTER)
                 WebDriverWait(self.browser, 20, 2).until(
                     EC.element_to_be_clickable(
@@ -80,21 +79,21 @@ class FindationBrowser:
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                 )
                 product_input.send_keys(" " + product_name.strip())
-                time.sleep(0.5)
+                time.sleep(0.3)
                 product_input.send_keys(Keys.ENTER)
                 WebDriverWait(self.browser, 20, 2).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input")
                     )
                 )
-                time.sleep(0.5)
+                time.sleep(0.3)
                 shade_input = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
                 )
                 shade_input.send_keys(shade)
-                time.sleep(0.5)
+                time.sleep(0.3)
                 shade_input.send_keys(Keys.ENTER)
-                time.sleep(0.5)
+                time.sleep(0.3)
                 print(15)
                 if p < n_products - 1:
                     print(16)
@@ -102,7 +101,6 @@ class FindationBrowser:
                         EC.invisibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                     )
                     print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
-                    print("height")
                     WebDriverWait(self.browser, 20, 2).until(
                         EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
@@ -130,7 +128,6 @@ class FindationBrowser:
                     find_matches_button.click()
                     print(19)
                     WebDriverWait(self.browser, 20, 0.1).until(EC.url_contains("searches"))
-                    print(20)
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div/div/div[4]/div[3]/div"))
                     )
@@ -147,7 +144,7 @@ class FindationBrowser:
                         match_product["name"] = match_name
                         match_product["shade"] = match_shade
                         match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
-                        match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
+                        # match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
 
                         if match_brand in outputs and match_name in outputs[match_brand]:
                             match_product["ingredients"] = outputs[match_brand][match_name]["ingredients"]
