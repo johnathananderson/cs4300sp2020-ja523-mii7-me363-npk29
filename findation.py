@@ -70,7 +70,7 @@ class FindationBrowser:
                 WebDriverWait(self.browser, 20, 0.5).until(EC.element_to_be_clickable((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
                 brand_input.send_keys("  " + brand.strip())
-                time.sleep(0.5)
+                time.sleep(1.5)
                 brand_input.send_keys(Keys.ENTER)
                 WebDriverWait(self.browser, 20, 0.5).until(
                     EC.element_to_be_clickable(
@@ -81,7 +81,7 @@ class FindationBrowser:
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                 )
                 product_input.send_keys(" " + product_name.strip())
-                time.sleep(0.5)
+                time.sleep(1.5)
                 product_input.send_keys(Keys.ENTER)
                 print(13)
                 WebDriverWait(self.browser, 20, 0.5).until(
@@ -90,12 +90,11 @@ class FindationBrowser:
                     )
                 )
                 print(14)
-                time.sleep(0.5)
                 shade_input = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
                 )
                 shade_input.send_keys(shade)
-                time.sleep(0.5)
+                time.sleep(1.5)
                 shade_input.send_keys(Keys.ENTER)
                 print(15)
                 if p < n_products - 1:
