@@ -57,7 +57,6 @@ class FindationBrowser:
                 brand = product[0]
                 product_name = product[1]
                 shade = product[2]
-                print(9)
                 self.browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 print(10)
                 print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
@@ -77,20 +76,17 @@ class FindationBrowser:
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")
                     )
                 )
-                print(12)
                 product_input = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                 )
                 product_input.send_keys(" " + product_name.strip())
                 time.sleep(0.5)
                 product_input.send_keys(Keys.ENTER)
-                print(13)
                 WebDriverWait(self.browser, 20, 2).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input")
                     )
                 )
-                print(14)
                 time.sleep(0.5)
                 shade_input = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
@@ -105,7 +101,6 @@ class FindationBrowser:
                     WebDriverWait(self.browser, 20, 2).until(
                         EC.invisibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                     )
-                    print(17)
                     print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
                     print("height")
                     WebDriverWait(self.browser, 20, 2).until(
@@ -134,7 +129,7 @@ class FindationBrowser:
                     )
                     find_matches_button.click()
                     print(19)
-                    WebDriverWait(self.browser, 20, 2).until(EC.url_contains("searches"))
+                    WebDriverWait(self.browser, 20, 0.1).until(EC.url_contains("searches"))
                     print(20)
                     WebDriverWait(self.browser, 20, 2).until(
                         EC.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div/div/div[4]/div[3]/div"))
