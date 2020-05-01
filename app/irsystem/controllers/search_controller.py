@@ -118,6 +118,6 @@ def outputs():
         output_message = "Your search: " + query
     return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data)
 
-@irsystem.route("/product-shades/", methods=["POST"])
+@irsystem.route("/product-shades/", methods=["GET"])
 def product_shades():
     return render_template("product-shades.html", name=project_name, netid=net_id)
