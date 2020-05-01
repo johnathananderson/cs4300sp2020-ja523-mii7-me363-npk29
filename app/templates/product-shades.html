@@ -17,13 +17,13 @@
         </div>
 
         <div class="inner-form">
-            <form id="prod_shade_form" method="POST">
+            <form id="prod_shade_form" method="GET">
                   <div class="advance-search">
                     <div class="row">
                         <div class="input-field">
                             <div class="input-select">
                                 <!-- select product -->
-                                <select id ="selectp" name="choices-single-defaul">
+                                <select id ="selectp" data-trigger="" name="selectp choices-single-defaul">
                                     <option placeholder="" value="" disabled selected>"Enter your current product"</option>
                                 </select>
                             </div>
@@ -31,7 +31,7 @@
                         <div class="input-field">
                             <!-- select shade -->
                             <div class="input-select">
-                                <select id ="selects" name="choices-single-defaul">
+                                <select id ="selects" data-trigger="" name="selects choices-single-defaul">
                                     <option placeholder="" value="" disabled selected>"Enter your current shade"</option>
                                 </select>
                             </div>
@@ -40,9 +40,18 @@
                     <div class="row third">
                             <div class="input-field">
                                 <div class="result-count">
-                                    <!-- <span> {{ num_results }} </span>results -->
                                     <button class="btn-delete" id="delete">Reset</button>
                                 </div>
+
+                                <script>
+                                    var myform = document.getElementById('prod_shade_form');
+                                    myform.onsubmit = function () {
+                                        var b = String(({{ brand | tojson | safe }}));
+                                        document.getElementById("selectp").value = b;
+                                        myform.submit();
+                                    };
+                                </script>
+
                                 <div class="group-btn">
                                     <button type="submit" class="btn btn-search" name="adv-search">Search</button>
                                 </div>
@@ -52,6 +61,40 @@
                 </form>
             </div>
         </div>
+
+
+        <script>
+            p = ({{ products | safe }});
+            s = ({{ shades | safe }});
+
+            function populate(product, shade){
+                var product = document.getElementById(selectp);
+                var shade = document.getElementById(selects);
+
+                product.innerHTML = "";
+                shade.innerHTML = "";
+
+            var prodOptions = [];
+            var optionArray = ["|","camaro|Camaro","corvette|Corvette","impala|Impala"];
+
+                if(product.value == "Chevy"){
+                    var optionArray = ["|","camaro|Camaro","corvette|Corvette","impala|Impala"];
+                } else if(product.value == "Dodge"){
+                    var optionArray = ["|","avenger|Avenger","challenger|Challenger","charger|Charger"];
+                } else if(product.value == "Ford"){
+                    var optionArray = ["|","mustang|Mustang","shelby|Shelby"];
+                }
+                for(var option in optionArray){
+                    var pair = optionArray[option].split("|");
+                    var newOption = document.createElement("option");
+                    newOption.value = pair[0];
+                    newOption.innerHTML = pair[1];
+                    shade.options.add(newOption);
+                }
+            }
+            populate(document.getElementById("input"), p);
+        </script>
+
 
         <script>
             p = ({{ products | safe }});
