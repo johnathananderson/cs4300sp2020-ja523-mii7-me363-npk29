@@ -67,21 +67,27 @@
             p = ({{ products | safe }});
             s = ({{ shades | safe }});
 
-            function populate(product, shade){
-                var product = document.getElementById(selectp);
-                var shade = document.getElementById(selects);
+            var b = String(({{ brand | tojson | safe }}));
+            var p = ({{ products | safe }});
 
-                product.innerHTML = "";
-                shade.innerHTML = "";
+            var opt = document.createElement('option');
+            var prodOptions = document.getElementById('selectp');
+            var shadeOptions = document.getElementById('selects');
 
-            var prodOptions = [];
-            var shadeOptions = [];
-                
-            }
-            populate(p,s);
+            p.forEach(function (item) {
+                opt.appendChild( document.createTextNode(item) );
+                prodOptions.appendChild(opt);
+            });
+
         </script>
 
-        <!-- <div id="productforms">
+        <!-- 
+                s.forEach(function (item) {
+                opt.appendChild( document.createTextNode(item) );
+                shadeOptions.appendChild(opt);
+            });
+
+        <div id="productforms">
             <div class="col-xs-6">
                 <select class="form-control" name="select1" id="select1">
                     <option value="1">Fruit</option>
