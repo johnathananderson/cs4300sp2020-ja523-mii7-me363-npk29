@@ -53,11 +53,7 @@
 
             <div id="products">
                 <script>
-                    var array = {
-                        {
-                        data | tojson | safe
-                    }
-                    };
+                    var array = ({{ data | tojson | safe}});
 
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
