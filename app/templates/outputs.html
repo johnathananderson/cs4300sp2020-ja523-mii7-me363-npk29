@@ -57,7 +57,7 @@
                 <script>
 
                     var array = ({{ data | tojson | safe}});
-                    var alphabetical = _.cloneDeep(array).sort(function (a, b) { return a["name"].localeCompare(b["name"]); });
+                    var alphabetical = array.slice().sort(function (a, b) { return a["name"].localeCompare(b["name"]); });
 
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
