@@ -146,25 +146,11 @@
     </style>
 </head>
 
-<body>
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-    
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-
-         <div class="spinner-grow text"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text"></div>
-    
-    </div>
+<body onload="myFunction()">
+<div id="loading"></div>
+   
     <ul id="myUl">
+
         <script>
             var array = {{ data | tojson | safe }};
 
@@ -176,6 +162,19 @@
                 document.getElementById("myUl").appendChild(li);
             });
         </script>
+        <script>
+		// $(document).ready(function(){
+			// 	$('div#loading').removeAttr('id');
+		// });
+		var preloader = document.getElementById("loading");
+		// window.addEventListener('load', function(){
+		// 	preloader.style.display = 'none';
+		// 	})
+
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+	</script>
 
 </body>
 
