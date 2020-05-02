@@ -44,7 +44,7 @@
                         <div class="product-name">{{ product_name }}</div>
                         <div class="shade">{{ shade }}</div>
                         <div class="prices">{{ prices }}</div>
-                        <div class="ingredients" style="text-transform: capitalize">{{ ingredients }}</div>
+                        <div class="ingredients">{{ ingredients }}</div>
                     </div>
 
                 </div>
@@ -55,8 +55,8 @@
                 <script>
                     var array = {
                         {
-                            data | tojson | safe
-                        }
+                        data | tojson | safe
+                    }
                     };
 
                     function renderProduct(item, block) {
@@ -79,7 +79,7 @@
                         block.innerHTML = rendered;
                     }
                     var i = 0;
-                    array.forEach(function(item) {
+                    array.forEach(function (item) {
                         var block = document.createElement("div");
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter " + String(i)
                         renderProduct(item, block)
