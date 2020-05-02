@@ -216,7 +216,7 @@
                 <script>
                     var array = {{ data | tojson | safe }};
                     function renderProduct(item, block) {
-                        var template = $.get('./output.html', function (template, textStatus, jqXhr) {
+                        var template = $.get('/templates/output.html', function (template, textStatus, jqXhr) {
                             var rendered = Mustache.render($(template).filter('#channelTpl').html(), { brand: item["brand"], name: item["name"], image: item["thumbnail"], ingredients: item["ingredients"], price: item["price"] });
                             block.innerHTML = rendered;
                         });
