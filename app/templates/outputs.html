@@ -17,22 +17,22 @@
 
 <body>
     <div class="loader">
-        <div class="load-container">                                   
+        <div class="load-container">
             <div class="spinner-grow style='color:#e45c27'"></div>
             <div class="spinner-grow style='color:#e45c27'"></div>
             <div class="spinner-grow style='color:#e45c27'"></div>
             <div class="spinner-grow style='color:#e45c27'"></div>
             <div class="spinner-grow style='color:#e45c27'"></div>
         </div>
-    </div> 
+    </div>
 
-        <script>
-            $(window).on("load", function(){
-                $(".load-container").fadeOut("slow");
-                $(".loader").fadeOut("slow");
-            });
-        </script>
-        
+    <script>
+        $(window).on("load", function () {
+            $(".load-container").fadeOut("slow");
+            $(".loader").fadeOut("slow");
+        });
+    </script>
+
     <div class="container">
         <div class="row">
             <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -79,12 +79,11 @@
                     var array = {{ data | tojson | safe }};
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
-                        console.log(typeof i_ingredients)
-                        if (typeof i_ingredients == Array) {
+                        if (typeof i_ingredients == Object) {
                             i_ingredients = i_ingredients.join(", ")
                         }
                         var i_prices = item["prices"];
-                        if (typeof i_prices == Array) {
+                        if (typeof i_prices == Object) {
                             i_prices = i_prices.join(", ")
                         }
                         var template = document.getElementById("product_template").innerHTML;
