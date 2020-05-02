@@ -64,7 +64,7 @@ class FindationBrowser:
                 brand_input.send_keys("  " + brand.strip())
                 time.sleep(0.1)
                 brand_input.send_keys(Keys.ENTER)
-                WebDriverWait(self.browser, 20, 0.01).until(
+                WebDriverWait(self.browser, 20, 2).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")
                     )
@@ -75,7 +75,7 @@ class FindationBrowser:
                 product_input.send_keys(" " + product_name.strip())
                 time.sleep(0.1)
                 product_input.send_keys(Keys.ENTER)
-                WebDriverWait(self.browser, 20, 0.01).until(
+                WebDriverWait(self.browser, 20, 2).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input")
                     )
@@ -91,7 +91,7 @@ class FindationBrowser:
                 print(15)
                 if p < n_products - 1:
                     print(16)
-                    WebDriverWait(self.browser, 20, 0.01).until(
+                    WebDriverWait(self.browser, 20, 2).until(
                         EC.invisibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                     )
                     print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
@@ -112,7 +112,7 @@ class FindationBrowser:
                     add_another_button.click()
                     print(18)
                 else:
-                    WebDriverWait(self.browser, 20, 0.01).until(
+                    WebDriverWait(self.browser, 20, 2).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "actions"))
                     )
                     WebDriverWait(self.browser, 20, 0.01).until(EC.element_to_be_clickable((By.CLASS_NAME, "actions")))
