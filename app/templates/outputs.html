@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html class=''>
 
 <head>
     <link href="/static/css/main.css" rel="stylesheet" charset="utf-8">
-    <!-- <link href="/static/css/bootstrap.min.css" rel="stylesheet" charset="utf-8"> -->
     <script
         src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script>
     <script
@@ -160,6 +159,56 @@
             });
         </script>
 
+</body>
+
+</html> -->
+<html>
+
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="/static/css/outputs.css" rel="stylesheet" id="outputs-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="gallery-title">Gallery</h1>
+            </div>
+
+            <div styyle="align: center">
+                <button class="btn btn-default filter-button" data-filter="alphabetical">Alphabetical</button>
+                <button class="btn btn-default filter-button" data-filter="positive">Most Postitively Reviewed</button>
+                <button class="btn btn-default filter-button" data-filter="healthy">Most Healthy</button>
+                <button class="btn btn-default filter-button" data-filter="cheap">Cheapest</button>
+            </div>
+            <br />
+
+            <div id="products">
+                <script>
+                    var array = {{ data | tojson | safe }};
+                    function renderProduct(item, block) {
+                        fetch('/static/templates/output.html')
+                            .then((response) => response.text())
+                            .then((template) => {
+                                var rendered = Mustache.render(template, { brand: item["brand"], name: item["name"], image: item["thumbnail"], ingredients: item["ingredients"], price: item["price"] });
+                                block.innerHTML = rendered;
+                            });
+                    }
+                    var i = 0;
+                    array.forEach(function (item) {
+                        var block = document.createElement("div");
+                        block.className = "block gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter " + String(i)
+                        renderProduct(item, block)
+                        i++;
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
