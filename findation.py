@@ -55,14 +55,14 @@ class FindationBrowser:
                 print(10)
                 print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
 
-                WebDriverWait(self.browser, 20, 2).until(
+                WebDriverWait(self.browser, 20, 0.01).until(
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                 )
                 print(11)
                 WebDriverWait(self.browser, 20, 0.01).until(EC.element_to_be_clickable((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
                 brand_input.send_keys("  " + brand.strip())
-                time.sleep(0.3)
+                time.sleep(0.1)
                 brand_input.send_keys(Keys.ENTER)
                 WebDriverWait(self.browser, 20, 2).until(
                     EC.element_to_be_clickable(
@@ -73,21 +73,21 @@ class FindationBrowser:
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                 )
                 product_input.send_keys(" " + product_name.strip())
-                time.sleep(0.3)
+                time.sleep(0.1)
                 product_input.send_keys(Keys.ENTER)
                 WebDriverWait(self.browser, 20, 2).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input")
                     )
                 )
-                time.sleep(0.3)
+                time.sleep(0.1)
                 shade_input = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input"
                 )
                 shade_input.send_keys(shade)
-                time.sleep(0.3)
+                time.sleep(0.1)
                 shade_input.send_keys(Keys.ENTER)
-                time.sleep(0.3)
+                time.sleep(0.1)
                 print(15)
                 if p < n_products - 1:
                     print(16)
@@ -95,12 +95,12 @@ class FindationBrowser:
                         EC.invisibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                     )
                     print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
-                    WebDriverWait(self.browser, 20, 2).until(
+                    WebDriverWait(self.browser, 20, 0.01).until(
                         EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     )
-                    WebDriverWait(self.browser, 20, 2).until(
+                    WebDriverWait(self.browser, 20, 0.01).until(
                         EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
@@ -147,9 +147,11 @@ class FindationBrowser:
                         if match_brand in outputs and match_name in outputs[match_brand]:
                             match_product["ingredients"] = outputs[match_brand][match_name]["ingredients"]
                             match_product["prices"] = outputs[match_brand][match_name]["prices"]
+                            match_product["health_score"] = outputs[match_brand][match_name]["health_score"]
                         else:
                             match_product["ingredients"] = "Ingredients not found"
                             match_product["prices"] = "Prices not found"
+                            match_product["health_score"] = 10.766666666666666
                         results.append(match_product)
             self.browser.delete_all_cookies()
             return results

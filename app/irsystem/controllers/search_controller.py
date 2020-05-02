@@ -27,7 +27,7 @@ with open(outputs_json[0], encoding="utf8") as data:
 @irsystem.route("/", methods=["GET"])
 def search():
     query = request.args.get("search")
-    brands_json = glob.glob("brand-ids.json")
+    brands_json = glob.glob("products.json")
     with open(brands_json[0], encoding="utf8") as brandslist:
         bdata = json.load(brandslist)
     brands = []
