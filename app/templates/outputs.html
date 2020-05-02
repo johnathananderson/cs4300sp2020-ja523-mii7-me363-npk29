@@ -12,9 +12,38 @@
     <link href="/static/css/outputs.css" rel="stylesheet" id="outputs-css">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+
+    <style>
+        .load-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #F5F5F5;
+            z-index: 1000;}
+    </style>
 </head>
 
 <body>
+    <div class="load-container">                                   
+        <div class="spinner-grow text"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text"></div>
+    </div>   
+
+        <script>
+            $(window).on("load", function(){
+                $(".load-container").fadeOut("slow");
+            });
+        </script>
+
     <div class="container">
         <div class="row">
             <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
