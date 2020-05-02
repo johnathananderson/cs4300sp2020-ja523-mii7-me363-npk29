@@ -115,7 +115,7 @@ class FindationBrowser:
                     WebDriverWait(self.browser, 20, 2).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "actions"))
                     )
-                    WebDriverWait(self.browser, 20, 2).until(EC.element_to_be_clickable((By.CLASS_NAME, "actions")))
+                    WebDriverWait(self.browser, 20, 0.01).until(EC.element_to_be_clickable((By.CLASS_NAME, "actions")))
                     find_matches_button = self.browser.find_element_by_class_name("actions").find_element_by_tag_name(
                         "button"
                     )
@@ -137,7 +137,11 @@ class FindationBrowser:
                         match_product["brand"] = match_brand
                         match_product["name"] = match_name
                         match_product["shade"] = match_shade
-                        match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
+                        match_product["thumbnail"] = (
+                            match.find_element_by_class_name("micro")
+                            .get_attribute("src")
+                            .replace("micro_thumb", "medium")
+                        )
                         # match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
 
                         if match_brand in outputs and match_name in outputs[match_brand]:
