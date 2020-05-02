@@ -150,17 +150,18 @@
 </head>
 
 <body>
-{# <div id="loading"></div> #}
+<div class="loader-wrapper">
     <div class="container">                                   
-    <div class="spinner-grow text-muted"></div>
-    <div class="spinner-grow text-primary"></div>
-    <div class="spinner-grow text-success"></div>
-    <div class="spinner-grow text-info"></div>
-    <div class="spinner-grow text-warning"></div>
-    <div class="spinner-grow text-danger"></div>
-    <div class="spinner-grow text-secondary"></div>
-    <div class="spinner-grow text-dark"></div>
-    <div class="spinner-grow text-light"></div>
+        <div class="spinner-grow text"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text"></div>
+    </div>
     </div>   
     <ul id="myUl">
 
@@ -176,19 +177,11 @@
             });
         </script>
 
-        {# <script>
-		// $(document).ready(function(){
-			// 	$('div#loading').removeAttr('id');
-		// });
-		var preloader = document.getElementById("loading");
-		// window.addEventListener('load', function(){
-		// 	preloader.style.display = 'none';
-		// 	})
-
-		function myFunction(){
-			preloader.style.display = 'none';
-		};
-	</script> #}
+        <script>
+            $(window).on("load", function(){
+                $(".loader-wrapper").fadeOut("slow");
+            });
+        </script>
 
 </body>
 
