@@ -55,7 +55,7 @@ class FindationBrowser:
                 print(10)
                 print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
 
-                WebDriverWait(self.browser, 20, 2).until(
+                WebDriverWait(self.browser, 20, 0.01).until(
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                 )
                 print(11)
