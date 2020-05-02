@@ -204,7 +204,7 @@
                 <h1 class="gallery-title">Gallery</h1>
             </div>
 
-            <div styyle="align: center">
+            <div style="align: center">
                 <button class="btn btn-default filter-button" data-filter="alphabetical">Alphabetical</button>
                 <button class="btn btn-default filter-button" data-filter="positive">Most Postitively Reviewed</button>
                 <button class="btn btn-default filter-button" data-filter="healthy">Most Healthy</button>
@@ -212,17 +212,37 @@
             </div>
             <br />
 
+            <div class="block" id="template" style="display: none;">
+
+                <div class="top">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                        <li><span class="brand">{{brand}}</span></li>
+                        <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="middle">
+                    <img src={{image}} alt="pic" />
+                </div>
+
+                <div class="bottom">
+                    <div class="name">{{name}}</div>
+                    <div class="shade">{{shade}}</div>
+                    <div class="price">{{price}}</div>
+                    <div class="ingredients">{{ingredients}}</div>
+                </div>
+
+            </div>
+
             <div id="products">
                 <script>
                     var array = {{ data | tojson | safe }};
                     function renderProduct(item, block) {
-                        fetch('./output.html')
-                            .then((response) => response.text())
-                            .then((template) => {
-                                console.log(template);
-                                var rendered = Mustache.render(template, { brand: item["brand"], name: item["name"], image: item["thumbnail"], ingredients: item["ingredients"], price: item["price"] });
-                                block.innerHTML = rendered;
-                            });
+                        var template = document.getElementById("template");
+                        template.style = "display: block";
+                        var rendered = Mustache.render(template.innerHTML, { brand: item["brand"], name: item["name"], image: item["thumbnail"], ingredients: item["ingredients"], price: item["price"] });
+                        block.innerHTML = rendered;
                     }
                     var i = 0;
                     array.forEach(function (item) {
