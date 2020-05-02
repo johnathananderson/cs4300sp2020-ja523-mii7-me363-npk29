@@ -151,7 +151,6 @@
 </head>
 
 <body>
-<div class="loader-wrapper">
     <div class="container">                                   
         <div class="spinner-grow text"></div>
         <div class="spinner-grow text-warning"></div>
@@ -162,8 +161,14 @@
         <div class="spinner-grow text"></div>
         <div class="spinner-grow text-warning"></div>
         <div class="spinner-grow text"></div>
-    </div>
     </div>   
+
+        <script>
+            $(window).on("load", function(){
+                $(".container").fadeOut("slow");
+            });
+        </script>
+
     <ul id="myUl">
 
         <script>
@@ -175,12 +180,6 @@
                 console.log(item);
                 li.appendChild(text);
                 document.getElementById("myUl").appendChild(li);
-            });
-        </script>
-
-        <script>
-            $(window).on("load", function(){
-                $(".loader-wrapper").fadeOut("slow");
             });
         </script>
 
