@@ -1,5 +1,6 @@
 $(document).ready(function () {
     console.log(array);
+    console.log(alphabetical);
 
     $(".filter-button").click(function () {
         var value = $(this).attr('data-filter');
