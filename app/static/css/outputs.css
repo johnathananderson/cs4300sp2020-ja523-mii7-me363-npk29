@@ -140,7 +140,7 @@ body {
     flex-grow: 1;
 }
 
-.name {
+.product-name {
     font-size: 17px;
     text-transform: uppercase;
     margin-bottom: 5px;
