@@ -55,7 +55,6 @@
 
             <div id="products">
                 <script>
-                    var _ = require("lodash");
 
                     var array = ({{ data | tojson | safe}});
                     var alphabetical = _.cloneDeep(array).sort(function (a, b) { return a["name"].localeCompare(b["name"]); });

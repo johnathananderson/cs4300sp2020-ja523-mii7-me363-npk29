@@ -24,7 +24,8 @@
             <form id="prev_form" action="product" method="GET">
                 <div class="basic-search">
                     <div class="input-field">
-                        <input id="input" name="search" type="text" placeholder="Enter your current brand of foundation or concealer" autocomplete="off" />
+                        <input id="input" name="search" type="text"
+                            placeholder="Enter your current brand of foundation or concealer" autocomplete="off" />
                         <button id="icon-wrap" type="submit" style="justify-content: center">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
@@ -45,7 +46,7 @@
                     the text field element and an array of possible autocompleted values:*/
                     var currentFocus;
                     /*execute a function when someone writes in the text field:*/
-                    inp.addEventListener("input", function(e) {
+                    inp.addEventListener("input", function (e) {
                         var a, b, i, val = this.value;
                         /*close any already open lists of autocompleted values*/
                         closeAllLists();
@@ -62,7 +63,7 @@
                         /*for each item in the array...*/
                         for (i = 0; i < arr.length; i++) {
                             /*check if the item starts with the same letters as the text field value:*/
-                            if (arr[i].substr(0, val.trim().length).toUpperCase() == val.trim().toUpperCase()) {
+                            if (arr[i].substr(0, val.trim().length).toUpperCase() == val.trim().toUpperCase() || val.length == 0) {
                                 /*create a DIV element for each matching element:*/
                                 b = document.createElement("DIV");
                                 b.setAttribute("class", "a-items");
@@ -72,7 +73,7 @@
                                 /*insert a input field that will hold the current array item's value:*/
                                 b.innerHTML += '<input type= "hidden" value="' + arr[i] + '">';
                                 /*execute a function when someone clicks on the item value (DIV element):*/
-                                b.addEventListener("click", function(e) {
+                                b.addEventListener("click", function (e) {
                                     /*insert the value for the autocomplete text field:*/
                                     inp.value = this.getElementsByTagName("input")[0].value;
                                     // .replace("'", "%27")
@@ -85,7 +86,7 @@
                         }
                     });
                     /*execute a function presses a key on the keyboard:*/
-                    inp.addEventListener("keydown", function(e) {
+                    inp.addEventListener("keydown", function (e) {
                         var x = document.getElementById(this.id + "autocomplete-list");
                         if (x) x = x.getElementsByTagName("div");
                         if (e.keyCode == 40) {
@@ -141,7 +142,7 @@
                         }
                     }
                     /*execute a function when someone clicks in the document:*/
-                    document.addEventListener("click", function(e) {
+                    document.addEventListener("click", function (e) {
                         closeAllLists(e.target);
                     });
                 }
@@ -155,7 +156,8 @@
                 <div class="advance-search">
                     <span class="desc" style="margin-bottom: 10px; text-align: center;">Don't have a current product?
                     </span>
-                    <span class="desc2" style="font-size: 15px; color: #999; display: block; text-align: center; margin-bottom: 35px;">
+                    <span class="desc2"
+                        style="font-size: 15px; color: #999; display: block; text-align: center; margin-bottom: 35px;">
                         Let's help you find one. </span>
                     <!-- <br/> <br/> Let's help you find one. -->
                     <div class="row">
@@ -253,7 +255,7 @@
             itemSelectText: '',
         });
         for (let i = 0; i < customSelects.length; i++) {
-            customSelects[i].addEventListener('addItem', function(event) {
+            customSelects[i].addEventListener('addItem', function (event) {
                 if (event.detail.value) {
                     let parent = this.parentNode.parentNode
                     parent.classList.add('valid')
@@ -265,7 +267,7 @@
                 }
             }, false);
         }
-        deleteBtn.addEventListener("click", function(e) {
+        deleteBtn.addEventListener("click", function (e) {
             e.preventDefault()
             const deleteAll = document.querySelectorAll('.choices__button')
             for (let i = 0; i < deleteAll.length; i++) {
