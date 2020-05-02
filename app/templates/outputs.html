@@ -216,9 +216,10 @@
                 <script>
                     var array = {{ data | tojson | safe }};
                     function renderProduct(item, block) {
-                        fetch('/static/templates/output.html')
+                        fetch('./output.html')
                             .then((response) => response.text())
                             .then((template) => {
+                                console.log(template);
                                 var rendered = Mustache.render(template, { brand: item["brand"], name: item["name"], image: item["thumbnail"], ingredients: item["ingredients"], price: item["price"] });
                                 block.innerHTML = rendered;
                             });
