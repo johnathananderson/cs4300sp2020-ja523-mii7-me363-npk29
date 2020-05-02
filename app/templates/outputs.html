@@ -86,12 +86,16 @@
                         });
                         block.innerHTML = rendered;
                     }
-                    var i = 0;
                     array.forEach(function (item) {
                         var block = document.createElement("div");
-                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter default"
-                        renderProduct(item, block)
-                        i++;
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter default";
+                        renderProduct(item, block);
+                        document.getElementById("products").appendChild(block);
+                    });
+                    alphabetical.forEach(function (item) {
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter alphabetical";
+                        renderProduct(item, block);
                         document.getElementById("products").appendChild(block);
                     });
                 </script>
