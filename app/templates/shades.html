@@ -13,21 +13,20 @@
 </head>
 
 <body>
+<div class="loader">
     <div class="load-container">                                   
-        <div class="spinner-grow text"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text"></div>
+        <div class="spinner-grow style='color:#e45c27'"></div>
+        <div class="spinner-grow style='color:#e45c27'"></div>
+        <div class="spinner-grow style='color:#e45c27'"></div>
+        <div class="spinner-grow style='color:#e45c27'"></div>
+        <div class="spinner-grow style='color:#e45c27'"></div>
     </div>
+</div> 
 
     <script>
         $(window).on("load", function(){
             $(".load-container").fadeOut("slow");
+            $(".loader").fadeOut("slow");
         });
     </script>
 
