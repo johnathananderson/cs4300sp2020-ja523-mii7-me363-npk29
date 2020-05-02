@@ -214,35 +214,12 @@
 
             <div id="products">
                 <script>
-                    <div class="block" id="product">
-
-                        <div class="top">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-                                <li><span class="brand">{{ brand }}</span></li>
-                                <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="middle">
-                            <img src={{ image }} alt="pic" />
-                        </div>
-
-                        <div class="bottom">
-                            <div class="product-name">{{ product_name }}</div>
-                            <div class="shade">{{ shade }}</div>
-                            <div class="price">{{ price }}</div>
-                            <div class="ingredients">{{ ingredients }}</div>
-                        </div>
-
-                    </div>
-
-
                     var array = {{ data | tojson | safe }};
                     function renderProduct(item, block) {
-                        var template = document.getElementById("product");
-                        var rendered = Mustache.render(template, { brand: item["brand"], product_name: item["name"], image: item["thumbnail"], ingredients: item["ingredients"], price: item["price"] });
-                        block.innerHTML = rendered;
+                        var template = $.get('/app/templates/output.html', function (template, textStatus, jqXhr) {
+                            var rendered = Mustache.render($(template).filter('#channelTpl').html(), { brand: item["brand"], name: item["name"], image: item["thumbnail"], ingredients: item["ingredients"], price: item["price"] });
+                            block.innerHTML = rendered;
+                        });
                     }
                     var i = 0;
                     array.forEach(function (item) {
