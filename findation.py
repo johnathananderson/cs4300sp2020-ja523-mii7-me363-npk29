@@ -91,7 +91,7 @@ class FindationBrowser:
                 print(15)
                 if p < n_products - 1:
                     print(16)
-                    WebDriverWait(self.browser, 20, 2).until(
+                    WebDriverWait(self.browser, 20, 0.01).until(
                         EC.invisibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                     )
                     print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
