@@ -115,7 +115,7 @@ class FindationBrowser:
                     WebDriverWait(self.browser, 20, 2).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "actions"))
                     )
-                    WebDriverWait(self.browser, 20, 2).until(EC.element_to_be_clickable((By.CLASS_NAME, "actions")))
+                    WebDriverWait(self.browser, 20, 0.01).until(EC.element_to_be_clickable((By.CLASS_NAME, "actions")))
                     find_matches_button = self.browser.find_element_by_class_name("actions").find_element_by_tag_name(
                         "button"
                     )

@@ -209,7 +209,7 @@
                     <div class="bottom">
                         <div class="product-name">{{ product_name }}</div>
                         <div class="shade">{{ shade }}</div>
-                        <div class="price">{{ price }}</div>
+                        <div class="prices">{{ prices }}</div>
                         <div class="ingredients" style="text-transform: capitalize">{{ ingredients }}</div>
                     </div>
 
@@ -221,8 +221,16 @@
                 <script>
                     var array = {{ data | tojson | safe }};
                     function renderProduct(item, block) {
+                        var i_ingredients = item["ingredients"];
+                        if (typeof (i_ingredients) == Array) {
+                            i_ingredients = i_ingredients.join(", ")
+                        }
+                        var i_prices = item["prices"];
+                        if (typeof (i_prices) == Array) {
+                            i_prices = i_prices.join(", ")
+                        }
                         var template = document.getElementById("product_template").innerHTML;
-                        var rendered = Mustache.render(template, { brand: item["brand"], product_name: item["name"], image: item["thumbnail"], ingredients: (item["ingredients"].join(", ")), price: (item["prices"].join(", ")) });
+                        var rendered = Mustache.render(template, { brand: item["brand"], product_name: item["name"], image: item["thumbnail"], ingredients: i_ingredients, prices: i_prices });
                         block.innerHTML = rendered;
                     }
                     var i = 0;
