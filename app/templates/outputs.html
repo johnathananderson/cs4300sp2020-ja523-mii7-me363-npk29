@@ -46,6 +46,7 @@
                                     <div class="product-name">{{ product_name }}</div>
                                     <div class="shade">{{ shade }}</div>
                                     <div class="prices">{{ prices }}</div>
+                                    <div class="ingredients">{{ health_score }}</div>
                                     <div class="ingredients">{{ ingredients }}</div>
                                 </div>
 
@@ -82,9 +83,11 @@
                         var rendered = Mustache.render(template, {
                             brand: item["brand"],
                             product_name: item["name"],
+                            shade: item["shade"],
                             image: item["thumbnail"],
                             ingredients: i_ingredients,
-                            prices: i_prices
+                            prices: i_prices,
+                            health_score: item["health_score"]
                         });
                         block.innerHTML = rendered;
                     }
