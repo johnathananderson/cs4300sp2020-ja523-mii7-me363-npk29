@@ -222,11 +222,12 @@
                     var array = {{ data | tojson | safe }};
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
-                        if (typeof (i_ingredients) == Array) {
+                        console.log(typeof i_ingredients)
+                        if (typeof i_ingredients == Array) {
                             i_ingredients = i_ingredients.join(", ")
                         }
                         var i_prices = item["prices"];
-                        if (typeof (i_prices) == Array) {
+                        if (typeof i_prices == Array) {
                             i_prices = i_prices.join(", ")
                         }
                         var template = document.getElementById("product_template").innerHTML;
