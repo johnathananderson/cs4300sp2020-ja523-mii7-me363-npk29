@@ -6,8 +6,8 @@ $(document).ready(function () {
 
     $(".filter-button").click(function () {
         var value = $(this).attr('data-filter');
-        $('.filter').filter('.' + value).show('5000');
-        $('.filter').not('.' + value).hide('5000')
+        $('.filter').filter('.' + value).show('4000');
+        $('.filter').not('.' + value).hide('4000')
     });
 
     if ($(".filter-button").removeClass("active")) {
