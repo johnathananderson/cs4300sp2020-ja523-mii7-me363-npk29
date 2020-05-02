@@ -222,7 +222,7 @@
                     var array = {{ data | tojson | safe }};
                     function renderProduct(item, block) {
                         var template = document.getElementById("product_template").innerHTML;
-                        var rendered = Mustache.render(template, { brand: item["brand"], product_name: item["name"], image: item["thumbnail"], ingredients: item["ingredients"], price: item["price"] });
+                        var rendered = Mustache.render(template, { brand: item["brand"], product_name: item["name"], image: item["thumbnail"], ingredients: item["ingredients"], price: item["prices"] });
                         block.innerHTML = rendered;
                     }
                     var i = 0;
