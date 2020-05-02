@@ -8,6 +8,7 @@
     <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
     <script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+    <script src="lodash.js"></script>
 </head>
 
 <body>
@@ -54,8 +55,10 @@
 
             <div id="products">
                 <script>
+                    import _ from "lodash";
+
                     var array = ({{ data | tojson | safe}});
-                    var alphabetical = $.extend(array).sort(function (a, b) { return a["name"].localeCompare(b["name"]); });
+                    var alphabetical = _.cloneDeep(array).sort(function (a, b) { return a["name"].localeCompare(b["name"]); });
 
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
