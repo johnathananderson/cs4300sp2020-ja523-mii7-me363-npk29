@@ -24,6 +24,10 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <style class="cp-pen-styles">
         * {
@@ -146,7 +150,20 @@
 </head>
 
 <body>
+{# <div id="loading"></div> #}
+    <div class="container">                                   
+    <div class="spinner-grow text-muted"></div>
+    <div class="spinner-grow text-primary"></div>
+    <div class="spinner-grow text-success"></div>
+    <div class="spinner-grow text-info"></div>
+    <div class="spinner-grow text-warning"></div>
+    <div class="spinner-grow text-danger"></div>
+    <div class="spinner-grow text-secondary"></div>
+    <div class="spinner-grow text-dark"></div>
+    <div class="spinner-grow text-light"></div>
+    </div>   
     <ul id="myUl">
+
         <script>
             var array = {{ data | tojson | safe }};
 
@@ -158,6 +175,20 @@
                 document.getElementById("myUl").appendChild(li);
             });
         </script>
+
+        {# <script>
+		// $(document).ready(function(){
+			// 	$('div#loading').removeAttr('id');
+		// });
+		var preloader = document.getElementById("loading");
+		// window.addEventListener('load', function(){
+		// 	preloader.style.display = 'none';
+		// 	})
+
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+	</script> #}
 
 </body>
 
