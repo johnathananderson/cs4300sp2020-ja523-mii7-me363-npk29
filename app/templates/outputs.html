@@ -21,7 +21,7 @@
                 <button class="btn btn-default filter-button" data-filter="default">Default</button>
                 <button class="btn btn-default filter-button" data-filter="alphabetical">Alphabetical</button>
                 <button class="btn btn-default filter-button" data-filter="positive">Most Postitively Reviewed</button>
-                <button class="btn btn-default filter-button" data-filter="healthy">Most Healthy</button>
+                <button class="btn btn-default filter-button" data-filter="healthiest">Healthiest</button>
                 <button class="btn btn-default filter-button" data-filter="cheap">Cheapest</button>
             </div>
             <br />
@@ -55,7 +55,6 @@
 
             <div id="products">
                 <script>
-
                     var array = ({{ data | tojson | safe}});
                     var alphabetical = array.slice().sort(function (a, b) {
                         if (a["brand"] == b["brand"]) {
@@ -63,9 +62,12 @@
                         }
                         return a["brand"].localeCompare(b["brand"]);
                     });
-                    // var healthiest = array.slice().map(function (item) {
+                    var missing_i = array.slice().filter(item => item["ingredients"] == "Ingredients not found");
+                    var not_missing_i = array.slice().filter(item => item["ingredients"] != "Ingredients not found").sort((a, b) => a["health_score"] < b["health_score"] ? 1 : -1);
+                    var healthiest = not_missing_i.concat(missing_i);
+                    // var cheapest = array.slice().map(function (item) {
 
-                    // })
+                    // });
 
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
@@ -95,6 +97,12 @@
                     alphabetical.forEach(function (item) {
                         var block = document.createElement("div");
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter alphabetical";
+                        renderProduct(item, block);
+                        document.getElementById("products").appendChild(block);
+                    });
+                    healthiest.forEach(function (item) {
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter healthiest";
                         renderProduct(item, block);
                         document.getElementById("products").appendChild(block);
                     });

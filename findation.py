@@ -147,9 +147,11 @@ class FindationBrowser:
                         if match_brand in outputs and match_name in outputs[match_brand]:
                             match_product["ingredients"] = outputs[match_brand][match_name]["ingredients"]
                             match_product["prices"] = outputs[match_brand][match_name]["prices"]
+                            match_product["health_score"] = outputs[match_brand][match_name]["health_score"]
                         else:
                             match_product["ingredients"] = "Ingredients not found"
                             match_product["prices"] = "Prices not found"
+                            match_product["health_score"] = 10.766666666666666
                         results.append(match_product)
             self.browser.delete_all_cookies()
             return results
