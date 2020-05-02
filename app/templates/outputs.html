@@ -53,22 +53,33 @@
 
             <div id="products">
                 <script>
-                    var array = {{ data | tojson | safe }};
+                    var array = {
+                        {
+                            data | tojson | safe
+                        }
+                    };
+
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
-                        if (typeof i_ingredients == Object) {
+                        if (typeof i_ingredients == "object") {
                             i_ingredients = i_ingredients.join(", ")
                         }
                         var i_prices = item["prices"];
-                        if (typeof i_prices == Object) {
+                        if (typeof i_prices == "object") {
                             i_prices = i_prices.join(", ")
                         }
                         var template = document.getElementById("product_template").innerHTML;
-                        var rendered = Mustache.render(template, { brand: item["brand"], product_name: item["name"], image: item["thumbnail"], ingredients: i_ingredients, prices: i_prices });
+                        var rendered = Mustache.render(template, {
+                            brand: item["brand"],
+                            product_name: item["name"],
+                            image: item["thumbnail"],
+                            ingredients: i_ingredients,
+                            prices: i_prices
+                        });
                         block.innerHTML = rendered;
                     }
                     var i = 0;
-                    array.forEach(function (item) {
+                    array.forEach(function(item) {
                         var block = document.createElement("div");
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter " + String(i)
                         renderProduct(item, block)
