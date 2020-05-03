@@ -116,6 +116,7 @@
                         //     $('#icon-wrap').disable(true);
                         // } else 
                         if (val && arr.includes(val)) {
+                            console.log("Hide");
                             $('#input').popover('hide');
                         }
 
@@ -201,6 +202,7 @@
                         if (!arr.includes(val)) {
                             e.preventDefault();
                             e.stopPropagation();
+                            console.log("Show");
                             $('#input').popover('show');
                         }
                     });
