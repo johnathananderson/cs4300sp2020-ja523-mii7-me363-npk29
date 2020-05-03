@@ -3,7 +3,7 @@
     color: #e45c27;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .gallery-title:after {
@@ -21,7 +21,7 @@
     border-radius: 5px;
     text-align: center;
     color: #e45c27;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     margin-left: 2.5px;
     margin-right: 2.5px;
 }
