@@ -12,7 +12,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body onload="load(main)">
+
     <div class="loader">
         <div class="load-container">
             <div class="spinner-grow style='color:#e45c27'"></div>
@@ -23,12 +24,32 @@
         </div>
     </div>
 
-    <!-- <script>
-        $(window).on("load", function () {
+    <script>
+        /* $(window).on("load", function () {
             $(".load-container").fadeOut("slow");
             $(".loader").fadeOut("slow");
-        });
-    </script> -->
+        }); */
+
+            // function load(url) {
+            //     // display loading image here...
+            //     document.getElementById('loader').visible = true;
+            //     // request your data...
+            //     var req = new XMLHttpRequest();
+            //     req.open("POST", url, true);
+
+            //     req.onreadystatechange = function () {
+            //         if (req.readyState == 4 && req.status == 200) {
+            //             // content is loaded...hide the gif and display the content...
+            //             if (req.responseText) {
+            //                 document.getElementById('s008').innerHTML = req.responseText;
+            //                 document.getElementById('loader').visible = false;
+            //             }
+            //         }
+            //     };
+            //     request.send(vars);
+            // }
+
+    </script>
 
     <div class="s008">
         <div class="topcorner">
