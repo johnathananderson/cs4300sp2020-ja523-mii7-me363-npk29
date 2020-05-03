@@ -11,6 +11,9 @@
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" charset="utf-8" />
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -25,8 +28,10 @@
                 <div class="basic-search">
                     <div class="input-field">
                         <input id="input" name="search" type="text"
-                            placeholder="Enter your current brand of foundation or concealer" autocomplete="off" />
-                        <button id="icon-wrap" type="submit" style="justify-content: center">
+                            placeholder="Enter your current brand of foundation or concealer" autocomplete="off"
+                            data-container="body" data-toggle="popover" data-placement="top" title="Invalid Brand"
+                            data-content="Please enter a valid brand before submitting!" />
+                        <button id="icon-wrap" type="submit" style="justify-content: center;" disabled>
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
                                 <path
@@ -41,7 +46,15 @@
             <script>
                 brands = {{ brands | safe }};
 
-                function autocomplete(inp, arr) {
+                function autocomplete(inp, arr, form) {
+
+                    jQuery.fn.extend({
+                        disable: function (state) {
+                            return this.each(function () {
+                                this.disabled = state;
+                            });
+                        }
+                    });
                     /*the autocomplete function takes two arguments,
                     the text field element and an array of possible autocompleted values:*/
                     var currentFocus;
@@ -78,12 +91,15 @@
                                     /*close the list of autocompleted values,
                                     (or any other open lists of autocompleted values:*/
                                     closeAllLists();
+                                    $('#icon-wrap').disable(false);
+                                    document.getElementById("icon-wrap").click();
                                 });
                                 a.appendChild(b);
                             }
                         }
                     });
                     inp.addEventListener("input", function (e) {
+                        $('#input').popover('hide');
                         var a, b, i, val = this.value;
                         /*close any already open lists of autocompleted values*/
                         closeAllLists();
@@ -97,6 +113,12 @@
                         a.setAttribute("class", "autocomplete-items");
                         /*append the DIV element as a child of the autocomplete container:*/
                         this.parentNode.appendChild(a);
+                        if (val && !arr.includes(val)) {
+                            $('#icon-wrap').disable(true);
+                        } else if (val && arr.includes(val)) {
+                            $('#icon-wrap').disable(false);
+                        }
+
                         /*for each item in the array...*/
                         for (i = 0; i < arr.length; i++) {
                             /*check if the item starts with the same letters as the text field value:*/
@@ -115,6 +137,8 @@
                                     /*close the list of autocompleted values,
                                     (or any other open lists of autocompleted values:*/
                                     closeAllLists();
+                                    $('#icon-wrap').disable(false);
+                                    document.getElementById("icon-wrap").click();
                                 });
                                 a.appendChild(b);
                             } else if (arr[i].substr(0, val.trim().length).toUpperCase() == val.trim().toUpperCase()) {
@@ -134,6 +158,8 @@
                                     /*close the list of autocompleted values,
                                     (or any other open lists of autocompleted values:*/
                                     closeAllLists();
+                                    $('#icon-wrap').disable(false);
+                                    document.getElementById("icon-wrap").click();
                                 });
                                 a.appendChild(b);
                             }
@@ -162,8 +188,20 @@
                             if (currentFocus > -1) {
                                 /*and simulate a click on the "active" item:*/
                                 if (x) x[currentFocus].click();
+                                $('#icon-wrap').disable(false);
                                 document.getElementById("icon-wrap").click();
                             }
+                        }
+                    });
+
+
+
+                    form.addEventListener("submit", function (e) {
+                        var val = inp.value;
+                        if (!arr.includes(val)) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            $('#input').popover('show');
                         }
                     });
 
@@ -201,8 +239,8 @@
                     });
                 }
 
-                /*initiate the autocomplete function on the "inut" element, and pass along the brands array as possible autocomplete values:*/
-                autocomplete(document.getElementById("input"), brands);
+                /*initiate the autocomplete function on the "input" element, and pass along the brands array as possible autocomplete values:*/
+                autocomplete(document.getElementById("input"), brands, document.getElementById("prev_form"));
             </script>
 
 
