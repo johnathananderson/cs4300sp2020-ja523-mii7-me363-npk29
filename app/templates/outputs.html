@@ -11,44 +11,6 @@
 </head>
 
 <body>
-
-    <!-- <div class="loader">
-        <div class="load-container">
-            <div class="spinner-grow style='color:#e45c27'"></div>
-            <div class="spinner-grow style='color:#e45c27'"></div>
-            <div class="spinner-grow style='color:#e45c27'"></div>
-            <div class="spinner-grow style='color:#e45c27'"></div>
-            <div class="spinner-grow style='color:#e45c27'"></div>
-        </div>
-    </div> -->
-
-    <!-- <script>
-            /* $(window).on("load", function () {
-                $(".load-container").fadeOut("slow");
-                $(".loader").fadeOut("slow");
-            }); */
-
-            function load(url) {
-                // display loading image here...
-                document.getElementById('loader').visible = true;
-                // request your data...
-                var req = new XMLHttpRequest();
-                req.open("POST", url, true);
-
-                req.onreadystatechange = function () {
-                    if (req.readyState == 4 && req.status == 200) {
-                        // content is loaded...hide the gif and display the content...
-                        if (req.responseText) {
-                            document.getElementById('container').innerHTML = req.responseText;
-                            document.getElementById('loader').visible = false;
-                        }
-                    }
-                };
-                request.send(vars);
-            }
-
-        </script> -->
-
     <div class="container">
         <div class="row">
             <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -65,34 +27,34 @@
             <br />
 
             <script id="product_template" type="text/html">
-                            {% raw %}
-                            <div class="block">
+                {% raw %}
+                <div class="block">
 
-                                <div class="top">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-                                        <li><span class="brand">{{ brand }}</span></li>
-                                        <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
+                    <div class="top">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                            <li><span class="brand">{{ brand }}</span></li>
+                            <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
 
-                                <div class="middle">
-                                    <img src="{{ image }}" alt="pic" />
-                                </div>
+                    <div class="middle">
+                        <img src="{{ image }}" alt="pic" />
+                    </div>
 
-                                <div class="bottom">
-                                    <div class="product-name">{{ product_name }}</div>
-                                    <div class="shade">Your Shade: {{ shade }}</div>
-                                    {{#prices}} 
-                                    <div class="prices">Retailers: {{ prices }}</div>
-                                    {{/prices}} 
-                                    <div class="ingredients">Health Score: {{ health_score }}</div>
-                                    <div class="ingredients">{{ ingredients }}</div>
-                                </div>
+                    <div class="bottom">
+                        <div class="product-name">{{ product_name }}</div>
+                        <div class="shade">Your Shade: {{ shade }}</div>
+                        {{#prices}} 
+                        <div class="prices">Retailers: {{ prices }}</div>
+                        {{/prices}} 
+                        <div class="ingredients">Health Score: {{ health_score }}</div>
+                        <div class="ingredients">{{ ingredients }}</div>
+                    </div>
 
-                            </div>
-                            {% endraw %}
-    </script>
+                </div>
+                {% endraw %}
+            </script>
 
             <div id="products">
                 <script>

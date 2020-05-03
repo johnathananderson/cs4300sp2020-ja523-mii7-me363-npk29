@@ -188,9 +188,10 @@
                             // document.getElementById("icon-wrap").click();
                             if (currentFocus > -1) {
                                 /*and simulate a click on the "active" item:*/
-                                if (x) x[currentFocus].click();
+                                if (x) {
+                                    x[currentFocus].click();
+                                }
                                 // $('#icon-wrap').disable(false);
-                                document.getElementById("icon-wrap").click();
                             }
                         }
                     });

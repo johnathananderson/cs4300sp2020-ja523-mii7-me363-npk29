@@ -68,16 +68,6 @@
                             title="Invalid Shade" data-content="Please enter a valid shade before searching!" />
                         <input type="hidden" id="brand-input" name="brand-input" />
                         <input type="hidden" id="product-input" name="product-input" />
-                        <script>
-                            var myform = document.getElementById('prev_form');
-                            myform.onsubmit = function () {
-                                var b = String(({{ brand | tojson | safe }}));
-                            document.getElementById("brand-input").value = b;
-                            var p = String(({{ product | tojson | safe }}));
-                            document.getElementById("product-input").value = p;
-                            myform.submit();
-                            };
-                        </script>
                         <button id="icon-wrap" type="submit" style="justify-content: center">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
@@ -224,7 +214,6 @@
                     if (currentFocus > -1) {
                         /*and simulate a click on the "active" item:*/
                         if (x) x[currentFocus].click();
-                        document.getElementById("icon-wrap").click();
                     }
                 }
             });
@@ -236,6 +225,8 @@
                     e.stopPropagation();
                     $('#input').popover('show');
                 } else {
+                    document.getElementById("brand-input").value = String(({{ brand | tojson | safe }}));
+                    document.getElementById("product-input").value = String(({{ product | tojson | safe }}));
                     $(".loader").show();
                 }
             });
