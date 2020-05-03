@@ -106,7 +106,7 @@
                             brand: item["brand"],
                             product_name: item["name"],
                             shade: item["shade"],
-                            image: item["thumbnail"],
+                            image: item["thumbnail"].replace("micro_thumb", "medium"),
                             ingredients: i_ingredients,
                             prices: i_prices,
                             health_score: item["health_score"]
