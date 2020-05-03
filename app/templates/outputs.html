@@ -66,7 +66,7 @@
                     var missing_i = array.slice().filter(item => item["ingredients"] == "Ingredients not found");
                     var not_missing_i = array.slice().filter(item => item["ingredients"] != "Ingredients not found").sort((a, b) => a["health_score"] < b["health_score"] ? 1 : -1);
                     var healthiest = not_missing_i.concat(missing_i);
-                    var prices = array.slice().map(item => item["prices"].map(p => parseFloat(p.substring(p.indexOf("$")))).sort((a, b) => a > b ? 1 : -1)[0])
+                    var prices = array.slice().map(item => (item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$")))).sort((a, b) => a > b ? 1 : -1)[0])
                     console.log(prices);
                     // for (i = 0; i < )
 
