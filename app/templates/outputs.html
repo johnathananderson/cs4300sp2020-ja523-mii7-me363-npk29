@@ -69,6 +69,7 @@
                         if (item["ingredients"] === undefined) {
                             item["ingredients"] = "Ingredients not found";
                         }
+                        return item;
                     });
                     var alphabetical = array.slice().sort(function (a, b) {
                         if (a["brand"] == b["brand"]) {
