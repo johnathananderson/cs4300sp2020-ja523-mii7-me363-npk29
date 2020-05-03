@@ -45,7 +45,7 @@
 }
 
 .gallery_product {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 * {
@@ -156,9 +156,14 @@ body {
     text-transform: uppercase;
 }
 
+.prices {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
 .shade {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .old-price {
