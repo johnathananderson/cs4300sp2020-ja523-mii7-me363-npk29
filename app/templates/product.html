@@ -52,11 +52,7 @@
                         <script>
                             var myform = document.getElementById('prev_form');
                             myform.onsubmit = function () {
-                                var b = String(({
-                                    {
-                                        brand | tojson | safe
-                                    }
-                                }));
+                                var b = String(({{brand | tojson | safe }}));
                             document.getElementById("brand-input").value = b;
                             myform.submit();
                             };
@@ -90,7 +86,6 @@
                 var a, b, i, val = this.value;
                 if (!val) {
                     /*close any already open lists of autocompleted values*/
-                    closeAllLists();
                     // if (!val) {
                     //     return false;
                     // }
