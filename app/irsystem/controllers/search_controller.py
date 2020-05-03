@@ -87,7 +87,7 @@ def product():
         for shade in s:
             shades.append(shade)
 
-        output_message = "Your search: " + brand + ", " + product
+        output_message = "Your search: " + brand + ",\n " + product
 
         return render_template(
             "shades.html",
