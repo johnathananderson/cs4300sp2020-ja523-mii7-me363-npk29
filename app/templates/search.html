@@ -17,6 +17,15 @@
 </head>
 
 <body>
+    <div class="loader" style="display: none;">
+        <div class="load-container">
+            <div class="spinner-grow style='color:#e45c27'"></div>
+            <div class="spinner-grow style='color:#e45c27'"></div>
+            <div class="spinner-grow style='color:#e45c27'"></div>
+            <div class="spinner-grow style='color:#e45c27'"></div>
+            <div class="spinner-grow style='color:#e45c27'"></div>
+        </div>
+    </div>
     <div class="s008">
         <div class="topcorner">
             <p>Project Name: {{ name }}</p>
@@ -201,6 +210,7 @@
                             e.stopPropagation();
                             $('#input').popover('show');
                         } else {
+                            $(".loader").show();
                             $(".load-container").fadeOut("slow");
                             $(".loader").fadeOut("slow");
                         }
