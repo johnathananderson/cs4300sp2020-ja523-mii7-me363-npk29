@@ -114,6 +114,7 @@
                         block.innerHTML = rendered;
                     }
                     var blocks = document.createElement("div");
+                    blocks.style = "display: flex; justify-content: space-between;";
                     for (i = 0; i < array.length; i++) {
                         var item = array[i];
                         var block = document.createElement("div");
@@ -123,9 +124,11 @@
                         if (i % 3 == 2) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
+                            blocks.style = "display: flex; justify-content: space-between;";
                         }
                     }
                     blocks = document.createElement("div");
+                    blocks.style = "display: flex; justify-content: space-between;";
                     for (i = 0; i < alphabetical.length; i++) {
                         var item = alphabetical[i];
                         var block = document.createElement("div");
@@ -135,9 +138,11 @@
                         if (i % 3 == 2) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
+                            blocks.style = "display: flex; justify-content: space-between;";
                         }
                     }
                     blocks = document.createElement("div");
+                    blocks.style = "display: flex; justify-content: space-between;";
                     for (i = 0; i < healthiest.length; i++) {
                         var item = healthiest[i];
                         var block = document.createElement("div");
@@ -147,9 +152,11 @@
                         if (i % 3 == 2) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
+                            blocks.style = "display: flex; justify-content: space-between;";
                         }
                     }
                     blocks = document.createElement("div");
+                    blocks.style = "display: flex; justify-content: space-between;";
                     for (i = 0; i < cheapest.length; i++) {
                         var item = cheapest[i];
                         var block = document.createElement("div");
@@ -159,6 +166,7 @@
                         if (i % 3 == 2) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
+                            blocks.style = "display: flex; justify-content: space-between;";
                         }
                     }
                 </script>
