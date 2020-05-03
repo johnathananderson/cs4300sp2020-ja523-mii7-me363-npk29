@@ -22,6 +22,8 @@
     text-align: center;
     color: #e45c27;
     margin-bottom: 30px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
 }
 
 .filter-button:hover {
