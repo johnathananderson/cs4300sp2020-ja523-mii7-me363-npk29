@@ -14,7 +14,7 @@
 
 <body>
 
-    <div class="loader">
+    <!-- <div class="loader">
         <div class="load-container">
             <div class="spinner-grow style='color:#e45c27'"></div>
             <div class="spinner-grow style='color:#e45c27'"></div>
@@ -22,7 +22,7 @@
             <div class="spinner-grow style='color:#e45c27'"></div>
             <div class="spinner-grow style='color:#e45c27'"></div>
         </div>
-    </div>
+    </div> -->
 
     <script>
         // $(window).on("load", function () {
@@ -44,17 +44,20 @@
                 <div class="basic-search">
                     <div class="input-field">
 
-                        <input id="input" name="product-input" type="text" placeholder="Enter your current product"
-                            autocomplete="off" data-container="body" data-toggle="popover" data-placement="top"
-                            title="Invalid Product" data-content="Please enter a valid product before searching!" />
+                        <input id="input" name="product-input" type="text" placeholder="Enter your current product" autocomplete="off" data-container="body" data-toggle="popover" data-placement="top" title="Invalid Product" data-content="Please enter a valid product before searching!"
+                        />
                         <input type="hidden" id="brand-input" name="brand-input" />
 
                         <script>
                             var myform = document.getElementById('prev_form');
-                            myform.onsubmit = function () {
-                                var b = String(({{ brand | tojson | safe }}));
-                            document.getElementById("brand-input").value = b;
-                            myform.submit();
+                            myform.onsubmit = function() {
+                                var b = String(({
+                                    {
+                                        brand | tojson | safe
+                                    }
+                                }));
+                                document.getElementById("brand-input").value = b;
+                                myform.submit();
                             };
                         </script>
 
@@ -76,12 +79,17 @@
     </div>
 
     <script>
-        p = ({{ products | safe }});
+        p = ({
+            {
+                products | safe
+            }
+        });
+
         function autocomplete(inp, arr, form) {
             /*the autocomplete function takes two arguments,
             the text field element and an array of possible autocompleted values:*/
             var currentFocus;
-            inp.addEventListener("focus", function (e) {
+            inp.addEventListener("focus", function(e) {
                 var a, b, i, val = this.value;
                 if (!val) {
                     /*close any already open lists of autocompleted values*/
@@ -106,7 +114,7 @@
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += '<input type= "hidden" value="' + arr[i] + '">';
                         /*execute a function when someone clicks on the item value (DIV element):*/
-                        b.addEventListener("click", function (e) {
+                        b.addEventListener("click", function(e) {
                             /*insert the value for the autocomplete text field:*/
                             inp.value = this.getElementsByTagName("input")[0].value;
                             // .replace("'", "%27")
@@ -120,7 +128,7 @@
                 }
             });
             /*execute a function when someone writes in the text field:*/
-            inp.addEventListener("input", function (e) {
+            inp.addEventListener("input", function(e) {
                 var a, b, i, val = this.value;
                 /*close any already open lists of autocompleted values*/
                 closeAllLists();
@@ -148,7 +156,7 @@
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += '<input type= "hidden" value="' + arr[i] + '">';
                         /*execute a function when someone clicks on the item value (DIV element):*/
-                        b.addEventListener("click", function (e) {
+                        b.addEventListener("click", function(e) {
                             /*insert the value for the autocomplete text field:*/
                             inp.value = this.getElementsByTagName("input")[0].value;
                             // .replace("'", "%27")
@@ -169,7 +177,7 @@
                         /*insert a input field that will hold the current array item's value:*/
                         b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                         /*execute a function when someone clicks on the item value (DIV element):*/
-                        b.addEventListener("click", function (e) {
+                        b.addEventListener("click", function(e) {
                             /*insert the value for the autocomplete text field:*/
                             inp.value = this.getElementsByTagName("input")[0].value.replace("'", "\'");
                             // .replace("'", "%27")
@@ -183,7 +191,7 @@
                 }
             });
             /*execute a function presses a key on the keyboard:*/
-            inp.addEventListener("keydown", function (e) {
+            inp.addEventListener("keydown", function(e) {
                 var x = document.getElementById(this.id + "autocomplete-list");
                 if (x) x = x.getElementsByTagName("div");
                 if (e.keyCode == 40) {
@@ -210,7 +218,7 @@
                 }
             });
 
-            form.addEventListener("submit", function (e) {
+            form.addEventListener("submit", function(e) {
                 var val = inp.value;
                 if (!arr.includes(val)) {
                     e.preventDefault();
@@ -251,7 +259,7 @@
                 }
             }
             /*execute a function when someone clicks in the document:*/
-            document.addEventListener("click", function (e) {
+            document.addEventListener("click", function(e) {
                 closeAllLists(e.target);
             });
         }
@@ -265,7 +273,7 @@
             $select2 = $('#select2'),
             $options = $select2.find('option');
 
-        $select1.on('change', function () {
+        $select1.on('change', function() {
             $select2.html($options.filter('[value="' + this.value + '"]'));
         }).trigger('change');
     </script>
