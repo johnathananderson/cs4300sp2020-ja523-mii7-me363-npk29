@@ -31,7 +31,7 @@
                             placeholder="Enter your current brand of foundation or concealer" autocomplete="off"
                             data-container="body" data-toggle="popover" data-placement="top" title="Invalid Brand"
                             data-content="Please enter a valid brand before submitting!" />
-                        <button id="icon-wrap" type="submit" style="justify-content: center;" disabled>
+                        <button id="icon-wrap" type="submit" style="justify-content: center;">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
                                 <path
@@ -48,13 +48,13 @@
 
                 function autocomplete(inp, arr, form) {
 
-                    jQuery.fn.extend({
-                        disable: function (state) {
-                            return this.each(function () {
-                                this.disabled = state;
-                            });
-                        }
-                    });
+                    // jQuery.fn.extend({
+                    //     disable: function (state) {
+                    //         return this.each(function () {
+                    //             this.disabled = state;
+                    //         });
+                    //     }
+                    // });
                     /*the autocomplete function takes two arguments,
                     the text field element and an array of possible autocompleted values:*/
                     var currentFocus;
@@ -91,7 +91,7 @@
                                     /*close the list of autocompleted values,
                                     (or any other open lists of autocompleted values:*/
                                     closeAllLists();
-                                    $('#icon-wrap').disable(false);
+                                    // $('#icon-wrap').disable(false);
                                     document.getElementById("icon-wrap").click();
                                 });
                                 a.appendChild(b);
@@ -99,7 +99,6 @@
                         }
                     });
                     inp.addEventListener("input", function (e) {
-                        $('#input').popover('hide');
                         var a, b, i, val = this.value;
                         /*close any already open lists of autocompleted values*/
                         closeAllLists();
@@ -113,10 +112,11 @@
                         a.setAttribute("class", "autocomplete-items");
                         /*append the DIV element as a child of the autocomplete container:*/
                         this.parentNode.appendChild(a);
-                        if (val && !arr.includes(val)) {
-                            $('#icon-wrap').disable(true);
-                        } else if (val && arr.includes(val)) {
-                            $('#icon-wrap').disable(false);
+                        // if (val && !arr.includes(val)) {
+                        //     $('#icon-wrap').disable(true);
+                        // } else 
+                        if (val && arr.includes(val)) {
+                            $('#input').popover('hide');
                         }
 
                         /*for each item in the array...*/
@@ -137,7 +137,7 @@
                                     /*close the list of autocompleted values,
                                     (or any other open lists of autocompleted values:*/
                                     closeAllLists();
-                                    $('#icon-wrap').disable(false);
+                                    // $('#icon-wrap').disable(false);
                                     document.getElementById("icon-wrap").click();
                                 });
                                 a.appendChild(b);
@@ -158,7 +158,7 @@
                                     /*close the list of autocompleted values,
                                     (or any other open lists of autocompleted values:*/
                                     closeAllLists();
-                                    $('#icon-wrap').disable(false);
+                                    // $('#icon-wrap').disable(false);
                                     document.getElementById("icon-wrap").click();
                                 });
                                 a.appendChild(b);
@@ -188,7 +188,7 @@
                             if (currentFocus > -1) {
                                 /*and simulate a click on the "active" item:*/
                                 if (x) x[currentFocus].click();
-                                $('#icon-wrap').disable(false);
+                                // $('#icon-wrap').disable(false);
                                 document.getElementById("icon-wrap").click();
                             }
                         }
