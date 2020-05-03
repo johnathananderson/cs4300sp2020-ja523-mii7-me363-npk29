@@ -206,6 +206,7 @@
                     e.stopPropagation();
                     $('#input').popover('show');
                 } else {
+                    $('#input').popover('hide');
                     document.getElementById("brand-input").value = String(({{brand | tojson | safe }}));
                     $(".loader").show();
                 }

@@ -225,6 +225,7 @@
                     e.stopPropagation();
                     $('#input').popover('show');
                 } else {
+                    $('#input').popover('hide');
                     $(".loader").show();
                     document.getElementById("brand-input").value = String(({{ brand | tojson | safe }}));
                     document.getElementById("product-input").value = String(({{ product | tojson | safe }}));
