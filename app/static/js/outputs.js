@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.filter:visible').not('.default').hide();
+    var last = '.default';
 
     $(".filter-button").click(function () {
         var value = $(this).attr('data-filter');

@@ -72,14 +72,16 @@
                     var missing_p = array.slice().filter(item => item["prices"].length == 0);
                     var not_missing_p = array.slice().filter(item => item["prices"].length > 0);
                     var lowest_prices = not_missing_p.slice().map(item => Array.from(item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$") + 1))).sort((a, b) => a > b ? 1 : -1)[0]);
+                    console.log("total");
+                    console.log(array);
                     console.log("lowest");
                     console.log(lowest_prices);
                     console.log("not missing");
                     console.log(not_missing_p);
                     console.log("missing")
                     console.log(missing_p);
-                    var not_missing_p_sorted = not_missing_p.slice().sort(function (a, b) {
-                        lowest_prices[not_missing_p.indexOf(b)] - lowest_prices[not_missing_p.indexOf(a)]
+                    var not_missing_p_sorted = not_missing_p.sort(function (a, b) {
+                        return lowest_prices[not_missing_p.indexOf(b)] - lowest_prices[not_missing_p.indexOf(a)];
                     });
                     console.log("not missing sorted")
                     console.log(not_missing_p_sorted);
