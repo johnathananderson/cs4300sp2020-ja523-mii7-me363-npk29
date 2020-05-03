@@ -56,7 +56,17 @@
 
             <div id="products">
                 <script>
-                    var array = ({{ data | tojson | safe}});
+                    var array = Array.from({{ data | tojson | safe}}).map(function (item) {
+                        if (!"health_score" in item) {
+                            item["health_score"] = "N/A";
+                        }
+                        if (!"prices" in item) {
+                            item["prices"] = [];
+                        }
+                        if (!"ingredients" in item) {
+                            item["ingredients"] = "Ingredients not found";
+                        }
+                    });
                     var alphabetical = array.slice().sort(function (a, b) {
                         if (a["brand"] == b["brand"]) {
                             return a["name"].localeCompare(b["name"]);
