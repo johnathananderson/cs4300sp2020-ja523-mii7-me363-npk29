@@ -17,7 +17,7 @@
             </div>
 
         <div style="align: center; text-align: center;">
-            <div style="display: flex; justify-content: space-between;">
+            <div style="display: inline-block">
                 <button class="btn btn-default filter-button" data-filter="default">Default</button>
                 <button class="btn btn-default filter-button" data-filter="alphabetical">Alphabetical</button>
                 <button class="btn btn-default filter-button" data-filter="cheapest">Cheapest</button>
@@ -47,8 +47,7 @@
                         <div class="product-name">{{ product_name }}</div>
                         <div class="shade">Your Shade: {{ shade }}</div>
                         {{#prices}} 
-                        <div class="prices">Retailers: {{ prices }}</div>
-                        <br>
+                        <div class="prices">Retailers: {{ prices }}<br></div>
                         {{/prices}} 
                         <div class="ingredients">Safety Score: {{ health_score }}</div>
                         <div class="ingredients">{{ ingredients }}</div>
