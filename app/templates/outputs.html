@@ -69,7 +69,7 @@
                     console.log(array);
                     console.log(alphabetical);
                     console.log(healthiest);
-                    var prices = array.slice().map(item => (item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$")))).sort((a, b) => a > b ? 1 : -1)[0])
+                    var prices = array.slice().map(item => Array.from(item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$")))).sort((a, b) => a > b ? 1 : -1)[0])
                     console.log(prices);
                     var cheapest = array.slice().sort(function (a, b) {
                         return prices[a] - prices[b];
