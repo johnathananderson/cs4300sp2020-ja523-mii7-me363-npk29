@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    console.log(array);
-    console.log(alphabetical);
-    console.log(healthiest);
     $('.filter:visible').not('.default').hide();
 
     $(".filter-button").click(function () {

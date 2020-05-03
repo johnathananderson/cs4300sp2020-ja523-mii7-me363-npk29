@@ -63,17 +63,19 @@
                         }
                         return a["brand"].localeCompare(b["brand"]);
                     });
-                    var missing_i = array.slice().filter(item => item["ingredients"] == "Ingredients not found");
-                    var not_missing_i = array.slice().filter(item => item["ingredients"] != "Ingredients not found").sort((a, b) => a["health_score"] < b["health_score"] ? 1 : -1);
+                    var missing_i = array.slice().filter(item => item["health_score"] == "N/A");
+                    var not_missing_i = array.slice().filter(item => item["health_score"] != "N/A").sort((a, b) => a["health_score"] < b["health_score"] ? 1 : -1);
                     var healthiest = not_missing_i.concat(missing_i);
                     console.log(array);
                     console.log(alphabetical);
                     console.log(healthiest);
-                    var prices = array.slice().map(item => Array.from(item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$")))).sort((a, b) => a > b ? 1 : -1)[0])
-                    console.log(prices);
-                    var cheapest = array.slice().sort(function (a, b) {
-                        return prices[a] - prices[b];
+                    var missing_p = array.slice().filter(item => item["prices"].length == 0);
+                    var not_missing_p = array.slice().filter(item => item["prices"].length > 0);
+                    var lowest_prices = not_missing_p.slice().map(item => Array.from(item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$") + 1))).sort((a, b) => a > b ? 1 : -1)[0]);
+                    var not_missing_p_sorted = not_missing_p.slice().sort(function (a, b) {
+                        lowest_prices[not_missing_p.indexOf(b)] - lowest_prices[not_missing_p.indexOf(a)]
                     });
+                    var cheapest = not_missing_p_sorted.concat(missing_p);
                     console.log(cheapest);
 
                     function renderProduct(item, block) {
