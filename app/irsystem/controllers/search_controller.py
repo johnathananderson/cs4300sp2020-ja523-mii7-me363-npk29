@@ -92,7 +92,7 @@ def product():
         )
 
 
-@irsystem.route("/product/findation/", methods=["POST"])
+@irsystem.route("/product/outputs/", methods=["POST"])
 def product_test():
     brand = request.form.get("brand-input")
     product = request.form.get("product-input")
@@ -105,18 +105,19 @@ def product_test():
     return render_template("outputs.html", name=project_name, netid=net_id, data=data)
 
 
-@irsystem.route("/outputs/", methods=["GET"])
-def outputs():
-    # prod_type = request.form['choices-single-defaul']
-    query = request.args.get("adv-search")
-    print(query)
-    if not query:
-        data = []
-        output_message = "Its not working"
-    else:
-        data = range(5)
-        output_message = "Your search: " + query
-    return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+# @irsystem.route("/outputs/", methods=["GET"])
+# def outputs():
+#     # prod_type = request.form['choices-single-defaul']
+#     query = request.args.get("adv-search")
+#     print(query)
+#     if not query:
+#         data = []
+#         output_message = "Its not working"
+#     else:
+#         data = range(5)
+#         output_message = "Your search: " + query
+#     return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+
 
 # @irsystem.route("/product-shades/", methods=["GET"])
 # def product_shades():
