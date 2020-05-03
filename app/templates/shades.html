@@ -225,9 +225,9 @@
                     e.stopPropagation();
                     $('#input').popover('show');
                 } else {
+                    $(".loader").show();
                     document.getElementById("brand-input").value = String(({{ brand | tojson | safe }}));
                     document.getElementById("product-input").value = String(({{ product | tojson | safe }}));
-                    $(".loader").show();
                 }
             });
 
@@ -266,7 +266,7 @@
         }
 
         /*initiate the autocomplete function on the "inut" element, and pass along the brands array as possible autocomplete values:*/
-        autocomplete(document.getElementById("input"), s);
+        autocomplete(document.getElementById("input"), s, document.getElementById("prev_form"));
     </script>
 
     <!-- <div id="productforms">
