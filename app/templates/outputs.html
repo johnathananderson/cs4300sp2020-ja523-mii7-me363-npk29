@@ -121,7 +121,7 @@
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter default";
                         renderProduct(item, block);
                         blocks.appendChild(block);
-                        if (i % 3 == 2) {
+                        if (i % 3 == 2 || i == alphabetical.length - 1) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
                             blocks.style = "display: flex; justify-content: space-between;";
@@ -135,7 +135,7 @@
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter alphabetical";
                         renderProduct(item, block);
                         blocks.appendChild(block);
-                        if (i % 3 == 2) {
+                        if (i % 3 == 2 || i == alphabetical.length - 1) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
                             blocks.style = "display: flex; justify-content: space-between;";
@@ -149,7 +149,7 @@
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter healthiest";
                         renderProduct(item, block);
                         blocks.appendChild(block);
-                        if (i % 3 == 2) {
+                        if (i % 3 == 2 || i == healthiest.length - 1) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
                             blocks.style = "display: flex; justify-content: space-between;";
@@ -163,7 +163,7 @@
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cheapest";
                         renderProduct(item, block);
                         blocks.appendChild(block);
-                        if (i % 3 == 2) {
+                        if (i % 3 == 2 || i == cheapest.length - 1) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
                             blocks.style = "display: flex; justify-content: space-between;";
