@@ -66,9 +66,15 @@
                     var missing_i = array.slice().filter(item => item["ingredients"] == "Ingredients not found");
                     var not_missing_i = array.slice().filter(item => item["ingredients"] != "Ingredients not found").sort((a, b) => a["health_score"] < b["health_score"] ? 1 : -1);
                     var healthiest = not_missing_i.concat(missing_i);
+                    console.log(array);
+                    console.log(alphabetical);
+                    console.log(healthiest);
                     var prices = array.slice().map(item => (item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$")))).sort((a, b) => a > b ? 1 : -1)[0])
                     console.log(prices);
-                    // for (i = 0; i < )
+                    var cheapest = array.slice().sort(function (a, b) {
+                        return prices[a] - prices[b];
+                    });
+                    console.log(cheapest);
 
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
@@ -106,6 +112,12 @@
                     healthiest.forEach(function (item) {
                         var block = document.createElement("div");
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter healthiest";
+                        renderProduct(item, block);
+                        document.getElementById("products").appendChild(block);
+                    });
+                    cheapest.forEach(function (item) {
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cheapest";
                         renderProduct(item, block);
                         document.getElementById("products").appendChild(block);
                     });
