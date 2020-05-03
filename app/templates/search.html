@@ -56,14 +56,6 @@
                 brands = {{ brands | safe }};
 
                 function autocomplete(inp, arr, form) {
-
-                    // jQuery.fn.extend({
-                    //     disable: function (state) {
-                    //         return this.each(function () {
-                    //             this.disabled = state;
-                    //         });
-                    //     }
-                    // });
                     /*the autocomplete function takes two arguments,
                     the text field element and an array of possible autocompleted values:*/
                     var currentFocus;
@@ -211,8 +203,6 @@
                             $('#input').popover('show');
                         } else {
                             $(".loader").show();
-                            $(".load-container").fadeOut("slow");
-                            $(".loader").fadeOut("slow");
                         }
                     });
 
