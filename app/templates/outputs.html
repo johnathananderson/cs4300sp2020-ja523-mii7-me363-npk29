@@ -45,7 +45,9 @@
                                 <div class="bottom">
                                     <div class="product-name">{{ product_name }}</div>
                                     <div class="shade">Your Shade: {{ shade }}</div>
+                                    {{#prices}} 
                                     <div class="prices">Retailers: {{ prices }}</div>
+                                    {{/prices}} 
                                     <div class="ingredients">Health Score: {{ health_score }}</div>
                                     <div class="ingredients">{{ ingredients }}</div>
                                 </div>
@@ -61,12 +63,13 @@
                         if (item["health_score"] === undefined) {
                             item["health_score"] = "N/A";
                         }
-                        if (item("prices") === undefined) {
-                            item["prices"] = [];
+                        if (item["prices"] !== undefined && item["prices"].length == 0) {
+                            item["prices"] = undefined;
                         }
-                        if (item("ingredients") === undefined) {
+                        if (item["ingredients"] === undefined) {
                             item["ingredients"] = "Ingredients not found";
                         }
+                        return item;
                     });
                     var alphabetical = array.slice().sort(function (a, b) {
                         if (a["brand"] == b["brand"]) {
@@ -80,8 +83,8 @@
                     // console.log(array);
                     // console.log(alphabetical);
                     // console.log(healthiest);
-                    var missing_p = array.slice().filter(item => item["prices"].length == 0);
-                    var not_missing_p = array.slice().filter(item => item["prices"].length > 0);
+                    var missing_p = array.slice().filter(item => item["prices"] === undefined);
+                    var not_missing_p = array.slice().filter(item => item["prices"] !== undefined);
                     var lowest_prices = not_missing_p.slice().map(item => Array.from(item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$") + 1))).sort((a, b) => a > b ? 1 : -1)[0]);
                     var not_missing_p_sorted = not_missing_p.sort(function (a, b) {
                         return lowest_prices[not_missing_p.indexOf(a)] - lowest_prices[not_missing_p.indexOf(b)];
