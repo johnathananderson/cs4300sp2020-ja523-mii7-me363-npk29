@@ -35,7 +35,7 @@ def search():
         brands.append(brand)
     if not query:
         data = []
-        output_message = "Its not working"
+        output_message = "Error"
     else:
         output_message = "Your search: " + query
         data = range(5)
@@ -87,8 +87,16 @@ def product():
         for shade in s:
             shades.append(shade)
 
+        output_message = "Your search: " + brand + ", " + product
+
         return render_template(
-            "shades.html", name=project_name, netid=net_id, product=product, shades=shades, brand=brand
+            "shades.html",
+            name=project_name,
+            netid=net_id,
+            product=product,
+            shades=shades,
+            brand=brand,
+            output_message=output_message,
         )
 
 
