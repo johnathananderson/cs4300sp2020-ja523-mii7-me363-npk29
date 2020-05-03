@@ -21,7 +21,7 @@
                 <button class="btn btn-default filter-button" data-filter="default">Default</button>
                 <button class="btn btn-default filter-button" data-filter="alphabetical">Alphabetical</button>
                 <button class="btn btn-default filter-button" data-filter="positive">Most Postitively Reviewed</button>
-                <button class="btn btn-default filter-button" data-filter="healthy">Most Healthy</button>
+                <button class="btn btn-default filter-button" data-filter="healthiest">Healthiest</button>
                 <button class="btn btn-default filter-button" data-filter="cheap">Cheapest</button>
             </div>
             <br />
@@ -44,8 +44,9 @@
 
                                 <div class="bottom">
                                     <div class="product-name">{{ product_name }}</div>
-                                    <div class="shade">{{ shade }}</div>
-                                    <div class="prices">{{ prices }}</div>
+                                    <div class="shade">Your Shade: {{ shade }}</div>
+                                    <div class="prices">Retailers: {{ prices }}</div>
+                                    <div class="ingredients">Health Score: {{ health_score }}</div>
                                     <div class="ingredients">{{ ingredients }}</div>
                                 </div>
 
@@ -55,7 +56,6 @@
 
             <div id="products">
                 <script>
-
                     var array = ({{ data | tojson | safe}});
                     var alphabetical = array.slice().sort(function (a, b) {
                         if (a["brand"] == b["brand"]) {
@@ -63,9 +63,20 @@
                         }
                         return a["brand"].localeCompare(b["brand"]);
                     });
-                    // var healthiest = array.slice().map(function (item) {
-
-                    // })
+                    var missing_i = array.slice().filter(item => item["health_score"] == "N/A");
+                    var not_missing_i = array.slice().filter(item => item["health_score"] != "N/A").sort((a, b) => a["health_score"] < b["health_score"] ? 1 : -1);
+                    var healthiest = not_missing_i.concat(missing_i);
+                    console.log(array);
+                    console.log(alphabetical);
+                    console.log(healthiest);
+                    var missing_p = array.slice().filter(item => item["prices"].length == 0);
+                    var not_missing_p = array.slice().filter(item => item["prices"].length > 0);
+                    var lowest_prices = not_missing_p.slice().map(item => Array.from(item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$") + 1))).sort((a, b) => a > b ? 1 : -1)[0]);
+                    var not_missing_p_sorted = not_missing_p.slice().sort(function (a, b) {
+                        lowest_prices[not_missing_p.indexOf(b)] - lowest_prices[not_missing_p.indexOf(a)]
+                    });
+                    var cheapest = not_missing_p_sorted.concat(missing_p);
+                    console.log(cheapest);
 
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
@@ -80,9 +91,11 @@
                         var rendered = Mustache.render(template, {
                             brand: item["brand"],
                             product_name: item["name"],
+                            shade: item["shade"],
                             image: item["thumbnail"],
                             ingredients: i_ingredients,
-                            prices: i_prices
+                            prices: i_prices,
+                            health_score: item["health_score"]
                         });
                         block.innerHTML = rendered;
                     }
@@ -95,6 +108,18 @@
                     alphabetical.forEach(function (item) {
                         var block = document.createElement("div");
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter alphabetical";
+                        renderProduct(item, block);
+                        document.getElementById("products").appendChild(block);
+                    });
+                    healthiest.forEach(function (item) {
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter healthiest";
+                        renderProduct(item, block);
+                        document.getElementById("products").appendChild(block);
+                    });
+                    cheapest.forEach(function (item) {
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cheapest";
                         renderProduct(item, block);
                         document.getElementById("products").appendChild(block);
                     });
