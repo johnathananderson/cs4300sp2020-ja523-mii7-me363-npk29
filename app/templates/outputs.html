@@ -22,7 +22,7 @@
                 <button class="btn btn-default filter-button" data-filter="alphabetical">Alphabetical</button>
                 <button class="btn btn-default filter-button" data-filter="positive">Most Postitively Reviewed</button>
                 <button class="btn btn-default filter-button" data-filter="healthiest">Healthiest</button>
-                <button class="btn btn-default filter-button" data-filter="cheap">Cheapest</button>
+                <button class="btn btn-default filter-button" data-filter="cheapest">Cheapest</button>
             </div>
             <br />
 
@@ -72,19 +72,9 @@
                     var missing_p = array.slice().filter(item => item["prices"].length == 0);
                     var not_missing_p = array.slice().filter(item => item["prices"].length > 0);
                     var lowest_prices = not_missing_p.slice().map(item => Array.from(item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$") + 1))).sort((a, b) => a > b ? 1 : -1)[0]);
-                    console.log("total");
-                    console.log(array);
-                    console.log("lowest");
-                    console.log(lowest_prices);
-                    console.log("not missing");
-                    console.log(not_missing_p);
-                    console.log("missing")
-                    console.log(missing_p);
                     var not_missing_p_sorted = not_missing_p.sort(function (a, b) {
-                        return lowest_prices[not_missing_p.indexOf(b)] - lowest_prices[not_missing_p.indexOf(a)];
+                        return lowest_prices[not_missing_p.indexOf(a)] - lowest_prices[not_missing_p.indexOf(b)];
                     });
-                    console.log("not missing sorted")
-                    console.log(not_missing_p_sorted);
                     var cheapest = not_missing_p_sorted.concat(missing_p);
 
                     function renderProduct(item, block) {
