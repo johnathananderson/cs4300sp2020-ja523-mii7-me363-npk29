@@ -23,12 +23,12 @@
         </div>
     </div>
 
-    <script>
+    <!-- <script>
         $(window).on("load", function () {
             $(".load-container").fadeOut("slow");
             $(".loader").fadeOut("slow");
         });
-    </script>
+    </script> -->
 
     <div class="s008">
         <div class="topcorner">
@@ -43,7 +43,8 @@
                 <div class="basic-search">
                     <div class="input-field">
                         <input id="input" name="shade-input" type="text" placeholder="Enter your shade"
-                            autocomplete="off" />
+                            autocomplete="off" data-container="body" data-toggle="popover" data-placement="top"
+                            title="Invalid Shade" data-content="Please enter a valid shade before searching!" />
                         <input type="hidden" id="brand-input" name="brand-input" />
                         <input type="hidden" id="product-input" name="product-input" />
                         <script>
@@ -73,7 +74,7 @@
 
     <script>
         s = ({{ shades | safe }});
-        function autocomplete(inp, arr) {
+        function autocomplete(inp, arr, form) {
             /*the autocomplete function takes two arguments,
             the text field element and an array of possible autocompleted values:*/
             var currentFocus;
@@ -109,6 +110,7 @@
                             /*close the list of autocompleted values,
                             (or any other open lists of autocompleted values:*/
                             closeAllLists();
+                            document.getElementById("icon-wrap").click();
                         });
                         a.appendChild(b);
                     }
@@ -129,6 +131,11 @@
                 a.setAttribute("class", "autocomplete-items");
                 /*append the DIV element as a child of the autocomplete container:*/
                 this.parentNode.appendChild(a);
+
+                if (val && arr.includes(val)) {
+                    $('#input').popover('hide');
+                }
+
                 /*for each item in the array...*/
                 for (i = 0; i < arr.length; i++) {
                     if (!val) {
@@ -146,6 +153,7 @@
                             /*close the list of autocompleted values,
                             (or any other open lists of autocompleted values:*/
                             closeAllLists();
+                            document.getElementById("icon-wrap").click();
                         });
                         a.appendChild(b);
                     } else if (arr[i].substr(0, val.trim().length).toUpperCase() == val.trim().toUpperCase()) {
@@ -166,6 +174,7 @@
                             /*close the list of autocompleted values,
                             (or any other open lists of autocompleted values:*/
                             closeAllLists();
+                            document.getElementById("icon-wrap").click();
                         });
                         a.appendChild(b);
                     }
@@ -189,12 +198,25 @@
                     addActive(x);
                 } else if (e.keyCode == 13) {
                     /*If the ENTER key is pressed, prevent the form from being submitted,*/
-                    e.preventDefault();
+                    // e.preventDefault();
                     // document.getElementById("icon-wrap").click();
                     if (currentFocus > -1) {
                         /*and simulate a click on the "active" item:*/
                         if (x) x[currentFocus].click();
+                        document.getElementById("icon-wrap").click();
                     }
+                }
+            });
+
+            form.addEventListener("submit", function (e) {
+                var val = inp.value;
+                if (!arr.includes(val)) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    $('#input').popover('show');
+                } else {
+                    $(".load-container").fadeOut("slow");
+                    $(".loader").fadeOut("slow");
                 }
             });
 

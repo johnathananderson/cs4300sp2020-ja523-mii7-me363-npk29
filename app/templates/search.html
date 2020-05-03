@@ -30,7 +30,7 @@
                         <input id="input" name="search" type="text"
                             placeholder="Enter your current brand of foundation or concealer" autocomplete="off"
                             data-container="body" data-toggle="popover" data-placement="top" title="Invalid Brand"
-                            data-content="Please enter a valid brand before submitting!" />
+                            data-content="Please enter a valid brand before searching!" />
                         <button id="icon-wrap" type="submit" style="justify-content: center;">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
@@ -116,7 +116,6 @@
                         //     $('#icon-wrap').disable(true);
                         // } else 
                         if (val && arr.includes(val)) {
-                            console.log("Hide");
                             $('#input').popover('hide');
                         }
 
@@ -195,15 +194,15 @@
                         }
                     });
 
-
-
                     form.addEventListener("submit", function (e) {
                         var val = inp.value;
                         if (!arr.includes(val)) {
                             e.preventDefault();
                             e.stopPropagation();
-                            console.log("Show");
                             $('#input').popover('show');
+                        } else {
+                            $(".load-container").fadeOut("slow");
+                            $(".loader").fadeOut("slow");
                         }
                     });
 
