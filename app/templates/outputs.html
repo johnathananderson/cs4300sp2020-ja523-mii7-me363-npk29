@@ -113,7 +113,63 @@
                         });
                         block.innerHTML = rendered;
                     }
-                    array.forEach(function (item) {
+                    var blocks = document.createElement("div");
+                    for (i = 0; i < array.length; i++) {
+                        var item = array[i];
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter default";
+                        renderProduct(item, block);
+                        blocks.appendChild(block);
+                        if (i % 3 == 2) {
+                            document.getElementById("products").appendChild(blocks);
+                            blocks = document.createElement("div");
+                        }
+                    }
+                    blocks = document.createElement("div");
+                    for (i = 0; i < alphabetical.length; i++) {
+                        var item = alphabetical[i];
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter alphabetical";
+                        renderProduct(item, block);
+                        blocks.appendChild(block);
+                        if (i % 3 == 2) {
+                            document.getElementById("products").appendChild(blocks);
+                            blocks = document.createElement("div");
+                        }
+                    }
+                    blocks = document.createElement("div");
+                    for (i = 0; i < healthiest.length; i++) {
+                        var item = healthiest[i];
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter healthiest";
+                        renderProduct(item, block);
+                        blocks.appendChild(block);
+                        if (i % 3 == 2) {
+                            document.getElementById("products").appendChild(blocks);
+                            blocks = document.createElement("div");
+                        }
+                    }
+                    blocks = document.createElement("div");
+                    for (i = 0; i < cheapest.length; i++) {
+                        var item = cheapest[i];
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cheapest";
+                        renderProduct(item, block);
+                        blocks.appendChild(block);
+                        if (i % 3 == 2) {
+                            document.getElementById("products").appendChild(blocks);
+                            blocks = document.createElement("div");
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+{# array.forEach(function (item) {
                         var block = document.createElement("div");
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter default";
                         renderProduct(item, block);
@@ -136,11 +192,4 @@
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cheapest";
                         renderProduct(item, block);
                         document.getElementById("products").appendChild(block);
-                    });
-                </script>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
+                    }); #}
