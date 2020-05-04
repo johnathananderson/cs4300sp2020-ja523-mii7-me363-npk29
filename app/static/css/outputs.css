@@ -225,7 +225,7 @@ button.btn.btn-default.filter-button:focus {
 #cheap:focus,
 #safe:focus,
 #review:focus {
-    color: black !important;
+    color: white !important;
     background-color: #e45c27 !important;
     border-color: #e45c27 !important;
     outline: none !important;
