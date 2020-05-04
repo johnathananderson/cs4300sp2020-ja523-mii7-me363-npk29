@@ -63,7 +63,7 @@
 
             <div id="products">
                 <script>
-                    var outputs = ({{outputs | tojson | safe}});
+                    var outputs = {{outputs | tojson | safe}};
                     console.log({{ data | tojson | safe}});
                     var array = ({{ data | tojson | safe}}).map(function (item) {
                         var b = item["brand"];
