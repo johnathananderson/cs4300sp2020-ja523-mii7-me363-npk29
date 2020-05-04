@@ -67,6 +67,7 @@ class FindationBrowser:
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")
                     )
                 )
+                time.sleep(0.1)
                 product_input = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                 )
