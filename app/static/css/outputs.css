@@ -172,7 +172,10 @@ body {
 }
 
 .filter-button:focus {
-    background-color: #e45c27;
-    outline-color: #e45c27;
-    color: white;
+    background-color: #e45c27 !important;
+    outline-color: #e45c27 !important;
+    color: white !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
