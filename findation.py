@@ -50,13 +50,10 @@ class FindationBrowser:
                 product_name = product[1]
                 shade = product[2]
                 self.browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                print(10)
-                print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
 
                 WebDriverWait(self.browser, 20, 0.1).until(
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                 )
-                print(11)
                 WebDriverWait(self.browser, 20, 0.1).until(EC.element_to_be_clickable((By.ID, "brand-search")))
                 brand_input = self.browser.find_element_by_id("brand-search")
                 brand_input.send_keys("  " + brand.strip())
@@ -86,13 +83,10 @@ class FindationBrowser:
                 time.sleep(0.1)
                 shade_input.send_keys(Keys.ENTER)
                 time.sleep(0.1)
-                print(15)
                 if p < n_products - 1:
-                    print(16)
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.invisibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                     )
-                    print(self.browser.find_element_by_id("brand").value_of_css_property("height"))
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.visibility_of_element_located(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
@@ -106,9 +100,7 @@ class FindationBrowser:
                     add_another_button = self.browser.find_element_by_xpath(
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
-                    print(add_another_button.get_attribute("text"))
                     add_another_button.click()
-                    print(18)
                 else:
                     WebDriverWait(self.browser, 20, 2).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "actions"))
@@ -118,12 +110,10 @@ class FindationBrowser:
                         "button"
                     )
                     find_matches_button.click()
-                    print(19)
                     WebDriverWait(self.browser, 20, 0.1).until(EC.url_contains("searches"))
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div/div/div[4]/div[3]/div"))
                     )
-                    print(21)
                     matches = self.browser.find_elements_by_class_name("match-meta")
                     print("Found " + str(len(matches)) + " matches")
                     for match in matches:
@@ -139,16 +129,16 @@ class FindationBrowser:
                         # match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
 
                         if match_brand in outputs and match_name in outputs[match_brand]:
-                            match_product["ingredients"] = outputs[match_brand][match_name]["ingredients"]
-                            match_product["prices"] = outputs[match_brand][match_name]["prices"]
-                            match_product["health_score"] = outputs[match_brand][match_name]["health_score"]
-                            match_product["sentiment"] = outputs[match_brand][match_name]["sentiment"]
+                            m = outputs[match_brand][match_name]
+                            match_product["ingredients"] = m["ingredients"]
+                            match_product["prices"] = m["prices"]
+                            match_product["health_score"] = m["health_score"]
+                            match_product["sentiment"] = m["sentiment"]
                         # else:
                         #     match_product["ingredients"] = "Ingredients not found"
                         #     match_product["prices"] = []
                         #     match_product["health_score"] = "N/A"
                         results.append(match_product)
-            self.browser.delete_all_cookies()
             return results
         except Exception as e:
             print("Failed: " + products[0][0] + " " + products[0][1])
