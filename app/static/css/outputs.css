@@ -196,7 +196,7 @@ button.btn.btn-default.filter-button:focus {
 
 #brand-input::placeholder {
     color: #e45c27;
-    opacity: 1;
+    opacity: 0.6;
 }
 
 #brand-input {
