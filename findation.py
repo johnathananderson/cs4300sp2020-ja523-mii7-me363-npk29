@@ -1,6 +1,3 @@
-import json
-
-# import urllib
 import os
 
 import time
@@ -9,9 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-
-# from ingredients import IngredientsBrowser
-from webdriver_manager.chrome import ChromeDriverManager
 
 
 class FindationBrowser:
@@ -41,11 +35,8 @@ class FindationBrowser:
             )
             get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
             get_started_button.click()
-            n_products = len(products)
             results = []
-            for p in range(n_products):
-                print(p)
-                product = products[p]
+            for product in products:
                 brand = product[0]
                 product_name = product[1]
                 shade = product[2]
