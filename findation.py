@@ -1,6 +1,3 @@
-import json
-
-# import urllib
 import os
 
 import time
@@ -10,15 +7,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-# from ingredients import IngredientsBrowser
-from webdriver_manager.chrome import ChromeDriverManager
-
 
 class FindationBrowser:
     def __init__(self):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-gpu")
+        # chrome_options.add_argument("--disable-gpu")
         # chrome_options.add_argument("--headless")
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument("--no-proxy-server")
@@ -41,11 +35,8 @@ class FindationBrowser:
             )
             get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
             get_started_button.click()
-            n_products = len(products)
             results = []
-            for p in range(n_products):
-                print(p)
-                product = products[p]
+            for product in products:
                 brand = product[0]
                 product_name = product[1]
                 shade = product[2]
@@ -62,18 +53,19 @@ class FindationBrowser:
                 brand_input.send_keys("  " + brand.strip())
                 time.sleep(0.1)
                 brand_input.send_keys(Keys.ENTER)
-                WebDriverWait(self.browser, 20, 2).until(
+                WebDriverWait(self.browser, 20, 0.5).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")
                     )
                 )
+                time.sleep(0.1)
                 product_input = self.browser.find_element_by_xpath(
                     "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                 )
                 product_input.send_keys(" " + product_name.strip())
                 time.sleep(0.1)
                 product_input.send_keys(Keys.ENTER)
-                WebDriverWait(self.browser, 20, 2).until(
+                WebDriverWait(self.browser, 20, 0.5).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input")
                     )
@@ -106,8 +98,8 @@ class FindationBrowser:
                     add_another_button = self.browser.find_element_by_xpath(
                         "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
-                    print(add_another_button.get_attribute("text"))
                     add_another_button.click()
+                    time.sleep(0.1)
                     print(18)
                 else:
                     WebDriverWait(self.browser, 20, 2).until(
@@ -123,26 +115,14 @@ class FindationBrowser:
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div/div/div[4]/div[3]/div"))
                     )
-                    print(21)
-                    matches = self.browser.find_elements_by_class_name("match-meta")
-                    print("Found " + str(len(matches)) + " matches")
-                    for match in matches:
+                    print("Done")
+                    for match in self.browser.find_elements_by_class_name("match-meta"):
                         lines = match.text.splitlines()
-                        match_brand = lines[0]
-                        match_name = lines[1]
-                        match_shade = lines[2].replace("Your shade: ", "").replace(" (Natural)", "")
                         match_product = {}
-                        match_product["brand"] = match_brand
-                        match_product["name"] = match_name
-                        match_product["shade"] = match_shade
+                        match_product["brand"] = lines[0]
+                        match_product["name"] = lines[1]
+                        match_product["shade"] = lines[2].replace("Your shade: ", "").replace(" (Natural)", "")
                         match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
-                        # match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
-
-                    
-                        # else:
-                        #     match_product["ingredients"] = "Ingredients not found"
-                        #     match_product["prices"] = []
-                        #     match_product["health_score"] = "N/A"
                         results.append(match_product)
             self.browser.delete_all_cookies()
             return results
