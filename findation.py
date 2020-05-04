@@ -34,7 +34,7 @@ class FindationBrowser:
     def close_out(self):
         self.browser.close()
 
-    def process_matches(self, products, outputs):
+    def process_matches(self, products):
         try:
             WebDriverWait(self.browser, 20, 0.1).until(
                 EC.visibility_of_element_located((By.XPATH, "//*[@id='hide-splash']"))
@@ -138,12 +138,7 @@ class FindationBrowser:
                         match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
                         # match_product["url"] = match.find_element_by_class_name("media").get_attribute("href")
 
-                        if match_brand in outputs and match_name in outputs[match_brand]:
-                            m = outputs[match_brand][match_name]
-                            match_product["ingredients"] = m["ingredients"]
-                            match_product["prices"] = m["prices"]
-                            match_product["health_score"] = m["health_score"]
-                            match_product["sentiment"] = m["sentiment"]
+                    
                         # else:
                         #     match_product["ingredients"] = "Ingredients not found"
                         #     match_product["prices"] = []

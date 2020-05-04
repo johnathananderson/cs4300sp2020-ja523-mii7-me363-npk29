@@ -108,9 +108,9 @@ def product_test():
     f = FindationBrowser()
     products = [[brand, product, shade], [brand, product, shade]]
     time.sleep(0.01)
-    data = f.process_matches(products, outputs_j)
+    data = f.process_matches(products)
     f.close_out()
-    return render_template("outputs.html", name=project_name, netid=net_id, data=data)
+    return render_template("outputs.html", name=project_name, netid=net_id, data=data, outputs=outputs_j)
 
 
 # @irsystem.route("/outputs/", methods=["GET"])
