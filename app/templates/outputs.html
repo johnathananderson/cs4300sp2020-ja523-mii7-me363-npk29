@@ -68,7 +68,7 @@
                     var array = ({{ data | tojson | safe}}).map(function (item) {
                         var b = item["brand"];
                         var n = item["name"];
-                        if (b in outputs and n in outputs[b]) {
+                        if (b in outputs && n in outputs[b]) {
                             var m = outputs[b][n];
                             item["ingredients"] = m["ingredients"];
                             item["prices"] = m["prices"];
