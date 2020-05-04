@@ -170,3 +170,12 @@ body {
     color: #f00;
     text-decoration: line-through;
 }
+
+.filter-button:focus {
+    background-color: #e45c27 !important;
+    outline-color: #e45c27 !important;
+    color: white !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
