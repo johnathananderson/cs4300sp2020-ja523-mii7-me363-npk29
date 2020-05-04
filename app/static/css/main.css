@@ -6,16 +6,15 @@
 }
 
 .proj {
-    color: #fff;
     font-size: 40px;
-    font-family: "ubuntu";
+    /* font-family: "ubuntu"; */
     font-weight: 700;
     font-family: "Josefin Sans", sans-serif;
     background: linear-gradient(to left, #FFDBAC 20%, #c68642 40%, #875222 60%, #c68642 80%, #FFDBAC 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
-    color: #fff;
+    color: #e45c27;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -106,16 +105,11 @@
     transform: translate(-50%, -50%);
 }
 
-
-/* 
-
-.out_message{
-
+.out_message,
+.collab {
+    font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
 }
-
-.collab{
-
-} */
 
 
 /* #loading {
