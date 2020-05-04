@@ -13,7 +13,7 @@ from findation import FindationBrowser
 
 # import time
 
-project_name = "Save Face"
+project_name = "save face"
 net_id = "ja523, me363, mii7, npk29"
 outputs_json = glob.glob("outputs_i.json")
 with open(outputs_json[0], encoding="utf8") as data:
