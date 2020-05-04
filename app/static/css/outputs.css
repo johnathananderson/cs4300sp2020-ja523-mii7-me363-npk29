@@ -173,5 +173,6 @@ body {
 
 .filter-button:focus {
     background-color: #e45c27;
+    outline-color: #e45c27;
     color: white;
 }
