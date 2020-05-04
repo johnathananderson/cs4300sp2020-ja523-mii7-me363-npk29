@@ -15,23 +15,6 @@
     border-bottom: 1px solid #5e5e5e;
 }
 
-.filter-input {
-    font-size: 18px;
-    border: 1px solid #e45c27;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 25px;
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-    padding: 6px 12px;
-    vertical-align: middle;
-}
-
-.filter-input::placeholder {
-    color: #e45c27;
-    opacity: 1;
-}
-
 .filter-button {
     font-size: 18px;
     border: 1px solid #e45c27;
@@ -201,7 +184,6 @@ body {
     box-shadow: none;
 }
 
-
 /* 
 button.btn.btn-default.filter-button:focus {
     background: #e45c27;
@@ -215,12 +197,17 @@ button.btn.btn-default.filter-button:focus {
     height: 40px;
     position: relative;
     padding: 15px 40px 15px 20px;
-    color: #525252;
-    font-size: 16px;
+    color: #e45c27;
+    font-size: 18px;
     font-weight: 100;
     letter-spacing: 2px;
     border-radius: 5px;
     background: linear-gradient(to right, #FFFFFF 0%, #464747 #F9F9F9 100%);
     transition: width 0.4s ease;
-    width: 550px;
+    width: 100%;
+}
+
+#brand-input::placeholder {
+    color: #e45c27;
+    opacity: 1;
 }
