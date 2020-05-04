@@ -3,6 +3,12 @@ $(document).ready(function () {
     var filter = "default";
     var value = "";
 
+    $.expr[":"].contains = $.expr.createPseudo(function (arg) {
+        return function (elem) {
+            return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+        };
+    });
+
     $(".filter-button").click(function () {
         filter = $(this).attr('data-filter');
         $('.' + filter).filter(':contains(' + value + ')').show('3000');
