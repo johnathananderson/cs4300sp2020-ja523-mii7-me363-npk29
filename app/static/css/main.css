@@ -130,8 +130,11 @@
 }
 
 .out_message {
-    font-size: 30px;
+    font-size: 28px;
     font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    color: #e45c27;
+    opacity: 0.8;
 }
 
 .collab {
