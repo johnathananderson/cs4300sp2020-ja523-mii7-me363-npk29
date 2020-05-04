@@ -35,7 +35,7 @@
     background-color: #e45c27;
 }
 
-.btn-default:active .filter-button:active {
+.btn-default:active .filter-button:active .btn-default:focus .filter-button:focus {
     background-color: #e45c27;
     color: white;
 }
@@ -171,7 +171,8 @@ body {
     text-decoration: line-through;
 }
 
-.filter-button:focus {
+
+/* .filter-button:focus {
     background: #e45c27;
     color: white;
     outline: none;
@@ -183,4 +184,4 @@ button.btn.btn-default.filter-button:focus {
     color: white;
     outline: none;
     box-shadow: none;
-}
+} */
