@@ -194,21 +194,6 @@ button.btn.btn-default.filter-button:focus {
     box-shadow: none;
 } */
 
-#brand-input {
-    border: 1px solid #e45c27;
-    height: 40px;
-    position: relative;
-    padding: 15px 40px 15px 20px;
-    color: #e45c27;
-    font-size: 18px;
-    font-weight: 100;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    background: linear-gradient(to right, #FFFFFF 0%, #464747 #F9F9F9 100%);
-    transition: width 0.4s ease;
-    width: 100%;
-}
-
 #brand-input::placeholder {
     color: #e45c27;
     opacity: 1;
@@ -220,17 +205,17 @@ button.btn.btn-default.filter-button:focus {
     position: relative;
     padding: 15px 40px 15px 20px;
     color: #525252;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 100;
     letter-spacing: 2px;
     border-radius: 5px;
     background: linear-gradient(to right, #FFFFFF 0%, #464747 #F9F9F9 100%);
     transition: width 0.4s ease;
-    width: 550px;
+    width: 100%;
 }
 
 #brand-input:focus {
-    color: white;
+    color: black;
     outline: none;
     box-shadow: none;
 }
