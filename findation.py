@@ -62,7 +62,7 @@ class FindationBrowser:
                 brand_input.send_keys("  " + brand.strip())
                 time.sleep(0.1)
                 brand_input.send_keys(Keys.ENTER)
-                WebDriverWait(self.browser, 20, 0.5).until(
+                WebDriverWait(self.browser, 20, 0.3).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")
                     )
@@ -74,7 +74,7 @@ class FindationBrowser:
                 product_input.send_keys(" " + product_name.strip())
                 time.sleep(0.1)
                 product_input.send_keys(Keys.ENTER)
-                WebDriverWait(self.browser, 20, 0.5).until(
+                WebDriverWait(self.browser, 20, 0.3).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input")
                     )
@@ -124,18 +124,13 @@ class FindationBrowser:
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div/div/div[4]/div[3]/div"))
                     )
-                    print(21)
-                    matches = self.browser.find_elements_by_class_name("match-meta")
                     print("Found " + str(len(matches)) + " matches")
-                    for match in matches:
+                    for match in self.browser.find_elements_by_class_name("match-meta"):
                         lines = match.text.splitlines()
-                        match_brand = lines[0]
-                        match_name = lines[1]
-                        match_shade = lines[2].replace("Your shade: ", "").replace(" (Natural)", "")
                         match_product = {}
-                        match_product["brand"] = match_brand
-                        match_product["name"] = match_name
-                        match_product["shade"] = match_shade
+                        match_product["brand"] = lines[0]
+                        match_product["name"] = lines[1]
+                        match_product["shade"] = lines[2].replace("Your shade: ", "").replace(" (Natural)", "")
                         match_product["thumbnail"] = match.find_element_by_class_name("micro").get_attribute("src")
                         results.append(match_product)
             self.browser.delete_all_cookies()
