@@ -35,7 +35,7 @@
         <div class="inner-form">
             <form id="prev_form" method="POST" action="outputs">
                 <div class="basic-search">
-                    <div class="input-field">
+                    <div class="input-field" style="margin-top: -5vh">
                         <input id="input" name="shade-input" type="text" placeholder="Enter your shade"
                             autocomplete="off" data-container="body" data-toggle="popover" data-placement="top"
                             title="Invalid Shade" data-content="Please enter a valid shade before searching!" />
@@ -75,6 +75,8 @@
                     a = document.createElement("DIV");
                     a.setAttribute("id", this.id + "autocomplete-list");
                     a.setAttribute("class", "autocomplete-items");
+                    a.setAttribute("max-height", "30vh");
+
                     /*append the DIV element as a child of the autocomplete container:*/
                     this.parentNode.appendChild(a);
                     /*check if the item starts with the same letters as the text field value:*/
@@ -113,6 +115,7 @@
                 a = document.createElement("DIV");
                 a.setAttribute("id", this.id + "autocomplete-list");
                 a.setAttribute("class", "autocomplete-items");
+                a.setAttribute("max-height", "30vh");
                 /*append the DIV element as a child of the autocomplete container:*/
                 this.parentNode.appendChild(a);
 
