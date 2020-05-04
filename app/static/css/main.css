@@ -35,6 +35,25 @@
     right: 2%;
 }
 
+.leftcorner {
+    position: absolute;
+    text-align: right;
+    top: 2%;
+    left: 2%;
+}
+
+.proto {
+    display: inline;
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #964b00;
+    padding: 10px;
+}
+
+.proto:hover {
+    color: black;
+}
+
 #prev_form {
     margin-top: 10.5vh;
     display: inline-block;
