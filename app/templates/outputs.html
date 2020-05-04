@@ -19,11 +19,11 @@
         <div style="align: center; text-align: center;">
             <div style="display: inline-block">
                 <button class="btn btn-default filter-button" data-filter="default">Random</button>
-                <button class="btn btn-default filter-button" data-filter="alphabetical" data-toggle="tooltip" data-placement="top" title="Sort Alphabetically By Brand">Alphabetical</button>
-                <button class="btn btn-default filter-button" data-filter="cheapest" data-toggle="tooltip" data-placement="top" title="Sort By Price: Low to High">Cheapest</button>
-                <button class="btn btn-default filter-button" data-filter="healthiest" data-toggle="tooltip" data-placement="top" title="Sort By Safety: High to Low">Safest</button>
-                <button class="btn btn-default filter-button" data-filter="sentiment" data-toggle="tooltip" data-placement="top" title="Sort By Reviews Sentiment: High to Low">Sentiment</button>
-                <div id="keywords"><input id="brand-input" type="text" placeholder="Filter By Keyword"/></div>
+                <button class="btn btn-default filter-button" data-filter="alphabetical" title="Sort Alphabetically By Brand">Alphabetical</button>
+                <button class="btn btn-default filter-button" data-filter="cheapest" title="Sort By Price: Low to High">Cheapest</button>
+                <button class="btn btn-default filter-button" data-filter="healthiest" title="Sort By Safety: High to Low">Safest</button>
+                <button class="btn btn-default filter-button" data-filter="sentiment" title="Sort By Reviews Sentiment: High to Low">Sentiment</button>
+                <input class="filter-input" id="brand-input" type="text" placeholder="Filter By Keyword"/>
             </div>
         </div>
             <br />
@@ -126,7 +126,7 @@
                         block.innerHTML = rendered;
                     }
                     var blocks = document.createElement("div");
-                    
+                    blocks.style = "display: flex; justify-content: space-between;";
                     for (i = 0; i < array.length; i++) {
                         var item = array[i];
                         var block = document.createElement("div");
@@ -136,11 +136,11 @@
                         if (i % 3 == 2 || i == alphabetical.length - 1) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
-                            
+                            blocks.style = "display: flex; justify-content: space-between;";
                         }
                     }
                     blocks = document.createElement("div");
-                    
+                    blocks.style = "display: flex; justify-content: space-between;";
                     for (i = 0; i < alphabetical.length; i++) {
                         var item = alphabetical[i];
                         var block = document.createElement("div");
@@ -150,11 +150,11 @@
                         if (i % 3 == 2 || i == alphabetical.length - 1) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
-                            
+                            blocks.style = "display: flex; justify-content: space-between;";
                         }
                     }
                     blocks = document.createElement("div");
-                    
+                    blocks.style = "display: flex; justify-content: space-between;";
                     for (i = 0; i < healthiest.length; i++) {
                         var item = healthiest[i];
                         var block = document.createElement("div");
@@ -164,11 +164,11 @@
                         if (i % 3 == 2 || i == healthiest.length - 1) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
-                            
+                            blocks.style = "display: flex; justify-content: space-between;";
                         }
                     }
                     blocks = document.createElement("div");
-                    
+                    blocks.style = "display: flex; justify-content: space-between;";
                     for (i = 0; i < cheapest.length; i++) {
                         var item = cheapest[i];
                         var block = document.createElement("div");
@@ -178,11 +178,11 @@
                         if (i % 3 == 2 || i == cheapest.length - 1) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
-                            
+                            blocks.style = "display: flex; justify-content: space-between;";
                         }
                     }
                     blocks = document.createElement("div");
-                    
+                    blocks.style = "display: flex; justify-content: space-between;";
                     for (i = 0; i < sentiments.length; i++) {
                         var item = sentiments[i];
                         var block = document.createElement("div");
@@ -192,7 +192,7 @@
                         if (i % 3 == 2 || i == cheapest.length - 1) {
                             document.getElementById("products").appendChild(blocks);
                             blocks = document.createElement("div");
-                            
+                            blocks.style = "display: flex; justify-content: space-between;";
                         }
                     }
                 </script>
