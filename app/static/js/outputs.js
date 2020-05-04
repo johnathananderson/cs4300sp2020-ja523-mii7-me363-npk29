@@ -13,7 +13,7 @@ $(document).ready(function () {
     }
     $(this).addClass("active");
 
-    $("#brand-input").input(function () {
+    $("#brand-input").on("input", function () {
         var value = $(this).attr('value');
         $('.' + filter + ":hidden").filter(':contains(' + value + ')').show('3000');
         $('.' + filter + ":visible").filter(':not(:contains(' + value + '))').hide('3000');
