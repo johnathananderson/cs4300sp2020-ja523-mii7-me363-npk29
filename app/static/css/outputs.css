@@ -227,3 +227,20 @@ button.btn.btn-default.filter-button:focus {
     transition: width 0.4s ease;
     width: 550px;
 }
+
+#brand-input:focus {
+    color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+#random:focus,
+#alpha:focus,
+#cheap:focus,
+#safe:focus,
+#review:focus {
+    color: black !important;
+    background-color: #e45c27 !important;
+    border-color: #e45c27 !important;
+    outline: none !important;
+}
