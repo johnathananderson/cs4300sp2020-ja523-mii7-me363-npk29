@@ -18,11 +18,11 @@
 
         <div style="align: center; text-align: center;">
             <div style="display: inline-block">
-                <button class="btn btn-default filter-button" data-filter="default">Default</button>
+                <button class="btn btn-default filter-button" data-filter="default">Random</button>
                 <button class="btn btn-default filter-button" data-filter="alphabetical">Alphabetical</button>
                 <button class="btn btn-default filter-button" data-filter="cheapest">Cheapest</button>
                 <button class="btn btn-default filter-button" data-filter="healthiest">Safest</button>
-                <button class="btn btn-default filter-button" data-filter="positive">Most Postitively Reviewed</button>
+                <button class="btn btn-default filter-button" data-filter="sentiment">Sentiment</button>
             </div>
         </div>
             <br />
@@ -48,7 +48,10 @@
                         <div class="shade">Your Shade: {{ shade }}</div>
                         {{#prices}} 
                         <div class="prices">Retailers: {{ prices }}</div>
-                        {{/prices}} 
+                        {{/prices}}
+                        {{#sentiment}}
+                        <div class="ingredients">Sentiment: {{ sentiment }}</div> 
+                        {{/sentiment}}
                         <div class="ingredients">Safety Score: {{ health_score }}</div>
                         <div class="ingredients">{{ ingredients }}</div>
                     </div>
@@ -63,9 +66,16 @@
                     var array = ({{ data | tojson | safe}}).map(function (item) {
                         if (item["health_score"] === undefined) {
                             item["health_score"] = "N/A";
+                        } else if (typeof item["health_score"] == "number") {
+                            item["health_score"] = (item["health_score"]).toFixed(2);
                         }
                         if (item["prices"] !== undefined && item["prices"].length == 0) {
                             item["prices"] = undefined;
+                        }
+                        if (item["sentiment"] === undefined || item["sentiment"] == "N/A") {
+                            item["sentiment"] = undefined;
+                        } else if (typeof item["sentiment"] == "number"){
+                            item["sentiment"] = (item["sentiment"] * 10).toFixed(3);
                         }
                         if (item["ingredients"] === undefined) {
                             item["ingredients"] = "Ingredients not found";
@@ -81,9 +91,6 @@
                     var missing_i = array.slice().filter(item => item["health_score"] == "N/A");
                     var not_missing_i = array.slice().filter(item => item["health_score"] != "N/A").sort((a, b) => a["health_score"] < b["health_score"] ? 1 : -1);
                     var healthiest = not_missing_i.concat(missing_i);
-                    // console.log(array);
-                    // console.log(alphabetical);
-                    // console.log(healthiest);
                     var missing_p = array.slice().filter(item => item["prices"] === undefined);
                     var not_missing_p = array.slice().filter(item => item["prices"] !== undefined);
                     var lowest_prices = not_missing_p.slice().map(item => Array.from(item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$") + 1))).sort((a, b) => a > b ? 1 : -1)[0]);
@@ -91,6 +98,9 @@
                         return lowest_prices[not_missing_p.indexOf(a)] - lowest_prices[not_missing_p.indexOf(b)];
                     });
                     var cheapest = not_missing_p_sorted.concat(missing_p);
+                    var missing_s = array.slice().filter(item => item["sentiment"] === undefined);
+                    var not_missing_s = array.slice().filter(item => item["sentiment"] !== undefined).sort((a, b) => a["sentiment"] < b["sentiment"] ? 1 : -1);
+                    var sentiments = not_missing_s.concat(missing_s);
 
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
@@ -109,7 +119,8 @@
                             image: item["thumbnail"].replace("micro_thumb", "medium"),
                             ingredients: i_ingredients,
                             prices: i_prices,
-                            health_score: item["health_score"]
+                            health_score: item["health_score"],
+                            sentiment: item["sentiment"]
                         });
                         block.innerHTML = rendered;
                     }
@@ -161,6 +172,20 @@
                         var item = cheapest[i];
                         var block = document.createElement("div");
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cheapest";
+                        renderProduct(item, block);
+                        blocks.appendChild(block);
+                        if (i % 3 == 2 || i == cheapest.length - 1) {
+                            document.getElementById("products").appendChild(blocks);
+                            blocks = document.createElement("div");
+                            blocks.style = "display: flex; justify-content: space-between;";
+                        }
+                    }
+                    blocks = document.createElement("div");
+                    blocks.style = "display: flex; justify-content: space-between;";
+                    for (i = 0; i < sentiments.length; i++) {
+                        var item = sentiments[i];
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sentiment";
                         renderProduct(item, block);
                         blocks.appendChild(block);
                         if (i % 3 == 2 || i == cheapest.length - 1) {

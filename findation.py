@@ -142,6 +142,7 @@ class FindationBrowser:
                             match_product["ingredients"] = outputs[match_brand][match_name]["ingredients"]
                             match_product["prices"] = outputs[match_brand][match_name]["prices"]
                             match_product["health_score"] = outputs[match_brand][match_name]["health_score"]
+                            match_product["sentiment"] = outputs[match_brand][match_name]["sentiment"]
                         # else:
                         #     match_product["ingredients"] = "Ingredients not found"
                         #     match_product["prices"] = []
