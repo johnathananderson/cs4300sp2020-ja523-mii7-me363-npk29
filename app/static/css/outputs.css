@@ -173,7 +173,8 @@ body {
     text-decoration: line-through;
 }
 
-.filter-button:focus {
+
+/* .filter-button:focus {
     font-size: 18px;
     border: 1px solid #e45c27;
     border-radius: 5px;
@@ -182,7 +183,7 @@ body {
     background-color: #e45c27;
     outline: none;
     box-shadow: none;
-}
+} */
 
 
 /* 
