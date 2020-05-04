@@ -13,8 +13,9 @@ $(document).ready(function () {
     }
     $(this).addClass("active");
 
-    $("#brand-input").on("input", function () {
+    $("#brand-input").bind("input", function () {
         var value = $(this).val();
+        console.log("filter")
         console.log(value);
         console.log(filter);
         $('.' + filter + ":hidden").filter(':contains(' + value + ')').show('3000');
