@@ -40,6 +40,13 @@
                             placeholder="Enter your current brand of foundation or concealer" autocomplete="off"
                             data-container="body" data-toggle="popover" data-placement="top" title="Invalid Brand"
                             data-content="Please enter a valid brand before searching!" />
+                        <script>
+                            window.onload = function () {
+                                var input = document.getElementById('input');
+                                input.focus();
+                                input.select();
+                            }
+                        </script>
                         <button id="icon-wrap" type="submit" style="justify-content: center;">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">

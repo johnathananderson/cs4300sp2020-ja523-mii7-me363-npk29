@@ -39,6 +39,13 @@
                         <input id="input" name="shade-input" type="text" placeholder="Enter your shade"
                             autocomplete="off" data-container="body" data-toggle="popover" data-placement="top"
                             title="Invalid Shade" data-content="Please enter a valid shade before searching!" />
+                        <script>
+                            window.onload = function () {
+                                var input = document.getElementById('input');
+                                input.focus();
+                                input.select();
+                            }
+                        </script>
                         <input type="hidden" id="brand-input" name="brand-input" />
                         <input type="hidden" id="product-input" name="product-input" />
                         <button id="icon-wrap" type="submit" style="justify-content: center">
