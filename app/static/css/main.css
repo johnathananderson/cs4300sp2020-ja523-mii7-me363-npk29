@@ -105,9 +105,13 @@
     transform: translate(-50%, -50%);
 }
 
-.out_message,
-.collab {
+.out_message {
     font-size: 30px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.collab {
+    font-size: 11px;
     font-family: "Josefin Sans", sans-serif;
 }
 
