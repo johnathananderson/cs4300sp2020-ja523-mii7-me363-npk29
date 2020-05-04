@@ -54,6 +54,7 @@
 }
 
 .proto:hover {
+    color: #964b00;
     opacity: 1;
     text-decoration: none;
 }
