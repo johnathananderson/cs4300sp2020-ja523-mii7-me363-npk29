@@ -124,7 +124,7 @@ class FindationBrowser:
                     WebDriverWait(self.browser, 20, 0.1).until(
                         EC.visibility_of_element_located((By.XPATH, "/html/body/div[3]/div/div/div[4]/div[3]/div"))
                     )
-                    print("Found " + str(len(matches)) + " matches")
+                    print("Done")
                     for match in self.browser.find_elements_by_class_name("match-meta"):
                         lines = match.text.splitlines()
                         match_product = {}
