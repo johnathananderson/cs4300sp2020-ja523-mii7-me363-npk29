@@ -15,23 +15,6 @@
     border-bottom: 1px solid #5e5e5e;
 }
 
-.filter-input {
-    font-size: 18px;
-    border: 1px solid #e45c27;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 25px;
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-    padding: 6px 12px;
-    vertical-align: middle;
-}
-
-.filter-input::placeholder {
-    color: #e45c27;
-    opacity: 1;
-}
-
 .filter-button {
     font-size: 18px;
     border: 1px solid #e45c27;
@@ -171,16 +154,13 @@ body {
     color: #969696;
     margin-bottom: 10px;
     text-transform: uppercase;
-}
-
-.prices {
-    font-size: 14px;
-    margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 #prices {
     font-size: 14px;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .shade {
@@ -212,6 +192,26 @@ button.btn.btn-default.filter-button:focus {
     outline: none;
     box-shadow: none;
 } */
+
+#brand-input {
+    border: 1px solid #e45c27;
+    height: 40px;
+    position: relative;
+    padding: 15px 40px 15px 20px;
+    color: #e45c27;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FFFFFF 0%, #464747 #F9F9F9 100%);
+    transition: width 0.4s ease;
+    width: 100%;
+}
+
+#brand-input::placeholder {
+    color: #e45c27;
+    opacity: 1;
+}
 
 #brand-input {
     border: 1px solid #e45c27;
