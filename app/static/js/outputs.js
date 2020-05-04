@@ -1,10 +1,11 @@
 $(document).ready(function () {
     $('.filter:visible').not('.default').hide();
     var filter = "default";
+    var value = "";
 
     $(".filter-button").click(function () {
         filter = $(this).attr('data-filter');
-        $('.' + filter).show('3000');
+        $('.' + filter).filter(':contains(' + value + ')').show('3000');
         $('.filter:visible').not('.' + filter).hide('3000');
     });
 
@@ -14,10 +15,7 @@ $(document).ready(function () {
     $(this).addClass("active");
 
     $("#brand-input").bind("input", function () {
-        var value = $(this).val();
-        console.log("filter")
-        console.log(value);
-        console.log(filter);
+        value = $(this).val();
         $('.' + filter + ":hidden").filter(':contains(' + value + ')').show('3000');
         $('.' + filter + ":visible").filter(':not(:contains(' + value + '))').hide('3000');
     });
