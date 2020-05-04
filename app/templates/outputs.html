@@ -68,12 +68,13 @@
                     var array = ({{ data | tojson | safe}}).map(function (item) {
                         var b = item["brand"];
                         var n = item["name"];
-                        if b in outputs and n in outputs[b]:
+                        if (b in outputs and n in outputs[b]) {
                             var m = outputs[b][n];
                             item["ingredients"] = m["ingredients"];
                             item["prices"] = m["prices"];
                             item["health_score"] = m["health_score"];
                             item["sentiment"] = m["sentiment"];
+                        }
                         if (item["health_score"] === undefined) {
                             item["health_score"] = "N/A";
                         } else if (typeof item["health_score"] == "number") {
