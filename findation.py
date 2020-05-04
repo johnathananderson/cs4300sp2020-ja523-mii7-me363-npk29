@@ -62,7 +62,7 @@ class FindationBrowser:
                 brand_input.send_keys("  " + brand.strip())
                 time.sleep(0.1)
                 brand_input.send_keys(Keys.ENTER)
-                WebDriverWait(self.browser, 20, 2).until(
+                WebDriverWait(self.browser, 20, 0.5).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")
                     )
@@ -73,7 +73,7 @@ class FindationBrowser:
                 product_input.send_keys(" " + product_name.strip())
                 time.sleep(0.1)
                 product_input.send_keys(Keys.ENTER)
-                WebDriverWait(self.browser, 20, .5).until(
+                WebDriverWait(self.browser, 20, 0.5).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[3]/div[1]/input")
                     )
