@@ -35,8 +35,11 @@ class FindationBrowser:
             )
             get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
             get_started_button.click()
+            n_products = len(products)
             results = []
-            for product in products:
+            for p in range(n_products):
+                print(p)
+                product = products[p]
                 brand = product[0]
                 product_name = product[1]
                 shade = product[2]
