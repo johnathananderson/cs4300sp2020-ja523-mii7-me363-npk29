@@ -171,16 +171,13 @@ body {
     color: #969696;
     margin-bottom: 10px;
     text-transform: uppercase;
-}
-
-.prices {
-    font-size: 14px;
-    margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 #prices {
     font-size: 14px;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .shade {
