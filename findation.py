@@ -36,10 +36,9 @@ class FindationBrowser:
 
     def process_matches(self, products, outputs):
         try:
-            WebDriverWait(self.browser, 20, 0.1).until(
+            get_started_button = WebDriverWait(self.browser, 20, 0.1).until(
                 EC.visibility_of_element_located((By.XPATH, "//*[@id='hide-splash']"))
             )
-            get_started_button = self.browser.find_element_by_xpath("//*[@id='hide-splash']")
             get_started_button.click()
             n_products = len(products)
             results = []
@@ -54,18 +53,16 @@ class FindationBrowser:
                 WebDriverWait(self.browser, 20, 0.1).until(
                     EC.visibility_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]"))
                 )
-                WebDriverWait(self.browser, 20, 0.1).until(EC.element_to_be_clickable((By.ID, "brand-search")))
-                brand_input = self.browser.find_element_by_id("brand-search")
+                brand_input = WebDriverWait(self.browser, 20, 0.1).until(
+                    EC.element_to_be_clickable((By.ID, "brand-search"))
+                )
                 brand_input.send_keys("  " + brand.strip())
                 time.sleep(0.1)
                 brand_input.send_keys(Keys.ENTER)
-                WebDriverWait(self.browser, 20, 2).until(
+                product_input = WebDriverWait(self.browser, 20, 2).until(
                     EC.element_to_be_clickable(
                         (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input")
                     )
-                )
-                product_input = self.browser.find_element_by_xpath(
-                    "/html/body/div[2]/div/div/div[3]/div[2]/div/div[2]/div[1]/input"
                 )
                 product_input.send_keys(" " + product_name.strip())
                 time.sleep(0.1)
@@ -92,22 +89,20 @@ class FindationBrowser:
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
                     )
-                    WebDriverWait(self.browser, 20, 0.1).until(
+                    add_another_button = WebDriverWait(self.browser, 20, 0.1).until(
                         EC.element_to_be_clickable(
                             (By.XPATH, "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a")
                         )
-                    )
-                    add_another_button = self.browser.find_element_by_xpath(
-                        "/html/body/div[2]/div/div/div[3]/div[1]/form/div/div/div/a"
                     )
                     add_another_button.click()
                 else:
                     WebDriverWait(self.browser, 20, 2).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, "actions"))
                     )
-                    WebDriverWait(self.browser, 20, 0.1).until(EC.element_to_be_clickable((By.CLASS_NAME, "actions")))
-                    find_matches_button = self.browser.find_element_by_class_name("actions").find_element_by_tag_name(
-                        "button"
+                    find_matches_button = (
+                        WebDriverWait(self.browser, 20, 0.1)
+                        .until(EC.element_to_be_clickable((By.CLASS_NAME, "actions")))
+                        .find_element_by_class_name("btn-default")
                     )
                     find_matches_button.click()
                     WebDriverWait(self.browser, 20, 0.1).until(EC.url_contains("searches"))
