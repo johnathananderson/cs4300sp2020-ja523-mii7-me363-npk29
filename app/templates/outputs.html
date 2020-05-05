@@ -47,13 +47,9 @@
                     <div class="bottom">
                         <div class="product-name">{{ product_name }}</div>
                         <div class="shade">Your Shade: {{ shade }}</div>
-                        {{#prices}} 
                         <div class="prices" id="prices">Retailers: {{ prices }}</div>
-                        {{/prices}}
-                        {{#sentiment}}
-                        <div class="ingredients">Sentiment: {{ sentiment }} / 10</div> 
-                        <div class="ingredients">Top Descriptors: {{ words }}</div> 
-                        {{/sentiment}}
+                        <div class="ingredients">Sentiment: {{ sentiment }}</div> 
+                        <div class="ingredients">Top Descriptors: {{ words }}</div>
                         <div class="ingredients">Safety Score: {{ health_score }} / 10</div>
                         <div class="ingredients">{{ ingredients }}</div>
                     </div>
@@ -82,14 +78,14 @@
                         } else if (typeof item["health_score"] == "number") {
                             item["health_score"] = (item["health_score"]).toFixed(2);
                         }
-                        if (item["prices"] !== undefined && item["prices"].length == 0) {
-                            item["prices"] = undefined;
+                        if (item["prices"] === undefined || item["prices"].length == 0) {
+                            item["prices"] = "Retailers not found";
                         }
-                        if (item["words"] === undefined || item["words"] == "N/A" || item["words"].length == 0) {
-                            item["words"] = undefined;
+                        if (item["words"] === undefined || item["words"].length == 0) {
+                            item["words"] = "N/A";
                         }
-                        if (item["sentiment"] === undefined || item["sentiment"] == "N/A") {
-                            item["sentiment"] = undefined;
+                        if (item["sentiment"] === undefined) {
+                            item["sentiment"] = "N/A";
                         } else if (typeof item["sentiment"] == "number"){
                             item["sentiment"] = ((item["sentiment"] * 5) + 5).toFixed(2);
                         }
@@ -107,15 +103,15 @@
                     var missing_i = array.slice().filter(item => item["health_score"] == "N/A");
                     var not_missing_i = array.slice().filter(item => item["health_score"] != "N/A").sort((a, b) => a["health_score"] < b["health_score"] ? 1 : -1);
                     var healthiest = not_missing_i.concat(missing_i);
-                    var missing_p = array.slice().filter(item => item["prices"] === undefined);
-                    var not_missing_p = array.slice().filter(item => item["prices"] !== undefined);
+                    var missing_p = array.slice().filter(item => item["prices"] == "N/A");
+                    var not_missing_p = array.slice().filter(item => item["prices"] != "N/A");
                     var lowest_prices = not_missing_p.slice().map(item => Array.from(item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$") + 1))).sort((a, b) => a > b ? 1 : -1)[0]);
                     var not_missing_p_sorted = not_missing_p.sort(function (a, b) {
                         return lowest_prices[not_missing_p.indexOf(a)] - lowest_prices[not_missing_p.indexOf(b)];
                     });
                     var cheapest = not_missing_p_sorted.concat(missing_p);
-                    var missing_s = array.slice().filter(item => item["sentiment"] === undefined);
-                    var not_missing_s = array.slice().filter(item => item["sentiment"] !== undefined).sort((a, b) => a["sentiment"] < b["sentiment"] ? 1 : -1);
+                    var missing_s = array.slice().filter(item => item["sentiment"] === "N/A");
+                    var not_missing_s = array.slice().filter(item => item["sentiment"] != "N/A").sort((a, b) => a["sentiment"] < b["sentiment"] ? 1 : -1);
                     var sentiments = not_missing_s.concat(missing_s);
 
                     function renderProduct(item, block) {
@@ -125,12 +121,19 @@
                         }
                         var i_prices = item["prices"];
                         if (typeof i_prices == "object") {
-                            i_prices = i_prices.join(", ")
+                            i_prices = "Retailers: " + i_prices.join(", ")
                         }
                         var i_words = item["words"];
                         if (typeof i_words == "object") {
                             i_words = i_words.join(", ")
                         }
+                        if (item["sentiment"] !== "N/A") {
+                            item["sentiment"] = (item["sentiment"]).toString() + " / 10"
+                        }
+                        if (item["health_score"] !== "N/A") {
+                            item["health_score"] = (item["health_score"]).toString() + " / 10"
+                        }
+                        
                         var template = document.getElementById("product_template").innerHTML;
                         var rendered = Mustache.render(template, {
                             brand: item["brand"],
