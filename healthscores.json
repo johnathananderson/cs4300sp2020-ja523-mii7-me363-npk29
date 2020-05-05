@@ -1,9 +1,9 @@
 {
     "Clinique": {
-        "Almost Powder Makeup SPF 15": 8.06,
-        "Perfectly Real Compact Makeup": 6.68,
-        "Stay-Matte Oil-Free Makeup": 9.59,
-        "Even Better Glow Light Reflecting Makeup": 9.68,
+        "Almost Powder Makeup SPF 15": 7.87,
+        "Perfectly Real Compact Makeup": 6.62,
+        "Stay-Matte Oil-Free Makeup": 9.56,
+        "Even Better Glow Light Reflecting Makeup": 9.58,
         "Anti-Blemish Solutions Clearing Concealer": "N/A",
         "Even Better Makeup": 10.0,
         "Superbalanced Makeup": 8.57,
@@ -42,8 +42,8 @@
         "Moisture Surge Hydrating Cushion Compact": "N/A"
     },
     "Bobbi Brown": {
-        "Skin Foundation Mineral Makeup SPF 15": 8.17,
-        "Face Touch Up Stick Concealer": 6.45,
+        "Skin Foundation Mineral Makeup SPF 15": 8.0,
+        "Face Touch Up Stick Concealer": 6.42,
         "Creamy Corrector": "N/A",
         "Creamy Concealer Kit": "N/A",
         "Long-Wear Even Finish Liquid Foundation SPF15": "N/A",
@@ -73,9 +73,9 @@
     },
     "CHANEL": {
         "Vitalumiere Satin Smoothing Fluid Makeup": "N/A",
-        "Perfection Lumiere Long-Wear Flawless Fluid Makeup": 7.45,
+        "Perfection Lumiere Long-Wear Flawless Fluid Makeup": 7.31,
         "Les Beiges Healthy Glow Foundation": 8.4,
-        "Vitalumiere Moisture-Rich Radiance Sunscreen Fluid Makeup": 7.71,
+        "Vitalumiere Moisture-Rich Radiance Sunscreen Fluid Makeup": 7.58,
         "Le Teint Ultra Tenue Ultrawear Flawless Foundation": "N/A",
         "Correcteur Perfection Long Lasting Concealer": "N/A",
         "Vitalumiere Aqua Ultra-Light Skin Perfecting Sunscreen Makeup": 7.57,
@@ -125,10 +125,10 @@
     },
     "Mary Kay": {
         "Endless Performance Cr\u00e8me-to-Powder Foundation": "N/A",
-        "TimeWise Matte-Wear Liquid Foundation": 7.92,
-        "TimeWise Luminous-Wear Liquid Foundation": 8.27,
+        "TimeWise Matte-Wear Liquid Foundation": 7.79,
+        "TimeWise Luminous-Wear Liquid Foundation": 8.24,
         "Day Radiance Cream Foundation": "N/A",
-        "Mineral Powder Foundation": 5.59,
+        "Mineral Powder Foundation": 5.54,
         "CC Cream Sunscreen": "N/A",
         "Perfecting Concealer": "N/A",
         "Tinted Moisturizer Sunscreen": 3.85,
@@ -141,9 +141,9 @@
         "TimeWise Matte 3D Foundation": "N/A"
     },
     "L'Oreal Paris": {
-        "True Match Super Blendable Compact Makeup": 7.48,
-        "Infallible Advanced Never Fail Makeup": 7.04,
-        "Infallible Pro-Matte Foundation": 8.22,
+        "True Match Super Blendable Compact Makeup": 7.31,
+        "Infallible Advanced Never Fail Makeup": 6.94,
+        "Infallible Pro-Matte Foundation": 8.18,
         "Infallible Sculpt Base Foundation": "N/A",
         "BB Cream Milagroso 5 em 1": "N/A",
         "Infallible 24H-Matte Foundation": "N/A",
@@ -201,7 +201,7 @@
         "Perfect Finish Souffle All Day Makeup": "N/A",
         "Fast Finish Foundation Stick": "N/A",
         "Pressed Powder": "N/A",
-        "Loose Powder": 4.98,
+        "Loose Powder": 4.9,
         "True Finish Refining Mineral Foundation": "N/A",
         "Oil-Free Liquid Makeup": "N/A",
         "Cover Tone Concealing Cream": "N/A"
@@ -215,10 +215,10 @@
         "Luxury Pressed Powder": "N/A"
     },
     "Iman": {
-        "Second to None Luminous Foundation": 5.41,
-        "Second to None Cream to Powder Foundation": 5.53,
-        "Oil-Blotting Pressed Powder": 5.26,
-        "Luxury Pressed Powder": 6.09,
+        "Second to None Luminous Foundation": 5.17,
+        "Second to None Cream to Powder Foundation": 5.48,
+        "Oil-Blotting Pressed Powder": 5.22,
+        "Luxury Pressed Powder": 6.01,
         "Second to None Semi-Loose Powder": 5.43,
         "Skin Tone Evener BB Creme": 6.62,
         "Second to None Stick Foundation": 5.91,
@@ -228,17 +228,17 @@
         "Luxury Translucent Powder": "N/A"
     },
     "Milani": {
-        "Conceal + Perfect 2-in-1 Foundation + Concealer": 9.08,
-        "Mineral Compact Makeup": 5.59,
-        "The Multitasker Face Powder": 4.81,
-        "Glow Natural Brush-On Liquid Makeup": 7.1,
+        "Conceal + Perfect 2-in-1 Foundation + Concealer": 8.68,
+        "Mineral Compact Makeup": 5.52,
+        "The Multitasker Face Powder": 4.77,
+        "Glow Natural Brush-On Liquid Makeup": 6.92,
         "Secret Cover Concealer Cream": 6.85,
         "Smooth Finish Cream-To-Powder Makeup": 6.79,
         "Even-Touch Powder Foundation": 5.92,
         "Conceal + Perfect Foundation Stick": 7.91,
         "Retouch + Erase Light-Lifting Concealer": "N/A",
         "Conceal + Perfect Longwear Concealer": "N/A",
-        "Pressed Powder": 4.1,
+        "Pressed Powder": 4.01,
         "Conceal + Perfect Shine-Proof Powder": 7.22,
         "Screen Queen Foundation": "N/A",
         "Conceal + Perfect All-In-One Concealer Kit": "N/A",
@@ -246,10 +246,10 @@
         "Make It Last Setting Powder": 8.09
     },
     "Black Opal": {
-        "True Color Stick Foundation": 7.35,
+        "True Color Stick Foundation": 7.19,
         "True Color Mineral Matte Cr\u00e8me Powder Foundation": "N/A",
         "True Color Pore Perfecting Liquid Foundation": "N/A",
-        "Total Coverage Concealing Foundation": 5.91,
+        "Total Coverage Concealing Foundation": 5.86,
         "Even True Flawless Liquid Foundation": "N/A",
         "True Color Ultra Matte Foundation Powder": "N/A",
         "True Color Flawless Perfecting Concealer": "N/A",
@@ -264,7 +264,7 @@
         "Perfect Blend Cream To Powder Foundation": "N/A"
     },
     "Dior": {
-        "Diorskin Forever Compact Foundation": 8.83,
+        "Diorskin Forever Compact Foundation": 8.55,
         "Diorskin Forever Extreme Control Perfect Matte Powder Makeup": "N/A",
         "Capture Dreamskin Moist & Perfect Cushion": "N/A",
         "Diorskin Forever Perfect Makeup": "N/A",
@@ -298,8 +298,8 @@
         "Fix It 2-in-1 Prime & Color Correct Face - Eyes - Lips": "N/A"
     },
     "Revlon": {
-        "ColorStay Makeup For Combination/Oily Skin": 8.49,
-        "Nearly Naked Makeup": 10.0,
+        "ColorStay Makeup For Combination/Oily Skin": 8.12,
+        "Nearly Naked Makeup": 9.96,
         "Age Defying CC Cream Color Corrector": 3.86,
         "ColorStay Two-Way Powder Foundation": "N/A",
         "PhotoReady Candid Natural Finish Anti-Pollution Foundation": 8.71,
@@ -332,13 +332,13 @@
         "Photoready Color Correcting Pen": 9.03
     },
     "Black Radiance": {
-        "Color Perfect Liquid Makeup": 7.58,
-        "Pressed Powder": 6.85,
-        "True Complexion BB Cream": 9.53,
+        "Color Perfect Liquid Makeup": 7.4,
+        "Pressed Powder": 6.7,
+        "True Complexion BB Cream": 9.52,
         "True Complexion Custom Coverage Foundation": "N/A",
         "True Complexion Under Eye Corrector Concealer": "N/A",
         "True Complexion Custom Concealer": 6.87,
-        "Concealer Stick": 5.21,
+        "Concealer Stick": 5.11,
         "True Complexion Soft Focus Finishing Powder": 6.82,
         "True Complexion HD Corrector": 8.99,
         "Color Perfect HD Mousse Foundation": "N/A"
@@ -358,9 +358,9 @@
         "Concealer Palette": "N/A"
     },
     "Maybelline": {
-        "Fit Me Matte + Poreless Foundation": 6.88,
+        "Fit Me Matte + Poreless Foundation": 6.57,
         "Super Stay 24H Full Coverage Foundation": "N/A",
-        "Fit Me Pressed Powder": 6.62,
+        "Fit Me Pressed Powder": 6.57,
         "Fit Me Anti-Shine Stick": "N/A",
         "Affinitone Concealer Stick": "N/A",
         "Fit Me Dewy + Smooth Foundation": 6.19,
@@ -434,13 +434,13 @@
         "Instant Age Rewind Eraser": 8.21
     },
     "NARS": {
-        "Sheer Glow Foundation": 7.34,
+        "Sheer Glow Foundation": 7.13,
         "Natural Radiant Longwear Foundation": "N/A",
         "All Day Luminous Weightless Foundation": 10.0,
         "Velvet Matte Foundation Stick": "N/A",
         "Sheer Matte Foundation": "N/A",
         "Radiant Creamy Concealer": 8.32,
-        "Concealer": 6.76,
+        "Concealer": 6.63,
         "Velvet Matte Skin Tint Broad Spectrum SPF 30": 7.07,
         "Pure Radiant Tinted Moisturizer Broad Spectrum SPF 30": "N/A",
         "All Day Luminous Powder Foundation": 10.0,
@@ -452,12 +452,12 @@
         "AquaGlow Cushion Compact Foundation SPF23 / PA ++": "N/A",
         "Tinted Glow Booster": "N/A",
         "Radiant Cream Compact Foundation": 8.33,
-        "Pressed Powder": 5.49,
+        "Pressed Powder": 5.32,
         "Radiant Liquid Foundation CC": "N/A"
     },
     "IT Cosmetics": {
-        "Celebration Foundation Illumination": 7.86,
-        "Celebration Foundation SPF 50+": 7.63,
+        "Celebration Foundation Illumination": 7.67,
+        "Celebration Foundation SPF 50+": 7.56,
         "Your Skin But Better CC+ Airbrush Perfecting Powder SPF 50+": "N/A",
         "Your Skin But Better CC+ Color Correcting Full Coverage Cream": 10.0,
         "Your Skin But Better CC+ Illumination with SPF 50+": "N/A",
@@ -482,8 +482,8 @@
         "IT-O\u2082 Ultra Repair Liquid Oxygen Foundation": "N/A"
     },
     "Lancome": {
-        "Teint Miracle Foundation": 7.54,
-        "Teint Idole Ultra Wear Foundation": 7.52,
+        "Teint Miracle Foundation": 7.32,
+        "Teint Idole Ultra Wear Foundation": 7.33,
         "Mat Miracle 24H Fluid Foundation": "N/A",
         "Absolue Sublime Cream Foundation": "N/A",
         "Miracle Air De Teint - Foundation": "N/A",
@@ -559,10 +559,10 @@
         "Compact Pressed Powder Superior Cover": "N/A"
     },
     "Urban Decay": {
-        "Naked Skin Weightless Ultra Definition Liquid Makeup": 8.45,
+        "Naked Skin Weightless Ultra Definition Liquid Makeup": 8.12,
         "24/7 Concealer Pencil": "N/A",
         "Stay Naked Concealer": "N/A",
-        "Naked Skin Weightless Complete Coverage Concealer": 8.27,
+        "Naked Skin Weightless Complete Coverage Concealer": 8.09,
         "Naked Skin Ultra Definition Loose Finishing Powder": 6.76,
         "Naked Skin Ultra Definition Powder Foundation": 6.89,
         "All Nighter Liquid Foundation": 8.17,
@@ -587,8 +587,8 @@
         "All Purpose Pencil Concealer": "N/A"
     },
     "L.A. Girl": {
-        "HD Pro Conceal": 6.66,
-        "HD Pro Matte Foundation": 6.65,
+        "HD Pro Conceal": 6.32,
+        "HD Pro Matte Foundation": 6.47,
         "HD Pro Coverage Illuminating Foundation": "N/A",
         "Perfecting Liquid Makeup": "N/A",
         "HD Pro BB Cream": 7.44,
@@ -604,7 +604,7 @@
         "Creamy Liquid Foundation": "N/A"
     },
     "Estee Lauder": {
-        "Double Wear Light Stay-in-Place Makeup": 9.14,
+        "Double Wear Light Stay-in-Place Makeup": 8.84,
         "Futurist Aqua Brilliance Makeup": "N/A",
         "Double Wear Stay-in-Place Matte Powder Foundation": 10.0,
         "Double Wear Brightening Powder Makeup and Soft Blur Powder": "N/A",
@@ -660,7 +660,7 @@
         "Camouflage+ Healthy Glow Concealer": "N/A",
         "#InstaPerfect Liquid Makeup": "N/A",
         "Camouflage+ Matt Concealer": "N/A",
-        "Mattifying Compact Powder": 6.11,
+        "Mattifying Compact Powder": 6.07,
         "Soft & Natural Makeup": "N/A",
         "Instant Matt Make-Up": "N/A",
         "Coverstick": 6.89,
@@ -670,7 +670,7 @@
         "Camouflage Cream Concealer": "N/A"
     },
     "100% Pure": {
-        "Fruit Pigmented 2nd Skin Foundation": 7.3,
+        "Fruit Pigmented 2nd Skin Foundation": 7.15,
         "Bamboo Blur Tinted Moisturizer": "N/A",
         "Fruit Pigmented Brightening Concealer": 7.12,
         "Fruit Pigmented 2nd Skin Concealer": "N/A",
@@ -720,8 +720,8 @@
         "16 Guroom Cream Foundation": "N/A"
     },
     "Pacifica": {
-        "Ultra CC Cream Radiant Foundation": 6.92,
-        "Alight Clean Foundation": 7.48,
+        "Ultra CC Cream Radiant Foundation": 6.72,
+        "Alight Clean Foundation": 7.31,
         "Crystal Blur Illuminating Foundation": "N/A",
         "Transcendent Concentrated Correcting Concealer": "N/A",
         "Dreamy Cover Bare-Faced Serum Foundation": "N/A",
@@ -749,7 +749,7 @@
         "Time Plus Long Lasting Make-Up": "N/A"
     },
     "Beauty Bakerie": {
-        "Cake Mix Demi-Matte Foundation": 6.97,
+        "Cake Mix Demi-Matte Foundation": 6.72,
         "InstaBake Aqua Glass Foundation": "N/A"
     },
     "Angelissima": {
@@ -841,8 +841,8 @@
     },
     "BeautiControl": {
         "Secret Agent Mineral Makeup": "N/A",
-        "Creme to Powder Finish Foundation": 6.35,
-        "Perfecting Wet/Dry Finish Foundation": 5.79,
+        "Creme to Powder Finish Foundation": 6.23,
+        "Perfecting Wet/Dry Finish Foundation": 5.76,
         "BC Color Tinted Moisturizer": "N/A",
         "Secret Agent Undercover Makeup": 7.54,
         "Tight, Firm & Fill Foundation": 7.86
@@ -851,14 +851,14 @@
         "Dual Skin Cr\u00e9me Foundation": "N/A"
     },
     "NYX": {
-        "Conceal Correct Contour Palette": 7.72,
+        "Conceal Correct Contour Palette": 7.62,
         "Born to Glow Naturally Radiant Foundation": 10.0,
-        "Stay Matte But Not Flat Powder Foundation": 6.87,
-        "Can't Stop Won't Stop Full Coverage Foundation": 8.22,
+        "Stay Matte But Not Flat Powder Foundation": 6.83,
+        "Can't Stop Won't Stop Full Coverage Foundation": 8.06,
         "HD Studio Photogenic Concealer Wand": "N/A",
         "Total Control Drop Foundation": 7.4,
         "Invincible Fullest Coverage Foundation": 7.82,
-        "BB Cream": 6.53,
+        "BB Cream": 6.37,
         "Stay Matte But Not Flat Liquid Foundation": 6.24,
         "Can't Stop Won't Stop Setting Powder": "N/A",
         "Can't Stop Won't Stop Contour Concealer": 8.02,
@@ -868,12 +868,12 @@
         "Concealer Jar": 5.47,
         "Total Control Mesh Cushion Foundation": "N/A",
         "Wonder Stick": "N/A",
-        "HD Studio Photogenic Foundation": 8.62,
+        "HD Studio Photogenic Foundation": 8.34,
         "Dark Circle Concealer": 5.47,
-        "Mineral Stick Foundation": 6.54,
+        "Mineral Stick Foundation": 6.5,
         "Define and Refine Powder Foundation": "N/A",
         "Hydra Touch Powder Foundation": "N/A",
-        "Tinted Moisturizer": 6.61,
+        "Tinted Moisturizer": 6.23,
         "Gotcha Covered Concealer": 8.32,
         "#NoFilter Finishing Powder": "N/A",
         "Pro Foundation Mixers": 10.0,
@@ -903,7 +903,7 @@
         "10HR Fix & Correct Concealer": "N/A",
         "Glow Perfection Foundation": "N/A",
         "Matte Perfection Stick Foundation & Concealer": "N/A",
-        "Perfection Mist Airbrush Foundation": 8.07,
+        "Perfection Mist Airbrush Foundation": 7.93,
         "Matte Perfection Powder Foundation": "N/A",
         "High Coverage Concealer": "N/A",
         "Make No Mistake Foundation and Concealer Stick": "N/A",
@@ -990,15 +990,15 @@
         "Touche Eclat Neutralizer Colour Corrector": "N/A"
     },
     "Shiseido": {
-        "Advanced Hydro-Liquid Compact": 7.81,
-        "Perfect Hydrating BB Cream": 8.42,
-        "Radiant Lifting Foundation": 8.38,
-        "Synchro Skin Glow Luminizing Fluid Foundation": 9.67,
+        "Advanced Hydro-Liquid Compact": 7.61,
+        "Perfect Hydrating BB Cream": 8.26,
+        "Radiant Lifting Foundation": 8.36,
+        "Synchro Skin Glow Luminizing Fluid Foundation": 9.53,
         "Future Solution LX Total Radiance Foundation": "N/A",
         "Sports BB WetForce BB": 8.95,
         "Synchro Skin Self-Refreshing Foundation": "N/A",
-        "Compact Foundation": 8.09,
-        "Stick Foundation": 5.82,
+        "Compact Foundation": 7.98,
+        "Stick Foundation": 5.72,
         "Dual Balancing Foundation": 7.29,
         "Synchro Skin Lasting Liquid Foundation": "N/A",
         "Synchro Skin Tinted Gel Cream": "N/A",
@@ -1116,7 +1116,7 @@
         "Natural Cover CC It Radiant Cover Cream": "N/A"
     },
     "La Mav": {
-        "Organic BB Creme": 7.77,
+        "Organic BB Creme": 7.62,
         "Anti-Ageing Mineral Foundation": "N/A"
     },
     "Oriflame": {
@@ -1133,10 +1133,10 @@
         "Very Me No Time For Shine Powder": "N/A"
     },
     "Charlotte Tilbury": {
-        "Airbrush Flawless Finish Powder": 6.37,
+        "Airbrush Flawless Finish Powder": 6.24,
         "Airbrush Flawless Foundation": "N/A",
         "The Retoucher": 9.42,
-        "Magic Foundation": 8.7,
+        "Magic Foundation": 8.58,
         "Light Wonder Youth-Boosting Perfect Skin Foundation": 7.47,
         "Hollywood Flawless Filter Foundation": "N/A",
         "Magic Away Liquid Concealer": "N/A",
@@ -1145,10 +1145,10 @@
         "Magic Vanish Colour Corrector": "N/A"
     },
     "Jane Iredale": {
-        "PurePressed Base Mineral Foundation": 5.68,
-        "Glow Time Full Coverage Mineral BB Cream": 7.25,
+        "PurePressed Base Mineral Foundation": 5.6,
+        "Glow Time Full Coverage Mineral BB Cream": 7.14,
         "Beyond Matte Liquid Foundation": "N/A",
-        "Dream Tint Tinted Moisturizer": 7.54,
+        "Dream Tint Tinted Moisturizer": 7.47,
         "Amazing Base Loose Mineral Powder": 5.68,
         "Liquid Minerals A Foundation": 8.12,
         "Circle/Delete Concealer": 7.76,
@@ -1221,15 +1221,15 @@
         "Studio Fix Soft Matte Foundation Stick": "N/A"
     },
     "Burt's Bees": {
-        "Mattifying Powder Foundation": 7.34,
-        "Goodness Glows Liquid Makeup": 7.77,
-        "BB Cream with Noni Extract": 9.17,
+        "Mattifying Powder Foundation": 7.24,
+        "Goodness Glows Liquid Makeup": 7.62,
+        "BB Cream with Noni Extract": 9.16,
         "Concealer": "N/A"
     },
     "3INA": {
         "The Liquid Concealer": "N/A",
         "The Nude Foundation": "N/A",
-        "The Bb Cream": 6.78,
+        "The Bb Cream": 6.74,
         "The 3in1 Foundation": "N/A",
         "The Matte Foundation": "N/A",
         "The 24H Foundation": "N/A"
@@ -1256,13 +1256,13 @@
         "Wings of Color 2 in 1 Foundation & Concealer": "N/A"
     },
     "Anna Lotan": {
-        "Premium BB Cream": 7.48
+        "Premium BB Cream": 7.2
     },
     "Tarte": {
-        "Shape Tape Contour Concealer": 7.14,
-        "Amazonian Clay BB Tinted Moisturizer Broad Spectrum SPF 20": 8.11,
+        "Shape Tape Contour Concealer": 6.83,
+        "Amazonian Clay BB Tinted Moisturizer Broad Spectrum SPF 20": 8.0,
         "Amazonian Clay Full Coverage Airbrush Foundation": 6.03,
-        "Creaseless Concealer": 6.91,
+        "Creaseless Concealer": 6.82,
         "Face Tape Foundation": "N/A",
         "Rainforest of the Sea Aquacealer Concealer": 8.73,
         "Amazonian Clay Full Coverage Foundation": 6.03,
@@ -1311,10 +1311,10 @@
     },
     "Ulta": {
         "Adjustable Coverage Foundation": "N/A",
-        "Cream Foundation": 6.92,
-        "Mineral Powder Foundation": 3.93,
-        "Double Duty Foundation": 7.8,
-        "BB Cream Beauty Balm": 7.84,
+        "Cream Foundation": 6.75,
+        "Mineral Powder Foundation": 3.89,
+        "Double Duty Foundation": 7.66,
+        "BB Cream Beauty Balm": 7.63,
         "Demi Matte Foundation": "N/A",
         "Moisturizing Foundation Stick": "N/A",
         "HD Full Coverage Liquid Foundation": "N/A",
@@ -1325,7 +1325,7 @@
     "Avon": {
         "mark. Mousse Foundation": "N/A",
         "Ideal Flawless Invisible Coverage Foundation": 10.0,
-        "Anew Age-Transforming Foundation": 9.98,
+        "Anew Age-Transforming Foundation": 9.69,
         "Color Trend Fresh Face Liquid Foundation": "N/A",
         "24K Gold Ideal Oil Control Pressed Powder": "N/A",
         "Anew Age-Transforming Pressed Powder": "N/A",
@@ -1389,9 +1389,9 @@
         "True Color White Essence Foundation": "N/A"
     },
     "Zuri Cosmetics": {
-        "Loose Powder": 3.36,
-        "Liquid Make-up": 6.77,
-        "Pressed Powder": 4.1,
+        "Loose Powder": 3.28,
+        "Liquid Make-up": 6.63,
+        "Pressed Powder": 4.03,
         "Naturally Sheer Wet to Dry Powder Foundation": "N/A",
         "Naturally Sheer Satin Finish Cream to Powder Foundation": "N/A",
         "Naturally Sheer Oil Free Powder Foundation": "N/A"
@@ -1413,16 +1413,16 @@
         "24 Hour CC Spot Concealer": "N/A"
     },
     "H&M": {
-        "All-Day Liquid Foundation": 8.77,
-        "BB Cream Beauty Balm": 9.64,
-        "Natural Satin Foundation": 7.02,
+        "All-Day Liquid Foundation": 8.4,
+        "BB Cream Beauty Balm": 9.43,
+        "Natural Satin Foundation": 6.98,
         "Immaculate Compact Foundation": 10.0
     },
     "Alima Pure": {
-        "Cream Concealer": 6.85,
+        "Cream Concealer": 6.81,
         "Pressed Foundation with Rosehip Antioxidant Complex": "N/A",
-        "Liquid Silk Foundation": 7.3,
-        "Satin Matte Foundation": 3.82,
+        "Liquid Silk Foundation": 7.18,
+        "Satin Matte Foundation": 3.77,
         "Mineral Powder Concealer": "N/A",
         "Satin Finishing Powder": 4.66,
         "Color Balancing Powder": 4.66,
@@ -1432,7 +1432,7 @@
     "Anastasia Beverly Hills": {
         "Stick Foundation / Stick Contour": "N/A",
         "Luminous Foundation": "N/A",
-        "Pro Pencil": 6.85,
+        "Pro Pencil": 6.81,
         "Concealer": "N/A",
         "Contour Cream Kit": "N/A",
         "Powder Bronzer": 7.94
@@ -1446,16 +1446,16 @@
         "Hydrating Fluid Foundation / Fond de Teint Hydratant": "N/A"
     },
     "INIKA": {
-        "Certified Organic BB Cream": 6.59,
-        "Loose Mineral Foundation": 4.09,
-        "Baked Mineral Foundation": 7.25,
+        "Certified Organic BB Cream": 6.52,
+        "Loose Mineral Foundation": 4.02,
+        "Baked Mineral Foundation": 7.15,
         "Certified Organic Liquid Foundation with Hyaluronic Acid": "N/A",
         "Certified Organic Perfection Concealer": 7.93,
         "Baked in a Box": "N/A"
     },
     "Almay": {
         "Best Blend Forever Makeup": 10.0,
-        "Clear Complexion Concealer": 9.27,
+        "Clear Complexion Concealer": 9.11,
         "Clear Complexion Liquid Makeup": "N/A",
         "Healthy Glow Makeup + Gradual Self Tan": 10.0,
         "Clear Complexion Pressed Powder": 5.84,
@@ -1518,10 +1518,10 @@
         "Lux Certified Organic Flora Luminescent Liquid Foundation": "N/A"
     },
     "Ilia": {
-        "True Skin Serum Foundation": 8.55,
+        "True Skin Serum Foundation": 8.04,
         "True Skin Serum Concealer": "N/A",
-        "Vivid Foundation": 6.9,
-        "Sheer Vivid Tinted Moisturizer": 7.34,
+        "Vivid Foundation": 6.88,
+        "Sheer Vivid Tinted Moisturizer": 7.23,
         "Vivid Concealer": 7.6
     },
     "Coffret D'or by Kanebo": {
@@ -1551,13 +1551,13 @@
     },
     "Annabelle": {
         "BB Compact Makeup": "N/A",
-        "BB Cream": 9.59,
+        "BB Cream": 9.37,
         "SkinTrue Foundation": "N/A",
         "SkinTrue": "N/A"
     },
     "RMS Beauty": {
         "Un Cover-Up Concealer/Foundation": "N/A",
-        "Tinted Un Powder": 3.78
+        "Tinted Un Powder": 3.74
     },
     "Avril": {
         "Compact Powder / Poudre Compacte": "N/A",
@@ -1566,14 +1566,14 @@
     },
     "Au Naturale": {
         "Zero Gravity C2P Foundation Stick": "N/A",
-        "Semi-Matte Powder Foundation": 3.89,
-        "Completely Covered Creme Concealer": 6.35,
-        "Color Theory Creme Corrector": 6.37
+        "Semi-Matte Powder Foundation": 3.85,
+        "Completely Covered Creme Concealer": 6.34,
+        "Color Theory Creme Corrector": 6.33
     },
     "Philosophy": {
-        "Take a Deep Breath Cushion Foundation": 9.92,
-        "Renewed Hope in a Jar Skin Tint": 8.55,
-        "Miracle Worker Anti-Aging Foundation": 8.99,
+        "Take a Deep Breath Cushion Foundation": 9.62,
+        "Renewed Hope in a Jar Skin Tint": 8.34,
+        "Miracle Worker Anti-Aging Foundation": 8.96,
         "Hope in a Jar Hydrating Foundation": "N/A",
         "Renewed Hope in a Jar Complete Concealer": "N/A",
         "No Reason To Hide Instant Skin-Tone Perfecting Moisturizer": 8.84
@@ -1583,7 +1583,7 @@
     },
     "NP SET": {
         "NP Set Memory Foundation": "N/A",
-        "NP Set Powder Foundation": 6.74
+        "NP Set Powder Foundation": 6.62
     },
     "Bella Donna": {
         "Ultimate Pure Perfection Liquid Mineral Foundation": "N/A",
@@ -1596,22 +1596,22 @@
         "Phyto Aqua Cushion": "N/A"
     },
     "Abella": {
-        "ColorShade Tinted Sunscreen": 7.12,
+        "ColorShade Tinted Sunscreen": 6.92,
         "ColorShade SPF 30+ Tinted Moisturizer": "N/A"
     },
     "Dolce and Gabbana": {
-        "The Lift Foundation - Perfect Reveal Lift Foundation": 8.51,
-        "The Foundation - Perfect Matte Powder Foundation": 7.08,
+        "The Lift Foundation - Perfect Reveal Lift Foundation": 8.14,
+        "The Foundation - Perfect Matte Powder Foundation": 7.04,
         "The Foundation - Perfect Finish Creamy Foundation": "N/A",
-        "The Foundation - Perfect Luminous Liquid Foundation": 8.61,
+        "The Foundation - Perfect Luminous Liquid Foundation": 8.41,
         "The Foundation - Perfect Matte Liquid Foundation": 8.47,
         "MillenialSkin On-The-Glow Tinted Moisturizer": "N/A",
         "The Pressed Powder - Perfection Veil Pressed Powder": 7.36
     },
     "Juvia's Place": {
         "Shade Stick Foundation": "N/A",
-        "I Am Magic Foundation": 8.9,
-        "I Am Magic Concealer": 7.93,
+        "I Am Magic Foundation": 8.76,
+        "I Am Magic Concealer": 7.92,
         "Loose Setting Powder": "N/A"
     },
     "MCC Cosmetics": {
@@ -1634,11 +1634,11 @@
         "Air Moisture Cream Foundation": "N/A"
     },
     "Natio": {
-        "Flawless Foundation": 4.94,
-        "Tinted Moisturiser SPF 20": 7.9,
-        "Pure Mineral Foundation": 5.68,
+        "Flawless Foundation": 4.9,
+        "Tinted Moisturiser SPF 20": 7.72,
+        "Pure Mineral Foundation": 5.67,
         "Mineral Crystal Loose Foundation": "N/A",
-        "Pressed Powder": 6.78,
+        "Pressed Powder": 6.66,
         "Clever Stick": 4.16,
         "Tinted Moisturiser SPF 50+": 6.71,
         "Pure Mineral Skin Perfecting BB Cream": "N/A",
@@ -1649,17 +1649,17 @@
         "Pure Mineral Concealer": 6.66
     },
     "Cover FX": {
-        "Power Play Foundation": 8.51,
+        "Power Play Foundation": 8.25,
         "CC Cream Time Release Tinted Treatment": "N/A",
         "Total Cover Cream Foundation": 7.38,
         "Power Play Concealer": "N/A",
-        "Pressed Mineral Foundation": 6.17,
+        "Pressed Mineral Foundation": 6.12,
         "Natural Finish Oil Free Foundation": 8.59,
         "BB Gel Mattifying Anti-Blemish Treatment": 9.12,
         "Cover Click Foundation and Concealer": "N/A",
         "Correct Click Cream Corrector": "N/A",
         "Custom Cover Drops (Reformulated 2019)": "N/A",
-        "Cream Concealer": 8.47,
+        "Cream Concealer": 8.33,
         "Blotting Powder": 6.52,
         "Perfect Pencil Concealer": "N/A"
     },
@@ -1687,8 +1687,8 @@
         "Liquid Mineral Foundation": "N/A"
     },
     "Clarins": {
-        "Everlasting Foundation +": 7.58,
-        "Skin Illusion Natural Radiance Foundation": 8.03,
+        "Everlasting Foundation +": 7.39,
+        "Skin Illusion Natural Radiance Foundation": 7.93,
         "Instant Concealer": "N/A",
         "Pore Perfecting Matifying Foundation": "N/A",
         "Skin Illusion Loose Powder Foundation": 7.78,
@@ -1715,7 +1715,7 @@
         "Airbrush Away Sheer Finish Foundation": "N/A",
         "Match Made Custom Blend Foundation Drops": "N/A",
         "Stay Perfect Foundation": "N/A",
-        "Lift & Luminate Triple Action Serum Foundation": 8.17,
+        "Lift & Luminate Triple Action Serum Foundation": 8.06,
         "Beautifully Matte Foundation": 8.73,
         "Essentially Natural Foundation": "N/A",
         "Stay Perfect Superlight Foundation": "N/A",
@@ -1777,7 +1777,7 @@
     },
     "Catrice": {
         "Liquid Camouflage High Coverage Concealer": "N/A",
-        "HD Liquid Coverage Foundation": 7.56,
+        "HD Liquid Coverage Foundation": 7.38,
         "HD Liquid Radiance Foundation": "N/A",
         "Photo Finish 18h Liquid Foundation": "N/A",
         "All Matt Plus Shine Control Make Up": "N/A",
@@ -1791,8 +1791,8 @@
         "One Drop Coverage Weightless Concealer": "N/A"
     },
     "The Ordinary": {
-        "Coverage Foundation": 9.05,
-        "Serum Foundation": 8.84
+        "Coverage Foundation": 8.68,
+        "Serum Foundation": 8.7
     },
     "Huda Beauty": {
         "FauxFilter Foundation": "N/A",
@@ -1839,13 +1839,13 @@
         "UV Liquid Foundation R": "N/A"
     },
     "Beauty Blender": {
-        "Bounce Foundation": 7.63,
+        "Bounce Foundation": 7.34,
         "Bounce Airbrush Liquid Whip Concealer": "N/A"
     },
     "P\u00dcR": {
-        "4-in-1 Foundation Stick": 5.81,
+        "4-in-1 Foundation Stick": 5.67,
         "4-in-1 Love Your Selfie Longwear Foundation and Concealer": "N/A",
-        "4-in-1 Liquid Foundation": 9.66,
+        "4-in-1 Liquid Foundation": 9.62,
         "Liquid Veil 4-in-1 Spray Foundation": "N/A",
         "Bare It All 12-Hour 4-in-1 Skin-Perfecting Foundation": "N/A",
         "4-in-1 Pressed Mineral Makeup Foundation Split Pan": "N/A",
@@ -1863,7 +1863,7 @@
     "Max Factor": {
         "MasterTouch All Day Concealer": "N/A",
         "Ageless Elixir Miracle Foundation": "N/A",
-        "Lasting Performance Foundation": 7.88,
+        "Lasting Performance Foundation": 7.85,
         "Pan Stik Foundation": "N/A",
         "Miracle Touch Skin Smoothing Foundation": "N/A",
         "Facefinity All Day Flawless 3 in 1 Foundation": "N/A",
@@ -1885,9 +1885,9 @@
     },
     "Garnier": {
         "Ambre Solaire BB Cream": "N/A",
-        "BB Cream Miracle Skin Perfector Anti-Ageing": 8.13,
+        "BB Cream Miracle Skin Perfector Anti-Ageing": 7.97,
         "BB Cream Miracle Skin Perfector Sensitive Skin": "N/A",
-        "BB Cream Miracle Skin Perfector Combination To Oily Skin": 8.06,
+        "BB Cream Miracle Skin Perfector Combination To Oily Skin": 7.92,
         "BB Cream Miracle Skin Perfector Oil-Free": "N/A",
         "SkinActive BB Cream": 7.1,
         "BB Cream Original/Classic Miracle Skin Perfector": "N/A",
@@ -1897,10 +1897,10 @@
         "SkinActive Clearly Brighter Anti-Dark Circle Eye Roller": "N/A"
     },
     "Wet 'n' Wild": {
-        "MegaCushion Foundation": 7.77,
+        "MegaCushion Foundation": 7.43,
         "PhotoFocus Concealer": "N/A",
-        "CoverAll Cream Foundation": 8.91,
-        "PhotoFocus Foundation": 8.02,
+        "CoverAll Cream Foundation": 8.87,
+        "PhotoFocus Foundation": 7.84,
         "CoverAll Coverstick": 5.67,
         "Intuitive Blend Shade-Adjusting Foundation + Primer": 7.31,
         "PhotoFocus Stick Foundation": 8.68,
@@ -1921,7 +1921,7 @@
         "fond de teint fluide": "N/A",
         "Teint Fidelity Emotions Resist": "N/A",
         "Teint Osmose Foundation": "N/A",
-        "b.b. cream": 7.62,
+        "b.b. cream": 7.59,
         "Teint Fidelity 24H": "N/A",
         "6 in 1 Tinted Cream": "N/A",
         "Teint Lumi\u00e8re cin\u00e9ma": "N/A"
@@ -1943,7 +1943,7 @@
         "Naked Skin Collection Color Correcting Fluid": "N/A"
     },
     "Anew": {
-        "Anew Age-Transforming Foundation": 9.98
+        "Anew Age-Transforming Foundation": 9.69
     },
     "Bruna Tavares": {
         "Pausa Para Feminices Base Matte": "N/A",
@@ -2001,10 +2001,10 @@
         "Les Voilettes Translucent Compact Powder Mattifying Veil": "N/A"
     },
     "Too Faced": {
-        "Born This Way Naturally Radiant Concealer": 8.2,
-        "Born This Way Super Coverage Multi-Use Sculpting Concealer": 8.27,
-        "Born This Way Foundation": 8.56,
-        "Dew You Foundation Full Coverage Fresh Glow Foundation": 8.79,
+        "Born This Way Naturally Radiant Concealer": 7.91,
+        "Born This Way Super Coverage Multi-Use Sculpting Concealer": 8.16,
+        "Born This Way Foundation": 8.55,
+        "Dew You Foundation Full Coverage Fresh Glow Foundation": 8.63,
         "Peach Perfect Comfort Matte Foundation": 8.77,
         "Born This Way Powder Foundation / Pressed Complexion Powder": "N/A",
         "Cocoa Powder Foundation": 7.52,
@@ -2012,16 +2012,16 @@
     },
     "Bissu": {
         "Compact Powder Makeup": "N/A",
-        "Long Wear Foundation": 4.66,
-        "Concealer": 8.32,
+        "Long Wear Foundation": 4.58,
+        "Concealer": 8.16,
         "Professional Bronzer": "N/A",
         "Concealer Stick": "N/A"
     },
     "Fenty Beauty": {
-        "Pro Filt'r Soft Matte Longwear Foundation": 8.15,
+        "Pro Filt'r Soft Matte Longwear Foundation": 7.81,
         "Match Stix Trios": "N/A",
-        "Pro Filt'r Instant Retouch Concealer": 8.22,
-        "Pro Filt'r Hydrating Longwear Foundation": 8.42,
+        "Pro Filt'r Instant Retouch Concealer": 8.21,
+        "Pro Filt'r Hydrating Longwear Foundation": 8.23,
         "Matte Skinstick": 8.46
     },
     "Alergoshop": {
@@ -2051,8 +2051,8 @@
         "Mineral Brush Foundation": "N/A"
     },
     "BeautyCounter": {
-        "Touchup Skin Concealer Pen": 7.95,
-        "Tint Skin Hydrating Foundation": 8.46
+        "Touchup Skin Concealer Pen": 7.75,
+        "Tint Skin Hydrating Foundation": 8.32
     },
     "Marie Dalgar": {
         "Stamp Up Matte Finish Air Cushion": "N/A",
@@ -2086,10 +2086,10 @@
         "Concealing Pen": "N/A"
     },
     "Juice Beauty": {
-        "SPF 30 Tinted Mineral Moisturizer": 6.71,
+        "SPF 30 Tinted Mineral Moisturizer": 6.66,
         "Phyto-Pigments Flawless Serum Foundation": "N/A",
         "Phyto-Pigments Youth Cream Compact Foundation": "N/A",
-        "Stem Cellular CC Cream": 6.93,
+        "Stem Cellular CC Cream": 6.92,
         "Phyto-Pigments Light-Diffusing Dust": "N/A",
         "Phyto-Pigments Perfecting Concealer": 6.03
     },
@@ -2118,7 +2118,7 @@
         "Purely Mineral Makeup": "N/A",
         "Timeless Illuminating Makeup": "N/A",
         "Sheer Defense Tinted Moisturizer": 8.05,
-        "CC Cream": 8.48,
+        "CC Cream": 8.17,
         "Expert Finish Makeup": "N/A",
         "Purely Mineral Pressed Makeup": "N/A",
         "Dual Action Concealer": "N/A"
@@ -2143,8 +2143,8 @@
         "Perfect Teint Concealer": "N/A"
     },
     "Korres": {
-        "Wild Rose Compact Powder": 5.04,
-        "Wild Rose Brightening & Flawless Finish Compact Powder": 6.93,
+        "Wild Rose Compact Powder": 4.91,
+        "Wild Rose Brightening & Flawless Finish Compact Powder": 6.83,
         "Wild Rose Liquid Foundation SPF20": "N/A",
         "Watermelon Lightweight Tinted Moisturiser": "N/A",
         "Ginger and Vitamins Lightweight Foundation SPF 10": "N/A",
@@ -2202,15 +2202,15 @@
         "Anti-Aging Hydra Tint": 10.0
     },
     "Milk Makeup": {
-        "Sunshine Skin Tint SPF 30": 9.73,
-        "Blur Liquid Matte Foundation": 7.73,
+        "Sunshine Skin Tint SPF 30": 9.61,
+        "Blur Liquid Matte Foundation": 7.63,
         "Flex Concealer": "N/A",
         "Flex Foundation Stick": "N/A"
     },
     "Rimmel": {
-        "Match Perfection Foundation": 7.04,
+        "Match Perfection Foundation": 6.7,
         "Lasting Finish 25HR Foundation with Comfort Serum": "N/A",
-        "Lasting Finish Breathable Foundation": 8.42,
+        "Lasting Finish Breathable Foundation": 8.38,
         "Match Perfection Concealer": "N/A",
         "Lasting Finish Breathable Concealer": "N/A",
         "Wake Me Up Foundation": "N/A",
@@ -2237,7 +2237,7 @@
         "Youth Glow Foundation": "N/A"
     },
     "Laura Mercier": {
-        "Silk Creme Oil Free Photo Edition Foundation": 8.12,
+        "Silk Creme Oil Free Photo Edition Foundation": 7.9,
         "Flawless Fusion Ultra-Longwear Foundation": "N/A",
         "Flawless Fusion Ultra-Longwear Concealer": "N/A",
         "Translucent Loose Setting Powder": 6.63,
@@ -2252,10 +2252,10 @@
         "Secret Concealer": "N/A"
     },
     "BECCA": {
-        "Ultimate Coverage 24 Hour Foundation": 8.7,
+        "Ultimate Coverage 24 Hour Foundation": 8.51,
         "Ultimate Coverage Concealing Cr\u00e8me": 10.0,
-        "Ever-Matte Shine Proof Foundation": 4.79,
-        "Aqua Luminous Perfecting Foundation": 7.81,
+        "Ever-Matte Shine Proof Foundation": 4.75,
+        "Aqua Luminous Perfecting Foundation": 7.71,
         "Skin Love Weightless Blur Foundation": 8.46,
         "Backlight Targeted Colour Corrector": 6.76,
         "Aqua Luminous Perfecting Concealer": 7.64,
@@ -2269,10 +2269,10 @@
         "#MSBB Who's That Glow Girl? Glow Cushion": "N/A"
     },
     "Jouer Cosmetics": {
-        "Luminizing Moisture Tint": 7.74,
+        "Luminizing Moisture Tint": 7.31,
         "Essential High Coverage Cr\u00e8me Foundation": "N/A",
         "Essential High Coverage Liquid Concealer": "N/A",
-        "Matte Moisture Tint": 7.3,
+        "Matte Moisture Tint": 7.14,
         "Age-Repairing Perfector": "N/A",
         "Mineral Face Powder": "N/A"
     },
@@ -2288,7 +2288,7 @@
     "Vichy": {
         "Dermablend Corrective Compact Cream Foundation": "N/A",
         "Normaderm Teint Foundation": "N/A",
-        "Dermablend 3D Correction Foundation": 6.61,
+        "Dermablend 3D Correction Foundation": 6.6,
         "Dermablend Ultra Corrective Cream Stick": "N/A",
         "Dermablend Covermatte Compact Powder Foundation": "N/A",
         "Dermablend Corrective Fluid Foundation": 8.12,
@@ -2435,9 +2435,9 @@
     },
     "Amazing Cosmetics": {
         "Amazing Concealer Illuminate": "N/A",
-        "Velvet Mineral Pressed Powder": 4.81,
+        "Velvet Mineral Pressed Powder": 4.74,
         "Amazing Concealer Liquid Foundation": "N/A",
-        "Amazing Concealer Corrector": 7.02,
+        "Amazing Concealer Corrector": 6.91,
         "Amazing Concealer Hydrate": 6.61,
         "Amazing Concealer": 7.02,
         "Perfection Stick Cover And Contour On The Go": "N/A",
@@ -2446,7 +2446,7 @@
     },
     "Dailus": {
         "Pro Corretivo HD": "N/A",
-        "Corretivo": 6.58,
+        "Corretivo": 6.38,
         "Base L\u00edquida Tonalizante": "N/A",
         "Base Cobertura Ultra": "N/A",
         "Corretivo Soft": "N/A",
@@ -2512,7 +2512,7 @@
         "Magic Girls Plus BB Cream": "N/A"
     },
     "HONEST BEAUTY": {
-        "Everything Cream Foundation": 6.78
+        "Everything Cream Foundation": 6.59
     },
     "Biotherm": {
         "Sense Comfort Hydra Comfort Foundation SPF15": "N/A",
@@ -2575,8 +2575,8 @@
         "Face Powder": "N/A"
     },
     "BeYu": {
-        "Light Reflecting Foundation": 7.06,
-        "Catwalk Compact Powder": 4.15,
+        "Light Reflecting Foundation": 6.82,
+        "Catwalk Compact Powder": 4.13,
         "Velvet Mat Foundation": "N/A",
         "Nutri Power Foundation": "N/A",
         "Light Reflecting Concealer": 6.38,
@@ -2602,7 +2602,7 @@
         "2 In 1 Cover Up Concealer & Foundation Stick": "N/A"
     },
     "Antonym": {
-        "Baked Foundation": 6.88,
+        "Baked Foundation": 6.75,
         "Skin Esteem Organic Liquid Foundation": "N/A"
     },
     "Alix Avien": {
@@ -2670,8 +2670,8 @@
     "CoverGirl": {
         "CoverGirl + Olay Advanced Radiance Age-Defying Liquid Makeup": "N/A",
         "Clean Liquid Makeup Normal Skin": "N/A",
-        "TruBlend Liquid Makeup": 6.35,
-        "Clean Matte BB Cream": 7.42,
+        "TruBlend Liquid Makeup": 6.31,
+        "Clean Matte BB Cream": 7.3,
         "Smoothers Aquasmooth Compact Foundation": 7.05,
         "Ready Set Gorgeous Foundation": 7.31,
         "Smoothers All-Day Hydrating Makeup": "N/A",
@@ -2721,7 +2721,7 @@
         "Zero Defaut Color Correcting Concealer": "N/A"
     },
     "Alison Raffaele": {
-        "Reality Base": 9.04
+        "Reality Base": 8.76
     },
     "Faces Cosmetics": {
         "Dual Powder Foundation": "N/A",
@@ -2789,10 +2789,10 @@
         "Age Miracle Cell ReGEN Anti-Aging Expert BB+ Cream": "N/A"
     },
     "Neutrogena": {
-        "Hydro Boost Hydrating Tint": 7.93,
-        "SkinClearing Liquid Makeup": 7.46,
-        "Healthy Skin Pressed Powder": 6.25,
-        "Healthy Skin Liquid Makeup": 8.93,
+        "Hydro Boost Hydrating Tint": 7.62,
+        "SkinClearing Liquid Makeup": 7.35,
+        "Healthy Skin Pressed Powder": 6.21,
+        "Healthy Skin Liquid Makeup": 8.75,
         "Shine Control Liquid Makeup": 8.14,
         "Mineral Sheers Loose Powder Foundation": 5.23,
         "SkinClearing Mineral Powder": 6.43,
@@ -2841,13 +2841,13 @@
         "Super Plush Powder Foundation": "N/A"
     },
     "Supergoop!": {
-        "Daily Correct CC Cream": 7.1
+        "Daily Correct CC Cream": 6.85
     },
     "Lavera": {
-        "Natural Liquid Foundation": 7.56,
+        "Natural Liquid Foundation": 7.22,
         "2-in-1 Compact Foundation": "N/A",
         "Nude Effect Natural Makeup Fluid": "N/A",
-        "Natural Concealer": 7.54,
+        "Natural Concealer": 7.4,
         "Soft Liquid Foundation": "N/A",
         "Natural Mousse Make-Up": "N/A"
     },
@@ -2899,7 +2899,7 @@
     },
     "L.A. Colors": {
         "Liquid Makeup": "N/A",
-        "Truly Matte Foundation": 5.28,
+        "Truly Matte Foundation": 5.17,
         "Mineral Pressed Powder": "N/A",
         "Radiant Liquid Makeup": "N/A",
         "Cover Up! Pro Concealer Stick": 6.58,
@@ -2919,7 +2919,7 @@
         "Absolute Finish Foundation": "N/A"
     },
     "Apoliva": {
-        "Foundation": 7.73
+        "Foundation": 7.42
     },
     "Designer Brands Cosmetics (DB Cosmetics)": {
         "Barely Nude Mineral Foundation": "N/A",
@@ -2936,9 +2936,9 @@
         "Flawless All in One Foundation Stick": "N/A"
     },
     "Mineral Fusion": {
-        "Liquid Foundation": 7.32,
-        "Pressed Powder Foundation": 6.78,
-        "Liquid Concealer": 6.99,
+        "Liquid Foundation": 7.2,
+        "Pressed Powder Foundation": 6.69,
+        "Liquid Concealer": 6.9,
         "Concealer Duo": 6.75,
         "Sheer Tint Foundation": "N/A"
     },
@@ -2959,7 +2959,7 @@
         "Zen Foundation": "N/A"
     },
     "Napoleon Perdis": {
-        "Auto Pilot BBB Cream": 8.84,
+        "Auto Pilot BBB Cream": 8.4,
         "Foundation Stick": "N/A",
         "China Doll Foundation": "N/A",
         "Camera Finish Powder Foundation": "N/A",
@@ -2976,7 +2976,7 @@
         "Camera Finish Liquid Foundation": "N/A"
     },
     "Marc Jacobs Beauty": {
-        "Perfection Powder Featherweight Foundation": 7.53,
+        "Perfection Powder Featherweight Foundation": 7.43,
         "Shameless Youthful-Look 24H Foundation SPF 25": "N/A",
         "Re(Marc)able Full Cover Foundation Concentrate": 8.61,
         "Marvelous Mousse Transformative Foundation": 8.23,
@@ -2987,7 +2987,7 @@
         "Instamarc Light-Filtering Contour Powder": "N/A"
     },
     "ColourPop": {
-        "No Filter Concealer": 8.28,
+        "No Filter Concealer": 8.04,
         "No Filter Foundation": "N/A",
         "No Filter Sheer Pressed Powder": "N/A",
         "Pretty Fresh Hyaluronic Acid Tinted Moisturizer": "N/A",
@@ -3009,9 +3009,9 @@
         "Smooth Liquid Camo Concealer": 8.15
     },
     "Morphe": {
-        "Fluidity Full Coverage Foundation": 8.78,
-        "Fluidity Full Coverage Concealer": 7.94,
-        "Filter Effect Finishing Powder": 6.9
+        "Fluidity Full Coverage Foundation": 8.42,
+        "Fluidity Full Coverage Concealer": 7.76,
+        "Filter Effect Finishing Powder": 6.86
     },
     "Collection Cosmetics (Collection 2000)": {
         "Lasting Perfection Ultimate Wear Concealer": "N/A",
@@ -3036,15 +3036,15 @@
         "Wonderlight Serum Make Up": "N/A",
         "Perfect Coverage Concealer": "N/A",
         "Natural Fix All Day Matt Make Up": "N/A",
-        "Illuminator": 6.68,
+        "Illuminator": 6.62,
         "Air Finish Longlasting Make Up": "N/A",
         "Lumi-Lift Illuminating Lifting Make Up": "N/A"
     },
     "Physicians Formula": {
-        "Youthful Wear Cosmeceutical Youth-Boosting Foundation & Brush": 8.18,
-        "The Healthy Foundation": 8.0,
-        "Nude Wear Touch of Glow Foundation": 8.96,
-        "Organic Wear CC Cream": 7.38,
+        "Youthful Wear Cosmeceutical Youth-Boosting Foundation & Brush": 7.84,
+        "The Healthy Foundation": 7.88,
+        "Nude Wear Touch of Glow Foundation": 8.92,
+        "Organic Wear CC Cream": 7.28,
         "Mineral Wear Talc-Free Mineral Loose Powder SPF 16": 5.81,
         "Mineral Wear Talc-Free Mineral Liquid Foundation": 6.4,
         "Organic Wear Pressed Powder": 6.1,
@@ -3093,9 +3093,9 @@
         "Take Cover Concealer Crayon": "N/A"
     },
     "BH Cosmetics": {
-        "BH Liquid Foundation / Naturally Flawless Liquid Foundation": 6.17,
+        "BH Liquid Foundation / Naturally Flawless Liquid Foundation": 6.03,
         "Studio Pro Matte Finish Pressed Powder": "N/A",
-        "Studio Pro Total Coverage Concealer": 7.74
+        "Studio Pro Total Coverage Concealer": 7.7
     },
     "Make B": {
         "Color Adapt Liquid Concealer / Color Correct Liquid Concealer": "N/A",
@@ -3110,9 +3110,9 @@
         "Propolis Ampule Foundation": "N/A"
     },
     "Ben Nye": {
-        "Luxury Powder": 3.39,
-        "Creme Foundation": 8.34,
-        "Matte HD Foundation": 6.29,
+        "Luxury Powder": 3.34,
+        "Creme Foundation": 8.16,
+        "Matte HD Foundation": 6.28,
         "MediaPro HD Sheer Foundation": "N/A",
         "Starluxe Foundation": "N/A",
         "Color Cake Foundation": 6.91
@@ -3136,9 +3136,9 @@
         "Umbrian Clay Freshface Foundation SPF20": "N/A"
     },
     "Glossier": {
-        "Stretch Concealer": 7.42,
-        "Perfecting Skin Tint": 7.41,
-        "Wowder": 5.25
+        "Stretch Concealer": 7.19,
+        "Perfecting Skin Tint": 7.24,
+        "Wowder": 5.21
     },
     "Chantecaille": {
         "Just Skin Tinted Moisturizer": "N/A",
@@ -3185,7 +3185,7 @@
         "Embelliseur Skin Enhancing Foundation": "N/A"
     },
     "Kjaer Weis": {
-        "Cream Foundation": 7.14
+        "Cream Foundation": 7.07
     },
     "Note Cosmetics": {
         "Luminous Silk Compact Powder": "N/A",
@@ -3202,7 +3202,7 @@
         "BB Concealer": "N/A"
     },
     "Bioderma": {
-        "Photoderm Max Tinted Cream": 7.62,
+        "Photoderm Max Tinted Cream": 7.52,
         "Photoderm Nude Touch": "N/A",
         "Sensibio AR BB Cream": "N/A",
         "Photoderm Max Tinted Aquafluid": "N/A",
@@ -3265,7 +3265,7 @@
     "Zao Organic Makeup": {
         "Organic Silk Foundation (Liquid)": "N/A",
         "Organic Mineral Silk Foundation (Loose Powder)": "N/A",
-        "Organic Concealer": 6.36
+        "Organic Concealer": 6.32
     },
     "Quem disse Berenice?": {
         "Base Supermate Matte Liquid Foundation": "N/A",
@@ -3283,16 +3283,16 @@
     },
     "TheBalm": {
         "Even Steven Whipped Foundation": "N/A",
-        "Time Balm Concealer": 6.79,
+        "Time Balm Concealer": 6.72,
         "Photobalm Powder Foundation": "N/A",
-        "TimeBalm Foundation": 6.52,
+        "TimeBalm Foundation": 6.48,
         "Balm Shelter Tinted Moisturizer": 7.55
     },
     "PIXI Beauty": {
         "H2O SkinTint": "N/A",
         "Flawless Vitamin Veil": "N/A",
         "Correction Concentrate Concealer": "N/A",
-        "Beauty Balm": 7.21,
+        "Beauty Balm": 7.03,
         "Flawless Beauty Fluid": 6.07,
         "Illuminating Tint & Conceal": "N/A",
         "Flawless Beauty Powder": "N/A",
@@ -3307,11 +3307,11 @@
         "Fond de teint correcteur fluide": "N/A"
     },
     "Make Up For Ever": {
-        "Water Blend Face & Body Foundation": 6.71,
-        "Ultra HD Invisible Cover Foundation": 8.29,
+        "Water Blend Face & Body Foundation": 6.65,
+        "Ultra HD Invisible Cover Foundation": 8.22,
         "Lift Concealer": "N/A",
         "Pan Stick Foundation": 6.48,
-        "HD Foundation": 8.29,
+        "HD Foundation": 8.02,
         "Matte Velvet Skin Liquid Full Coverage Foundation": "N/A",
         "Full Cover Extreme Camouflage Cream": "N/A",
         "Duo Mat Powder Foundation": 6.65,
@@ -3333,22 +3333,22 @@
         "Ultra HD Pressed Powder": "N/A"
     },
     "Erborian": {
-        "BB Creme Au Ginseng": 7.78,
+        "BB Creme Au Ginseng": 7.47,
         "CC Cr\u00e8me High Definition Radiance Face Cream Skin Perfector": "N/A",
         "Touch Pen Complexion Sculptor and Concealer": "N/A"
     },
     "Hourglass": {
-        "Vanish Seamless Finish Foundation Stick": 8.33,
-        "Illusion Hyaluronic Skin Tint": 9.43,
-        "Hidden Corrective Concealer": 7.05,
-        "Veil Fluid Makeup": 8.77,
+        "Vanish Seamless Finish Foundation Stick": 8.13,
+        "Illusion Hyaluronic Skin Tint": 9.25,
+        "Hidden Corrective Concealer": 7.01,
+        "Veil Fluid Makeup": 8.66,
         "Immaculate Liquid Powder Foundation": 7.41,
         "Vanish Seamless Finish Liquid Foundation": "N/A",
         "Vanish Airbrush Concealer": "N/A",
         "Veil Retouching Fluid": "N/A"
     },
     "Missha": {
-        "M Perfect Cover BB Cream": 6.95,
+        "M Perfect Cover BB Cream": 6.76,
         "Misa Cho Bo Yang BB Cream": "N/A",
         "M Magic Cushion": "N/A",
         "Glow Tension Pact": "N/A",
@@ -3402,11 +3402,11 @@
         "Moist Foundation": "N/A"
     },
     "Kosas": {
-        "Tinted Face Oil Foundation": 6.24,
+        "Tinted Face Oil Foundation": 6.11,
         "Revealer Concealer": "N/A"
     },
     "Origins": {
-        "Silk Screen Refining Powder": 6.71,
+        "Silk Screen Refining Powder": 6.61,
         "Stay Tuned Balancing Foundation": "N/A",
         "Plantscription SPF 15 Anti-Aging Longwear Foundation": "N/A",
         "Plantscription Anti-Aging Longwear Concealer": "N/A"
@@ -3437,7 +3437,7 @@
     "Payot": {
         "Base Liquida Mate HD": "N/A",
         "Lumimat Base / Lumimat Foundation": "N/A",
-        "P\u00f3 Compacto": 6.18,
+        "P\u00f3 Compacto": 6.14,
         "Boca Rosa Beauty Perfect Base Mate": "N/A",
         "My Payot BB Cream Blur": "N/A"
     },
@@ -3461,10 +3461,10 @@
         "Liquid Foundation": "N/A"
     },
     "Josie Maran": {
-        "Vibrancy Argan Oil Foundation Fluid": 9.09,
-        "Argan Matchmaker Serum Foundation": 8.06,
+        "Vibrancy Argan Oil Foundation Fluid": 8.85,
+        "Argan Matchmaker Serum Foundation": 7.96,
         "Vibrancy Argan Oil Full Coverage Concealer Fluid": "N/A",
-        "Whipped Argan Oil Beauty Butter": 8.69,
+        "Whipped Argan Oil Beauty Butter": 8.55,
         "Argan Creamy Concealer Crayon": 7.68
     },
     "Everyday Minerals": {
@@ -3479,8 +3479,8 @@
         "Close-Up Smoothing Pressed Powder": "N/A"
     },
     "Vapour Organic Beauty": {
-        "Atmosphere Soft Focus Foundation": 7.17,
-        "Illusionist Concealer": 6.97
+        "Atmosphere Soft Focus Foundation": 7.04,
+        "Illusionist Concealer": 6.9
     },
     "CYO Cosmetics": {
         "Lifeproof Long Lasting Foundation": "N/A",
@@ -3493,7 +3493,7 @@
     "Sappho": {
         "New Paradigm Liquid Foundation": "N/A",
         "Essential Foundation": "N/A",
-        "CC Cream": 6.47
+        "CC Cream": 6.43
     },
     "MakeOver": {
         "Skin Foundation": "N/A",
@@ -3596,7 +3596,7 @@
         "Legend Lasting Wear Foundation": "N/A",
         "Hide Out Full Cover Concealer": "N/A",
         "It's A Match Made In Heaven Heavenly Matte Foundation": "N/A",
-        "HD Foundation": 7.85,
+        "HD Foundation": 7.57,
         "Face Fantasy Matte Finish Foundation": "N/A",
         "Cover It! Colour Corrective Concealer": "N/A",
         "Catwalk Concealer": "N/A",
@@ -3639,18 +3639,18 @@
     },
     "Olay": {
         "Complete Care Touch of Foundation / Complete Day Cream with Foundation": "N/A",
-        "Total Effects CC Cream Tone Correcting Moisturiser": 7.99,
+        "Total Effects CC Cream Tone Correcting Moisturiser": 7.87,
         "Fresh Effects BB Creme": "N/A",
-        "Total Effects Pore Minimising CC Cream": 7.67
+        "Total Effects Pore Minimising CC Cream": 7.53
     },
     "Stila": {
         "Aqua Glow Serum Foundation": 10.0,
-        "Sheer Color Tinted Moisturizer": 8.16,
-        "Illuminating Powder Foundation": 6.93,
-        "Natural Finish Oil Free Makeup": 8.01,
+        "Sheer Color Tinted Moisturizer": 8.02,
+        "Illuminating Powder Foundation": 6.9,
+        "Natural Finish Oil Free Makeup": 7.86,
         "Perfectly Poreless Putty Perfector Foundation": 10.0,
         "Sheer Pressed Powder": 7.3,
-        "Illuminating Liquid Foundation": 7.59,
+        "Illuminating Liquid Foundation": 7.45,
         "Perfect & Correct Foundation": 7.77,
         "Stay All Day Foundation & Concealer": 8.09,
         "Stay All Day Concealer": 7.12,
@@ -3671,19 +3671,19 @@
         "Original Ultimate Foundation": "N/A"
     },
     "Miessence": {
-        "Mineral Foundation Powder": 3.44,
-        "Translucent Foundation": 6.32
+        "Mineral Foundation Powder": 3.4,
+        "Translucent Foundation": 6.3
     },
     "Gressa": {
         "Minimalist Corrective Serum Foundation": "N/A"
     },
     "Anna Sui": {
-        "Liquid Foundation": 7.75,
-        "Powder Foundation": 6.61,
+        "Liquid Foundation": 7.61,
+        "Powder Foundation": 6.32,
         "Loose Face Powder": "N/A"
     },
     "Aveeno": {
-        "Positively Radiant Tinted Moisturizer": 7.92,
+        "Positively Radiant Tinted Moisturizer": 7.74,
         "Positively Ageless Correcting Tinted Moisturizer": "N/A"
     },
     "Givenchy": {
@@ -3762,7 +3762,7 @@
     },
     "The Body Shop": {
         "Fresh Nude Foundation": "N/A",
-        "All-In-One Face Base": 5.35,
+        "All-In-One Face Base": 5.28,
         "Matte Clay Skin Clarifying Foundation": "N/A",
         "Extra Virgin Minerals Cream Compact Foundation": "N/A",
         "Oil-Free Balancing Foundation": "N/A",
@@ -3793,7 +3793,7 @@
         "Two-Way Cake with Milk Moisturisers": "N/A",
         "Two-Way Cake with Papaya Extract": "N/A",
         "Cake Foundation": "N/A",
-        "Loose Powder": 4.98,
+        "Loose Powder": 4.9,
         "Perfect Stick with Tea-Tree Oil": "N/A",
         "Perfect Stick": 6.91
     },
@@ -3802,13 +3802,13 @@
         "Matitude": "N/A"
     },
     "Palladio": {
-        "Wet and Dry Foundation": 6.21,
+        "Wet and Dry Foundation": 6.01,
         "Under Eyes Disguise Full-Coverage Concealer": "N/A",
         "Powder Finish Foundation": "N/A"
     },
     "Aveda": {
-        "Inner Light Mineral Tinted Moisture SPF 15": 7.94,
-        "Inner Light Mineral Dual Foundation": 6.32,
+        "Inner Light Mineral Tinted Moisture SPF 15": 7.82,
+        "Inner Light Mineral Dual Foundation": 6.25,
         "Inner Light Mineral Pressed Powder": "N/A"
     },
     "Prescriptives": {
@@ -3823,15 +3823,15 @@
         "Flawless Skin Total Protection Concealer": "N/A"
     },
     "Mineral Hygienics": {
-        "Mineral Foundation": 4.09
+        "Mineral Foundation": 4.02
     },
     "Exuviance": {
-        "CoverBlend Concealing Treatment Makeup": 7.94,
+        "CoverBlend Concealing Treatment Makeup": 7.68,
         "Skin Caring Foundation SPF 15": "N/A",
         "CoverBlend Multi-Function Concealer": "N/A"
     },
     "Sally Hansen": {
-        "Airbrush Legs Makeup": 7.42,
+        "Airbrush Legs Makeup": 7.01,
         "Your Skin Makeup Foundation": "N/A",
         "Luminous Matte Pressed Powder": "N/A"
     },
@@ -3840,16 +3840,16 @@
         "Ultra Foundation": "N/A"
     },
     "Temptu": {
-        "Airpod Foundation": 6.15,
+        "Airpod Foundation": 5.86,
         "Pro Silicone-Based Foundation": "N/A",
-        "S/B Foundation": 6.15,
+        "S/B Foundation": 6.1,
         "Dura Skin": "N/A",
         "Perfect Canvas Hydra Lock Airbrush Foundation": "N/A",
         "Perfect Canvas Hydra Lock Airpod Foundation": "N/A",
         "Retouch Foundation": "N/A"
     },
     "Yes Cosmetics": {
-        "Base HD": 6.02,
+        "Base HD": 5.81,
         "Po Compacto": 6.05,
         "Base Liquida HD": "N/A"
     },
@@ -3882,7 +3882,7 @@
     },
     "Bellapierre Cosmetics": {
         "Compact Mineral Foundation": "N/A",
-        "Mineral Foundation": 4.09,
+        "Mineral Foundation": 4.02,
         "BB Cream Derma Renew": "N/A"
     },
     "Monave": {
@@ -3941,10 +3941,10 @@
         "BB Cream Secret de Maquilleurs SPF20": "N/A"
     },
     "Ellis Faas": {
-        "Skin Veil Foundation": 7.93,
-        "Compact Powder": 7.04,
-        "Skin Veil Bottle": 7.93,
-        "Concealer": 9.0,
+        "Skin Veil Foundation": 7.64,
+        "Compact Powder": 6.87,
+        "Skin Veil Bottle": 7.89,
+        "Concealer": 8.7,
         "Skin Veil Foundation Pen": "N/A"
     },
     "Blosson Ville Cosmetics": {
@@ -3975,9 +3975,9 @@
         "Pimple Concealer": 7.93
     },
     "Elizabeth Arden": {
-        "Pure Finish Mineral Powder Foundation": 5.58,
-        "Flawless Finish Sponge-On Cream Makeup": 4.57,
-        "Pure Finish Mineral Tinted Moisturizer": 7.24,
+        "Pure Finish Mineral Powder Foundation": 5.45,
+        "Flawless Finish Sponge-On Cream Makeup": 4.46,
+        "Pure Finish Mineral Tinted Moisturizer": 7.2,
         "Flawless Finish Perfectly Nude Makeup": "N/A",
         "Flawless Finish Everyday Perfection Bouncy Makeup": "N/A",
         "Ceramide Skin Smoothing Loose Powder": 5.24,
@@ -3994,10 +3994,10 @@
         "Flawless Finish Correcting and Highlighting Perfector": "N/A"
     },
     "W3LL People": {
-        "Narcissist Foundation Stick": 7.87,
+        "Narcissist Foundation Stick": 7.74,
         "Altruist Foundation Powder": "N/A",
-        "Bio Correct Multi-Action Concealer": 8.83,
-        "Bio Tint Multi-Action Moisturizer": 9.35,
+        "Bio Correct Multi-Action Concealer": 8.79,
+        "Bio Tint Multi-Action Moisturizer": 9.28,
         "Bio Base Baked Foundation": "N/A"
     },
     "Mirenesse": {
@@ -4037,23 +4037,23 @@
     },
     "BYS": {
         "All Day Wear Foundation": "N/A",
-        "Creme Foundation": 6.5,
+        "Creme Foundation": 6.46,
         "Complete Coverage Foundation": "N/A",
-        "Matte Foundation": 7.76,
+        "Matte Foundation": 7.48,
         "Loose Powder with Puff": "N/A",
         "Minerals Naturale Foundation Compact": "N/A",
         "Two-Way Cake Foundation": "N/A",
         "Concealer Duo": "N/A",
         "Compact Powder": "N/A",
-        "Concealer": 7.36
+        "Concealer": 7.12
     },
     "Cargo": {
-        "Liquid Foundation": 6.08,
-        "OneBase Concealer + Foundation In One": 5.19,
+        "Liquid Foundation": 5.98,
+        "OneBase Concealer + Foundation In One": 5.1,
         "HD Picture Perfect Liquid Foundation": "N/A",
         "HD Picture Perfect Pressed Powder": "N/A",
         "HD Picture Perfect Concealer": "N/A",
-        "Tinted Moisturizer": 7.99,
+        "Tinted Moisturizer": 7.54,
         "Swimmables Longwear Foundation": "N/A"
     },
     "Spectraban T": {
@@ -4061,7 +4061,7 @@
         "Color Base Locao Fluid": "N/A"
     },
     "Kevyn Aucoin": {
-        "The Sensual Skin Enhancer Concealer and Foundation": 7.51,
+        "The Sensual Skin Enhancer Concealer and Foundation": 7.39,
         "The Etherealist Skin Illuminating Foundation": "N/A",
         "The Etherealist Super Natural Concealer": "N/A",
         "The Foundation Balm": "N/A",
@@ -4174,7 +4174,7 @@
         "Aquarela Base Liquida FPS8": "N/A",
         "Aquarela Po Compacto": "N/A",
         "Faces Base Extra Leve FPS8": "N/A",
-        "Faces Po Compacto": 2.95,
+        "Faces Po Compacto": 2.94,
         "Aquarela Base 3 en 1 FPS12": "N/A",
         "Una Base em Po": 6.54,
         "Faces Base Liquida Matte FPS8": "N/A",
@@ -4293,9 +4293,9 @@
     },
     "Sei Bella": {
         "Loose Powder": "N/A",
-        "Mineral Foundation": 6.97,
+        "Mineral Foundation": 6.82,
         "Creme-to-Powder Foundation": "N/A",
-        "Pressed Powder": 6.58,
+        "Pressed Powder": 6.48,
         "Age-Defying Liquid Foundation": "N/A"
     },
     "Bella Aurora": {
@@ -4317,8 +4317,8 @@
         "Base Cremosa": "N/A"
     },
     "Living Nature": {
-        "Foundation": 7.33,
-        "Clear Lights Tinted Moisturiser": 7.34,
+        "Foundation": 7.14,
+        "Clear Lights Tinted Moisturiser": 7.22,
         "Luminous Pressed Powder": "N/A"
     },
     "Nicka K / NK Makeup": {
@@ -4342,7 +4342,7 @@
     "By Terry": {
         "Light-Expert Click Brush - Illuminating Flawless Foundation Brush": "N/A",
         "Eclat Opulent Nutri-Lifting Foundation": "N/A",
-        "Touch-Expert Advanced Multi-Corrective Concealer Brush": 9.35,
+        "Touch-Expert Advanced Multi-Corrective Concealer Brush": 9.31,
         "Terrybly Densiliss Concealer Anti-Wrinkle - Dark Circle - Eye Bag Serum Corrector": "N/A",
         "Terrybly Densiliss Anti-Wrinkle Serum Foundation": "N/A",
         "Sheer-Expert Perfecting Fluid Foundation": "N/A",
@@ -4401,21 +4401,21 @@
         "Finishing Powder": "N/A"
     },
     "Eminence Organics": {
-        "Tinted Moisturizer": 6.89,
+        "Tinted Moisturizer": 6.8,
         "Sun Defense Minerals": "N/A",
         "Antioxidant Mineral Foundation": "N/A"
     },
     "Trish McEvoy": {
-        "Even Skin Foundation": 5.0,
+        "Even Skin Foundation": 4.9,
         "Even Skin Mineral Powder Foundation SPF 15": "N/A",
         "Even Skin Treatment Foundation SPF 15": "N/A",
-        "Even Skin Portable Foundation": 5.28,
+        "Even Skin Portable Foundation": 5.25,
         "Beauty Balm Instant Solutions": 10.0,
         "Beauty Booster Tinted Moisturizer": 7.02
     },
     "Laura Geller": {
-        "Balance N Brighten Baked Color Correcting Foundation": 6.91,
-        "Phenomenal Foundation": 7.58,
+        "Balance N Brighten Baked Color Correcting Foundation": 6.7,
+        "Phenomenal Foundation": 7.46,
         "Baked Balance-n-Glow Illuminating Foundation": "N/A",
         "Baked Liquid Radiance Foundation": "N/A",
         "Take Cover Anti-Aging Foundation": "N/A",
@@ -4429,15 +4429,15 @@
         "Baked Radiance Cream Concealer": "N/A"
     },
     "Sonia Kashuk": {
-        "Perfecting Luminous Foundation": 8.72,
+        "Perfecting Luminous Foundation": 8.58,
         "Radiant Tinted Moisturizer SPF15": "N/A",
         "Soft Focus Satin Matte Foundation": "N/A",
-        "Undetectable Foundation Stick": 8.39
+        "Undetectable Foundation Stick": 8.28
     },
     "Lorac": {
-        "POREfection Foundation": 8.5,
+        "POREfection Foundation": 8.27,
         "Double Feature Concealer & Highlighter": "N/A",
-        "Breakthrough Performance Foundation": 5.67,
+        "Breakthrough Performance Foundation": 5.61,
         "POREfection Concealer": "N/A",
         "Natural Performance Foundation": 6.24,
         "Sheer POREfection Foundation": "N/A",
@@ -4554,7 +4554,7 @@
         "Bronzing Powder": "N/A"
     },
     "Coloressence": {
-        "HD Foundation": 5.61,
+        "HD Foundation": 5.43,
         "HD Foundation Stick": "N/A",
         "Aqua Makeup Base": "N/A",
         "Compact Powder": "N/A",
@@ -4643,24 +4643,24 @@
         "W-Coverfit Dual Cushion": "N/A"
     },
     "RMK": {
-        "Gel Creamy Foundation": 9.24,
-        "Liquid Foundation": 3.57,
+        "Gel Creamy Foundation": 8.84,
+        "Liquid Foundation": 3.54,
         "Creamy Polished Base N": "N/A",
-        "Powder Foundation EX": 6.74,
+        "Powder Foundation EX": 6.65,
         "Creamy Foundation N": 5.54,
         "Basic Control Color N": "N/A",
         "Gel Emulsion Compact": "N/A",
         "UV Liquid Foundation": 5.61,
         "Liquid Foundation S (Limited Edition)": "N/A",
         "Gel Creamy Foundation S (Limited Edition)": "N/A",
-        "Stick Foundation": 6.45,
+        "Stick Foundation": 6.4,
         "Airy Powder Foundation": "N/A",
         "Silk Fit Face Powder": "N/A",
         "Pressed Powder N": 5.36,
         "Super Basic Liquid Concealer N": "N/A"
     },
     "L'Ocean": {
-        "Stick Foundation": 7.22,
+        "Stick Foundation": 7.11,
         "Perfection Cover Foundation": "N/A"
     },
     "Hanskin": {
@@ -4669,7 +4669,7 @@
         "Air Slip BB Cushion": "N/A"
     },
     "AmorePacific": {
-        "Color Control Cushion Compact": 9.15,
+        "Color Control Cushion Compact": 8.76,
         "Age Correcting Foundation Cushion": "N/A"
     },
     "Karaja Makeup": {
@@ -4695,7 +4695,7 @@
         "Americana Custom Coverage Concentrate": "N/A"
     },
     "Iope": {
-        "Air Cushion": 7.18,
+        "Air Cushion": 7.05,
         "Perfect Cover Cushion": "N/A",
         "Perfect Skin Foundation": "N/A",
         "Super Vital Foundation": "N/A",
@@ -4708,7 +4708,7 @@
         "Air Fluid Foundation Glow": "N/A",
         "Beauty Metal Cushion Foundation Long Wear": "N/A",
         "Perfecting Last Stick Foundation": "N/A",
-        "CC Cream": 7.73,
+        "CC Cream": 7.67,
         "Expert Metal Cushion Foundation": "N/A",
         "Air Fluid Foundation": "N/A",
         "Beauty Metal Cushion Foundation Moisture Glow (17 years)": "N/A",
@@ -4758,8 +4758,8 @@
         "Foundation Orchid": "N/A"
     },
     "Algenist": {
-        "Reveal Concentrated Color Correcting Drops": 8.55,
-        "Reveal Color Correcting Eye Serum Concealer": 9.15,
+        "Reveal Concentrated Color Correcting Drops": 8.15,
+        "Reveal Color Correcting Eye Serum Concealer": 8.97,
         "REVEAL Color Correcting Anti-Aging Serum Foundation": "N/A",
         "Repairing Tint & Radiance Moisturizer": 10.0
     },
@@ -4868,7 +4868,7 @@
     },
     "Elke": {
         "Base Liquida / Liquid Foundation": "N/A",
-        "Pancake": 9.14,
+        "Pancake": 9.12,
         "Po Facial / Facial Powder": "N/A",
         "Po Compacto / Compact Powder": "N/A"
     },
@@ -4883,13 +4883,13 @@
         "Defence Color Mat - Zone - Mattifying foundation": "N/A"
     },
     "TIGI": {
-        "Powder Foundation": 5.54,
+        "Powder Foundation": 5.41,
         "Whipped Foundation": "N/A",
         "Satin Liquid Foundation": "N/A",
-        "Creme Foundation": 7.7
+        "Creme Foundation": 7.55
     },
     "Circa Beauty": {
-        "Color Balance Liquid Foundation": 9.37
+        "Color Balance Liquid Foundation": 9.03
     },
     "MyFace Cosmetics": {
         "mymix Foundation": "N/A",
@@ -5029,10 +5029,10 @@
         "Cosmetics Luminous Foundation": "N/A"
     },
     "Kaja": {
-        "Don't Settle Concealer": 8.36
+        "Don't Settle Concealer": 8.06
     },
     "Yuva": {
-        "Mineral powder": 5.83
+        "Mineral powder": 5.82
     },
     "Giordani Gold by Oriflame": {
         "Liquid Silk Foundation": "N/A",
@@ -5073,7 +5073,7 @@
         "Base Duo Kit": "N/A",
         "Creme to Powder Foundation": "N/A",
         "Lifeproof Foundation": "N/A",
-        "CC Cream": 7.09,
+        "CC Cream": 6.89,
         "Superior Cover Pressed Powder": "N/A",
         "Luminous Pressed Powder": "N/A",
         "Vitality Fresh Foundation": "N/A",
@@ -5085,9 +5085,9 @@
     },
     "Dr. Jart+": {
         "Water Fuse Blemish Base BB Cream SPF27": "N/A",
-        "Water Fuse Smart Gel BB": 7.37,
-        "Dis-A-Pore Beauty Balm": 9.2,
-        "Black Label Detox BB Beauty Balm": 9.83,
+        "Water Fuse Smart Gel BB": 7.26,
+        "Dis-A-Pore Beauty Balm": 9.18,
+        "Black Label Detox BB Beauty Balm": 9.72,
         "Bounce Beauty Balm Moist": "N/A",
         "CC Essence Balm": 10.0,
         "Premium Beauty Balm": 8.16
@@ -5132,7 +5132,7 @@
         "Perfect Canvas Loose Face Powder": "N/A",
         "Liquid Canvas Dew Finish Foundation Waterproof SPF15": "N/A",
         "New Light Canvas Tinted Moisturizer SPF25": "N/A",
-        "Liquid Canvas Healthy Fluid Soft Matte Foundation": 6.38,
+        "Liquid Canvas Healthy Fluid Soft Matte Foundation": 6.31,
         "Water Canvas Creme-to-Powder Foundation- Oil Free": "N/A",
         "Pressed Face Powder": "N/A",
         "Velour Pressed Powder": 6.26,
@@ -5246,7 +5246,7 @@
         "Pancake": "N/A"
     },
     "Miracle Skin Transformer": {
-        "Miracle Skin Transformer SPF 20": 7.77
+        "Miracle Skin Transformer SPF 20": 7.44
     },
     "SeneGence International": {
         "MakeSense Color Correcting Tinted Moisturizer": "N/A",
@@ -5289,7 +5289,7 @@
     },
     "NYC - New York Color": {
         "Natural Matte Foundation": "N/A",
-        "Smooth Skin Pressed Face Powder": 4.3,
+        "Smooth Skin Pressed Face Powder": 4.23,
         "Get It All Foundation": "N/A",
         "Smooth Skin BB Creme Instant Matte": "N/A",
         "Smooth Skin BB Creme": "N/A",
@@ -5347,7 +5347,7 @@
     },
     "Nip + Fab": {
         "Foundation": "N/A",
-        "CC Cream": 5.25
+        "CC Cream": 5.15
     },
     "Nykaa": {
         "SKINgenius Sculpting & Hydrating Foundation": "N/A",
@@ -5390,7 +5390,7 @@
         "Creme Concealer/Foundation": "N/A"
     },
     "Mad Minerals": {
-        "Mineral Makeup": 4.73,
+        "Mineral Makeup": 4.66,
         "Liquid Mineral Foundation": "N/A"
     },
     "Edward Bess": {
@@ -5464,12 +5464,12 @@
         "Compressed Mineral Foundation": "N/A"
     },
     "Paul & Joe": {
-        "Light Cream Foundation S": 9.59,
-        "Protective Fluid Foundation S": 9.59,
+        "Light Cream Foundation S": 9.44,
+        "Protective Fluid Foundation S": 9.49,
         "Creamy Powder Foundation": 9.59,
-        "Creamy Matte Foundation": 9.59,
+        "Creamy Matte Foundation": 9.49,
         "Face Powder N": "N/A",
-        "Liquid Foundation": 9.59,
+        "Liquid Foundation": 9.49,
         "Protecting Foundation Primer S": 9.59,
         "Pressed Powder Duo": 9.59,
         "Powder Compact Foundation": 9.59,
@@ -5599,7 +5599,7 @@
         "Integrate Loose Foundation": "N/A"
     },
     "Rom&nd": {
-        "Perfect Fitting Foundation": 7.96,
+        "Perfect Fitting Foundation": 7.65,
         "Perfect Innerlighting Cushion": "N/A",
         "Zero Cushion": "N/A"
     },
@@ -5641,7 +5641,7 @@
         "Tap Semi-Foundation Powder": "N/A"
     },
     "Fasio": {
-        "Mineral Foundation": 7.32
+        "Mineral Foundation": 7.11
     },
     "Diego Dalla Palma": {
         "Cream Compact Foundation": "N/A",
@@ -5705,7 +5705,7 @@
     },
     "First Aid Beauty": {
         "Eye Duty Triple Remedy: Brighten, Depuff and Smooth": "N/A",
-        "Ultra Repair Tinted Moisturizer": 7.97,
+        "Ultra Repair Tinted Moisturizer": 7.79,
         "Hello FAB Bendy Avocado Concealer": "N/A",
         "Hello FAB Triple Protection Skin Tint with Goji Berry": "N/A"
     },
@@ -5749,7 +5749,7 @@
     },
     "Color Studio": {
         "Nude Compact": "N/A",
-        "BB Cream": 7.49,
+        "BB Cream": 7.39,
         "Invincible Foundation": "N/A"
     },
     "Dermaquest": {
@@ -5772,7 +5772,7 @@
         "Make B. Po Compacto Matte": "N/A"
     },
     "Coty": {
-        "Airspun Face Powder": 4.54
+        "Airspun Face Powder": 4.47
     },
     "Pink Up Cosmetics": {
         "Mega Cover Foundation": "N/A"
@@ -5789,7 +5789,7 @@
         "HD Cinema & TV Sweatproof Foundation": "N/A"
     },
     "OFRA": {
-        "Absolute Foundation": 7.69,
+        "Absolute Foundation": 7.47,
         "Derma Minerals Cream Foundation": "N/A",
         "Light Foundation": "N/A"
     },
@@ -5847,7 +5847,7 @@
         "Mineral Foundation Powder": "N/A"
     },
     "Latika": {
-        "BB Cream": 9.88
+        "BB Cream": 9.74
     },
     "Koloss Cosmeticos": {
         "Moisturising Foundation / Base Liquida Hidratante": "N/A",
@@ -6005,7 +6005,7 @@
         "4 in One Camera Ready Foundation": "N/A"
     },
     "dUCK Cosmetics": {
-        "All Covered Make-Up Foundation": 8.09,
+        "All Covered Make-Up Foundation": 7.69,
         "Piece of Cake Powder Foundation": "N/A"
     },
     "SimplySiti": {
@@ -6023,11 +6023,11 @@
     },
     "Nvey Eco": {
         "Creme Deluxe Flawless Finish Foundation": "N/A",
-        "Moisture Rich Fluid Foundation": 6.77,
-        "Mattifying Compact Powder": 6.16
+        "Moisture Rich Fluid Foundation": 6.64,
+        "Mattifying Compact Powder": 6.12
     },
     "Sunday Riley": {
-        "The Influencer Clean Long Wear Foundation": 9.24,
+        "The Influencer Clean Long Wear Foundation": 9.01,
         "Liquid Light Breathable Perfecting Foundation": "N/A",
         "Cr\u00e8me Radiance Breathable Ageless Foundation": "N/A"
     },
@@ -6049,7 +6049,7 @@
         "HD Foundation": "N/A"
     },
     "Marcelle": {
-        "CC Cream": 9.61,
+        "CC Cream": 9.25,
         "BB Cream Beauty Balm": "N/A",
         "BB Cream Matte": "N/A",
         "Flawless Air Serum Foundation": "N/A",
@@ -6070,14 +6070,14 @@
         "Perk It Under-Eye Treatment Brightener": "N/A"
     },
     "Thrive Causemetics": {
-        "Buildable Blur CC Cream": 9.07
+        "Buildable Blur CC Cream": 8.66
     },
     "Winky Lux": {
         "Peeper Perfect Full Coverage Concealer": "N/A",
         "#NoFilter Diamond Powder": "N/A"
     },
     "Studio Gear": {
-        "Flawless Foundation": 7.74,
+        "Flawless Foundation": 7.31,
         "Tint Protective Tinted Moisturizer": "N/A",
         "Invisible Loose Powder": 7.67,
         "Invisible Pressed Powder": "N/A",
@@ -6098,7 +6098,7 @@
         "Cover Up Mesh Pact": "N/A"
     },
     "Profusion": {
-        "BB Cream": 7.48
+        "BB Cream": 7.3
     },
     "Prolux": {
         "Matte Foundation": "N/A"
@@ -6112,7 +6112,7 @@
     },
     "Sue Devitt": {
         "Triple Seaweed Gel Foundation": "N/A",
-        "Triple C-Weed Whipped Foundation": 7.41,
+        "Triple C-Weed Whipped Foundation": 7.37,
         "Silky Pressed Powder": "N/A",
         "SpaComplexion Hydrating Marine Minerals Tinted Moisturizer": "N/A"
     },
@@ -6162,10 +6162,10 @@
         "Bright Spark Radiant Foundation": "N/A"
     },
     "LACURA Beauty": {
-        "CC Cream": 7.85,
+        "CC Cream": 7.78,
         "Foundation SPF 15 / Foundation with Sunscreen": "N/A",
-        "BB Cream": 7.85,
-        "Make-Up": 7.27,
+        "BB Cream": 7.78,
+        "Make-Up": 7.13,
         "Illusion Touch 2 in 1 Make-Up & Concealer": "N/A"
     },
     "Trend IT UP": {
@@ -6236,7 +6236,7 @@
     "LT Pro": {
         "HD Perfect Image Foundation": "N/A",
         "Smooth Corrector Cream Foundation": "N/A",
-        "Fix Conceal": 6.66
+        "Fix Conceal": 6.61
     },
     "Lagom": {
         "CF Cushion": "N/A"
@@ -6274,7 +6274,7 @@
         "Secret Beauty Foundation": "N/A"
     },
     "Peter Thomas Roth": {
-        "Skin To Die For Mineral-Matte CC Cream": 8.05
+        "Skin To Die For Mineral-Matte CC Cream": 7.74
     },
     "IPSA": {
         "Cream Foundation": "N/A",
@@ -6338,8 +6338,8 @@
     },
     "Paula Dorf": {
         "Face Tint": "N/A",
-        "Oil Free Foundation": 5.27,
-        "Perfect Glo": 7.51
+        "Oil Free Foundation": 5.2,
+        "Perfect Glo": 7.47
     },
     "Yensa": {
         "Skin on Skin BC Foundation": "N/A"
@@ -6358,7 +6358,7 @@
         "IIID Foundation (Highlight / Contour)": "N/A"
     },
     "Nocib\u00e9": {
-        "Ultimate Foundation": 8.7,
+        "Ultimate Foundation": 8.51,
         "No Transfer Foundation": "N/A"
     },
     "Oriental Princess": {
@@ -6382,7 +6382,7 @@
         "Sublime Liquid Foundation": "N/A"
     },
     "Kate Somerville": {
-        "IllumiKate CC Cream": 9.41
+        "IllumiKate CC Cream": 9.18
     },
     "Hanyul": {
         "Cover Concealer for Face": "N/A",
@@ -6419,7 +6419,7 @@
     },
     "San San Cosmetics": {
         "Matte Finish Liquid Foundation": "N/A",
-        "BB Cream": 7.07
+        "BB Cream": 6.96
     },
     "Unny Club": {
         "Full Cover Tip Concealer": "N/A"
@@ -6459,7 +6459,7 @@
         "My Skin Cushion Daily Cover UV": "N/A"
     },
     "absolution": {
-        "La cr\u00e8me du teint": 6.62
+        "La cr\u00e8me du teint": 6.45
     },
     "iWhite Korea": {
         "BB Holic Everyday BB Cream": "N/A"
@@ -6477,7 +6477,7 @@
         "Hydra-Chrono Teinte Tinted Gel-Cream": "N/A"
     },
     "Intense": {
-        "INTENSE LIQUID BASE": 6.84
+        "INTENSE LIQUID BASE": 6.74
     },
     "Kiotis": {
         "Youth Teint Cream Perfection": "N/A"
@@ -6508,7 +6508,7 @@
         "Naked Light Hydrating Foundation": "N/A"
     },
     "Stage Q": {
-        "Balm to Cushion": 5.59
+        "Balm to Cushion": 5.57
     },
     "Vice Cosmetics": {
         "Duo Finish Foundation": "N/A"
@@ -6533,7 +6533,7 @@
     },
     "DuWop": {
         "Revolotion Face Tinted Moisturizer": "N/A",
-        "Foundation of Youth": 8.72
+        "Foundation of Youth": 8.54
     },
     "Fusion Beauty": {
         "Ultraflesh Tinted Moisturizer SPF 15": "N/A"
@@ -6554,7 +6554,7 @@
         "Perfect Shade Mineral Foundation": "N/A"
     },
     "Florence By Mills": {
-        "Like a Light Skin Tint": 8.73
+        "Like a Light Skin Tint": 8.5
     },
     "Estelle & Thild": {
         "BioMineral Healthy Glow Foundation": "N/A"
@@ -6584,6 +6584,6 @@
         "Eye Shadow Phase One Under-eye Concealer": "N/A"
     },
     "Per-fekt Beauty": {
-        "Skin Perfection Gel": 6.47
+        "Skin Perfection Gel": 6.27
     }
 }

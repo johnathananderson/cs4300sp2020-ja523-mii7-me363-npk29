@@ -1,4 +1,6 @@
 import json
+import numpy as np
+from sklearn.preprocessing import normalize
 
 PAULA_WEIGHT = 0.013
 def write_json(data, filename='healthscores.json'): 
@@ -13,10 +15,32 @@ with open("ingredients.json", encoding = 'utf-8') as j:
 
 with open("ingredient_categories.json", encoding = 'utf-8') as j:
     data = json.load(j)
-final_scores = {}
-ingredient_set = set()
+
+docs = set()
+# Create tf matrix for products & ingredients
+prod_count = 0
+prod_index_map = {}
+ingredient_index_map = {}
+for brand in product_ingredient_map:
+    for ptr, product in enumerate(product_ingredient_map[brand]):
+        prod_count += 1
+        prod_index_map[product] = ptr
+        for ingredient in product_ingredient_map[brand][product]:
+            docs.add(ingredient)
+doc_term = np.zeros((prod_count,len(docs)))
+for ptr, ingredient in enumerate(docs):
+    ingredient_index_map[ingredient] = ptr
+for brand in product_ingredient_map:
+    for product in product_ingredient_map[brand]:
+        for ingredient in product_ingredient_map[brand][product]:
+            doc_term[prod_index_map[product]][ingredient_index_map[ingredient]] += 1
+term_sums = np.sum(doc_term,axis=0)
+term_avg = np.average(term_sums)
+term_std = np.std(term_sums)
 
 # Create paulaschoice.com ingredient dictionary
+final_scores = {}
+ingredient_set = set()
 for cat in data:
     for ingredient in data[cat]:
         ingredient_set.add(ingredient)
@@ -39,7 +63,14 @@ for brand in product_ingredient_map:
             # add some weight to this product via health_count. 
             for i in ingredient_set:
                 if i in ingredient.lower():
-                    health_count += 1
+                    if (doc_term[prod_index_map[product]][ingredient_index_map[ingredient]] < term_avg):
+                        # rare ingredient that is healthy 
+                        health_count += 1
+                    elif (doc_term[prod_index_map[product]][ingredient_index_map[ingredient]] > term_avg + term_std):
+                        # healthy ingredient that is exceptionally common
+                        health_count += 0.4
+                    else:
+                        health_count += 0.6
             # Calculating average product ewg score with total_score and number_scores
             total_score += ingredient_scores[ingredient]
             if (ingredient_scores[ingredient] > 0):
@@ -58,6 +89,7 @@ for brand in product_ingredient_map:
         final_scores[brand][product] = min(final_scores[brand][product] + (PAULA_WEIGHT * health_count), 10)
         listmin = min(listmin,final_scores[brand][product])
         listmax = max(listmax, final_scores[brand][product])
+
 # counta = 0
 # countb = 0
 # countc = 0
