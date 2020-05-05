@@ -23,7 +23,7 @@
                 <button id="cheap" class="btn btn-default filter-button" data-filter="cheapest" data-toggle="tooltip" data-placement="top" title="Sort By Price: Low to High">Cheapest</button>
                 <button id="safe" class="btn btn-default filter-button" data-filter="healthiest" data-toggle="tooltip" data-placement="top" title="Sort By Safety: High to Low">Safest</button>
                 <button id="review" class="btn btn-default filter-button" data-filter="sentiment" data-toggle="tooltip" data-placement="top" title="Sort By Reviews Sentiment: High to Low">Sentiment</button>
-                <div id="keywords"><input id="brand-input" type="text" placeholder="Filter by keyword"/></div>
+                <div id="keywords"><input id="brand-input" type="text" placeholder="Filter By Keyword"/></div>
             </div>
         </div>
             <br />
@@ -31,11 +31,12 @@
             <script id="product_template" type="text/html">
                 {% raw %}
                 <div class="block">
+
                     <div class="top">
-                      <ul>
-                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>	
-                            <li><span class="brand">{{ brand }}</span></li>	
-                            <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>	
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                            <li><span class="brand">{{ brand }}</span></li>
+                            <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
 
@@ -46,7 +47,7 @@
                     <div class="bottom">
                         <div class="product-name">{{ product_name }}</div>
                         <div class="shade">Your Shade: {{ shade }}</div>
-                        <div class="prices" id="prices">{{ prices }}</div>
+                        <div class="prices" id="prices">Retailers: {{ prices }}</div>
                         <div class="senti">Sentiment: {{ sentiment }}</div> 
                         <div class="descri">Top Descriptors: {{ words }}</div>
                         <div class="safe">Safety Score: {{ health_score }}</div>
