@@ -221,12 +221,12 @@ button.btn.btn-default.filter-button:focus {
     box-shadow: none;
 } */
 
-
-/* #brand-input::placeholder {
-    color: grey;
-    opacity: 0.6;
-    font-family: 'Roboto', sans-serif;
-} */
+#brand-input::placeholder {
+    /* color: grey;
+    opacity: 0.6; */
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
 #brand-input {
     border: 1px solid #e45c27;
