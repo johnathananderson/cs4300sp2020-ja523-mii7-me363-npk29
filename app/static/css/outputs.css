@@ -138,7 +138,8 @@ body {
     width: 100%;
 }
 
-.bottom {
+
+/* .bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -152,6 +153,16 @@ body {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+} */
+
+.bottom {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
 }
 
 .product-name {
