@@ -307,3 +307,26 @@ button.btn.btn-default.filter-button:focus {
     outline: none !important;
     opacity: 1;
 }
+
+
+/*for FireFox*/
+
+#random::-moz-focus-inner {
+    background-color: #e45c27 !important;
+}
+
+#alpha::-moz-focus-inner {
+    background-color: #e45c27 !important;
+}
+
+#cheap::-moz-focus-inner {
+    background-color: #e45c27 !important;
+}
+
+#safe::-moz-focus-inner {
+    background-color: #e45c27 !important;
+}
+
+#review::-moz-focus-inner {
+    background-color: #e45c27 !important;
+}

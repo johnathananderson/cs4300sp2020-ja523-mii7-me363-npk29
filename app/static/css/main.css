@@ -83,7 +83,7 @@
     position: absolute;
     width: 100%;
     z-index: 1;
-    max-height: 55vh;
+    max-height: 30vh;
     overflow: scroll;
     padding-left: 2vh;
     padding-top: 2vh;
