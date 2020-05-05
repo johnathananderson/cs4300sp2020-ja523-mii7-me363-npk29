@@ -196,11 +196,11 @@ button.btn.btn-default.filter-button:focus {
     box-shadow: none;
 } */
 
-#brand-input::placeholder {
-    /* color: grey; */
+
+/* #brand-input::placeholder {
+    color: grey;
     opacity: 0.6;
-    font-family: 'Roboto', sans-serif;
-}
+} */
 
 #brand-input {
     border: 1px solid #e45c27;
@@ -212,9 +212,8 @@ button.btn.btn-default.filter-button:focus {
     font-weight: 100;
     letter-spacing: 2px;
     border-radius: 5px;
-    background: linear-gradient(to right, #FFFFFF 0%, #464747 #F9F9F9 100%);
-    transition: width 0.4s ease;
     width: 100%;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
     border: 0;
     border-top-color: currentcolor;
     border-top-style: none;
