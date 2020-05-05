@@ -942,6 +942,7 @@ legend {
 .s008 .inner-form {
     width: 100%;
     text-align: center;
+    margin-left: -30vh;
 }
 
 .s008 .inner-form .input-field {
