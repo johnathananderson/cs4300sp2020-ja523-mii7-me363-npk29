@@ -158,16 +158,18 @@
     background-color: black;
 }
 
+
+/* 
 .steps::after {
     color: black;
     border-left: 13px solid;
     border-top: 13px solid transparent;
     border-bottom: 13px solid transparent;
-    display: inline-block;
+    display: block;
     content: '';
-    position: absolute;
     right: -13px;
 }
+ */
 
 
 /* #loading {
