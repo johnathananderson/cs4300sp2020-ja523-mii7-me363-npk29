@@ -1,26 +1,70 @@
 @font-face {
-    font-family: font1;
-    src: url('/static/fonts/solena-reg.otf');
-    src: url('/static/fonts/solena-reg.eot');
-    /* IE9 Compat Modes */
-    src: url('/static/fonts/solena-reg.woff2') format('woff2'), /* Super Modern Browsers */
-    url('/static/fonts/solena-reg.woff') format('woff'), /* Pretty Modern Browsers */
-    url('/static/fonts/solena-reg.ttf') format('truetype'), /* Safari, Android, iOS */
+    font-family: "ubuntu";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Lato Light Italic"), local("Lato-LightItalic"), url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2) format("woff2");
 }
 
-#saveface {
-    font-family: font1;
+.proj {
+    font-size: 40px;
+    /* font-family: "ubuntu"; */
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to left, #FFDBAC 20%, #c68642 40%, #875222 60%, #c68642 80%, #FFDBAC 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #e45c27;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3.5s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .topcorner {
     position: absolute;
+    text-align: right;
     top: 2%;
     right: 2%;
 }
 
+.leftcorner {
+    position: absolute;
+    text-align: right;
+    top: 2%;
+    left: 2%;
+}
+
+.proto {
+    display: inline;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    color: #964b00;
+    padding: 10px;
+    opacity: 0.6;
+    background-color: #f5f5f5;
+}
+
+.proto:hover {
+    color: #964b00;
+    opacity: 1;
+    text-decoration: none;
+}
+
 #prev_form {
-    margin-top: 10.5vh;
     display: inline-block;
+}
+
+.shadeprod {
+    margin-top: 25vh !important;
 }
 
 #adv_form {
@@ -35,7 +79,7 @@
 #inputautocomplete-list {
     text-align: left;
     color: black;
-    opacity: 0.98;
+    opacity: 0.95;
     position: absolute;
     width: 100%;
     z-index: 1;
@@ -86,6 +130,32 @@
     background-color: #F5F5F5;
     z-index: 1001;
     transform: translate(-50%, -50%);
+}
+
+.out_message {
+    font-size: 28px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    color: #e45c27;
+    opacity: 0.8;
+}
+
+.collab {
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: -2vh;
+    color: #964b00;
+}
+
+.steps {
+    display: inline;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    color: #964b00;
+    padding: 10px;
+    opacity: 0.6;
+    background-color: #f5f5f5;
 }
 
 

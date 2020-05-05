@@ -13,7 +13,7 @@ from findation import FindationBrowser
 
 # import time
 
-project_name = "Save Face"
+project_name = "save face"
 net_id = "ja523, me363, mii7, npk29"
 outputs_json = glob.glob("outputs_i.json")
 with open(outputs_json[0], encoding="utf8") as data:
@@ -35,7 +35,7 @@ def search():
         brands.append(brand)
     if not query:
         data = []
-        output_message = "Its not working"
+        output_message = "Error"
     else:
         output_message = "Your search: " + query
         data = range(5)
@@ -87,12 +87,20 @@ def product():
         for shade in s:
             shades.append(shade)
 
+        output_message = "Your search: " + brand + ", " + product
+
         return render_template(
-            "shades.html", name=project_name, netid=net_id, product=product, shades=shades, brand=brand
+            "shades.html",
+            name=project_name,
+            netid=net_id,
+            product=product,
+            shades=shades,
+            brand=brand,
+            output_message=output_message,
         )
 
 
-@irsystem.route("/product/findation/", methods=["POST"])
+@irsystem.route("/product/outputs/", methods=["POST"])
 def product_test():
     brand = request.form.get("brand-input")
     product = request.form.get("product-input")
@@ -100,23 +108,24 @@ def product_test():
     f = FindationBrowser()
     products = [[brand, product, shade], [brand, product, shade]]
     time.sleep(0.01)
-    data = f.process_matches(products, outputs_j)
+    data = f.process_matches(products)
     f.close_out()
-    return render_template("outputs.html", name=project_name, netid=net_id, data=data)
+    return render_template("outputs.html", name=project_name, netid=net_id, data=data, outputs=outputs_j)
 
 
-@irsystem.route("/outputs/", methods=["GET"])
-def outputs():
-    # prod_type = request.form['choices-single-defaul']
-    query = request.args.get("adv-search")
-    print(query)
-    if not query:
-        data = []
-        output_message = "Its not working"
-    else:
-        data = range(5)
-        output_message = "Your search: " + query
-    return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+# @irsystem.route("/outputs/", methods=["GET"])
+# def outputs():
+#     # prod_type = request.form['choices-single-defaul']
+#     query = request.args.get("adv-search")
+#     print(query)
+#     if not query:
+#         data = []
+#         output_message = "Its not working"
+#     else:
+#         data = range(5)
+#         output_message = "Your search: " + query
+#     return render_template("outputs.html", name=project_name, netid=net_id, output_message=output_message, data=data)
+
 
 # @irsystem.route("/product-shades/", methods=["GET"])
 # def product_shades():

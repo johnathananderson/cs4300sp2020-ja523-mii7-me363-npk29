@@ -5,7 +5,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="/static/css/outputs.css" rel="stylesheet" id="outputs-css">
-    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
     <script src="/static/js/outputs.js"></script>
 </head>
@@ -17,58 +16,102 @@
                 <h1 class="gallery-title">Results</h1>
             </div>
 
-            <div styyle="align: center">
-                <button class="btn btn-default filter-button" data-filter="default">Default</button>
-                <button class="btn btn-default filter-button" data-filter="alphabetical">Alphabetical</button>
-                <button class="btn btn-default filter-button" data-filter="positive">Most Postitively Reviewed</button>
-                <button class="btn btn-default filter-button" data-filter="healthiest">Healthiest</button>
-                <button class="btn btn-default filter-button" data-filter="cheap">Cheapest</button>
+        <div style="align: center; text-align: center;">
+            <div style="display: inline-block">
+                <button id="random" class="btn btn-default filter-button" data-filter="default">Random</button>
+                <button id="alpha" class="btn btn-default filter-button" data-filter="alphabetical" data-toggle="tooltip" data-placement="top" title="Sort Alphabetically By Brand">Alphabetical</button>
+                <button id="cheap" class="btn btn-default filter-button" data-filter="cheapest" data-toggle="tooltip" data-placement="top" title="Sort By Price: Low to High">Cheapest</button>
+                <button id="safe" class="btn btn-default filter-button" data-filter="healthiest" data-toggle="tooltip" data-placement="top" title="Sort By Safety: High to Low">Safest</button>
+                <button id="review" class="btn btn-default filter-button" data-filter="sentiment" data-toggle="tooltip" data-placement="top" title="Sort By Reviews Sentiment: High to Low">Sentiment</button>
+                <div id="keywords"><input id="brand-input" type="text" placeholder="Filter By Keyword"/></div>
             </div>
+        </div>
             <br />
 
             <script id="product_template" type="text/html">
-                            {% raw %}
-                            <div class="block">
+                {% raw %}
+                <div class="block">
 
-                                <div class="top">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-                                        <li><span class="brand">{{ brand }}</span></li>
-                                        <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
+                    <div class="top">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+                            <li><span class="brand">{{ brand }}</span></li>
+                            <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
 
-                                <div class="middle">
-                                    <img src="{{ image }}" alt="pic" />
-                                </div>
+                    <div class="middle">
+                        <img src="{{ image }}" alt="pic" />
+                    </div>
 
-                                <div class="bottom">
-                                    <div class="product-name">{{ product_name }}</div>
-                                    <div class="shade">{{ shade }}</div>
-                                    <div class="prices">{{ prices }}</div>
-                                    <div class="ingredients">Health Score: {{ health_score }}</div>
-                                    <div class="ingredients">{{ ingredients }}</div>
-                                </div>
+                    <div class="bottom">
+                        <div class="product-name">{{ product_name }}</div>
+                        <div class="shade">Your Shade: {{ shade }}</div>
+                        {{#prices}} 
+                        <div class="prices" id="prices">Retailers: {{ prices }}</div>
+                        {{/prices}}
+                        {{#sentiment}}
+                        <div class="ingredients">Sentiment: {{ sentiment }} / 10</div> 
+                        {{/sentiment}}
+                        <div class="ingredients">Safety Score: {{ health_score }} / 10</div>
+                        <div class="ingredients">{{ ingredients }}</div>
+                    </div>
 
-                            </div>
-                            {% endraw %}
-    </script>
+                </div>
+                {% endraw %}
+            </script>
 
             <div id="products">
                 <script>
-                    var array = ({{ data | tojson | safe}});
+                    var outputs = {{outputs | tojson | safe}};
+                    console.log({{ data | tojson | safe}});
+                    var array = ({{ data | tojson | safe}}).map(function (item) {
+                        var b = item["brand"];
+                        var n = item["name"];
+                        if (b in outputs && n in outputs[b]) {
+                            var m = outputs[b][n];
+                            item["ingredients"] = m["ingredients"];
+                            item["prices"] = m["prices"];
+                            item["health_score"] = m["health_score"];
+                            item["sentiment"] = m["sentiment"];
+                        }
+                        if (item["health_score"] === undefined) {
+                            item["health_score"] = "N/A";
+                        } else if (typeof item["health_score"] == "number") {
+                            item["health_score"] = (item["health_score"]).toFixed(2);
+                        }
+                        if (item["prices"] !== undefined && item["prices"].length == 0) {
+                            item["prices"] = undefined;
+                        }
+                        if (item["sentiment"] === undefined || item["sentiment"] == "N/A") {
+                            item["sentiment"] = undefined;
+                        } else if (typeof item["sentiment"] == "number"){
+                            item["sentiment"] = ((item["sentiment"] * 5) + 5).toFixed(3);
+                        }
+                        if (item["ingredients"] === undefined) {
+                            item["ingredients"] = "Ingredients not found";
+                        }
+                        return item;
+                    });
                     var alphabetical = array.slice().sort(function (a, b) {
                         if (a["brand"] == b["brand"]) {
                             return a["name"].localeCompare(b["name"]);
                         }
                         return a["brand"].localeCompare(b["brand"]);
                     });
-                    var missing_i = array.slice().filter(item => item["ingredients"] == "Ingredients not found");
-                    var not_missing_i = array.slice().filter(item => item["ingredients"] != "Ingredients not found").sort((a, b) => a["health_score"] < b["health_score"] ? 1 : -1);
+                    var missing_i = array.slice().filter(item => item["health_score"] == "N/A");
+                    var not_missing_i = array.slice().filter(item => item["health_score"] != "N/A").sort((a, b) => a["health_score"] < b["health_score"] ? 1 : -1);
                     var healthiest = not_missing_i.concat(missing_i);
-                    // var cheapest = array.slice().map(function (item) {
-
-                    // });
+                    var missing_p = array.slice().filter(item => item["prices"] === undefined);
+                    var not_missing_p = array.slice().filter(item => item["prices"] !== undefined);
+                    var lowest_prices = not_missing_p.slice().map(item => Array.from(item["prices"]).map(p => parseFloat(p.substring(p.indexOf("$") + 1))).sort((a, b) => a > b ? 1 : -1)[0]);
+                    var not_missing_p_sorted = not_missing_p.sort(function (a, b) {
+                        return lowest_prices[not_missing_p.indexOf(a)] - lowest_prices[not_missing_p.indexOf(b)];
+                    });
+                    var cheapest = not_missing_p_sorted.concat(missing_p);
+                    var missing_s = array.slice().filter(item => item["sentiment"] === undefined);
+                    var not_missing_s = array.slice().filter(item => item["sentiment"] !== undefined).sort((a, b) => a["sentiment"] < b["sentiment"] ? 1 : -1);
+                    var sentiments = not_missing_s.concat(missing_s);
 
                     function renderProduct(item, block) {
                         var i_ingredients = item["ingredients"];
@@ -84,14 +127,83 @@
                             brand: item["brand"],
                             product_name: item["name"],
                             shade: item["shade"],
-                            image: item["thumbnail"],
+                            image: item["thumbnail"].replace("micro_thumb", "medium"),
                             ingredients: i_ingredients,
                             prices: i_prices,
-                            health_score: item["health_score"]
+                            health_score: item["health_score"],
+                            sentiment: item["sentiment"]
                         });
                         block.innerHTML = rendered;
                     }
-                    array.forEach(function (item) {
+                    var blocks = document.createElement("div");
+                    for (i = 0; i < array.length; i++) {
+                        var item = array[i];
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter default";
+                        renderProduct(item, block);
+                        blocks.appendChild(block);
+                        if (i % 3 == 2 || i == alphabetical.length - 1) {
+                            document.getElementById("products").appendChild(blocks);
+                            blocks = document.createElement("div");
+                        }
+                    }
+                    blocks = document.createElement("div");
+                    for (i = 0; i < alphabetical.length; i++) {
+                        var item = alphabetical[i];
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter alphabetical";
+                        renderProduct(item, block);
+                        blocks.appendChild(block);
+                        if (i % 3 == 2 || i == alphabetical.length - 1) {
+                            document.getElementById("products").appendChild(blocks);
+                            blocks = document.createElement("div");
+                        }
+                    }
+                    blocks = document.createElement("div");
+                    for (i = 0; i < healthiest.length; i++) {
+                        var item = healthiest[i];
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter healthiest";
+                        renderProduct(item, block);
+                        blocks.appendChild(block);
+                        if (i % 3 == 2 || i == healthiest.length - 1) {
+                            document.getElementById("products").appendChild(blocks);
+                            blocks = document.createElement("div");
+                        }
+                    }
+                    blocks = document.createElement("div");
+                    for (i = 0; i < cheapest.length; i++) {
+                        var item = cheapest[i];
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cheapest";
+                        renderProduct(item, block);
+                        blocks.appendChild(block);
+                        if (i % 3 == 2 || i == cheapest.length - 1) {
+                            document.getElementById("products").appendChild(blocks);
+                            blocks = document.createElement("div");
+                        }
+                    }
+                    blocks = document.createElement("div");
+                    for (i = 0; i < sentiments.length; i++) {
+                        var item = sentiments[i];
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sentiment";
+                        renderProduct(item, block);
+                        blocks.appendChild(block);
+                        if (i % 3 == 2 || i == cheapest.length - 1) {
+                            document.getElementById("products").appendChild(blocks);
+                            blocks = document.createElement("div");
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+{# array.forEach(function (item) {
                         var block = document.createElement("div");
                         block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter default";
                         renderProduct(item, block);
@@ -109,10 +221,9 @@
                         renderProduct(item, block);
                         document.getElementById("products").appendChild(block);
                     });
-                </script>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
+                    cheapest.forEach(function (item) {
+                        var block = document.createElement("div");
+                        block.className = "gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter cheapest";
+                        renderProduct(item, block);
+                        document.getElementById("products").appendChild(block);
+                    }); #}

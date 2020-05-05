@@ -3,7 +3,7 @@
     color: #e45c27;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .gallery-title:after {
@@ -21,7 +21,9 @@
     border-radius: 5px;
     text-align: center;
     color: #e45c27;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
 }
 
 .filter-button:hover {
@@ -43,7 +45,7 @@
 }
 
 .gallery_product {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 * {
@@ -74,6 +76,8 @@ body {
     border-radius: 4px;
     width: 280px;
     min-height: 430px;
+    height: 650px;
+    overflow: scroll;
     background: #fff;
     padding: 23px;
     display: -webkit-box;
@@ -152,14 +156,79 @@ body {
     color: #969696;
     margin-bottom: 10px;
     text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+#prices {
+    font-size: 14px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .shade {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .old-price {
     color: #f00;
     text-decoration: line-through;
+}
+
+
+/* .filter-button:focus {
+    font-size: 18px;
+    border: 1px solid #e45c27;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #e45c27;
+    outline: none;
+    box-shadow: none;
+} */
+
+
+/* 
+button.btn.btn-default.filter-button:focus {
+    background: #e45c27;
+    color: white;
+    outline: none;
+    box-shadow: none;
+} */
+
+#brand-input::placeholder {
+    color: #e45c27;
+    opacity: 0.6;
+}
+
+#brand-input {
+    border: 1px solid #e45c27;
+    height: 40px;
+    position: relative;
+    padding: 15px 40px 15px 20px;
+    color: #525252;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FFFFFF 0%, #464747 #F9F9F9 100%);
+    transition: width 0.4s ease;
+    width: 100%;
+}
+
+#brand-input:focus {
+    color: black;
+    outline: none;
+    box-shadow: none;
+}
+
+#random:focus,
+#alpha:focus,
+#cheap:focus,
+#safe:focus,
+#review:focus {
+    color: white !important;
+    background-color: #e45c27 !important;
+    border-color: #e45c27 !important;
+    outline: none !important;
 }

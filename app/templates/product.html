@@ -14,49 +14,37 @@
 
 <body>
 
-    <div class="loader">
+    <div class="loader" style="display: none;">
         <div class="load-container">
-            <div class="spinner-grow style='color:#e45c27'"></div>
-            <div class="spinner-grow style='color:#e45c27'"></div>
-            <div class="spinner-grow style='color:#e45c27'"></div>
-            <div class="spinner-grow style='color:#e45c27'"></div>
-            <div class="spinner-grow style='color:#e45c27'"></div>
+            <div class="spinner-grow" style="color:#543315"></div>
+            <div class="spinner-grow" style="color:#c68642"></div>
+            <div class="spinner-grow" style="color:#f1c27d"></div>
+            <div class="spinner-grow" style="color:#FFDBAC"></div>
+            <div class="spinner-grow" style="color:#ffedd5"></div>
         </div>
     </div>
 
-    <script>
-        $(window).on("load", function () {
-            $(".load-container").fadeOut("slow");
-            $(".loader").fadeOut("slow");
-        });
-    </script>
-
     <div class="s008">
         <div class="topcorner">
-            <form class="form-inline global-search">
-                <h1>{{output_message}}</h1>
-                <br>
-            </form>
+                <h1 class="out_message">{{output_message}}</h1>
         </div>
 
-        <div class="inner-form">
-            <form id="prev_form" method="POST">
+        <div class="inner-form" style="margin-top: -30vh">
+            <div class="steps">Step 1: Enter your Product</div>
+            <form id="prev_form" class="shadeprod" method="POST">
                 <div class="basic-search">
                     <div class="input-field">
-
                         <input id="input" name="product-input" type="text" placeholder="Enter your current product"
-                            autocomplete="off" />
-                        <input type="hidden" id="brand-input" name="brand-input" />
-
+                            autocomplete="off" data-container="body" data-toggle="popover" data-placement="top"
+                            title="Invalid Product" data-content="Please enter a valid product before searching!" />
                         <script>
-                            var myform = document.getElementById('prev_form');
-                            myform.onsubmit = function () {
-                                var b = String(({{ brand | tojson | safe }}));
-                            document.getElementById("brand-input").value = b;
-                            myform.submit();
-                            };
+                            window.onload = function () {
+                                var input = document.getElementById('input');
+                                input.focus();
+                                input.select();
+                            }
                         </script>
-
+                        <input type="hidden" id="brand-input" name="brand-input" />
 
                         <button id="icon-wrap" type="submit" style="justify-content: center">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +63,9 @@
     </div>
 
     <script>
-        p = ({{ products | safe }});
-        function autocomplete(inp, arr) {
+        p = ({{products | safe}});
+
+        function autocomplete(inp, arr, form) {
             /*the autocomplete function takes two arguments,
             the text field element and an array of possible autocompleted values:*/
             var currentFocus;
@@ -84,7 +73,6 @@
                 var a, b, i, val = this.value;
                 if (!val) {
                     /*close any already open lists of autocompleted values*/
-                    closeAllLists();
                     // if (!val) {
                     //     return false;
                     // }
@@ -112,6 +100,7 @@
                             /*close the list of autocompleted values,
                             (or any other open lists of autocompleted values:*/
                             closeAllLists();
+                            document.getElementById("icon-wrap").click();
                         });
                         a.appendChild(b);
                     }
@@ -132,6 +121,10 @@
                 a.setAttribute("class", "autocomplete-items");
                 /*append the DIV element as a child of the autocomplete container:*/
                 this.parentNode.appendChild(a);
+                if (val && arr.includes(val)) {
+                    $('#input').popover('hide');
+                }
+
                 /*for each item in the array...*/
                 for (i = 0; i < arr.length; i++) {
                     if (!val) {
@@ -149,6 +142,7 @@
                             /*close the list of autocompleted values,
                             (or any other open lists of autocompleted values:*/
                             closeAllLists();
+                            document.getElementById("icon-wrap").click();
                         });
                         a.appendChild(b);
                     } else if (arr[i].substr(0, val.trim().length).toUpperCase() == val.trim().toUpperCase()) {
@@ -169,6 +163,7 @@
                             /*close the list of autocompleted values,
                             (or any other open lists of autocompleted values:*/
                             closeAllLists();
+                            document.getElementById("icon-wrap").click();
                         });
                         a.appendChild(b);
                     }
@@ -192,12 +187,25 @@
                     addActive(x);
                 } else if (e.keyCode == 13) {
                     /*If the ENTER key is pressed, prevent the form from being submitted,*/
-                    e.preventDefault();
+                    // e.preventDefault();
                     // document.getElementById("icon-wrap").click();
                     if (currentFocus > -1) {
                         /*and simulate a click on the "active" item:*/
                         if (x) x[currentFocus].click();
                     }
+                }
+            });
+
+            form.addEventListener("submit", function (e) {
+                var val = inp.value;
+                if (!arr.includes(val)) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    $('#input').popover('show');
+                } else {
+                    $('#input').popover('hide');
+                    document.getElementById("brand-input").value = String(({{brand | tojson | safe }}));
+                    $(".loader").show();
                 }
             });
 
@@ -236,7 +244,7 @@
         }
 
         /*initiate the autocomplete function on the "inut" element, and pass along the brands array as possible autocomplete values:*/
-        autocomplete(document.getElementById("input"), p);
+        autocomplete(document.getElementById("input"), p, document.getElementById("prev_form"));
     </script>
     <script>
         //Reference: https://jsfiddle.net/fwv18zo1/
