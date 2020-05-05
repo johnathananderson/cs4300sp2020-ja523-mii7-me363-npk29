@@ -1,5 +1,40 @@
 {
     "NYX": {
+        "Born to Glow Naturally Radiant Foundation": [
+            "dry",
+            "great",
+            "love"
+        ],
+        "Total Control Drop Foundation": [
+            "oily",
+            "try",
+            "dry"
+        ],
+        "Stay Matte But Not Flat Powder Foundation": [
+            "oily",
+            "foundations",
+            "tends"
+        ],
+        "Invincible Fullest Coverage Foundation": [
+            "pimples",
+            "definitely",
+            "got"
+        ],
+        "HD Studio Photogenic Foundation": [
+            "light",
+            "weightless",
+            "color"
+        ],
+        "Stay Matte But Not Flat Liquid Foundation": [
+            "oily",
+            "wonderful",
+            "heavy"
+        ],
+        "Gotcha Covered Concealer": [
+            "well",
+            "day",
+            "long"
+        ],
         "Mineral Stick Foundation": [
             "blends",
             "matches",
@@ -28,6 +63,11 @@
         ]
     },
     "Mineral Fusion": {
+        "Liquid Concealer": [
+            "fragranced",
+            "finish",
+            "type"
+        ],
         "Liquid Foundation": [
             "packaging",
             "natural",
@@ -63,6 +103,16 @@
         ]
     },
     "Too Faced": {
+        "Born This Way Foundation": [
+            "coverage",
+            "fine",
+            "good"
+        ],
+        "Born This Way Super Coverage Multi-Use Sculpting Concealer": [
+            "color",
+            "full",
+            "dry"
+        ],
         "Born This Way Naturally Radiant Concealer": [
             "fragrance",
             "naturally",
@@ -70,6 +120,11 @@
         ]
     },
     "KKW Beauty": {
+        "Liquid Concealer": [
+            "fragranced",
+            "finish",
+            "type"
+        ],
         "Concealer": [
             "good",
             "eye",
@@ -77,6 +132,16 @@
         ]
     },
     "Anastasia Beverly Hills": {
+        "Pro Pencil": [
+            "pencil",
+            "brows",
+            "like"
+        ],
+        "Concealer": [
+            "good",
+            "eye",
+            "eyes"
+        ],
         "Luminous Foundation": [
             "love",
             "definitely",
@@ -84,6 +149,56 @@
         ]
     },
     "MAC": {
+        "Full Coverage Foundation": [
+            "amount",
+            "brush",
+            "oily"
+        ],
+        "Pro LongWear Concealer": [
+            "eye",
+            "concealers",
+            "much"
+        ],
+        "Mineralize Concealer": [
+            "expert",
+            "settle",
+            "love"
+        ],
+        "Studio Fix Powder Plus Foundation": [
+            "coverage",
+            "like",
+            "light"
+        ],
+        "Studio Fix Soft Matte Foundation Stick": [
+            "love",
+            "something",
+            "foundations"
+        ],
+        "Studio Fix 24-Hour Smooth Wear Concealer": [
+            "apply",
+            "rash",
+            "creases"
+        ],
+        "Studio Face and Body Foundation": [
+            "like",
+            "apply",
+            "brush"
+        ],
+        "Studio Finish SPF 35 Concealer": [
+            "cover",
+            "find",
+            "eye"
+        ],
+        "Studio Tech Foundation": [
+            "like",
+            "dry",
+            "late"
+        ],
+        "Studio Waterweight Concealer": [
+            "like",
+            "super",
+            "still"
+        ],
         "Pro Longwear Nourishing Waterproof Foundation": [
             "great",
             "coverage",
@@ -91,6 +206,51 @@
         ]
     },
     "Clinique": {
+        "Beyond Perfecting Super Concealer Camouflage + 24-Hour Wear": [
+            "cover",
+            "like",
+            "applied"
+        ],
+        "Repairwear Laser Focus All-Smooth Makeup SPF 15": [
+            "melting",
+            "great",
+            "recommended"
+        ],
+        "Chubby in the Nude Foundation Stick": [
+            "love",
+            "buy",
+            "first"
+        ],
+        "Superbalanced Makeup": [
+            "like",
+            "many",
+            "sensitive"
+        ],
+        "Line Smoothing Concealer": [
+            "love",
+            "store",
+            "covers"
+        ],
+        "Airbrush Concealer": [
+            "like",
+            "well",
+            "time"
+        ],
+        "BIY Blend It Yourself Pigment Drops": [
+            "sunscreen",
+            "add",
+            "pores"
+        ],
+        "Perfectly Real Compact Makeup": [
+            "shade",
+            "need",
+            "people"
+        ],
+        "Even Better Refresh Hydrating and Repairing Makeup": [
+            "color",
+            "good",
+            "like"
+        ],
         "Almost Powder Makeup SPF 15": [
             "compact",
             "without",
@@ -126,7 +286,7 @@
         ]
     },
     "TheBalm": {
-        "timeBalm Foundation": [
+        "TimeBalm Foundation": [
             "well",
             "foundations",
             "yet"
@@ -140,6 +300,36 @@
         ]
     },
     "NARS": {
+        "Concealer": [
+            "good",
+            "eye",
+            "eyes"
+        ],
+        "Radiant Creamy Concealer": [
+            "apply",
+            "dry",
+            "well"
+        ],
+        "Natural Radiant Longwear Foundation": [
+            "like",
+            "coverage",
+            "recommend"
+        ],
+        "Sheer Glow Foundation": [
+            "dry",
+            "like",
+            "oily"
+        ],
+        "Soft Matte Complete Concealer": [
+            "like",
+            "shade",
+            "tap"
+        ],
+        "All Day Luminous Weightless Foundation": [
+            "good",
+            "coverage",
+            "love"
+        ],
         "Radiant Cream Compact Foundation": [
             "good",
             "well",
@@ -161,6 +351,11 @@
         ]
     },
     "3 Concept Eyes (3CE)": {
+        "Full Cover Concealer": [
+            "long",
+            "lasts",
+            "best"
+        ],
         "Liquid Foundation": [
             "packaging",
             "natural",
@@ -182,6 +377,11 @@
         ]
     },
     "Hourglass": {
+        "Immaculate Liquid Powder Foundation": [
+            "like",
+            "natural",
+            "finish"
+        ],
         "Vanish Seamless Finish Foundation Stick": [
             ",",
             "easily",
@@ -189,6 +389,11 @@
         ]
     },
     "Physicians Formula": {
+        "Conceal Rx Physicians Strength Concealer": [
+            "need",
+            "eyeshadow",
+            "actually"
+        ],
         "Nude Wear Touch of Glow Foundation": [
             "apply",
             "highlight",
@@ -210,6 +415,21 @@
         ]
     },
     "L'Oreal Paris": {
+        "Infallible Total Cover Foundation": [
+            "day",
+            "like",
+            "buy"
+        ],
+        "True Match Lumi Healthy Luminous Makeup": [
+            "good",
+            "consistency",
+            "medium"
+        ],
+        "Infallible Pro-Glow Foundation": [
+            "like",
+            "love",
+            "coverage"
+        ],
         "True Match Super Blendable Multi-Use Concealer": [
             "found",
             "say",
@@ -245,6 +465,21 @@
         ]
     },
     "Sephora": {
+        "High Coverage Concealer": [
+            "color",
+            "expression",
+            "lot"
+        ],
+        "Teint Infusion Ethereal Natural Finish Foundation": [
+            "coverage",
+            "feeling",
+            "bother"
+        ],
+        "Perfection Mist Airbrush Foundation": [
+            "spray",
+            "work",
+            "oily"
+        ],
         "Bright Future Gel Serum Concealer": [
             "glowing",
             "undereye",
@@ -280,6 +515,26 @@
         ]
     },
     "Tarte": {
+        "Shape Tape Contour Concealer": [
+            "first",
+            "full",
+            "reviews"
+        ],
+        "Amazonian Clay Full Coverage Airbrush Foundation": [
+            "brush",
+            "like",
+            "brilliant"
+        ],
+        "Clay Stick Foundation": [
+            "apply",
+            "lot",
+            "beautypedia"
+        ],
+        "Face Tape Foundation": [
+            "like",
+            "never",
+            "long"
+        ],
         "Colored Clay CC Undereye Corrector": [
             "eyes",
             "concealers",
@@ -301,6 +556,16 @@
         ]
     },
     "Marc Jacobs Beauty": {
+        "Re(Marc)able Full Cover Foundation Concentrate": [
+            "apply",
+            "like",
+            "natural"
+        ],
+        "Marvelous Mousse Transformative Foundation": [
+            "pale",
+            "canvas",
+            ",sensitive,"
+        ],
         "Re(Marc)able Full Cover Concealer": [
             "emollient",
             "dry",
@@ -308,6 +573,11 @@
         ]
     },
     "Nudestix": {
+        "Tinted Cover Foundation": [
+            "coverage",
+            "super",
+            "full"
+        ],
         "Nudies Tinted Blur Stick": [
             "like",
             "best",
@@ -315,6 +585,16 @@
         ]
     },
     "Juvia's Place": {
+        "Shade Stick Foundation": [
+            "coverage",
+            "love",
+            "well"
+        ],
+        "I Am Magic Foundation": [
+            "like",
+            "match",
+            "full"
+        ],
         "I Am Magic Concealer": [
             "like",
             "great",
@@ -329,6 +609,11 @@
         ]
     },
     "ColourPop": {
+        "Pretty Fresh Hyaluronic Acid Tinted Moisturizer": [
+            "good",
+            "day",
+            "color"
+        ],
         "Pretty Fresh Hyaluronic Creamy Concealer": [
             "like",
             "full",
@@ -336,6 +621,21 @@
         ]
     },
     "Benefit Cosmetics": {
+        "Hello Happy Velvet Powder Foundation": [
+            "coverage",
+            "finish",
+            "like"
+        ],
+        "Hello Happy Flawless Brightening Foundation": [
+            "like",
+            "love",
+            "think"
+        ],
+        "Boi-ing Hydrating Concealer": [
+            "eye",
+            "light",
+            "brush"
+        ],
         "Boi-ing Cakeless Concealer": [
             "nicely",
             "easily",
@@ -343,6 +643,11 @@
         ]
     },
     "Shiseido": {
+        "Stick Foundation": [
+            "application",
+            "immediately",
+            "beauty"
+        ],
         "Natural Finish Cream Concealer": [
             "counter",
             "winter",
@@ -385,6 +690,46 @@
         ]
     },
     "BECCA": {
+        "Aqua Luminous Perfecting Foundation": [
+            "dewy",
+            "like",
+            "think"
+        ],
+        "Skin Love Weightless Blur Foundation": [
+            "dry",
+            "love",
+            "long"
+        ],
+        "Aqua Luminous Perfecting Concealer": [
+            "medium",
+            "easily",
+            "finish"
+        ],
+        "Backlight Targeted Colour Corrector": [
+            "darkness",
+            "eye",
+            "darker"
+        ],
+        "Ever-Matte Shine Proof Foundation": [
+            ":-)",
+            "without",
+            "careful"
+        ],
+        "Ultimate Coverage 24 Hour Foundation": [
+            "like",
+            "coverage",
+            "full"
+        ],
+        "Ultimate Coverage Longwear Concealer": [
+            "wish",
+            "price",
+            "decent"
+        ],
+        "Under Eye Brightening Corrector": [
+            "eye",
+            "like",
+            "dark"
+        ],
         "Ultimate Coverage Concealing Cr\u00e8me": [
             "better",
             "best",
@@ -399,6 +744,31 @@
         ]
     },
     "Urban Decay": {
+        "All Nighter Waterproof Full-Coverage Concealer": [
+            "need",
+            "eyes",
+            "leaves"
+        ],
+        "Naked Skin Weightless Ultra Definition Liquid Makeup": [
+            "shade",
+            "good",
+            "dry"
+        ],
+        "Stay Naked The Fix Powder Foundation": [
+            "love",
+            "finish",
+            "primer"
+        ],
+        "All Nighter Liquid Foundation": [
+            "makes",
+            "like",
+            "shade"
+        ],
+        "Naked Skin Weightless Complete Coverage Concealer": [
+            "formula",
+            "covering",
+            "sattles"
+        ],
         "Naked Skin Ultra Definition Powder Foundation": [
             "coverage",
             "learned",
@@ -434,6 +804,16 @@
         ]
     },
     "Clarins": {
+        "Concealer Stick": [
+            "roll",
+            "flake",
+            "cake"
+        ],
+        "Instant Concealer": [
+            "undereye",
+            "eye",
+            "dry"
+        ],
         "Skin Illusion Natural Hydrating Foundation": [
             "like",
             "several",
@@ -441,8 +821,33 @@
         ]
     },
     "Smashbox": {
+        "Studio Skin 24 Hour Waterproof Concealer": [
+            "eyes",
+            "creases",
+            "star"
+        ],
+        "Studio Skin Flawless 24 Hour Concealer": [
+            "eye",
+            "eyes",
+            "shade"
+        ],
+        "Studio Skin 15 Hour Wear Hydrating Foundation": [
+            "dry",
+            "full",
+            "coverage"
+        ],
+        "Studio Skin Full Coverage 24 Hour Foundation": [
+            "dry",
+            "lot",
+            "pores"
+        ],
+        "Photo Filter Powder Foundation": [
+            "many",
+            "provides",
+            "almost"
+        ],
         "24 Hour CC Spot Concealer": [
-            "light",
+            ":-(",
             "makes",
             "lightest"
         ]
@@ -483,6 +888,41 @@
         ]
     },
     "Bobbi Brown": {
+        "Intensive Skin Serum Corrector": [
+            "shade",
+            "like",
+            "colour"
+        ],
+        "Creamy Concealer Kit": [
+            "perfect",
+            "around",
+            "thick"
+        ],
+        "Retouching Face Pencil": [
+            "find",
+            "dry",
+            "eyes"
+        ],
+        "Skin Foundation Stick": [
+            "day",
+            "oily",
+            "like"
+        ],
+        "Intensive Skin Serum Concealer": [
+            "circles",
+            "dark",
+            "well"
+        ],
+        "Instant Full Cover Concealer": [
+            "find",
+            "dry",
+            "eye"
+        ],
+        "Creamy Concealer": [
+            "great",
+            "work",
+            "non"
+        ],
         "Skin Foundation Mineral Makeup SPF 15": [
             "accountants",
             "companies",
@@ -490,6 +930,41 @@
         ]
     },
     "Estee Lauder": {
+        "Double Wear Radiant Concealer": [
+            "like",
+            "tape",
+            "shape"
+        ],
+        "Double Wear Light Soft Matte Hydra Makeup": [
+            "formula",
+            "old",
+            "shade"
+        ],
+        "Double Wear Stay-in-Place Matte Powder Foundation": [
+            "without",
+            "sponge",
+            "great"
+        ],
+        "Fresh Air Makeup Base": [
+            "foundations",
+            "sensitive",
+            "normal"
+        ],
+        "Double Wear Stay-in-Place Makeup": [
+            "day",
+            "coverage",
+            "full"
+        ],
+        "Double Wear Stay-in-Place High Cover Concealer SPF 35": [
+            "like",
+            "eyes",
+            "shade"
+        ],
+        "Double Wear Light Stay-in-Place Makeup": [
+            "like",
+            "find",
+            "nose"
+        ],
         "Double Wear Stay-in-Place Flawless Wear Concealer": [
             "bruises",
             "well",
@@ -511,6 +986,11 @@
         ]
     },
     "RMK": {
+        "Stick Foundation": [
+            "application",
+            "immediately",
+            "beauty"
+        ],
         "Liquid Foundation": [
             "packaging",
             "natural",
@@ -518,6 +998,26 @@
         ]
     },
     "Laura Mercier": {
+        "Smooth Finish Foundation Powder": [
+            "gets",
+            "love",
+            "absolutely"
+        ],
+        "Flawless Fusion Ultra-Longwear Foundation": [
+            "great",
+            "like",
+            "feels"
+        ],
+        "Secret Concealer": [
+            "concealers",
+            "work",
+            "setting"
+        ],
+        "Flawless Fusion Ultra-Longwear Concealer": [
+            "dark",
+            "cover",
+            "circles"
+        ],
         "Secret Camouflage": [
             "eye",
             "like",
@@ -525,6 +1025,21 @@
         ]
     },
     "Ulta": {
+        "Mineral Powder Foundation": [
+            "mineral",
+            "like",
+            "finish"
+        ],
+        "Moisturizing Foundation Stick": [
+            "good",
+            "like",
+            "sheer"
+        ],
+        "Adjustable Coverage Foundation": [
+            "color",
+            "love",
+            "medium"
+        ],
         "Full Coverage Liquid Concealer": [
             "much",
             "full",
@@ -532,6 +1047,21 @@
         ]
     },
     "Milani": {
+        "Conceal + Perfect 2-in-1 Foundation + Concealer": [
+            "coverage",
+            "oily",
+            "like"
+        ],
+        "Screen Queen Foundation": [
+            "coverage",
+            "good",
+            "love"
+        ],
+        "Conceal + Perfect Longwear Concealer": [
+            "eye",
+            "like",
+            "coverage"
+        ],
         "Retouch + Erase Light-Lifting Concealer": [
             "eye",
             "dark",
@@ -546,6 +1076,11 @@
         ]
     },
     "W3LL People": {
+        "Narcissist Foundation Stick": [
+            "love",
+            "like",
+            "makes"
+        ],
         "Bio Correct Multi-Action Concealer": [
             "well",
             "eye",
@@ -553,6 +1088,11 @@
         ]
     },
     "Amazing Cosmetics": {
+        "Amazing Concealer": [
+            "like",
+            "blend",
+            "try"
+        ],
         "Amazing Concealer Hydrate": [
             "dark",
             "coverage",
@@ -560,6 +1100,11 @@
         ]
     },
     "Flower Beauty": {
+        "Light Illusion Liquid Foundation": [
+            "coverage",
+            "glow",
+            "luminous"
+        ],
         "Light Illusion Full Coverage Concealer": [
             "coverage",
             "like",
@@ -567,6 +1112,31 @@
         ]
     },
     "Jane Iredale": {
+        "Dream Tint Tinted Moisturizer": [
+            "like",
+            "moisturizer",
+            "tinted"
+        ],
+        "Beyond Matte Liquid Foundation": [
+            "like",
+            "coverage",
+            "love"
+        ],
+        "Liquid Minerals A Foundation": [
+            "coverage",
+            "provides",
+            "like"
+        ],
+        "Enlighten Concealer": [
+            "raving",
+            "amazing",
+            "aply"
+        ],
+        "Active Light Under-Eye Concealer": [
+            "actually",
+            "thin",
+            "price"
+        ],
         "Glow Time Full Coverage Mineral BB Cream": [
             "years",
             "like",
@@ -574,6 +1144,31 @@
         ]
     },
     "Make Up For Ever": {
+        "Ultra HD Invisible Cover Foundation": [
+            "like",
+            "best",
+            "oily"
+        ],
+        "Water Blend Face & Body Foundation": [
+            "like",
+            "smells",
+            "better"
+        ],
+        "Ultra HD Invisible Cover Stick Foundation": [
+            "dry",
+            "like",
+            "want"
+        ],
+        "Pro Finish Multi-Use Powder Foundation": [
+            "dry",
+            "prone",
+            "started"
+        ],
+        "Lift Concealer": [
+            "lasts",
+            "dark",
+            "long"
+        ],
         "Duo Mat Powder Foundation": [
             "medium",
             "oily",
@@ -581,13 +1176,23 @@
         ]
     },
     "Juice Beauty": {
-        "PHYTO-PIGMENTS Flawless Serum Foundation": [
+        "Phyto-Pigments Perfecting Concealer": [
+            "love",
+            "like",
+            "finger"
+        ],
+        "Phyto-Pigments Flawless Serum Foundation": [
             "like",
             "shade",
             "day"
         ]
     },
     "Almay": {
+        "Clear Complexion Concealer": [
+            "acne",
+            "shade",
+            "sensitive"
+        ],
         "Skin Perfecting Comfort Matte Foundation": [
             "soon",
             "matte",
@@ -602,6 +1207,16 @@
         ]
     },
     "bareMinerals": {
+        "BARESKIN Complete Coverage Serum Concealer": [
+            "enough",
+            "another",
+            "smooth"
+        ],
+        "BAREPRO Performance Wear Powder Foundation": [
+            "like",
+            "coverage",
+            "foundations"
+        ],
         "BAREPRO Performance Wear Liquid Foundation SPF 20": [
             "oily",
             "covers",
@@ -651,6 +1266,11 @@
         ]
     },
     "Dermablend": {
+        "Smooth Liquid Camo Foundation": [
+            "oily",
+            "full",
+            "wanted"
+        ],
         "Smooth Liquid Camo Concealer": [
             "like",
             "first",
@@ -686,6 +1306,11 @@
         ]
     },
     "Face Stockholm": {
+        "Liquid Foundation": [
+            "packaging",
+            "natural",
+            "finish"
+        ],
         "Mineral Powder Foundation": [
             "mineral",
             "like",
@@ -707,7 +1332,32 @@
         ]
     },
     "Revlon": {
-        "PhotoReady Candid Antioxidant Concealer": [
+        "ColorStay Full Cover Foundation": [
+            "coverage",
+            "great",
+            "full"
+        ],
+        "Age Defying Targeted Dark Spot Concealer Treatment": [
+            "lot",
+            "settles",
+            "exchanged"
+        ],
+        "ColorStay Makeup for Normal/Dry Skin": [
+            "love",
+            "dry",
+            "good"
+        ],
+        "ColorStay Concealer": [
+            "like",
+            "cover",
+            "dark"
+        ],
+        "PhotoReady Candid Natural Finish Anti-Pollution Foundation": [
+            "good",
+            "day",
+            "dry"
+        ],
+        "Photoready Candid Antioxidant Concealer": [
             "like",
             "try",
             "coverage"
@@ -721,6 +1371,11 @@
         ]
     },
     "BeautiControl": {
+        "Secret Agent Undercover Makeup": [
+            "dry",
+            "prefer",
+            "formula"
+        ],
         "Perfecting Wet/Dry Finish Foundation": [
             "love",
             "found",
@@ -728,6 +1383,11 @@
         ]
     },
     "Dr.Hauschka": {
+        "Translucent Make-up": [
+            "putting",
+            "creams",
+            "dewy"
+        ],
         "Concealer": [
             "good",
             "eye",
@@ -749,6 +1409,46 @@
         ]
     },
     "Maybelline": {
+        "Dream Brightening Creamy Concealer": [
+            "liquid",
+            "usually",
+            "got"
+        ],
+        "FaceStudio Master Camo Color Correcting Pen": [
+            "cover",
+            "dark",
+            "work"
+        ],
+        "FaceStudio Master Conceal": [
+            "great",
+            "covering",
+            "quality"
+        ],
+        "Fit Me Concealer": [
+            "coverage",
+            "bag",
+            "covers"
+        ],
+        "Dream Matte Mousse Foundation": [
+            "shade",
+            "quality",
+            "oily"
+        ],
+        "Dream Lumi Touch Highlighting Concealer": [
+            "like",
+            "eye",
+            "dispenses"
+        ],
+        "Dream Velvet Soft-Matte Hydrating Foundation": [
+            "well",
+            "much",
+            "try"
+        ],
+        "Fit Me Dewy + Smooth Foundation": [
+            "like",
+            "dry",
+            "love"
+        ],
         "Instant Age Rewind Eraser Dark Circles Treatment Concealer": [
             "like",
             "dark",
@@ -756,6 +1456,21 @@
         ]
     },
     "IT Cosmetics": {
+        "Bye Bye Under Eye Full Coverage Anti-Aging Waterproof Concealer": [
+            "time",
+            "creases",
+            "like"
+        ],
+        "Bye Bye Under Eye Concealing Pot": [
+            "dark",
+            "good",
+            "worth"
+        ],
+        "Celebration Foundation Illumination": [
+            "years",
+            "like",
+            "perfect"
+        ],
         "Celebration Foundation SPF 50+": [
             "cream",
             "like",
@@ -777,13 +1492,43 @@
         ]
     },
     "CoverGirl": {
-        "Outlast Stay Fabulous 3-In-1 Foundation": [
+        "Vitalist Healthy Concealer Pen": [
+            "coverage",
+            "dark",
+            "day"
+        ],
+        "Full Spectrum All Day Idol Brightening Concealer": [
+            "eyes",
+            "like",
+            "happy"
+        ],
+        "TruBlend Liquid Makeup": [
+            "color",
+            "went",
+            "time"
+        ],
+        "TruBlend Matte Made Liquid Foundation": [
+            "like",
+            "matte",
+            "try"
+        ],
+        "Clean Matte Concealer": [
+            "like",
+            "day",
+            "gave"
+        ],
+        "Outlast Stay Fabulous 3-in-1 Foundation": [
             "long",
             "need",
             "great"
         ]
     },
     "Bissu": {
+        "Concealer Stick": [
+            "roll",
+            "flake",
+            "cake"
+        ],
         "Concealer": [
             "good",
             "eye",
@@ -791,6 +1536,11 @@
         ]
     },
     "Glossier": {
+        "Stretch Concealer": [
+            "shade",
+            "someone",
+            "good"
+        ],
         "Perfecting Skin Tint": [
             "alcohol",
             "coverage",
@@ -798,6 +1548,21 @@
         ]
     },
     "Lancome": {
+        "Maquicomplet Complete Coverage Concealer": [
+            "circles",
+            "never",
+            "shade"
+        ],
+        "Teint Idole Ultra Wear Camouflage Concealer": [
+            "irritated",
+            "clearly",
+            "corrector"
+        ],
+        "Skin Feels Good Hydrating Skin Tint": [
+            "coverage",
+            "like",
+            "amount"
+        ],
         "Dual Finish Multi-Tasking Powder Foundation": [
             "made",
             "irritate",
@@ -840,6 +1605,16 @@
         ]
     },
     "Neutrogena": {
+        "Hydro Boost Hydrating Tint": [
+            "coverage",
+            "love",
+            "dry"
+        ],
+        "SkinClearing Blemish Concealer": [
+            "fair",
+            "marks",
+            "products"
+        ],
         "Hydro Boost Hydrating Concealer": [
             "smooth",
             "dry",
@@ -882,6 +1657,16 @@
         ]
     },
     "Cover FX": {
+        "Pressed Mineral Foundation": [
+            "like",
+            "coverage",
+            "many"
+        ],
+        "Power Play Foundation": [
+            "got",
+            "better",
+            "color"
+        ],
         "Power Play Concealer": [
             "eyes",
             "dry",
@@ -896,6 +1681,11 @@
         ]
     },
     "Rimmel": {
+        "Stay Matte Liquid Mousse Foundation": [
+            "shade",
+            "work",
+            "full"
+        ],
         "Hide the Blemish Concealer": [
             "nice",
             "probably",
@@ -903,6 +1693,16 @@
         ]
     },
     "Elizabeth Arden": {
+        "Flawless Finish Mousse Makeup": [
+            "foundations",
+            "hide",
+            "far"
+        ],
+        "Flawless Finish Maximum Coverage Concealer": [
+            "fine",
+            "concealers",
+            "emphasize"
+        ],
         "Flawless Finish Sponge-On Cream Makeup": [
             "like",
             "coverage",
@@ -910,6 +1710,11 @@
         ]
     },
     "Makeup Revolution / Revolution Beauty": {
+        "Fast Base Stick Foundation": [
+            "like",
+            "coverage",
+            "never"
+        ],
         "Fast Base Concealer": [
             "like",
             "coverage",
@@ -924,6 +1729,11 @@
         ]
     },
     "Burt's Bees": {
+        "Mattifying Powder Foundation": [
+            "coverage",
+            "shade",
+            "light"
+        ],
         "Concealer": [
             "good",
             "eye",
@@ -938,6 +1748,16 @@
         ]
     },
     "Chantecaille": {
+        "Future Skin Foundation": [
+            "like",
+            "recently",
+            "recommend"
+        ],
+        "Bio Lift Concealer": [
+            "well",
+            "liked",
+            "wanted"
+        ],
         "Total Concealer": [
             "dries",
             "fine",
@@ -945,6 +1765,31 @@
         ]
     },
     "Stila": {
+        "Illuminating Liquid Foundation": [
+            "coverage",
+            "glitter",
+            "applied"
+        ],
+        "Aqua Glow Serum Foundation": [
+            "pore",
+            "many",
+            "reviews"
+        ],
+        "Hide & Chic Fluid Foundation": [
+            "like",
+            "coverage",
+            "light"
+        ],
+        "Perfecting Concealer": [
+            "coverage",
+            "top",
+            "dry"
+        ],
+        "Stay All Day Foundation & Concealer": [
+            "like",
+            "loved",
+            "finish"
+        ],
         "Lingerie Souffl\u00e9 Skin Perfecting Color": [
             "based",
             "like",
@@ -959,6 +1804,11 @@
         ]
     },
     "Note Cosmetics": {
+        "Luminous Moisturizing Foundation": [
+            "started",
+            "compliments",
+            "years"
+        ],
         "Full Coverage Liquid Concealer": [
             "much",
             "full",
@@ -973,7 +1823,7 @@
         ]
     },
     "J.Cat Beauty": {
-        "Aquasurance Compact Foundation": [
+        "AquaSurance Compact Foundation": [
             "dry",
             "coverage",
             "like"
@@ -1008,6 +1858,36 @@
         ]
     },
     "e.l.f. (eyes. lips. face)": {
+        "Acne Fighting Foundation": [
+            "acne",
+            "shade",
+            "solutions"
+        ],
+        "Flawless Finish Foundation": [
+            "great",
+            "shade",
+            "like"
+        ],
+        "Concealer": [
+            "good",
+            "eye",
+            "eyes"
+        ],
+        "Moisturizing Foundation Stick": [
+            "good",
+            "like",
+            "sheer"
+        ],
+        "Hydrating Camo Concealer": [
+            "great",
+            "hydrating",
+            "light"
+        ],
+        "16HR Camo Concealer": [
+            "light",
+            "coverage",
+            "concealers"
+        ],
         "HD Mattifying Cream Foundation": [
             "like",
             "find",
@@ -1015,6 +1895,26 @@
         ]
     },
     "Mary Kay": {
+        "Concealer": [
+            "good",
+            "eye",
+            "eyes"
+        ],
+        "Mineral Powder Foundation": [
+            "mineral",
+            "like",
+            "finish"
+        ],
+        "TimeWise Matte-Wear Liquid Foundation": [
+            "natural",
+            "find",
+            "much"
+        ],
+        "Perfecting Concealer": [
+            "coverage",
+            "top",
+            "dry"
+        ],
         "TimeWise Luminous-Wear Liquid Foundation": [
             "like",
             "pink",
@@ -1022,6 +1922,26 @@
         ]
     },
     "Wet 'n' Wild": {
+        "PhotoFocus Concealer": [
+            "coverage",
+            "like",
+            "enough"
+        ],
+        "PhotoFocus Stick Foundation": [
+            "like",
+            "super",
+            "shade"
+        ],
+        "CoverAll Cream Foundation": [
+            "amazing",
+            "unfortunately",
+            "allergic"
+        ],
+        "Illumi-Naughty Highlighting and Concealing Pen": [
+            "love",
+            "like",
+            "eyes"
+        ],
         "Photo Focus Dewy Foundation": [
             "dry",
             "love",
@@ -1029,13 +1949,18 @@
         ]
     },
     "P\u00dcR": {
-        "4-In-1 Foundation Stick": [
+        "4-in-1 Foundation Stick": [
             "coverage",
             "went",
             "dry"
         ]
     },
     "La Prairie": {
+        "Anti-Aging Foundation SPF 15": [
+            "sensitive",
+            "many",
+            "large"
+        ],
         "Cellular Treatment Foundation Powder Finish": [
             "like",
             "within",
