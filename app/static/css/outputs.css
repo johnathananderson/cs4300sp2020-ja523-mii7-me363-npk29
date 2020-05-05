@@ -93,7 +93,7 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    box-shadow: 0 2px 55px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 45px #e7744b4d;
 }
 
 .top {
@@ -229,7 +229,7 @@ button.btn.btn-default.filter-button:focus {
 #brand-input::placeholder {
     /* color: grey; */
     opacity: 0.6;
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Roboto', sans-serif;
 }
 
