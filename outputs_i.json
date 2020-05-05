@@ -35,7 +35,7 @@
                 "Clinique: $28.50"
             ],
             "sentiment": 0.08620604696151832,
-            "health_score": 8.06
+            "health_score": 7.87
         },
         "Perfectly Real Compact Makeup": {
             "ingredients": [
@@ -59,7 +59,7 @@
                 "Nordstrom: $29.50"
             ],
             "sentiment": 0.21604497354497357,
-            "health_score": 6.68
+            "health_score": 6.62
         },
         "Stay-Matte Oil-Free Makeup": {
             "ingredients": [
@@ -111,7 +111,7 @@
                 "Clinique: $28.50"
             ],
             "sentiment": "N/A",
-            "health_score": 9.59
+            "health_score": 9.56
         },
         "Even Better Glow Light Reflecting Makeup": {
             "ingredients": [
@@ -163,7 +163,7 @@
                 "Clinique: $29.50"
             ],
             "sentiment": "N/A",
-            "health_score": 9.68
+            "health_score": 9.58
         },
         "Anti-Blemish Solutions Clearing Concealer": {
             "ingredients": "Ingredients not found",
@@ -977,7 +977,7 @@
                 "Nordstrom: $50.00"
             ],
             "sentiment": -0.08396055003197861,
-            "health_score": 8.17
+            "health_score": 8.0
         },
         "Face Touch Up Stick Concealer": {
             "ingredients": [
@@ -1003,7 +1003,7 @@
                 "eBay: $47.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.45
+            "health_score": 6.42
         },
         "Creamy Corrector": {
             "ingredients": "Ingredients not found",
@@ -1768,7 +1768,7 @@
                 "CHANEL: $50.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.45
+            "health_score": 7.31
         },
         "Les Beiges Healthy Glow Foundation": {
             "ingredients": [
@@ -1860,7 +1860,7 @@
                 "eBay: $49.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.71
+            "health_score": 7.58
         },
         "Le Teint Ultra Tenue Ultrawear Flawless Foundation": {
             "ingredients": "Ingredients not found",
@@ -2463,7 +2463,7 @@
                 "eBay: $12.00"
             ],
             "sentiment": 0.19195396971154546,
-            "health_score": 7.92
+            "health_score": 7.79
         },
         "TimeWise Luminous-Wear Liquid Foundation": {
             "ingredients": [
@@ -2509,7 +2509,7 @@
                 "eBay: $11.50"
             ],
             "sentiment": 0.0835273941226322,
-            "health_score": 8.27
+            "health_score": 8.24
         },
         "Day Radiance Cream Foundation": {
             "ingredients": "Ingredients not found",
@@ -2542,7 +2542,7 @@
                 "eBay: $9.50"
             ],
             "sentiment": 0.28717312214534435,
-            "health_score": 5.59
+            "health_score": 5.54
         },
         "CC Cream Sunscreen": {
             "ingredients": "Ingredients not found",
@@ -2700,7 +2700,7 @@
                 "Kohl's: $10.95"
             ],
             "sentiment": "N/A",
-            "health_score": 7.48
+            "health_score": 7.31
         },
         "Infallible Advanced Never Fail Makeup": {
             "ingredients": [
@@ -2731,7 +2731,7 @@
                 "BuyMeBeauty: $11.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.04
+            "health_score": 6.94
         },
         "Infallible Pro-Matte Foundation": {
             "ingredients": [
@@ -2767,7 +2767,7 @@
                 "Target: $7.29"
             ],
             "sentiment": "N/A",
-            "health_score": 8.22
+            "health_score": 8.18
         },
         "Infallible Sculpt Base Foundation": {
             "ingredients": "Ingredients not found",
@@ -3430,7 +3430,7 @@
                 "eBay: $35.95"
             ],
             "sentiment": "N/A",
-            "health_score": 4.98
+            "health_score": 4.9
         },
         "True Finish Refining Mineral Foundation": {
             "ingredients": "Ingredients not found",
@@ -3541,7 +3541,7 @@
                 "BuyMeBeauty: $16.00"
             ],
             "sentiment": "N/A",
-            "health_score": 5.41
+            "health_score": 5.17
         },
         "Second to None Cream to Powder Foundation": {
             "ingredients": [
@@ -3568,7 +3568,7 @@
                 "Clinique: $25.59"
             ],
             "sentiment": "N/A",
-            "health_score": 5.53
+            "health_score": 5.48
         },
         "Oil-Blotting Pressed Powder": {
             "ingredients": [
@@ -3594,7 +3594,7 @@
                 "Clinique: $28.50"
             ],
             "sentiment": "N/A",
-            "health_score": 5.26
+            "health_score": 5.22
         },
         "Luxury Pressed Powder": {
             "ingredients": [
@@ -3617,7 +3617,7 @@
                 "eBay: $16.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.09
+            "health_score": 6.01
         },
         "Second to None Semi-Loose Powder": {
             "ingredients": [
@@ -3847,7 +3847,7 @@
                 "Walgreens.com: $8.99"
             ],
             "sentiment": 0.05671737213403877,
-            "health_score": 9.08
+            "health_score": 8.68
         },
         "Mineral Compact Makeup": {
             "ingredients": [
@@ -3878,7 +3878,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 5.59
+            "health_score": 5.52
         },
         "The Multitasker Face Powder": {
             "ingredients": [
@@ -3908,7 +3908,7 @@
                 "eBay: $7.00"
             ],
             "sentiment": "N/A",
-            "health_score": 4.81
+            "health_score": 4.77
         },
         "Glow Natural Brush-On Liquid Makeup": {
             "ingredients": [
@@ -3951,7 +3951,7 @@
                 "Walgreens.com: $9.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.1
+            "health_score": 6.92
         },
         "Secret Cover Concealer Cream": {
             "ingredients": [
@@ -4130,7 +4130,7 @@
                 "Walgreens.com: $9.99"
             ],
             "sentiment": "N/A",
-            "health_score": 4.1
+            "health_score": 4.01
         },
         "Conceal + Perfect Shine-Proof Powder": {
             "ingredients": [
@@ -4248,7 +4248,7 @@
                 "eBay: $10.65"
             ],
             "sentiment": "N/A",
-            "health_score": 7.35
+            "health_score": 7.19
         },
         "True Color Mineral Matte Cr\u00e8me Powder Foundation": {
             "ingredients": "Ingredients not found",
@@ -4304,7 +4304,7 @@
                 "eBay: $13.95"
             ],
             "sentiment": "N/A",
-            "health_score": 5.91
+            "health_score": 5.86
         },
         "Even True Flawless Liquid Foundation": {
             "ingredients": "Ingredients not found",
@@ -4441,7 +4441,7 @@
                 "Macy's: $52.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.83
+            "health_score": 8.55
         },
         "Diorskin Forever Extreme Control Perfect Matte Powder Makeup": {
             "ingredients": "Ingredients not found",
@@ -4976,7 +4976,7 @@
                 "Walgreens.com: $9.49"
             ],
             "sentiment": "N/A",
-            "health_score": 8.49
+            "health_score": 8.12
         },
         "Nearly Naked Makeup": {
             "ingredients": [
@@ -5037,7 +5037,7 @@
                 "BuyMeBeauty: $7.99"
             ],
             "sentiment": "N/A",
-            "health_score": 10.0
+            "health_score": 9.96
         },
         "Age Defying CC Cream Color Corrector": {
             "ingredients": [
@@ -5937,7 +5937,7 @@
                 "Target: $4.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.58
+            "health_score": 7.4
         },
         "Pressed Powder": {
             "ingredients": [
@@ -5958,7 +5958,7 @@
                 "eBay: $4.79"
             ],
             "sentiment": "N/A",
-            "health_score": 6.85
+            "health_score": 6.7
         },
         "True Complexion BB Cream": {
             "ingredients": [
@@ -6011,7 +6011,7 @@
                 "Target: $33.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.53
+            "health_score": 9.52
         },
         "True Complexion Custom Coverage Foundation": {
             "ingredients": "Ingredients not found",
@@ -6087,7 +6087,7 @@
                 "eBay: $11.95"
             ],
             "sentiment": "N/A",
-            "health_score": 5.21
+            "health_score": 5.11
         },
         "True Complexion Soft Focus Finishing Powder": {
             "ingredients": [
@@ -6312,7 +6312,7 @@
                 "Walgreens.com: $7.79"
             ],
             "sentiment": "N/A",
-            "health_score": 6.88
+            "health_score": 6.57
         },
         "Super Stay 24H Full Coverage Foundation": {
             "ingredients": "Ingredients not found",
@@ -6335,7 +6335,7 @@
                 "Walgreens.com: $5.39"
             ],
             "sentiment": "N/A",
-            "health_score": 6.62
+            "health_score": 6.57
         },
         "Fit Me Anti-Shine Stick": {
             "ingredients": "Ingredients not found",
@@ -7508,7 +7508,7 @@
             ],
             "prices": [],
             "sentiment": 0.09505262891870035,
-            "health_score": 7.34
+            "health_score": 7.13
         },
         "Natural Radiant Longwear Foundation": {
             "ingredients": "Ingredients not found",
@@ -7648,7 +7648,7 @@
             ],
             "prices": [],
             "sentiment": 0.162626613063121,
-            "health_score": 6.76
+            "health_score": 6.63
         },
         "Velvet Matte Skin Tint Broad Spectrum SPF 30": {
             "ingredients": [
@@ -8019,7 +8019,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 5.49
+            "health_score": 5.32
         },
         "Radiant Liquid Foundation CC": {
             "ingredients": "Ingredients not found",
@@ -8076,7 +8076,7 @@
                 "QVC: $35.00"
             ],
             "sentiment": 0.1564321503011979,
-            "health_score": 7.86
+            "health_score": 7.67
         },
         "Celebration Foundation SPF 50+": {
             "ingredients": [
@@ -8122,7 +8122,7 @@
                 "QVC: $43.50"
             ],
             "sentiment": 0.07937875243664716,
-            "health_score": 7.63
+            "health_score": 7.56
         },
         "Your Skin But Better CC+ Airbrush Perfecting Powder SPF 50+": {
             "ingredients": "Ingredients not found",
@@ -8875,7 +8875,7 @@
                 "Nordstrom: $47.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.54
+            "health_score": 7.32
         },
         "Teint Idole Ultra Wear Foundation": {
             "ingredients": [
@@ -8911,7 +8911,7 @@
                 "Macy's: $47.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.52
+            "health_score": 7.33
         },
         "Mat Miracle 24H Fluid Foundation": {
             "ingredients": "Ingredients not found",
@@ -9833,7 +9833,7 @@
                 "Nordstrom: $12.00"
             ],
             "sentiment": 0.131816904498431,
-            "health_score": 8.45
+            "health_score": 8.12
         },
         "24/7 Concealer Pencil": {
             "ingredients": "Ingredients not found",
@@ -9890,7 +9890,7 @@
                 "Nordstrom Rack: $29.00"
             ],
             "sentiment": 0.15390686983279578,
-            "health_score": 8.27
+            "health_score": 8.09
         },
         "Naked Skin Ultra Definition Loose Finishing Powder": {
             "ingredients": [
@@ -10269,7 +10269,7 @@
                 "House of Beauty World: $4.95"
             ],
             "sentiment": "N/A",
-            "health_score": 6.66
+            "health_score": 6.32
         },
         "HD Pro Matte Foundation": {
             "ingredients": [
@@ -10307,7 +10307,7 @@
                 "BEAUTY BAY: $9.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.65
+            "health_score": 6.47
         },
         "HD Pro Coverage Illuminating Foundation": {
             "ingredients": "Ingredients not found",
@@ -10477,7 +10477,7 @@
                 "Macy's: $43.00"
             ],
             "sentiment": 0.23388584549700814,
-            "health_score": 9.14
+            "health_score": 8.84
         },
         "Futurist Aqua Brilliance Makeup": {
             "ingredients": "Ingredients not found",
@@ -11202,7 +11202,7 @@
                 "Clinique: $28.50"
             ],
             "sentiment": "N/A",
-            "health_score": 6.11
+            "health_score": 6.07
         },
         "Soft & Natural Makeup": {
             "ingredients": "Ingredients not found",
@@ -11309,7 +11309,7 @@
                 "Purity Cosmetics: $25.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.3
+            "health_score": 7.15
         },
         "Bamboo Blur Tinted Moisturizer": {
             "ingredients": "Ingredients not found",
@@ -11745,7 +11745,7 @@
                 "Target: $17.99"
             ],
             "sentiment": "N/A",
-            "health_score": 6.92
+            "health_score": 6.72
         },
         "Alight Clean Foundation": {
             "ingredients": [
@@ -11781,7 +11781,7 @@
                 "Target: $15.99"
             ],
             "sentiment": 0.06512194295453225,
-            "health_score": 7.48
+            "health_score": 7.31
         },
         "Crystal Blur Illuminating Foundation": {
             "ingredients": "Ingredients not found",
@@ -12021,7 +12021,7 @@
                 "eBay: $31.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.97
+            "health_score": 6.72
         },
         "InstaBake Aqua Glass Foundation": {
             "ingredients": "Ingredients not found",
@@ -12695,7 +12695,7 @@
                 "Mercari: $64.79"
             ],
             "sentiment": "N/A",
-            "health_score": 6.35
+            "health_score": 6.23
         },
         "Perfecting Wet/Dry Finish Foundation": {
             "ingredients": [
@@ -12720,7 +12720,7 @@
                 "eBay: $18.00"
             ],
             "sentiment": 0.19414351851851852,
-            "health_score": 5.79
+            "health_score": 5.76
         },
         "BC Color Tinted Moisturizer": {
             "ingredients": "Ingredients not found",
@@ -12845,7 +12845,7 @@
                 "Walgreens.com: $8.59"
             ],
             "sentiment": "N/A",
-            "health_score": 7.72
+            "health_score": 7.62
         },
         "Born to Glow Naturally Radiant Foundation": {
             "ingredients": [
@@ -12886,7 +12886,7 @@
                 "Macy's: $9.50"
             ],
             "sentiment": "N/A",
-            "health_score": 6.87
+            "health_score": 6.83
         },
         "Can't Stop Won't Stop Full Coverage Foundation": {
             "ingredients": [
@@ -12923,7 +12923,7 @@
                 "Macy's: $15.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.22
+            "health_score": 8.06
         },
         "HD Studio Photogenic Concealer Wand": {
             "ingredients": "Ingredients not found",
@@ -13023,7 +13023,7 @@
                 "Walgreens.com: $13.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.53
+            "health_score": 6.37
         },
         "Stay Matte But Not Flat Liquid Foundation": {
             "ingredients": [
@@ -13243,7 +13243,7 @@
                 "Walgreens.com: $6.49"
             ],
             "sentiment": "N/A",
-            "health_score": 8.62
+            "health_score": 8.34
         },
         "Dark Circle Concealer": {
             "ingredients": [
@@ -13287,7 +13287,7 @@
                 "DermStore.com: $8.95"
             ],
             "sentiment": "N/A",
-            "health_score": 6.54
+            "health_score": 6.5
         },
         "Define and Refine Powder Foundation": {
             "ingredients": "Ingredients not found",
@@ -13333,7 +13333,7 @@
                 "Walgreens.com: $7.99"
             ],
             "sentiment": "N/A",
-            "health_score": 6.61
+            "health_score": 6.23
         },
         "Gotcha Covered Concealer": {
             "ingredients": [
@@ -13757,7 +13757,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 8.07
+            "health_score": 7.93
         },
         "Matte Perfection Powder Foundation": {
             "ingredients": "Ingredients not found",
@@ -14518,7 +14518,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.81
+            "health_score": 7.61
         },
         "Perfect Hydrating BB Cream": {
             "ingredients": [
@@ -14571,7 +14571,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 8.42
+            "health_score": 8.26
         },
         "Radiant Lifting Foundation": {
             "ingredients": [
@@ -14619,7 +14619,7 @@
                 "Nordstrom: $45.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.38
+            "health_score": 8.36
         },
         "Synchro Skin Glow Luminizing Fluid Foundation": {
             "ingredients": [
@@ -14685,7 +14685,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 9.67
+            "health_score": 9.53
         },
         "Future Solution LX Total Radiance Foundation": {
             "ingredients": "Ingredients not found",
@@ -14799,7 +14799,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 8.09
+            "health_score": 7.98
         },
         "Stick Foundation": {
             "ingredients": [
@@ -14828,7 +14828,7 @@
             ],
             "prices": [],
             "sentiment": 0.2320154810895552,
-            "health_score": 5.82
+            "health_score": 5.72
         },
         "Dual Balancing Foundation": {
             "ingredients": [
@@ -16108,7 +16108,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.77
+            "health_score": 7.62
         },
         "Anti-Ageing Mineral Foundation": {
             "ingredients": "Ingredients not found",
@@ -16248,7 +16248,7 @@
                 "Sephora: $45.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.37
+            "health_score": 6.24
         },
         "Airbrush Flawless Foundation": {
             "ingredients": "Ingredients not found",
@@ -16354,7 +16354,7 @@
                 "Nordstrom: $44.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.7
+            "health_score": 8.58
         },
         "Light Wonder Youth-Boosting Perfect Skin Foundation": {
             "ingredients": [
@@ -16466,7 +16466,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 5.68
+            "health_score": 5.6
         },
         "Glow Time Full Coverage Mineral BB Cream": {
             "ingredients": [
@@ -16498,7 +16498,7 @@
             ],
             "prices": [],
             "sentiment": 0,
-            "health_score": 7.25
+            "health_score": 7.14
         },
         "Beyond Matte Liquid Foundation": {
             "ingredients": "Ingredients not found",
@@ -16536,7 +16536,7 @@
                 "TheBeautyPlace: $44.00"
             ],
             "sentiment": 0,
-            "health_score": 7.54
+            "health_score": 7.47
         },
         "Amazing Base Loose Mineral Powder": {
             "ingredients": [
@@ -17259,7 +17259,7 @@
                 "Target: $16.29"
             ],
             "sentiment": 0.06750150312650312,
-            "health_score": 7.34
+            "health_score": 7.24
         },
         "Goodness Glows Liquid Makeup": {
             "ingredients": [
@@ -17308,7 +17308,7 @@
                 "BeautyExpert: $15.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.77
+            "health_score": 7.62
         },
         "BB Cream with Noni Extract": {
             "ingredients": [
@@ -17360,7 +17360,7 @@
                 "eBay: $4.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.17
+            "health_score": 9.16
         },
         "Concealer": {
             "ingredients": "Ingredients not found",
@@ -17412,7 +17412,7 @@
                 "Macy's: $17.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.78
+            "health_score": 6.74
         },
         "The 3in1 Foundation": {
             "ingredients": "Ingredients not found",
@@ -17626,7 +17626,7 @@
                 "eBay: $30.81"
             ],
             "sentiment": "N/A",
-            "health_score": 7.48
+            "health_score": 7.2
         }
     },
     "Tarte": {
@@ -17677,7 +17677,7 @@
                 "eBay: $15.00"
             ],
             "sentiment": 0,
-            "health_score": 7.14
+            "health_score": 6.83
         },
         "Amazonian Clay BB Tinted Moisturizer Broad Spectrum SPF 20": {
             "ingredients": [
@@ -17722,7 +17722,7 @@
                 "Macy's: $36.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.11
+            "health_score": 8.0
         },
         "Amazonian Clay Full Coverage Airbrush Foundation": {
             "ingredients": [
@@ -17774,7 +17774,7 @@
                 "Sephora: $26.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.91
+            "health_score": 6.82
         },
         "Face Tape Foundation": {
             "ingredients": "Ingredients not found",
@@ -18382,7 +18382,7 @@
                 "Macy's: $42.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.92
+            "health_score": 6.75
         },
         "Mineral Powder Foundation": {
             "ingredients": [
@@ -18405,7 +18405,7 @@
                 "DermStore.com: $48.00"
             ],
             "sentiment": 0.28717312214534435,
-            "health_score": 3.93
+            "health_score": 3.89
         },
         "Double Duty Foundation": {
             "ingredients": [
@@ -18440,7 +18440,7 @@
                 "Poshmark: $43.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.8
+            "health_score": 7.66
         },
         "BB Cream Beauty Balm": {
             "ingredients": [
@@ -18490,7 +18490,7 @@
                 "Nordstrom: $27.50"
             ],
             "sentiment": "N/A",
-            "health_score": 7.84
+            "health_score": 7.63
         },
         "Demi Matte Foundation": {
             "ingredients": "Ingredients not found",
@@ -18706,7 +18706,7 @@
                 "Poshmark: $25.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.98
+            "health_score": 9.69
         },
         "Color Trend Fresh Face Liquid Foundation": {
             "ingredients": "Ingredients not found",
@@ -19345,7 +19345,7 @@
                 "House of Beauty World: $6.95"
             ],
             "sentiment": "N/A",
-            "health_score": 3.36
+            "health_score": 3.28
         },
         "Liquid Make-up": {
             "ingredients": [
@@ -19376,7 +19376,7 @@
                 "Prescriptives: $5.95"
             ],
             "sentiment": "N/A",
-            "health_score": 6.77
+            "health_score": 6.63
         },
         "Pressed Powder": {
             "ingredients": [
@@ -19393,7 +19393,7 @@
                 "House of Beauty World: $5.95"
             ],
             "sentiment": "N/A",
-            "health_score": 4.1
+            "health_score": 4.03
         },
         "Naturally Sheer Wet to Dry Powder Foundation": {
             "ingredients": "Ingredients not found",
@@ -19909,7 +19909,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 8.77
+            "health_score": 8.4
         },
         "BB Cream Beauty Balm": {
             "ingredients": [
@@ -19962,7 +19962,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 9.64
+            "health_score": 9.43
         },
         "Natural Satin Foundation": {
             "ingredients": [
@@ -19981,7 +19981,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.02
+            "health_score": 6.98
         },
         "Immaculate Compact Foundation": {
             "ingredients": [
@@ -20076,7 +20076,7 @@
                 "eBay: $11.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.85
+            "health_score": 6.81
         },
         "Pressed Foundation with Rosehip Antioxidant Complex": {
             "ingredients": "Ingredients not found",
@@ -20116,7 +20116,7 @@
                 "Poshmark: $64.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.3
+            "health_score": 7.18
         },
         "Satin Matte Foundation": {
             "ingredients": [
@@ -20130,7 +20130,7 @@
                 "Mercari: $18.00"
             ],
             "sentiment": "N/A",
-            "health_score": 3.82
+            "health_score": 3.77
         },
         "Mineral Powder Concealer": {
             "ingredients": "Ingredients not found",
@@ -20227,7 +20227,7 @@
                 "Overstock.com: $15.99"
             ],
             "sentiment": 0.08440676607343274,
-            "health_score": 6.85
+            "health_score": 6.81
         },
         "Concealer": {
             "ingredients": "Ingredients not found",
@@ -20366,7 +20366,7 @@
                 "The Hut: $46.71"
             ],
             "sentiment": "N/A",
-            "health_score": 6.59
+            "health_score": 6.52
         },
         "Loose Mineral Foundation": {
             "ingredients": [
@@ -20382,7 +20382,7 @@
                 "eBay: $44.88"
             ],
             "sentiment": "N/A",
-            "health_score": 4.09
+            "health_score": 4.02
         },
         "Baked Mineral Foundation": {
             "ingredients": [
@@ -20406,7 +20406,7 @@
                 "BEAUTY BAY: $35.75"
             ],
             "sentiment": "N/A",
-            "health_score": 7.25
+            "health_score": 7.15
         },
         "Certified Organic Liquid Foundation with Hyaluronic Acid": {
             "ingredients": "Ingredients not found",
@@ -20534,7 +20534,7 @@
                 "BuyMeBeauty: $6.79"
             ],
             "sentiment": 0.17218406593406596,
-            "health_score": 9.27
+            "health_score": 9.11
         },
         "Clear Complexion Liquid Makeup": {
             "ingredients": "Ingredients not found",
@@ -21295,7 +21295,7 @@
                 "DermStore.com: $46.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.55
+            "health_score": 8.04
         },
         "True Skin Serum Concealer": {
             "ingredients": "Ingredients not found",
@@ -21336,7 +21336,7 @@
                 "DermStore.com: $54.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.9
+            "health_score": 6.88
         },
         "Sheer Vivid Tinted Moisturizer": {
             "ingredients": [
@@ -21375,7 +21375,7 @@
                 "ilia Beauty: $46.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.34
+            "health_score": 7.23
         },
         "Vivid Concealer": {
             "ingredients": [
@@ -21708,7 +21708,7 @@
                 "Clinique: $57.49"
             ],
             "sentiment": "N/A",
-            "health_score": 9.59
+            "health_score": 9.37
         },
         "SkinTrue Foundation": {
             "ingredients": "Ingredients not found",
@@ -21749,7 +21749,7 @@
                 "Skinstore: $34.00"
             ],
             "sentiment": "N/A",
-            "health_score": 3.78
+            "health_score": 3.74
         }
     },
     "Avril": {
@@ -21801,7 +21801,7 @@
                 "LovelySkin: $28.68"
             ],
             "sentiment": "N/A",
-            "health_score": 3.89
+            "health_score": 3.85
         },
         "Completely Covered Creme Concealer": {
             "ingredients": [
@@ -21827,7 +21827,7 @@
                 "LovelySkin: $19.99"
             ],
             "sentiment": -0.0030618686868686823,
-            "health_score": 6.35
+            "health_score": 6.34
         },
         "Color Theory Creme Corrector": {
             "ingredients": [
@@ -21852,7 +21852,7 @@
                 "LovelySkin: $23.50"
             ],
             "sentiment": "N/A",
-            "health_score": 6.37
+            "health_score": 6.33
         }
     },
     "Philosophy": {
@@ -21916,7 +21916,7 @@
                 "philosophy: $15.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.92
+            "health_score": 9.62
         },
         "Renewed Hope in a Jar Skin Tint": {
             "ingredients": [
@@ -21957,7 +21957,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 8.55
+            "health_score": 8.34
         },
         "Miracle Worker Anti-Aging Foundation": {
             "ingredients": [
@@ -22010,7 +22010,7 @@
                 "belk: $75.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.99
+            "health_score": 8.96
         },
         "Hope in a Jar Hydrating Foundation": {
             "ingredients": "Ingredients not found",
@@ -22135,7 +22135,7 @@
                 "Estee Lauder: $44.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.74
+            "health_score": 6.62
         }
     },
     "Bella Donna": {
@@ -22234,7 +22234,7 @@
                 "JustBlinds: $32.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.12
+            "health_score": 6.92
         },
         "ColorShade SPF 30+ Tinted Moisturizer": {
             "ingredients": "Ingredients not found",
@@ -22288,7 +22288,7 @@
                 "eBay: $13.25"
             ],
             "sentiment": "N/A",
-            "health_score": 8.51
+            "health_score": 8.14
         },
         "The Foundation - Perfect Matte Powder Foundation": {
             "ingredients": [
@@ -22332,7 +22332,7 @@
                 "eBay: $9.25"
             ],
             "sentiment": "N/A",
-            "health_score": 7.08
+            "health_score": 7.04
         },
         "The Foundation - Perfect Finish Creamy Foundation": {
             "ingredients": "Ingredients not found",
@@ -22393,7 +22393,7 @@
                 "eBay: $24.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.61
+            "health_score": 8.41
         },
         "The Foundation - Perfect Matte Liquid Foundation": {
             "ingredients": [
@@ -22544,7 +22544,7 @@
                 "Estee Lauder: $43.00"
             ],
             "sentiment": 0.08098518016375159,
-            "health_score": 8.9
+            "health_score": 8.76
         },
         "I Am Magic Concealer": {
             "ingredients": [
@@ -22580,7 +22580,7 @@
                 "Mercari: $15.80"
             ],
             "sentiment": 0.0878982734086901,
-            "health_score": 7.93
+            "health_score": 7.92
         },
         "Loose Setting Powder": {
             "ingredients": "Ingredients not found",
@@ -22710,7 +22710,7 @@
                 "BeautyExpert: $60.00"
             ],
             "sentiment": "N/A",
-            "health_score": 4.94
+            "health_score": 4.9
         },
         "Tinted Moisturiser SPF 20": {
             "ingredients": [
@@ -22761,7 +22761,7 @@
                 "Estee Lauder: $54.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.9
+            "health_score": 7.72
         },
         "Pure Mineral Foundation": {
             "ingredients": [
@@ -22785,7 +22785,7 @@
                 "The Hut: $21.00"
             ],
             "sentiment": "N/A",
-            "health_score": 5.68
+            "health_score": 5.67
         },
         "Mineral Crystal Loose Foundation": {
             "ingredients": "Ingredients not found",
@@ -22827,7 +22827,7 @@
                 "Estee Lauder: $20.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.78
+            "health_score": 6.66
         },
         "Clever Stick": {
             "ingredients": [
@@ -23050,7 +23050,7 @@
                 "Cover FX: $44.00"
             ],
             "sentiment": 0.20832068597419473,
-            "health_score": 8.51
+            "health_score": 8.25
         },
         "CC Cream Time Release Tinted Treatment": {
             "ingredients": "Ingredients not found",
@@ -23103,7 +23103,7 @@
                 "Cover FX: $38.00"
             ],
             "sentiment": 0.22819978541936212,
-            "health_score": 6.17
+            "health_score": 6.12
         },
         "Natural Finish Oil Free Foundation": {
             "ingredients": [
@@ -23262,7 +23262,7 @@
                 "Cover FX: $14.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.47
+            "health_score": 8.33
         },
         "Blotting Powder": {
             "ingredients": [
@@ -23508,7 +23508,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.58
+            "health_score": 7.39
         },
         "Skin Illusion Natural Radiance Foundation": {
             "ingredients": [
@@ -23550,7 +23550,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 8.03
+            "health_score": 7.93
         },
         "Instant Concealer": {
             "ingredients": "Ingredients not found",
@@ -24060,7 +24060,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 8.17
+            "health_score": 8.06
         },
         "Beautifully Matte Foundation": {
             "ingredients": [
@@ -24649,7 +24649,7 @@
                 "Zabiva: $16.76"
             ],
             "sentiment": 0.12340713044477049,
-            "health_score": 7.56
+            "health_score": 7.38
         },
         "HD Liquid Radiance Foundation": {
             "ingredients": "Ingredients not found",
@@ -24789,7 +24789,7 @@
                 "BEAUTY BAY: $7.95"
             ],
             "sentiment": "N/A",
-            "health_score": 9.05
+            "health_score": 8.68
         },
         "Serum Foundation": {
             "ingredients": [
@@ -24831,7 +24831,7 @@
                 "Skinstore: $7.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.84
+            "health_score": 8.7
         }
     },
     "Huda Beauty": {
@@ -25190,7 +25190,7 @@
                 "Sephora: $40.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.63
+            "health_score": 7.34
         },
         "Bounce Airbrush Liquid Whip Concealer": {
             "ingredients": "Ingredients not found",
@@ -25228,7 +25228,7 @@
                 "Macy's: $34.00"
             ],
             "sentiment": "N/A",
-            "health_score": 5.81
+            "health_score": 5.67
         },
         "4-in-1 Love Your Selfie Longwear Foundation and Concealer": {
             "ingredients": "Ingredients not found",
@@ -25296,7 +25296,7 @@
                 "BeautyExpert: $39.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.66
+            "health_score": 9.62
         },
         "Liquid Veil 4-in-1 Spray Foundation": {
             "ingredients": "Ingredients not found",
@@ -25557,7 +25557,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.88
+            "health_score": 7.85
         },
         "Pan Stik Foundation": {
             "ingredients": "Ingredients not found",
@@ -25777,7 +25777,7 @@
                 "Target: $10.79"
             ],
             "sentiment": "N/A",
-            "health_score": 8.13
+            "health_score": 7.97
         },
         "BB Cream Miracle Skin Perfector Sensitive Skin": {
             "ingredients": "Ingredients not found",
@@ -25834,7 +25834,7 @@
                 "Westmore Beauty: $39.95"
             ],
             "sentiment": "N/A",
-            "health_score": 8.06
+            "health_score": 7.92
         },
         "BB Cream Miracle Skin Perfector Oil-Free": {
             "ingredients": "Ingredients not found",
@@ -25979,7 +25979,7 @@
                 "Target: $5.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.77
+            "health_score": 7.43
         },
         "PhotoFocus Concealer": {
             "ingredients": "Ingredients not found",
@@ -26028,7 +26028,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 8.91
+            "health_score": 8.87
         },
         "PhotoFocus Foundation": {
             "ingredients": [
@@ -26063,7 +26063,7 @@
                 "Walgreens.com: $6.29"
             ],
             "sentiment": "N/A",
-            "health_score": 8.02
+            "health_score": 7.84
         },
         "CoverAll Coverstick": {
             "ingredients": [
@@ -26475,7 +26475,7 @@
                 "Sephora: $121.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.62
+            "health_score": 7.59
         },
         "Teint Fidelity 24H": {
             "ingredients": "Ingredients not found",
@@ -26684,7 +26684,7 @@
                 "Poshmark: $25.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.98
+            "health_score": 9.69
         }
     },
     "Bruna Tavares": {
@@ -27205,7 +27205,7 @@
                 "Walgreens.com: $29.00"
             ],
             "sentiment": 0.1919506172839506,
-            "health_score": 8.2
+            "health_score": 7.91
         },
         "Born This Way Super Coverage Multi-Use Sculpting Concealer": {
             "ingredients": [
@@ -27246,7 +27246,7 @@
                 "Nordstrom: $29.00"
             ],
             "sentiment": 0.07412260358688931,
-            "health_score": 8.27
+            "health_score": 8.16
         },
         "Born This Way Foundation": {
             "ingredients": [
@@ -27292,7 +27292,7 @@
                 "Too Faced Cosmetics: $39.00"
             ],
             "sentiment": 0.11909975165927547,
-            "health_score": 8.56
+            "health_score": 8.55
         },
         "Dew You Foundation Full Coverage Fresh Glow Foundation": {
             "ingredients": [
@@ -27349,7 +27349,7 @@
                 "Walmart: $36.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.79
+            "health_score": 8.63
         },
         "Peach Perfect Comfort Matte Foundation": {
             "ingredients": [
@@ -27549,7 +27549,7 @@
                 "Sephora: $48.00"
             ],
             "sentiment": "N/A",
-            "health_score": 4.66
+            "health_score": 4.58
         },
         "Concealer": {
             "ingredients": [
@@ -27590,7 +27590,7 @@
                 "Bella Verite: $42.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.32
+            "health_score": 8.16
         },
         "Professional Bronzer": {
             "ingredients": "Ingredients not found",
@@ -27654,7 +27654,7 @@
                 "eBay: $67.52"
             ],
             "sentiment": "N/A",
-            "health_score": 8.15
+            "health_score": 7.81
         },
         "Match Stix Trios": {
             "ingredients": "Ingredients not found",
@@ -27705,7 +27705,7 @@
                 "Mercari: $21.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.22
+            "health_score": 8.21
         },
         "Pro Filt'r Hydrating Longwear Foundation": {
             "ingredients": [
@@ -27748,7 +27748,7 @@
                 "eBay: $20.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.42
+            "health_score": 8.23
         },
         "Matte Skinstick": {
             "ingredients": [
@@ -27964,7 +27964,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.95
+            "health_score": 7.75
         },
         "Tint Skin Hydrating Foundation": {
             "ingredients": [
@@ -28011,7 +28011,7 @@
                 "eBay USA: $149.95"
             ],
             "sentiment": "N/A",
-            "health_score": 8.46
+            "health_score": 8.32
         }
     },
     "Marie Dalgar": {
@@ -28274,7 +28274,7 @@
                 "LovelySkin: $32.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.71
+            "health_score": 6.66
         },
         "Phyto-Pigments Flawless Serum Foundation": {
             "ingredients": "Ingredients not found",
@@ -28324,7 +28324,7 @@
                 "DermStore.com: $39.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.93
+            "health_score": 6.92
         },
         "Phyto-Pigments Light-Diffusing Dust": {
             "ingredients": "Ingredients not found",
@@ -28631,7 +28631,7 @@
                 "belk: $39.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.48
+            "health_score": 8.17
         },
         "Expert Finish Makeup": {
             "ingredients": "Ingredients not found",
@@ -28835,7 +28835,7 @@
                 "eBay: $10.00"
             ],
             "sentiment": "N/A",
-            "health_score": 5.04
+            "health_score": 4.91
         },
         "Wild Rose Brightening & Flawless Finish Compact Powder": {
             "ingredients": [
@@ -28887,7 +28887,7 @@
                 "Skinstore: $45.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.93
+            "health_score": 6.83
         },
         "Wild Rose Liquid Foundation SPF20": {
             "ingredients": "Ingredients not found",
@@ -29554,7 +29554,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 9.73
+            "health_score": 9.61
         },
         "Blur Liquid Matte Foundation": {
             "ingredients": [
@@ -29587,7 +29587,7 @@
                 "Estee Lauder: $27.99"
             ],
             "sentiment": 0.06323333333333332,
-            "health_score": 7.73
+            "health_score": 7.63
         },
         "Flex Concealer": {
             "ingredients": "Ingredients not found",
@@ -29657,7 +29657,7 @@
                 "www.fruugo.us: $9.95"
             ],
             "sentiment": "N/A",
-            "health_score": 7.04
+            "health_score": 6.7
         },
         "Lasting Finish 25HR Foundation with Comfort Serum": {
             "ingredients": "Ingredients not found",
@@ -29717,7 +29717,7 @@
                 "Walgreens.com: $6.99"
             ],
             "sentiment": "N/A",
-            "health_score": 8.42
+            "health_score": 8.38
         },
         "Match Perfection Concealer": {
             "ingredients": "Ingredients not found",
@@ -30007,7 +30007,7 @@
                 "Macy's: $48.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.12
+            "health_score": 7.9
         },
         "Flawless Fusion Ultra-Longwear Foundation": {
             "ingredients": "Ingredients not found",
@@ -30279,7 +30279,7 @@
                 "DermStore.com: $44.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.7
+            "health_score": 8.51
         },
         "Ultimate Coverage Concealing Cr\u00e8me": {
             "ingredients": [
@@ -30323,7 +30323,7 @@
                 "Nordstrom: $42.00"
             ],
             "sentiment": "N/A",
-            "health_score": 4.79
+            "health_score": 4.75
         },
         "Aqua Luminous Perfecting Foundation": {
             "ingredients": [
@@ -30354,7 +30354,7 @@
                 "DermStore.com: $44.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.81
+            "health_score": 7.71
         },
         "Skin Love Weightless Blur Foundation": {
             "ingredients": [
@@ -30680,7 +30680,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.74
+            "health_score": 7.31
         },
         "Essential High Coverage Cr\u00e8me Foundation": {
             "ingredients": "Ingredients not found",
@@ -30747,7 +30747,7 @@
                 "DermStore.com: $30.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.3
+            "health_score": 7.14
         },
         "Age-Repairing Perfector": {
             "ingredients": "Ingredients not found",
@@ -30873,7 +30873,7 @@
                 "Skinstore: $26.95"
             ],
             "sentiment": "N/A",
-            "health_score": 6.61
+            "health_score": 6.6
         },
         "Dermablend Ultra Corrective Cream Stick": {
             "ingredients": "Ingredients not found",
@@ -32126,7 +32126,7 @@
                 "Macy's: $27.00"
             ],
             "sentiment": "N/A",
-            "health_score": 4.81
+            "health_score": 4.74
         },
         "Amazing Concealer Liquid Foundation": {
             "ingredients": "Ingredients not found",
@@ -32169,7 +32169,7 @@
                 "Skinstore: $21.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.02
+            "health_score": 6.91
         },
         "Amazing Concealer Hydrate": {
             "ingredients": [
@@ -32304,7 +32304,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 6.58
+            "health_score": 6.38
         },
         "Base L\u00edquida Tonalizante": {
             "ingredients": "Ingredients not found",
@@ -32724,7 +32724,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 6.78
+            "health_score": 6.59
         }
     },
     "Biotherm": {
@@ -33176,7 +33176,7 @@
                 "Clinique: $28.50"
             ],
             "sentiment": "N/A",
-            "health_score": 7.06
+            "health_score": 6.82
         },
         "Catwalk Compact Powder": {
             "ingredients": [
@@ -33199,7 +33199,7 @@
                 "eBay: $12.89"
             ],
             "sentiment": "N/A",
-            "health_score": 4.15
+            "health_score": 4.13
         },
         "Velvet Mat Foundation": {
             "ingredients": "Ingredients not found",
@@ -33380,7 +33380,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 6.88
+            "health_score": 6.75
         },
         "Skin Esteem Organic Liquid Foundation": {
             "ingredients": "Ingredients not found",
@@ -33856,7 +33856,7 @@
             ],
             "prices": [],
             "sentiment": 0.18069266371893633,
-            "health_score": 6.35
+            "health_score": 6.31
         },
         "Clean Matte BB Cream": {
             "ingredients": [
@@ -33891,7 +33891,7 @@
                 "Target: $6.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.42
+            "health_score": 7.3
         },
         "Smoothers Aquasmooth Compact Foundation": {
             "ingredients": [
@@ -34860,7 +34860,7 @@
                 "eBay: $7.50"
             ],
             "sentiment": "N/A",
-            "health_score": 9.04
+            "health_score": 8.76
         }
     },
     "Faces Cosmetics": {
@@ -35394,7 +35394,7 @@
                 "Walgreens.com: $12.29"
             ],
             "sentiment": 0.30137199846268464,
-            "health_score": 7.93
+            "health_score": 7.62
         },
         "SkinClearing Liquid Makeup": {
             "ingredients": [
@@ -35438,7 +35438,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.46
+            "health_score": 7.35
         },
         "Healthy Skin Pressed Powder": {
             "ingredients": [
@@ -35474,7 +35474,7 @@
                 "Estee Lauder: $38.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.25
+            "health_score": 6.21
         },
         "Healthy Skin Liquid Makeup": {
             "ingredients": [
@@ -35525,7 +35525,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 8.93
+            "health_score": 8.75
         },
         "Shine Control Liquid Makeup": {
             "ingredients": [
@@ -36304,7 +36304,7 @@
                 "Supergoop!: $36.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.1
+            "health_score": 6.85
         }
     },
     "Lavera": {
@@ -36344,7 +36344,7 @@
                 "Estee Lauder: $43.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.56
+            "health_score": 7.22
         },
         "2-in-1 Compact Foundation": {
             "ingredients": "Ingredients not found",
@@ -36398,7 +36398,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.54
+            "health_score": 7.4
         },
         "Soft Liquid Foundation": {
             "ingredients": "Ingredients not found",
@@ -36789,7 +36789,7 @@
                 "eBay: $8.59"
             ],
             "sentiment": "N/A",
-            "health_score": 5.28
+            "health_score": 5.17
         },
         "Mineral Pressed Powder": {
             "ingredients": "Ingredients not found",
@@ -36949,7 +36949,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.73
+            "health_score": 7.42
         }
     },
     "Designer Brands Cosmetics (DB Cosmetics)": {
@@ -37108,7 +37108,7 @@
                 "BetterHealthStore.com: $21.49"
             ],
             "sentiment": "N/A",
-            "health_score": 7.32
+            "health_score": 7.2
         },
         "Pressed Powder Foundation": {
             "ingredients": [
@@ -37140,7 +37140,7 @@
                 "BetterHealthStore.com: $22.99"
             ],
             "sentiment": "N/A",
-            "health_score": 6.78
+            "health_score": 6.69
         },
         "Liquid Concealer": {
             "ingredients": [
@@ -37170,7 +37170,7 @@
                 "BetterHealthStore.com: $20.99"
             ],
             "sentiment": "N/A",
-            "health_score": 6.99
+            "health_score": 6.9
         },
         "Concealer Duo": {
             "ingredients": [
@@ -37371,7 +37371,7 @@
                 "DermStore.com: $49.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.84
+            "health_score": 8.4
         },
         "Foundation Stick": {
             "ingredients": "Ingredients not found",
@@ -37642,7 +37642,7 @@
                 "Estee Lauder: $27.26"
             ],
             "sentiment": 0.028174603174603186,
-            "health_score": 7.53
+            "health_score": 7.43
         },
         "Shameless Youthful-Look 24H Foundation SPF 25": {
             "ingredients": "Ingredients not found",
@@ -37815,7 +37815,7 @@
                 "Maxedbuy.com: $12.74"
             ],
             "sentiment": 0.09754273504273504,
-            "health_score": 8.28
+            "health_score": 8.04
         },
         "No Filter Foundation": {
             "ingredients": "Ingredients not found",
@@ -38036,7 +38036,7 @@
                 "Estee Lauder: $43.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.78
+            "health_score": 8.42
         },
         "Fluidity Full Coverage Concealer": {
             "ingredients": [
@@ -38069,7 +38069,7 @@
                 "Selfridges: $29.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.94
+            "health_score": 7.76
         },
         "Filter Effect Finishing Powder": {
             "ingredients": [
@@ -38095,7 +38095,7 @@
                 "Mercari: $32.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.9
+            "health_score": 6.86
         }
     },
     "Collection Cosmetics (Collection 2000)": {
@@ -38282,7 +38282,7 @@
                 "Macy's: $14210.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.68
+            "health_score": 6.62
         },
         "Air Finish Longlasting Make Up": {
             "ingredients": "Ingredients not found",
@@ -38346,7 +38346,7 @@
                 "eBay: $15.99"
             ],
             "sentiment": "N/A",
-            "health_score": 8.18
+            "health_score": 7.84
         },
         "The Healthy Foundation": {
             "ingredients": [
@@ -38392,7 +38392,7 @@
                 "Walgreens.com: $15.99"
             ],
             "sentiment": "N/A",
-            "health_score": 8.0
+            "health_score": 7.88
         },
         "Nude Wear Touch of Glow Foundation": {
             "ingredients": [
@@ -38442,7 +38442,7 @@
                 "Zabiva: $20.00"
             ],
             "sentiment": 0.06820618013287187,
-            "health_score": 8.96
+            "health_score": 8.92
         },
         "Organic Wear CC Cream": {
             "ingredients": [
@@ -38476,7 +38476,7 @@
                 "Walgreens.com: $11.19"
             ],
             "sentiment": "N/A",
-            "health_score": 7.38
+            "health_score": 7.28
         },
         "Mineral Wear Talc-Free Mineral Loose Powder SPF 16": {
             "ingredients": [
@@ -39286,7 +39286,7 @@
                 "Stylight US BTY: $9.99"
             ],
             "sentiment": "N/A",
-            "health_score": 6.17
+            "health_score": 6.03
         },
         "Studio Pro Matte Finish Pressed Powder": {
             "ingredients": "Ingredients not found",
@@ -39326,7 +39326,7 @@
                 "Westmore Beauty: $39.95"
             ],
             "sentiment": -0.12740366629255517,
-            "health_score": 7.74
+            "health_score": 7.7
         }
     },
     "Make B": {
@@ -39404,7 +39404,7 @@
                 "Truvani: $59.99"
             ],
             "sentiment": "N/A",
-            "health_score": 3.39
+            "health_score": 3.34
         },
         "Creme Foundation": {
             "ingredients": [
@@ -39455,7 +39455,7 @@
                 "eBay: $5.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.34
+            "health_score": 8.16
         },
         "Matte HD Foundation": {
             "ingredients": [
@@ -39495,7 +39495,7 @@
                 "Mercari: $31.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.29
+            "health_score": 6.28
         },
         "MediaPro HD Sheer Foundation": {
             "ingredients": "Ingredients not found",
@@ -39671,7 +39671,7 @@
                 "Mercari: $25.00"
             ],
             "sentiment": 0.32891652494331064,
-            "health_score": 7.42
+            "health_score": 7.19
         },
         "Perfecting Skin Tint": {
             "ingredients": [
@@ -39702,7 +39702,7 @@
                 "Glossier: $26.00"
             ],
             "sentiment": 0.06650621999641607,
-            "health_score": 7.41
+            "health_score": 7.24
         },
         "Wowder": {
             "ingredients": [
@@ -39723,7 +39723,7 @@
                 "Mercari: $16.00"
             ],
             "sentiment": "N/A",
-            "health_score": 5.25
+            "health_score": 5.21
         }
     },
     "Chantecaille": {
@@ -40124,7 +40124,7 @@
                 "DermStore.com: $68.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.14
+            "health_score": 7.07
         }
     },
     "Note Cosmetics": {
@@ -40274,7 +40274,7 @@
                 "DermStore.com: $12.90"
             ],
             "sentiment": "N/A",
-            "health_score": 7.62
+            "health_score": 7.52
         },
         "Photoderm Nude Touch": {
             "ingredients": "Ingredients not found",
@@ -40765,7 +40765,7 @@
                 "Prescriptives: $30.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.36
+            "health_score": 6.32
         }
     },
     "Quem disse Berenice?": {
@@ -40891,7 +40891,7 @@
                 "Walgreens.com: $18.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.79
+            "health_score": 6.72
         },
         "Photobalm Powder Foundation": {
             "ingredients": "Ingredients not found",
@@ -40935,7 +40935,7 @@
                 "LovelySkin: $17.60"
             ],
             "sentiment": "N/A",
-            "health_score": 6.52
+            "health_score": 6.48
         },
         "Balm Shelter Tinted Moisturizer": {
             "ingredients": [
@@ -41037,7 +41037,7 @@
                 "Skinstore: $24.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.21
+            "health_score": 7.03
         },
         "Flawless Beauty Fluid": {
             "ingredients": [
@@ -41199,7 +41199,7 @@
                 "Sephora: $43.00"
             ],
             "sentiment": 0.2042915944888871,
-            "health_score": 6.71
+            "health_score": 6.65
         },
         "Ultra HD Invisible Cover Foundation": {
             "ingredients": [
@@ -41253,7 +41253,7 @@
                 "Estee Lauder: $43.00"
             ],
             "sentiment": 0.19765896380729592,
-            "health_score": 8.29
+            "health_score": 8.22
         },
         "Lift Concealer": {
             "ingredients": "Ingredients not found",
@@ -41336,7 +41336,7 @@
                 "Sephora: $43.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.29
+            "health_score": 8.02
         },
         "Matte Velvet Skin Liquid Full Coverage Foundation": {
             "ingredients": "Ingredients not found",
@@ -41727,7 +41727,7 @@
                 "eBay: $59.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.78
+            "health_score": 7.47
         },
         "CC Cr\u00e8me High Definition Radiance Face Cream Skin Perfector": {
             "ingredients": "Ingredients not found",
@@ -41789,7 +41789,7 @@
                 "Nordstrom: $46.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.33
+            "health_score": 8.13
         },
         "Illusion Hyaluronic Skin Tint": {
             "ingredients": [
@@ -41845,7 +41845,7 @@
                 "Sephora: $56.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.43
+            "health_score": 9.25
         },
         "Hidden Corrective Concealer": {
             "ingredients": [
@@ -41869,7 +41869,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.05
+            "health_score": 7.01
         },
         "Veil Fluid Makeup": {
             "ingredients": [
@@ -41912,7 +41912,7 @@
                 "Nordstrom: $20.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.77
+            "health_score": 8.66
         },
         "Immaculate Liquid Powder Foundation": {
             "ingredients": [
@@ -42033,7 +42033,7 @@
                 "Estee Lauder: $43.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.95
+            "health_score": 6.76
         },
         "Misa Cho Bo Yang BB Cream": {
             "ingredients": "Ingredients not found",
@@ -42600,7 +42600,7 @@
                 "Target: $43.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.24
+            "health_score": 6.11
         },
         "Revealer Concealer": {
             "ingredients": "Ingredients not found",
@@ -42646,7 +42646,7 @@
                 "Origins: $32.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.71
+            "health_score": 6.61
         },
         "Stay Tuned Balancing Foundation": {
             "ingredients": "Ingredients not found",
@@ -42904,7 +42904,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 6.18
+            "health_score": 6.14
         },
         "Boca Rosa Beauty Perfect Base Mate": {
             "ingredients": "Ingredients not found",
@@ -43067,7 +43067,7 @@
                 "DermStore.com: $45.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.09
+            "health_score": 8.85
         },
         "Argan Matchmaker Serum Foundation": {
             "ingredients": [
@@ -43105,7 +43105,7 @@
                 "DermStore.com: $45.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.06
+            "health_score": 7.96
         },
         "Vibrancy Argan Oil Full Coverage Concealer Fluid": {
             "ingredients": "Ingredients not found",
@@ -43157,7 +43157,7 @@
                 "QVC: $36.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.69
+            "health_score": 8.55
         },
         "Argan Creamy Concealer Crayon": {
             "ingredients": [
@@ -43282,7 +43282,7 @@
                 "Pharmaca: $45.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.17
+            "health_score": 7.04
         },
         "Illusionist Concealer": {
             "ingredients": [
@@ -43307,7 +43307,7 @@
                 "Pharmaca: $29.99"
             ],
             "sentiment": "N/A",
-            "health_score": 6.97
+            "health_score": 6.9
         }
     },
     "CYO Cosmetics": {
@@ -43402,7 +43402,7 @@
                 "Thrive Causemetics: $56.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.47
+            "health_score": 6.43
         }
     },
     "MakeOver": {
@@ -44170,7 +44170,7 @@
                 "Overstock.com: $10.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.85
+            "health_score": 7.57
         },
         "Face Fantasy Matte Finish Foundation": {
             "ingredients": "Ingredients not found",
@@ -44552,7 +44552,7 @@
                 "Walgreens.com: $24.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.99
+            "health_score": 7.87
         },
         "Fresh Effects BB Creme": {
             "ingredients": "Ingredients not found",
@@ -44608,7 +44608,7 @@
                 "Olay.com: $10.49"
             ],
             "sentiment": "N/A",
-            "health_score": 7.67
+            "health_score": 7.53
         }
     },
     "Stila": {
@@ -44727,7 +44727,7 @@
                 "DermStore.com: $50.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.16
+            "health_score": 8.02
         },
         "Illuminating Powder Foundation": {
             "ingredients": [
@@ -44770,7 +44770,7 @@
                 "DermStore.com: $28.00"
             ],
             "sentiment": 0.04174603174603175,
-            "health_score": 6.93
+            "health_score": 6.9
         },
         "Natural Finish Oil Free Makeup": {
             "ingredients": [
@@ -44811,7 +44811,7 @@
                 "DermStore.com: $40.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.01
+            "health_score": 7.86
         },
         "Perfectly Poreless Putty Perfector Foundation": {
             "ingredients": [
@@ -44960,7 +44960,7 @@
                 "LovelySkin: $60.00"
             ],
             "sentiment": 0.14914200168829797,
-            "health_score": 7.59
+            "health_score": 7.45
         },
         "Perfect & Correct Foundation": {
             "ingredients": [
@@ -45325,7 +45325,7 @@
                 "Estee Lauder: $44.00"
             ],
             "sentiment": "N/A",
-            "health_score": 3.44
+            "health_score": 3.4
         },
         "Translucent Foundation": {
             "ingredients": [
@@ -45349,7 +45349,7 @@
                 "eBay: $21.60"
             ],
             "sentiment": "N/A",
-            "health_score": 6.32
+            "health_score": 6.3
         }
     },
     "Gressa": {
@@ -45413,7 +45413,7 @@
                 "Mercari: $19.20"
             ],
             "sentiment": "N/A",
-            "health_score": 7.75
+            "health_score": 7.61
         },
         "Powder Foundation": {
             "ingredients": [
@@ -45455,7 +45455,7 @@
                 "Nordstrom: $34.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.61
+            "health_score": 6.32
         },
         "Loose Face Powder": {
             "ingredients": "Ingredients not found",
@@ -45516,7 +45516,7 @@
                 "Target: $13.89"
             ],
             "sentiment": "N/A",
-            "health_score": 7.92
+            "health_score": 7.74
         },
         "Positively Ageless Correcting Tinted Moisturizer": {
             "ingredients": "Ingredients not found",
@@ -46357,7 +46357,7 @@
                 "Buy-Rite Beauty: $99.99"
             ],
             "sentiment": "N/A",
-            "health_score": 5.35
+            "health_score": 5.28
         },
         "Matte Clay Skin Clarifying Foundation": {
             "ingredients": "Ingredients not found",
@@ -46659,7 +46659,7 @@
                 "eBay: $15.90"
             ],
             "sentiment": "N/A",
-            "health_score": 4.98
+            "health_score": 4.9
         },
         "Perfect Stick with Tea-Tree Oil": {
             "ingredients": "Ingredients not found",
@@ -46766,7 +46766,7 @@
                 "House of Beauty World: $11.95"
             ],
             "sentiment": "N/A",
-            "health_score": 6.21
+            "health_score": 6.01
         },
         "Under Eyes Disguise Full-Coverage Concealer": {
             "ingredients": "Ingredients not found",
@@ -46820,7 +46820,7 @@
                 "Aveda: $26.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.94
+            "health_score": 7.82
         },
         "Inner Light Mineral Dual Foundation": {
             "ingredients": [
@@ -46853,7 +46853,7 @@
                 "Aveda: $20.00"
             ],
             "sentiment": 0.26755687857045385,
-            "health_score": 6.32
+            "health_score": 6.25
         },
         "Inner Light Mineral Pressed Powder": {
             "ingredients": "Ingredients not found",
@@ -46955,7 +46955,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 4.09
+            "health_score": 4.02
         }
     },
     "Exuviance": {
@@ -46995,7 +46995,7 @@
                 "DermStore.com: $22.80"
             ],
             "sentiment": "N/A",
-            "health_score": 7.94
+            "health_score": 7.68
         },
         "Skin Caring Foundation SPF 15": {
             "ingredients": "Ingredients not found",
@@ -47060,7 +47060,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.42
+            "health_score": 7.01
         },
         "Your Skin Makeup Foundation": {
             "ingredients": "Ingredients not found",
@@ -47122,7 +47122,7 @@
                 "The Tanning Store: $35.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.15
+            "health_score": 5.86
         },
         "Pro Silicone-Based Foundation": {
             "ingredients": "Ingredients not found",
@@ -47160,7 +47160,7 @@
                 "Nordstrom: $85.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.15
+            "health_score": 6.1
         },
         "Dura Skin": {
             "ingredients": "Ingredients not found",
@@ -47218,7 +47218,7 @@
                 "Natural Beauty Group: $43.25"
             ],
             "sentiment": "N/A",
-            "health_score": 6.02
+            "health_score": 5.81
         },
         "Po Compacto": {
             "ingredients": [
@@ -47460,7 +47460,7 @@
                 "BeautyExpert: $20.00"
             ],
             "sentiment": "N/A",
-            "health_score": 4.09
+            "health_score": 4.02
         },
         "BB Cream Derma Renew": {
             "ingredients": "Ingredients not found",
@@ -47817,7 +47817,7 @@
                 "DermStore.com: $38.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.93
+            "health_score": 7.64
         },
         "Compact Powder": {
             "ingredients": [
@@ -47857,7 +47857,7 @@
                 "DermStore.com: $58.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.04
+            "health_score": 6.87
         },
         "Skin Veil Bottle": {
             "ingredients": [
@@ -47891,7 +47891,7 @@
                 "DermStore.com: $58.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.93
+            "health_score": 7.89
         },
         "Concealer": {
             "ingredients": [
@@ -47945,7 +47945,7 @@
                 "DermStore.com: $37.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.0
+            "health_score": 8.7
         },
         "Skin Veil Foundation Pen": {
             "ingredients": "Ingredients not found",
@@ -48162,7 +48162,7 @@
                 "Overstock.com: $40.00"
             ],
             "sentiment": "N/A",
-            "health_score": 5.58
+            "health_score": 5.45
         },
         "Flawless Finish Sponge-On Cream Makeup": {
             "ingredients": [
@@ -48201,7 +48201,7 @@
                 "Macy's: $39.50"
             ],
             "sentiment": 0.16095984759410684,
-            "health_score": 4.57
+            "health_score": 4.46
         },
         "Pure Finish Mineral Tinted Moisturizer": {
             "ingredients": [
@@ -48243,7 +48243,7 @@
                 "Macy's: $40.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.24
+            "health_score": 7.2
         },
         "Flawless Finish Perfectly Nude Makeup": {
             "ingredients": "Ingredients not found",
@@ -48619,7 +48619,7 @@
                 "Target: $28.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.87
+            "health_score": 7.74
         },
         "Altruist Foundation Powder": {
             "ingredients": "Ingredients not found",
@@ -48675,7 +48675,7 @@
                 "Target: $22.99"
             ],
             "sentiment": "N/A",
-            "health_score": 8.83
+            "health_score": 8.79
         },
         "Bio Tint Multi-Action Moisturizer": {
             "ingredients": [
@@ -48731,7 +48731,7 @@
                 "Target: $29.99"
             ],
             "sentiment": "N/A",
-            "health_score": 9.35
+            "health_score": 9.28
         },
         "Bio Base Baked Foundation": {
             "ingredients": "Ingredients not found",
@@ -48995,7 +48995,7 @@
                 "LovelySkin: $52.80"
             ],
             "sentiment": "N/A",
-            "health_score": 6.5
+            "health_score": 6.46
         },
         "Complete Coverage Foundation": {
             "ingredients": "Ingredients not found",
@@ -49041,7 +49041,7 @@
                 "Nordstrom: $54.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.76
+            "health_score": 7.48
         },
         "Loose Powder with Puff": {
             "ingredients": "Ingredients not found",
@@ -49124,7 +49124,7 @@
                 "Zabiva: $36.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.36
+            "health_score": 7.12
         }
     },
     "Cargo": {
@@ -49161,7 +49161,7 @@
                 "Overstock.com: $21.19"
             ],
             "sentiment": "N/A",
-            "health_score": 6.08
+            "health_score": 5.98
         },
         "OneBase Concealer + Foundation In One": {
             "ingredients": [
@@ -49192,7 +49192,7 @@
                 "eBay: $25.33"
             ],
             "sentiment": "N/A",
-            "health_score": 5.19
+            "health_score": 5.1
         },
         "HD Picture Perfect Liquid Foundation": {
             "ingredients": "Ingredients not found",
@@ -49264,7 +49264,7 @@
                 "DermStore.com: $29.50"
             ],
             "sentiment": "N/A",
-            "health_score": 7.99
+            "health_score": 7.54
         },
         "Swimmables Longwear Foundation": {
             "ingredients": "Ingredients not found",
@@ -49320,7 +49320,7 @@
                 "DermStore.com: $48.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.51
+            "health_score": 7.39
         },
         "The Etherealist Skin Illuminating Foundation": {
             "ingredients": "Ingredients not found",
@@ -50134,7 +50134,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 2.95
+            "health_score": 2.94
         },
         "Aquarela Base 3 en 1 FPS12": {
             "ingredients": "Ingredients not found",
@@ -51074,7 +51074,7 @@
                 "Poshmark: $34.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.97
+            "health_score": 6.82
         },
         "Creme-to-Powder Foundation": {
             "ingredients": "Ingredients not found",
@@ -51098,7 +51098,7 @@
                 "eBay: $28.50"
             ],
             "sentiment": "N/A",
-            "health_score": 6.58
+            "health_score": 6.48
         },
         "Age-Defying Liquid Foundation": {
             "ingredients": "Ingredients not found",
@@ -51230,7 +51230,7 @@
                 "Professional Supplement Center: $46.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.33
+            "health_score": 7.14
         },
         "Clear Lights Tinted Moisturiser": {
             "ingredients": [
@@ -51263,7 +51263,7 @@
                 "Professional Supplement Center: $46.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.34
+            "health_score": 7.22
         },
         "Luminous Pressed Powder": {
             "ingredients": "Ingredients not found",
@@ -51455,7 +51455,7 @@
                 "DermStore.com: $58.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.35
+            "health_score": 9.31
         },
         "Terrybly Densiliss Concealer Anti-Wrinkle - Dark Circle - Eye Bag Serum Corrector": {
             "ingredients": "Ingredients not found",
@@ -51938,7 +51938,7 @@
                 "DermStore.com: $48.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.89
+            "health_score": 6.8
         },
         "Sun Defense Minerals": {
             "ingredients": "Ingredients not found",
@@ -51979,7 +51979,7 @@
                 "Nordstrom: $38.00"
             ],
             "sentiment": 0.10647582869805092,
-            "health_score": 5.0
+            "health_score": 4.9
         },
         "Even Skin Mineral Powder Foundation SPF 15": {
             "ingredients": "Ingredients not found",
@@ -52015,7 +52015,7 @@
                 "Nordstrom: $43.00"
             ],
             "sentiment": 0.061775362318840586,
-            "health_score": 5.28
+            "health_score": 5.25
         },
         "Beauty Balm Instant Solutions": {
             "ingredients": [
@@ -52160,7 +52160,7 @@
                 "QVC: $33.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.91
+            "health_score": 6.7
         },
         "Phenomenal Foundation": {
             "ingredients": [
@@ -52202,7 +52202,7 @@
                 "Nordstrom: $41.25"
             ],
             "sentiment": 0.11037878787878787,
-            "health_score": 7.58
+            "health_score": 7.46
         },
         "Baked Balance-n-Glow Illuminating Foundation": {
             "ingredients": "Ingredients not found",
@@ -52378,7 +52378,7 @@
             ],
             "prices": [],
             "sentiment": 0.1946780626780627,
-            "health_score": 8.72
+            "health_score": 8.58
         },
         "Radiant Tinted Moisturizer SPF15": {
             "ingredients": "Ingredients not found",
@@ -52442,7 +52442,7 @@
                 "eBay: $7.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.39
+            "health_score": 8.28
         }
     },
     "Lorac": {
@@ -52492,7 +52492,7 @@
                 "DermStore.com: $52.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.5
+            "health_score": 8.27
         },
         "Double Feature Concealer & Highlighter": {
             "ingredients": "Ingredients not found",
@@ -52537,7 +52537,7 @@
                 "Estee Lauder: $43.00"
             ],
             "sentiment": "N/A",
-            "health_score": 5.67
+            "health_score": 5.61
         },
         "POREfection Concealer": {
             "ingredients": "Ingredients not found",
@@ -53283,7 +53283,7 @@
                 "Skinstore: $43.52"
             ],
             "sentiment": "N/A",
-            "health_score": 5.61
+            "health_score": 5.43
         },
         "HD Foundation Stick": {
             "ingredients": "Ingredients not found",
@@ -53875,7 +53875,7 @@
                 "eBay: $62.12"
             ],
             "sentiment": "N/A",
-            "health_score": 9.24
+            "health_score": 8.84
         },
         "Liquid Foundation": {
             "ingredients": [
@@ -53913,7 +53913,7 @@
                 "YesStyle: $55.01"
             ],
             "sentiment": "N/A",
-            "health_score": 3.57
+            "health_score": 3.54
         },
         "Creamy Polished Base N": {
             "ingredients": "Ingredients not found",
@@ -53952,7 +53952,7 @@
                 "eBay: $68.88"
             ],
             "sentiment": "N/A",
-            "health_score": 6.74
+            "health_score": 6.65
         },
         "Creamy Foundation N": {
             "ingredients": [
@@ -54078,7 +54078,7 @@
                 "www.fruugo.us: $79.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.45
+            "health_score": 6.4
         },
         "Airy Powder Foundation": {
             "ingredients": "Ingredients not found",
@@ -54159,7 +54159,7 @@
                 "Nordstrom: $32.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.22
+            "health_score": 7.11
         },
         "Perfection Cover Foundation": {
             "ingredients": "Ingredients not found",
@@ -54248,7 +54248,7 @@
                 "Cosbar: $60.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.15
+            "health_score": 8.76
         },
         "Age Correcting Foundation Cushion": {
             "ingredients": "Ingredients not found",
@@ -54424,7 +54424,7 @@
                 "YesStyle: $16.06"
             ],
             "sentiment": "N/A",
-            "health_score": 7.18
+            "health_score": 7.05
         },
         "Perfect Cover Cushion": {
             "ingredients": "Ingredients not found",
@@ -54530,7 +54530,7 @@
                 "Supergoop!: $23.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.73
+            "health_score": 7.67
         },
         "Expert Metal Cushion Foundation": {
             "ingredients": "Ingredients not found",
@@ -54916,7 +54916,7 @@
                 "Sephora: $32.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.55
+            "health_score": 8.15
         },
         "Reveal Color Correcting Eye Serum Concealer": {
             "ingredients": [
@@ -54976,7 +54976,7 @@
                 "Sephora: $16.99"
             ],
             "sentiment": "N/A",
-            "health_score": 9.15
+            "health_score": 8.97
         },
         "REVEAL Color Correcting Anti-Aging Serum Foundation": {
             "ingredients": "Ingredients not found",
@@ -55730,7 +55730,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 9.14
+            "health_score": 9.12
         },
         "Po Facial / Facial Powder": {
             "ingredients": "Ingredients not found",
@@ -55840,7 +55840,7 @@
                 "TheBeautyPlace: $38.00"
             ],
             "sentiment": "N/A",
-            "health_score": 5.54
+            "health_score": 5.41
         },
         "Whipped Foundation": {
             "ingredients": "Ingredients not found",
@@ -55902,7 +55902,7 @@
                 "TheBeautyPlace: $38.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.7
+            "health_score": 7.55
         }
     },
     "Circa Beauty": {
@@ -55950,7 +55950,7 @@
                 "eBay: $12.99"
             ],
             "sentiment": "N/A",
-            "health_score": 9.37
+            "health_score": 9.03
         }
     },
     "MyFace Cosmetics": {
@@ -56859,7 +56859,7 @@
                 "Sephora: $16.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.36
+            "health_score": 8.06
         }
     },
     "Yuva": {
@@ -56879,7 +56879,7 @@
                 "Alive By Nature: $1000.00"
             ],
             "sentiment": "N/A",
-            "health_score": 5.83
+            "health_score": 5.82
         }
     },
     "Giordani Gold by Oriflame": {
@@ -57163,7 +57163,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.09
+            "health_score": 6.89
         },
         "Superior Cover Pressed Powder": {
             "ingredients": "Ingredients not found",
@@ -57271,7 +57271,7 @@
                 "Mercari: $10.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.37
+            "health_score": 7.26
         },
         "Dis-A-Pore Beauty Balm": {
             "ingredients": [
@@ -57323,7 +57323,7 @@
                 "Sephora: $36.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.2
+            "health_score": 9.18
         },
         "Black Label Detox BB Beauty Balm": {
             "ingredients": [
@@ -57391,7 +57391,7 @@
                 "Sephora: $36.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.83
+            "health_score": 9.72
         },
         "Bounce Beauty Balm Moist": {
             "ingredients": "Ingredients not found",
@@ -57818,7 +57818,7 @@
                 "Walmart: $24.99"
             ],
             "sentiment": "N/A",
-            "health_score": 6.38
+            "health_score": 6.31
         },
         "Water Canvas Creme-to-Powder Foundation- Oil Free": {
             "ingredients": "Ingredients not found",
@@ -58483,7 +58483,7 @@
                 "DermStore.com: $68.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.77
+            "health_score": 7.44
         }
     },
     "SeneGence International": {
@@ -58769,7 +58769,7 @@
                 "Estee Lauder: $13.90"
             ],
             "sentiment": "N/A",
-            "health_score": 4.3
+            "health_score": 4.23
         },
         "Get It All Foundation": {
             "ingredients": "Ingredients not found",
@@ -59171,7 +59171,7 @@
                 "Estee Lauder: $1.75"
             ],
             "sentiment": "N/A",
-            "health_score": 5.25
+            "health_score": 5.15
         }
     },
     "Nykaa": {
@@ -59423,7 +59423,7 @@
                 "Mercari: $7.00"
             ],
             "sentiment": "N/A",
-            "health_score": 4.73
+            "health_score": 4.66
         },
         "Liquid Mineral Foundation": {
             "ingredients": "Ingredients not found",
@@ -59848,7 +59848,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 9.59
+            "health_score": 9.44
         },
         "Protective Fluid Foundation S": {
             "ingredients": [
@@ -59899,7 +59899,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 9.59
+            "health_score": 9.49
         },
         "Creamy Powder Foundation": {
             "ingredients": [
@@ -60001,7 +60001,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 9.59
+            "health_score": 9.49
         },
         "Face Powder N": {
             "ingredients": [],
@@ -60058,7 +60058,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 9.59
+            "health_score": 9.49
         },
         "Protecting Foundation Primer S": {
             "ingredients": [
@@ -61140,7 +61140,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 7.96
+            "health_score": 7.65
         },
         "Perfect Innerlighting Cushion": {
             "ingredients": "Ingredients not found",
@@ -61374,7 +61374,7 @@
                 "eBay: $16.80"
             ],
             "sentiment": "N/A",
-            "health_score": 7.32
+            "health_score": 7.11
         }
     },
     "Diego Dalla Palma": {
@@ -61742,7 +61742,7 @@
                 "DermStore.com: $28.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.97
+            "health_score": 7.79
         },
         "Hello FAB Bendy Avocado Concealer": {
             "ingredients": "Ingredients not found",
@@ -62033,7 +62033,7 @@
                 "Mercari: $30.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.49
+            "health_score": 7.39
         },
         "Invincible Foundation": {
             "ingredients": "Ingredients not found",
@@ -62175,7 +62175,7 @@
                 "eBay: $7.99"
             ],
             "sentiment": "N/A",
-            "health_score": 4.54
+            "health_score": 4.47
         }
     },
     "Pink Up Cosmetics": {
@@ -62266,7 +62266,7 @@
                 "Walmart: $29.12"
             ],
             "sentiment": "N/A",
-            "health_score": 7.69
+            "health_score": 7.47
         },
         "Derma Minerals Cream Foundation": {
             "ingredients": "Ingredients not found",
@@ -62619,7 +62619,7 @@
                 "Nordstrom: $32.49"
             ],
             "sentiment": "N/A",
-            "health_score": 9.88
+            "health_score": 9.74
         }
     },
     "Koloss Cosmeticos": {
@@ -63383,7 +63383,7 @@
                 "Cover FX: $42.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.09
+            "health_score": 7.69
         },
         "Piece of Cake Powder Foundation": {
             "ingredients": "Ingredients not found",
@@ -63503,7 +63503,7 @@
                 "Estee Lauder: $43.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.77
+            "health_score": 6.64
         },
         "Mattifying Compact Powder": {
             "ingredients": [
@@ -63524,7 +63524,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 6.16
+            "health_score": 6.12
         }
     },
     "Sunday Riley": {
@@ -63582,7 +63582,7 @@
                 "Skinstore: $72.00"
             ],
             "sentiment": 0.057503668647736456,
-            "health_score": 9.24
+            "health_score": 9.01
         },
         "Liquid Light Breathable Perfecting Foundation": {
             "ingredients": "Ingredients not found",
@@ -63747,7 +63747,7 @@
                 "eBay: $15.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.61
+            "health_score": 9.25
         },
         "BB Cream Beauty Balm": {
             "ingredients": "Ingredients not found",
@@ -63908,7 +63908,7 @@
                 "Thrive Causemetics: $18.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.07
+            "health_score": 8.66
         }
     },
     "Winky Lux": {
@@ -63974,7 +63974,7 @@
                 "eBay: $14.99"
             ],
             "sentiment": "N/A",
-            "health_score": 7.74
+            "health_score": 7.31
         },
         "Tint Protective Tinted Moisturizer": {
             "ingredients": "Ingredients not found",
@@ -64153,7 +64153,7 @@
                 "YesStyle: $20.79"
             ],
             "sentiment": "N/A",
-            "health_score": 7.48
+            "health_score": 7.3
         }
     },
     "Prolux": {
@@ -64238,7 +64238,7 @@
                 "eBay: $6.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.41
+            "health_score": 7.37
         },
         "Silky Pressed Powder": {
             "ingredients": "Ingredients not found",
@@ -64528,7 +64528,7 @@
                 "eBay: $18.95"
             ],
             "sentiment": "N/A",
-            "health_score": 7.85
+            "health_score": 7.78
         },
         "Foundation SPF 15 / Foundation with Sunscreen": {
             "ingredients": "Ingredients not found",
@@ -64584,7 +64584,7 @@
                 "Estee Lauder: $62.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.85
+            "health_score": 7.78
         },
         "Make-Up": {
             "ingredients": [
@@ -64622,7 +64622,7 @@
                 "Poshmark: $43.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.27
+            "health_score": 7.13
         },
         "Illusion Touch 2 in 1 Make-Up & Concealer": {
             "ingredients": "Ingredients not found",
@@ -65041,7 +65041,7 @@
                 "BEAUTY BAY: $27.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.66
+            "health_score": 6.61
         }
     },
     "Lagom": {
@@ -65243,7 +65243,7 @@
                 "Nordstrom: $32.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.05
+            "health_score": 7.74
         }
     },
     "IPSA": {
@@ -65627,7 +65627,7 @@
                 "Clinique: $39.00"
             ],
             "sentiment": "N/A",
-            "health_score": 5.27
+            "health_score": 5.2
         },
         "Perfect Glo": {
             "ingredients": [
@@ -65658,7 +65658,7 @@
                 "eBay: $25.35"
             ],
             "sentiment": "N/A",
-            "health_score": 7.51
+            "health_score": 7.47
         }
     },
     "Yensa": {
@@ -65756,7 +65756,7 @@
                 "VITATENT: $40.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.7
+            "health_score": 8.51
         },
         "No Transfer Foundation": {
             "ingredients": "Ingredients not found",
@@ -65905,7 +65905,7 @@
                 "Estee Lauder: $109.00"
             ],
             "sentiment": "N/A",
-            "health_score": 9.41
+            "health_score": 9.18
         }
     },
     "Hanyul": {
@@ -66084,7 +66084,7 @@
                 "Zabiva: $36.00"
             ],
             "sentiment": "N/A",
-            "health_score": 7.07
+            "health_score": 6.96
         }
     },
     "Unny Club": {
@@ -66241,7 +66241,7 @@
             ],
             "prices": [],
             "sentiment": "N/A",
-            "health_score": 6.62
+            "health_score": 6.45
         }
     },
     "iWhite Korea": {
@@ -66320,7 +66320,7 @@
                 "eBay: $14.95"
             ],
             "sentiment": "N/A",
-            "health_score": 6.84
+            "health_score": 6.74
         }
     },
     "Kiotis": {
@@ -66469,7 +66469,7 @@
                 "YesStyle: $26.51"
             ],
             "sentiment": "N/A",
-            "health_score": 5.59
+            "health_score": 5.57
         }
     },
     "Vice Cosmetics": {
@@ -66603,7 +66603,7 @@
                 "Beauty of a Site: $46.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.72
+            "health_score": 8.54
         }
     },
     "Fusion Beauty": {
@@ -66707,7 +66707,7 @@
                 "Mercari: $20.00"
             ],
             "sentiment": "N/A",
-            "health_score": 8.73
+            "health_score": 8.5
         }
     },
     "Estelle & Thild": {
@@ -66828,7 +66828,7 @@
                 "DermStore.com: $48.00"
             ],
             "sentiment": "N/A",
-            "health_score": 6.47
+            "health_score": 6.27
         }
     }
 }

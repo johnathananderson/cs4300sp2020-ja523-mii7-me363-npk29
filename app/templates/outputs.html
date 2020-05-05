@@ -86,7 +86,7 @@
                         if (item["sentiment"] === undefined || item["sentiment"] == "N/A") {
                             item["sentiment"] = undefined;
                         } else if (typeof item["sentiment"] == "number"){
-                            item["sentiment"] = ((item["sentiment"] * 5) + 5).toFixed(3);
+                            item["sentiment"] = ((item["sentiment"] * 5) + 5).toFixed(2);
                         }
                         if (item["ingredients"] === undefined) {
                             item["ingredients"] = "Ingredients not found";
