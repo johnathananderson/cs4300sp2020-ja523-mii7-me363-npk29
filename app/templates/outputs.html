@@ -52,6 +52,7 @@
                         {{/prices}}
                         {{#sentiment}}
                         <div class="ingredients">Sentiment: {{ sentiment }} / 10</div> 
+                        <div class="ingredients">Top Descriptors: {{ words }}</div> 
                         {{/sentiment}}
                         <div class="ingredients">Safety Score: {{ health_score }} / 10</div>
                         <div class="ingredients">{{ ingredients }}</div>
@@ -74,6 +75,7 @@
                             item["prices"] = m["prices"];
                             item["health_score"] = m["health_score"];
                             item["sentiment"] = m["sentiment"];
+                            item["words"] = m["words"];
                         }
                         if (item["health_score"] === undefined) {
                             item["health_score"] = "N/A";
@@ -82,6 +84,9 @@
                         }
                         if (item["prices"] !== undefined && item["prices"].length == 0) {
                             item["prices"] = undefined;
+                        }
+                        if (item["words"] === undefined || item["words"] == "N/A" || item["words"].length == 0) {
+                            item["words"] = undefined;
                         }
                         if (item["sentiment"] === undefined || item["sentiment"] == "N/A") {
                             item["sentiment"] = undefined;
@@ -122,6 +127,10 @@
                         if (typeof i_prices == "object") {
                             i_prices = i_prices.join(", ")
                         }
+                        var i_words = item["words"];
+                        if (typeof i_words == "object") {
+                            i_words = i_words.join(", ")
+                        }
                         var template = document.getElementById("product_template").innerHTML;
                         var rendered = Mustache.render(template, {
                             brand: item["brand"],
@@ -131,7 +140,8 @@
                             ingredients: i_ingredients,
                             prices: i_prices,
                             health_score: item["health_score"],
-                            sentiment: item["sentiment"]
+                            sentiment: item["sentiment"],
+                            words: i_words
                         });
                         block.innerHTML = rendered;
                     }

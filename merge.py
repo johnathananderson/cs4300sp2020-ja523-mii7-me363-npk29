@@ -30,6 +30,13 @@ def merge():
         except:
             print("Couldn't open scores")
 
+    with open("review_words.json", encoding="utf8") as data:
+        try:
+            w = json.load(data)
+            print("Opened scores")
+        except:
+            print("Couldn't open scores")
+
     o = {}
     for brand in i:
         o[brand] = {}
@@ -44,6 +51,10 @@ def merge():
                 o[brand][product_name]["sentiment"] = r[brand][product_name]
             else:
                 o[brand][product_name]["sentiment"] = "N/A"
+            if brand in w and product_name in w[brand]:
+                o[brand][product_name]["words"] = w[brand][product_name]
+            else:
+                o[brand][product_name]["words"] = "N/A"
             o[brand][product_name]["health_score"] = h[brand][product_name]
     with open("outputs_i1.json", "w") as outfile:
         json.dump(o, outfile, indent=4)
