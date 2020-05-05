@@ -23,7 +23,7 @@
                 <button id="cheap" class="btn btn-default filter-button" data-filter="cheapest" data-toggle="tooltip" data-placement="top" title="Sort By Price: Low to High">Cheapest</button>
                 <button id="safe" class="btn btn-default filter-button" data-filter="healthiest" data-toggle="tooltip" data-placement="top" title="Sort By Safety: High to Low">Safest</button>
                 <button id="review" class="btn btn-default filter-button" data-filter="sentiment" data-toggle="tooltip" data-placement="top" title="Sort By Reviews Sentiment: High to Low">Sentiment</button>
-                <div id="keywords"><input id="brand-input" type="text" placeholder="Filter by keyword"/></div>
+                <div id="keywords"><input id="brand-input" type="text" placeholder="Filter By Keyword"/></div>
             </div>
         </div>
             <br />
@@ -127,10 +127,10 @@
                         if (typeof i_words == "object") {
                             i_words = i_words.join(", ")
                         }
-                        if (typeof item["sentiment"] == "number") {
+                        if (item["sentiment"] !== "N/A" && !(item["sentiment"].includes("/ 10"))) {
                             item["sentiment"] = (item["sentiment"]).toString() + " / 10"
                         }
-                        if (typeof item["health_score"] == "number") {
+                        if (item["health_score"] !== "N/A" && !(item["health_score"].includes("/ 10"))) {
                             item["health_score"] = (item["health_score"]).toString() + " / 10"
                         }
                         
