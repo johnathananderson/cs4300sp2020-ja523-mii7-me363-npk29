@@ -37,7 +37,7 @@
     text-align: center;
     color: #ffffff;
     background-color: #e45c27;
-    border-color: none !important;
+    border-color: white !important;
 }
 
 .btn-default:active .filter-button:active {
@@ -46,7 +46,7 @@
 }
 
 .btn-default {
-    border-color: none !important;
+    border-color: white !important;
 }
 
 .port-image {
