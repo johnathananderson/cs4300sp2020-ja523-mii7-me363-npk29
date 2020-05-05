@@ -127,10 +127,10 @@
                         if (typeof i_words == "object") {
                             i_words = i_words.join(", ")
                         }
-                        if (item["sentiment"] !== "N/A") {
+                        if (typeof item["sentiment"] == "number") {
                             item["sentiment"] = (item["sentiment"]).toString() + " / 10"
                         }
-                        if (item["health_score"] !== "N/A") {
+                        if (typeof item["health_score"] == "number") {
                             item["health_score"] = (item["health_score"]).toString() + " / 10"
                         }
                         
