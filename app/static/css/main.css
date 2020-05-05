@@ -158,7 +158,7 @@
     background-color: black;
 }
 
-.steps:after {
+.steps::after {
     color: black;
     border-left: 13px solid;
     border-top: 13px solid transparent;
