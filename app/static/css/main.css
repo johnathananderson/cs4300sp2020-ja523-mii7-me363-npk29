@@ -60,8 +60,11 @@
 }
 
 #prev_form {
-    /* margin-top: 10.5vh; */
     display: inline-block;
+}
+
+.shadeprod {
+    margin-top: 25vh;
 }
 
 #adv_form {
