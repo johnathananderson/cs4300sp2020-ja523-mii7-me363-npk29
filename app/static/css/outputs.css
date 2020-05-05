@@ -37,6 +37,7 @@
     text-align: center;
     color: #ffffff;
     background-color: #e45c27;
+    border-color: none !important;
 }
 
 .btn-default:active .filter-button:active {
@@ -45,7 +46,7 @@
 }
 
 .btn-default {
-    border-color: none;
+    border-color: none !important;
 }
 
 .port-image {
@@ -224,7 +225,7 @@ button.btn.btn-default.filter-button:focus {
 #brand-input::placeholder {
     /* color: grey;
     opacity: 0.6; */
-    font-size: 10px;
+    font-size: 12px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
