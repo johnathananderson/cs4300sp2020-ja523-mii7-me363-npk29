@@ -15,13 +15,14 @@
 <body>
 
     <div class="loader" style="display: none;">
-        <div class="load-container">
+        {# <div class="load-container">
             <div class="spinner-grow" style="color:#543315"></div>
             <div class="spinner-grow" style="color:#c68642"></div>
             <div class="spinner-grow" style="color:#f1c27d"></div>
             <div class="spinner-grow" style="color:#FFDBAC"></div>
             <div class="spinner-grow" style="color:#ffedd5"></div>
-        </div>
+        </div> #}
+        <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/XgFzyfbtRL7pwORV1c" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/Lancome-Official-XgFzyfbtRL7pwORV1c">via GIPHY</a></p>
     </div>
 
     <div class="s008">
@@ -245,16 +246,6 @@
 
         /*initiate the autocomplete function on the "inut" element, and pass along the brands array as possible autocomplete values:*/
         autocomplete(document.getElementById("input"), p, document.getElementById("prev_form"));
-    </script>
-    <script>
-        //Reference: https://jsfiddle.net/fwv18zo1/
-        var $select1 = $('#select1'),
-            $select2 = $('#select2'),
-            $options = $select2.find('option');
-
-        $select1.on('change', function () {
-            $select2.html($options.filter('[value="' + this.value + '"]'));
-        }).trigger('change');
     </script>
 </body>
 
