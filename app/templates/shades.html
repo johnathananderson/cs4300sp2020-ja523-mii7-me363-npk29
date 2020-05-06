@@ -24,15 +24,14 @@
         </div> #}
         {# <img src="/static/images/loader.gif"> #}
         <div style="display:inline-block; height: 100%;">
-            <iframe src="https://i.giphy.com/media/XgFzyfbtRL7pwORV1c/source.mp4" width="auto" height="35%"
-                style="margin-top: 30vh;" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
-        </div>
+            <iframe src="https://i.giphy.com/media/XgFzyfbtRL7pwORV1c/source.mp4" width="auto" height="35%" style="margin-top: 30vh;" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe>
+        </div>        
         {# <p><a href="https://giphy.com/gifs/Lancome-Official-XgFzyfbtRL7pwORV1c"></a></p> #}
     </div>
 
     <div class="s008">
         <div class="topcorner">
-            <h1 class="out_message">{{output_message}}</h1>
+                <h1 class="out_message">{{output_message}}</h1>
         </div>
         <div class="inner-form">
             <div class="steps">Step 3: Enter your Shade</div>
@@ -211,44 +210,43 @@
                 } else {
                     $('#input').popover('hide');
                     $(".loader").show();
-                    document.getElementById("brand-input").value = String(({{ brand | tojson | safe }
-            }));
-            document.getElementById("product-input").value = String(({{ product | tojson | safe }}));
+                    document.getElementById("brand-input").value = String(({{ brand | tojson | safe }}));
+                    document.getElementById("product-input").value = String(({{ product | tojson | safe }}));
                 }
             });
 
-        function addActive(x) {
-            /*a function to classify an item as "active":*/
-            if (!x) return false;
-            /*start by removing the "active" class on all items:*/
-            removeActive(x);
-            if (currentFocus >= x.length) currentFocus = 0;
-            if (currentFocus < 0) currentFocus = (x.length - 1);
-            /*add class "autocomplete-active":*/
-            x[currentFocus].classList.add("autocomplete-active");
-        }
-
-        function removeActive(x) {
-            /*a function to remove the "active" class from all autocomplete items:*/
-            for (var i = 0; i < x.length; i++) {
-                x[i].classList.remove("autocomplete-active");
+            function addActive(x) {
+                /*a function to classify an item as "active":*/
+                if (!x) return false;
+                /*start by removing the "active" class on all items:*/
+                removeActive(x);
+                if (currentFocus >= x.length) currentFocus = 0;
+                if (currentFocus < 0) currentFocus = (x.length - 1);
+                /*add class "autocomplete-active":*/
+                x[currentFocus].classList.add("autocomplete-active");
             }
-        }
 
-        function closeAllLists(elmnt) {
-            /*close all autocomplete lists in the document,
-            except the one passed as an argument:*/
-            var x = document.getElementsByClassName("autocomplete-items");
-            for (var i = 0; i < x.length; i++) {
-                if (elmnt != x[i] && elmnt != inp) {
-                    x[i].parentNode.removeChild(x[i]);
+            function removeActive(x) {
+                /*a function to remove the "active" class from all autocomplete items:*/
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove("autocomplete-active");
                 }
             }
-        }
-        /*execute a function when someone clicks in the document:*/
-        document.addEventListener("click", function (e) {
-            closeAllLists(e.target);
-        });
+
+            function closeAllLists(elmnt) {
+                /*close all autocomplete lists in the document,
+                except the one passed as an argument:*/
+                var x = document.getElementsByClassName("autocomplete-items");
+                for (var i = 0; i < x.length; i++) {
+                    if (elmnt != x[i] && elmnt != inp) {
+                        x[i].parentNode.removeChild(x[i]);
+                    }
+                }
+            }
+            /*execute a function when someone clicks in the document:*/
+            document.addEventListener("click", function (e) {
+                closeAllLists(e.target);
+            });
         }
 
         /*initiate the autocomplete function on the "inut" element, and pass along the brands array as possible autocomplete values:*/
